@@ -33,4 +33,3 @@ hugo server -w
 ## FAQ
 
 如果无法启动，并得到 "too many open files" 的错误代码，请运行 `sysctl -w kern.maxfiles=20480` 命令。
-
