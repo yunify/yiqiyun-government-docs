@@ -1,7 +1,6 @@
 ---
 title: "strongswan与VPC共同搭建隧道"
 linkTitle: "strongswan与VPC共同搭建隧道"
-date: 2021-02-16T10:08:56+09:00
 description:
 draft: false
 weight: 5
@@ -9,9 +8,9 @@ weight: 5
 
 ## 项目介绍
 
-客户业务在往青云迁移的过程中，因为两边的数据需要同步，所以需要建立站点到站点ipsec隧道，由于本地IDC设备不支持vpn服务，所以采用自建ipsec的方式互联，采用的是strongswan的方式，以下是模拟客户业务环境，成功搭建ipsec隧道的案例，供参考。
+客户业务在往计算平台迁移的过程中，因为两边的数据需要同步，所以需要建立站点到站点ipsec隧道，由于本地IDC设备不支持vpn服务，所以采用自建ipsec的方式互联，采用的是strongswan的方式，以下是模拟客户业务环境，成功搭建ipsec隧道的案例，供参考。
 
-### qingcloud ap2a （vpc自身具备ipsec服务）
+### jn1 （vpc自身具备ipsec服务）
 
 私有网络  172.25.100.0/24
 
@@ -19,7 +18,7 @@ weight: 5
 
 
 
-### pek3  vm信息（模拟本地IDC机房服务器）
+### jn2  vm信息（模拟本地IDC机房服务器）
 
 私有ip  172.20.100.180
 
@@ -33,7 +32,7 @@ weight: 5
 
 172.25.100.0/24<==>172.20.100.0/24
 
-### 1、pek3区的vm需要安装strongswan ，采用以下命令
+### 1、jn1区的vm需要安装strongswan ，采用以下命令
 
 ```
 sudo apt update
@@ -63,7 +62,7 @@ root@i-y862i3l9:~# openssl rand -base64 16
 oCTYi71l0ZU7WcRgLYaspg==
 ```
 
-### 4、pek3 vm的隧道环境配置参数
+### 4、jn2 vm的隧道环境配置参数
 
 #### <1、配置预共享秘钥
 

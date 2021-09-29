@@ -1,6 +1,5 @@
 ---
 title: "操作指南"
-date: 2020-12-01T00:38:25+09:00
 draft: false
 weight: 2
 ---
@@ -18,7 +17,7 @@ weight: 2
 
 ## 创建边界路由器
 
-登陆控制台，在顶部导航栏里搜索**边界路由器**，进入详情页面后，点击**创建**即可创建边界路由器。
+登录控制台，在顶部导航栏里搜索**边界路由器**，进入详情页面后，点击**创建**即可创建边界路由器。
 
 ![](../../_images/intranet_router.png)
 
@@ -86,7 +85,10 @@ weight: 2
 
 ![](../../_images/intranet_router_static_route.jpg)
 
-    注意：设置好内网路由策略后，需要点击"应用修改”以生效。
-    注意：边界路由器静态静态路由个数默认最大额度为10。
+> **注意**
+>
+> 边界路由器静态静态路由个数默认最大额度为10。
+>
+> 设置好内网路由策略后，需要点击**应用修改**以生效。
 
-边界路由器静态路由应用场景可见[专线经 VPC 访问公网](../../../../sd-wan/sd-wan/quick-start/line_connect_eip)和[光盒经 VPC 访问第三方网络](../../../../sd-wan/sd-wan/quick-start/cpe_connect_tunnel)。
+边界路由器静态路由应用场景可见[专线经 VPC 访问公网](/sd-wan/sdwan/quick-start/line_connect_eip/)和[光盒经 VPC 访问第三方网络](/sd-wan/sdwan/quick-start/cpe_connect_tunnel/)。

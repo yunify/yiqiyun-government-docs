@@ -1,7 +1,6 @@
 ---
 title: "连接私有网络"
 linkTitle: "连接私有网络"
-date: 2021-05-19T10:08:56+09:00
 description:
 draft: false
 weight: 15
@@ -13,7 +12,7 @@ weight: 15
 
 ## 创建私有网络并连接
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
@@ -34,7 +33,7 @@ weight: 15
 
 ## 连接已有私有网络
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 

@@ -1,7 +1,6 @@
 ---
 title: "使用虚拟 IP "
 linkTitle: "虚拟 IP "
-date: 2020-02-28T10:08:56+09:00
 description:
 draft: false
 weight: 50
@@ -19,7 +18,7 @@ weight: 50
 
 ## 虚拟IP 管理
 
-青云控制台提供了虚拟 IP 管理功能，用户创建虚拟 IP 后，将在控制台中展示出来虚拟 IP 被占用的情况。
+VPC 网络提供了虚拟 IP 管理功能，用户创建虚拟 IP 后，将在控制台中展示出来虚拟 IP 被占用的情况。
 
 
 在 VPC 网络和私有网络中，都可以创建虚拟IP
@@ -38,7 +37,7 @@ weight: 50
 
 ## 应用操作示例
 
-青云 VPC 网络一直支持虚拟 IP（Virtul_IP）的功能，只需要您采用支持虚拟 IP的软件 (如 keepalived) 就可以将 VPC 内的任何 IP 地址作为虚拟 IP 使用，即便未在青云控制台中指定创建虚拟 IP。
+VPC 网络一直支持虚拟 IP（Virtul_IP）的功能，只需要您采用支持虚拟 IP 的软件 (如 keepalived) 就可以将 VPC 内的任何 IP 地址作为虚拟 IP 使用，即便未在控制台中指定创建虚拟 IP。
 
 ### Keepalived 为例 ( Centos 7.6)
 

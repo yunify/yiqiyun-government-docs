@@ -1,7 +1,6 @@
 ---
 title: "创建 VPC 网络"
 linkTitle: "创建 VPC 网络"
-date: 2021-05-19T10:08:56+09:00
 description:
 draft: false
 weight: 10
@@ -11,11 +10,11 @@ weight: 10
 
 在 VPC 网络中使用云资源前，您必须先创建一个 VPC 网络和初始私有网络。
 
-本章节用于指导您创建一个新的VPC网络。
+本章节用于指导您创建一个新的 VPC 网络。
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 

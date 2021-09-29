@@ -4,7 +4,7 @@ description: Test description
 weight: 30
 draft: false
 enableToc: false
-keyword: QingCloud, 青云, 负载均衡器应用场景
+keyword: 负载均衡器应用场景
 ---
 
 ### 构建高可用业务架构
