@@ -14,7 +14,7 @@ HBase 的基本查询操作只能根据特性的行键进行查询（Get）或�
 
 ## 约束限制
 
-- 仅 QingCloud 2.1.0 - HBase 2.0.6 及以上版本支持。
+- 仅 ShanHe 2.1.0 - HBase 2.0.6 及以上版本支持。
 
 ## 前提条件
 
@@ -52,15 +52,10 @@ HBase 的基本查询操作只能根据特性的行键进行查询（Get）或�
   
 3. 重启 RegionServer 服务。
 
-   1. 登录 QingCloud 管理控制台。
-   2. 选择**产品与服务** > **大数据服务** > **HBase 服务**，进入集群管理页面。
+   1. 登录管理控制台。
+   2. 选择**产品与服务** > **大数据服务** > **大数据服务 HBase**，进入集群管理页面。
    3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
    4. 在**基本属性**区域，展开操作栏并点击**重启 RegionServer**。
-
-      <img src="../../../_images/region_server.png" alt="RegionServer" style="zoom:50%;" />
-
    5. 点击**提交**，确认重启主节点服务。
 
       集群状态切换为**活跃**时，节点重启完毕，即生效更新后 Filter 包。
-
-   <img src="../../../_images/restart_region_server.png" alt="重启 RegionServer" style="zoom:50%;" />
