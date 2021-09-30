@@ -1,7 +1,6 @@
-# 超算政务云文档项目说明
+# 山河公有云文档项目说明
 
-government分支用于超算政务云文档。main分支用于山河公有云文档。
-超算政务云文档使用了 [Hugo](https://gohugo.io/getting-started/installing/) 来构建网站，Hugo 是一个静态博客网站生成器，可将 Markdown 格式的文本构建为可发布的静态网站。因此需要在本地安装 Hugo。
+山河公有云文档使用了 [Hugo](https://gohugo.io/getting-started/installing/) 来构建网站，Hugo 是一个静态博客网站生成器，可将 Markdown 格式的文本构建为可发布的静态网站。因此需要在本地安装 Hugo。
 
 ## 第一步：安装前置工具 
 
@@ -29,7 +28,7 @@ hugo server -w
 
 2. 通过浏览器输入 `http://127.0.0.1:1313/` 预览文档，可以看到与线上文档相同的效果。
 
-> 说明：接下来只需要在 [shanhe/content/](https://github.com/yunify/shanhe-docs/tree/government/content) 目录下在本地编辑内容，可参考该目录下 3 个示例目录结构。编辑完成后，在本地使用 git 命令提交，最后提交一个 Pull Request 到上游的 [shanhe-docs 仓库](https://github.com/yunify/shanhe-docs)。
+> 说明：接下来只需要在 [shanhe/content/](https://github.com/yunify/shanhe-docs/tree/main/content) 目录下在本地编辑内容，可参考该目录下 3 个示例目录结构。编辑完成后，在本地使用 git 命令提交，最后提交一个 Pull Request 到上游的 [shanhe-docs 仓库](https://github.com/yunify/shanhe-docs)。
 
 ## FAQ
 
