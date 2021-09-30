@@ -1,6 +1,6 @@
 ---
 title: "多可用区部署测试"
-draft: true
+draft: false
 enableToc: false
 weight: 8
 ---
