@@ -1,5 +1,5 @@
 ---
-title: "大数据服务 HBase"
+title: "HBase 服务"
 linkTitle: "HBase"
 weight: 40
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: HBase
-  vice_title: 大数据服务 HBase 是一个开源的、分布式的、数据多版本的，列式存储的 NoSQL 数据库。
+  vice_title: HBase 服务是一个开源的、分布式的、数据多版本的，列式存储的 NoSQL 数据库。
 
 Section2:
   title: 用户指南

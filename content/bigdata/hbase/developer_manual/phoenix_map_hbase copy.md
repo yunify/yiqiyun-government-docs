@@ -10,7 +10,7 @@ draft: false
 
   
 
-本小节以 test1 表为例，介绍如何使用 Phoenix 映射HBase 中已有的表。
+本小节以 test1 表为例，介绍如何使用 Phoenix 映射 HBase 中已有的表。
 
 ## 创建表并写入数据
 

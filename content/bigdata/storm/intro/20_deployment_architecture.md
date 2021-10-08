@@ -22,4 +22,3 @@ Storm 集群采用的是 master/slave 架构， Storm 集群服务还包括在�
 | RPC 节点                                                     | 运行了 DRPC 和 Logviewer 服务，用于接收 RPC 请求，并将计算拓扑的处理结果返回给客户端。 |
 | 客户端节点                                                   | 安装了 Python、JRE/JDK 和 Storm 软件，用于提交计算拓扑。     |
 | ZooKeeper 集群 | 用于协调 Storm 集群。                                        |
-
