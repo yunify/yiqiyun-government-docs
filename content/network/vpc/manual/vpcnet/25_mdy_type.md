@@ -1,7 +1,6 @@
 ---
 title: "修改 VPC 规格类型"
 linkTitle: "修改 VPC 规格类型"
-date: 2021-05-19T10:08:56+09:00
 description:
 draft: false
 weight: 25
@@ -20,9 +19,9 @@ weight: 25
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
-2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
+2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
 3. 找到需要更改的 VPC 网络，点击**更多操作** > **扩容**。
 

@@ -1,7 +1,6 @@
 ---
 title: "绑定公网 IP"
 linkTitle: "绑定公网 IP"
-date: 2021-05-19T10:08:56+09:00
 description:
 draft: false
 weight: 26
@@ -17,9 +16,9 @@ weight: 26
 
 ## 操作步骤
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
-2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC网络**，进入**VPC网络**页面。
+2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
 3. 在 VPC 名称下方的**管理路由器属性**区域，可查看到当前VPC网络的**公网 IPV4**。
 

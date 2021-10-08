@@ -4,7 +4,7 @@ description: Test description
 weight: 40
 draft: false
 enableToc: false
-keyword: QingCloud, 青云, 负载均衡器
+keyword: 负载均衡器
 ---
 
 本文介绍负载均衡器（LB）实例的配额限制，以及如何申请更高配额。

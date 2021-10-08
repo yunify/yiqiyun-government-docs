@@ -1,7 +1,6 @@
 ---
 title: "外部绑定公网 IP"
 description: test
-date: 2021-05-26T15:08:56+09:00
 weight: 10
 draft: false
 ---

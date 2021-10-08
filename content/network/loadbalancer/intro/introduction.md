@@ -4,7 +4,7 @@ description: Test description
 weight: 10
 draft: false
 enableToc: false
-keyword: QingCloud, 青云, 负载均衡器
+keyword: 负载均衡器
 ---
 
 ## 负载均衡器

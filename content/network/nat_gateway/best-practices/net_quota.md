@@ -1,7 +1,6 @@
 ---
 
 title: "NAT 网关绑定私有网络个数限制"
-date: 2020-07-30T00:38:25+09:00
 description: Test description
 weight: 20
 draft: false

@@ -13,7 +13,7 @@ weight: 20
 
 ## 前提条件
 
-- 已注册青云账号并通过实名认证。
+- 已注册山河计算平台账号并通过实名认证。
 - 确保账户有足够金额。若需要充值，请前往[充值页面](https://console.qingcloud.com/finance/wallet)。
 
 ## 操作步骤
@@ -22,7 +22,7 @@ weight: 20
 
 按照以下操作，创建一个 VPC 网络并在 VPC 网络中添加一个私有网络。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
@@ -63,7 +63,7 @@ weight: 20
 
 按照以下操作，在[步骤1](#步骤1创建-vpc-网络及私有网络)中创建的私有网络中创建云服务器。
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 2. 在顶部菜单栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 3. 点击在[步骤1](#步骤1创建-vpc-网络及私有网络)中已创建好的 VPC 网络，进入 VPC 详情页面。
 4. 在**私有网络** > **资源列表**区，点击**创建资源** > **云服务器**。
@@ -82,7 +82,7 @@ weight: 20
 
 按照以下操作，申请一个公网IP并绑定到[步骤2](#步骤2在私有网络中创建云服务器)中所创建的云服务器。
 
-1. 登录[QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录[管理控制台](https://console.shanhe.com/login)。
 
 2. 在顶部菜单栏中，选择**产品与服务** > **网络服务** > **公网 IP**，进入**公网 IP**页面。
 
@@ -118,9 +118,9 @@ weight: 20
 
 1. 启动并登录已绑定公网IP的云服务器。
 
-2. 执行`ping`命令验证是否可公网通信。 如 `ping www.qingcloud.com` 测试公网连通性。
+2. 执行`ping`命令验证是否可公网通信。 如 `ping www.shanhe.com` 测试公网连通性。
 
-   <img src="/network/vpc_2.0/_images/4020_ping.png" alt="ping" style="zoom:50%;" />
+    如果能接收到回复报文，表示连接成功。
 
 
 
