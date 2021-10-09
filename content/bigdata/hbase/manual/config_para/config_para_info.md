@@ -11,11 +11,11 @@ draft: false
 
 在 AppCenter 集群管理控制台，支持对 HBase 常用配置参数的管理。
 
-> **说明：**
+> **说明**
 > 
 > 更多配置参数说明，请参见 [HBase 官方配置文件](http://hbase.apache.org/book.html#config.files)
 
-本小节主要介绍 AppCenter 中各 HBase 配置参数的含义。 
+本小节主要介绍 AppCenter 中各 HBase 配置参数的含义。
 
 ## 支持的配置参数
 

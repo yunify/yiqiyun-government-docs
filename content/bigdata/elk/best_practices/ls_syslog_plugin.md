@@ -21,7 +21,7 @@ Logstash 预置了 logstash-input-syslog 插件，通过此插件可在 Logstash
    syslog { port => 514 }
    ```
 
-   > **说明**：
+   > **说明**
    >
    > 请注意不要使用 22、80、9600 端口。
    >

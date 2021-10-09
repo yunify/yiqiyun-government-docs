@@ -15,4 +15,4 @@ ELK 是 Elasticsearch、 Kibana 和 Logstash 这三个软件集合的简称。EL
 
 - Logstash 为用户提供数据采集、转换、优化和输出的能力。
 
-大数据服务 ELK 服务对 Elasticsearch、Kibana 与 Logstash（后两者为可选）三者进行了很好的集成，以 AppCenter 云应用的形式交付给用户使用。
+大数据服务 ELK 对 Elasticsearch、Kibana 与 Logstash（后两者为可选）三者进行了很好的集成，以 AppCenter 云应用的形式交付给用户使用。
