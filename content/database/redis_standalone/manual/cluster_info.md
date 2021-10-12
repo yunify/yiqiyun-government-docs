@@ -16,7 +16,7 @@ draft: false
 
 ## 服务端口信息
 
-云数据 Redis Standalone 提供一个读写IP，此IP始终指向主节点。当发生主从切换时，此IP将指向新的主节点，无需手动更改主节点IP。
+Redis Standalone 提供一个读写 IP，此 IP 始终指向主节点。当发生主从切换时，此 IP 将指向新的主节点，无需手动更改主节点 IP。
 
 ## 节点实时角色
 
