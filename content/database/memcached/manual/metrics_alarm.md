@@ -12,7 +12,7 @@ draft: false
 
 ## 监控指标
 
-Memcached 服务提供了详尽的监控数据，来帮助用户随时了解缓存服务的运行状态和各项指标。每一项监控都提供了历史监控和实时监控，最短时间间隔可以达到10s。Memcached 的监控数据是通过 Memcached 的 stats 命令来进行采集的。
+Memcached 提供了详尽的监控数据，来帮助用户随时了解缓存服务的运行状态和各项指标。每一项监控都提供了历史监控和实时监控，最短时间间隔可以达到10s。Memcached 的监控数据是通过 Memcached 的 stats 命令来进行采集的。
 
 | 监控项 | <span style="display:inline-block;width:80px">间隔时间</span> | <span style="display:inline-block;width:60px">单位</span> | 说明 |
 |:--- |:--- |:--- |:--- |
