@@ -3,17 +3,6 @@ title: "操作指南"
 linkTitle: "操作指南"
 weight: 50
 collapsible: true
-
-Section2:
-  title: 绑定 IPv4 公网 IP
-  children:
-    - title: 绑定 IPv4 公网 IP
-      content: 绑定 IPv4 公网 IP
-      url: "ipv4/inband_ipv4/"
-
-    - title: 绑定 IPv6 公网 IP
-      content: 绑定 IPv6 公网 IP
-      url: "ipv6/inband_ipv6/"
 ---
 
 

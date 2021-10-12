@@ -130,7 +130,7 @@ draft: false
 
 ”网络” 中选择 “基础网络”， 在 “云服务器” 的下拉菜单中选择已经配置好的 web server，”端口” 输入 “443”，然后点击提交。
 
-![](../_images/add_http_backend.png)
+![](../_images/add_https_backend.png)
 
 同理，如果还有其他 HTTPS 云服务器，你可以通过类似的操作依次添加， 注意在添加完成之后，不要忘记点击 “应用修改” 使配置生效。
 
@@ -180,10 +180,13 @@ UDP监听也支持选择端口范围，点击“使用端口组”，端口组�
 
 假设负载均衡器有两个后端，运行着两个不同域名的网站，域名分别为 “domain1.com” 和 “domain2.com”。 我们现在通过配置转发策略来将不同的域名的流量转发到不同的后端。
 
-
 第一步：创建转发策略和转发规则
 
-首先创建针对域名 “domain1.com” 的转发策略，为了方便查看，我们命名为 “domain1.com”，如图所示：
+在控制台导航菜单中，选择**网络** > **负载均衡器**，然后点击**转发策略**页签，进入转发策略创建页面。
+
+首先创建针对域名 “domain1.com” 的转发策略，为了方便查看，我们命名为 “domain1.com”，
+
+如图所示：
 
 [![](../_images/create_lb_policy_domain.png)](../_images/create_lb_policy_domain.png)
 
@@ -214,11 +217,7 @@ UDP监听也支持选择端口范围，点击“使用端口组”，端口组�
 
 第三步：更新负载均衡器配置
 
-后端添加完成之后，点击 “应用修改” 来更新负载均衡器的配置，最后的配置效果如图所示：
-
-[![](../_images/list_lb_backend_domain.png)](../_images/list_lb_backend_domain.png)
-
-
+后端添加完成之后，点击 “应用修改” 来更新负载均衡器的配置。
 
 >
 >这里可能还需要做的配置是，在域名解析商处，将这两个域名解析到负载均衡器对应的IP上。
@@ -251,7 +250,7 @@ UDP监听也支持选择端口范围，点击“使用端口组”，端口组�
 >当规则重叠的转发策略，优先级也相同的情况下，仍然会出现随机匹配的情况。所以，在复杂的转发场景，请先做好规则匹配的规划。
 
 
-
+<!-- 
 ### URL 重写
 
 URL重写（英语：URL Rewriting）是一种REST的技术，它可以在负载均衡器中，针对用户所提供的URL进行转换后，再传入负载均衡器后端服务器进行处理。是针对[搜索引擎优化(SEO)](https://zh.wikipedia.org/wiki/%E6%90%9C%E5%B0%8B%E5%BC%95%E6%93%8E%E6%9C%80%E4%BD%B3%E5%8C%96)的重要手段,重写规则的内容符合[正则表达式](https://zh.wikipedia.org/zh-hans/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F)语法。
@@ -264,11 +263,7 @@ http://myhomer.vip/test3
 
 可以添加[重写规则](https://www.haproxy.com/documentation/aloha/10-0/traffic-management/lb-layer7/http-rewrite/#rewriting-http-urls)： `%[path,regsub(test,tset,i)]`
 
-![](../_images/add_urlrewrite_rules.png)
-
-转发策略与重写配合使用：
-
-![](../_images/add_urlrewrite_rules2.png)
+![](../_images/add_urlrewrite_rules.png) -->
 
 
 
