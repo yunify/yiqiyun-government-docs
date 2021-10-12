@@ -18,17 +18,17 @@ Section2:
       content: 产品简介
       url: "intro/introduction/"
 
-    - title: 计费指南
-      content: 计费指南
-      url: "billing/price/"
+  #  - title: 计费指南
+  #    content: 计费指南
+  #    url: "billing/price/"
 
-    - title: 快速入门
-      content: 快速入门
-      url: "quickstart/ipv6_quick_start/"
+  #  - title: 快速入门
+  #    content: 快速入门
+  #    url: "quickstart/ipv6_quick_start/"
 
     - title: 操作指南
       content: 操作指南
-      url: "manual/ipv4/inband_ipv4/"
+      url: "manual/outband_ipv4/"
 
     #- title: 最佳实践
     #  content: 最佳实践

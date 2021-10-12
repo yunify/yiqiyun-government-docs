@@ -18,27 +18,27 @@ Section2:
   children:
     - title: 产品简介
       content: 产品简介
-      url: "/network/loadbalancer/intro/introduction"
+      url: "intro/introduction"
 
-    - title: 计费指南
-      content: 计费指南
-      url: "/network/loadbalancer/billing/price"
+  #  - title: 计费指南
+  #    content: 计费指南
+  #    url: "billing/price"
 
     - title: 快速入门
       content: 快速入门
-      url: "/network/loadbalancer/quickstart/quick_start"
+      url: "quickstart/quick_start"
 
     - title: 操作指南
       content: 操作指南
-      url: "/network/loadbalancer/manual/lb_user_guide"
+      url: "manual/lb_user_guide"
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/network/loadbalancer/best-practices/lb_border"
+      url: "best-practices/lb_natgw/"
 
     - title: 常见问题
       content: 常见问题
-      url: "/network/loadbalancer/faq/lb_faq"
+      url: "faq/lb_faq"
 
 section3:
   title: 开发者指南
@@ -63,20 +63,20 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "/network/loadbalancer/intro/introduction"
+          url: "intro/introduction"
 
         - title: 产品优势
-          url: "/network/loadbalancer/intro/advantage"
+          url: "intro/advantage"
 
         - title: 应用场景
-          url: "/network/loadbalancer/intro/senario"
+          url: "intro/senario"
 
     - title: 上手：搭建负载均衡
       content: 搭建基于各个协议的负载均衡。
       vice_title: 上手的第一步
       children:
         - title: 搭建负载均衡
-          url: "/network/loadbalancer/quickstart/quick_start"       
+          url: "quickstart/quick_start"       
 ---
 
 

@@ -2,7 +2,7 @@
 title: "开启云服务器 IPv6 自动化配置"
 description: test
 weight: 40
-draft: false
+draft: true
 ---
 
 ## 操作场景

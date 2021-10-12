@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: VPC 网络
-  vice_title: VPC 网络是山河计算平台上用户专属的大型网络空间。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器/数据库/大数据等各种云资源。
+  vice_title: VPC 网络是山东省计算中心云平台上用户专属的大型网络空间。在 VPC 网络内，您可以自定义 IP 地址范围、创建子网，并在子网内创建云服务器/数据库/大数据等各种云资源。
   # todo add qingstor introduction video
   # video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_vpc_0723.mp4"
   # video_img: "/images/video.png"
@@ -21,27 +21,27 @@ Section2:
 
     - title: 产品简介
       content: 什么是 VPC 网络
-      url: "/network/vpc/intro/10_intro"
+      url: "intro/10_intro"
 
-    - title: 计费指南
-      content: VPC 网络如何计费
-      url: "/network/vpc/billing/price"
+    #- title: 计费指南
+    #  content: VPC 网络如何计费
+    #  url: "billing/price"
 
     - title: 快速入门
       content: 快速入门
-      url: "/network/vpc/quick-start/10_qs_net_plan"
+      url: "quick-start/10_qs_net_plan"
 
     - title: 操作指南
       content: 操作指南
-      url: "/network/vpc/manual/vpcnet/10_create_vpc"
+      url: "manual/vpcnet/10_create_vpc"
 
     - title: 最佳实践
       content: 最佳实践
-      url: "/network/vpc/best-practices/best_practices"
+      url: "best-practices/best_practices"
 
     - title: 常见问题
       content: 常见问题
-      url: "/network/vpc/faq/vpc_faq"
+      url: "faq/vpc_faq"
 
 section3:
   title: 开发者指南
@@ -65,16 +65,16 @@ section4:
       vice_title: 了解的第一步
       children:
         - title: 产品简介
-          url: "/network/vpc/intro/10_intro"
+          url: "intro/10_intro"
 
         - title: 产品优势
-          url: "/network/vpc/intro/intro/#vpc-产品优势"
+          url: "intro/intro/#vpc-产品优势"
     - title: 上手：创建和管理 VPC 网络
       content: 创建VPC网络，查看VPC属性，管理配置，图形化页面。
       vice_title: 上手的第一步
       children:
         - title: 创建VPC
-          url: "/network/vpc/manual/vpcnet/10_create_vpc"
+          url: "manual/vpcnet/10_create_vpc"
 
 ---
 

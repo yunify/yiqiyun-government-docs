@@ -17,7 +17,7 @@ weight: 2
 
 ## 创建边界路由器
 
-登录控制台，在顶部导航栏里搜索**边界路由器**，进入详情页面后，点击**创建**即可创建边界路由器。
+登录 WEB 管理控制台，在顶部菜单栏中点击**产品与服务**，选择 **网络** > **边界路由器** ，进行边界路由器页面，然后点击**创建**即可创建边界路由器。
 
 ![](../../_images/intranet_router.png)
 
@@ -30,14 +30,13 @@ weight: 2
 
 第二步：勾选客户端 1 和客户端 2 所在的私有网络，将其关联到边界路由器。
 
-![](../../_images/intranet_router_vxnet.png)
-
-    注意：边界路由器 IP 不能与私有网络中已使用的 IP 冲突。
+> **注意**
+>
+> 边界路由器 IP 不能与私有网络中已使用的 IP 冲突。
 
 第三步：在边界路由器的详情页面上方，点击**绑定 VPC 网络**，选择客户端 3 所在的VPC。
 
-![](../../_images/intranet_router_vpc_detail.jpg)
-
+![](../../_images/intranet_router_vpc_detail.png)
 
 ## 配置内网路由策略
 
@@ -83,7 +82,7 @@ weight: 2
 
 在边界路由详情页，点击**路由设置**中的**添加路由**，可以进入静态路由配置页面。
 
-![](../../_images/intranet_router_static_route.jpg)
+![](../../_images/intranet_router_static_route.png)
 
 > **注意**
 >
@@ -91,4 +90,4 @@ weight: 2
 >
 > 设置好内网路由策略后，需要点击**应用修改**以生效。
 
-边界路由器静态路由应用场景可见[专线经 VPC 访问公网](/sd-wan/sdwan/quick-start/line_connect_eip/)和[光盒经 VPC 访问第三方网络](/sd-wan/sdwan/quick-start/cpe_connect_tunnel/)。
+<!-- 边界路由器静态路由应用场景可见[专线经 VPC 访问公网](/sd-wan/sdwan/quick-start/line_connect_eip/)和[光盒经 VPC 访问第三方网络](/sd-wan/sdwan/quick-start/cpe_connect_tunnel/)。 -->
