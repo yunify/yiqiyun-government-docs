@@ -70,7 +70,7 @@ draft: false
 
 方案一 MapReduce 代码如下，先创建表，在 Map 中完成数据解析，在 Reduce 中完成入库。Reduce的个数相当于入库线程数。
 
-> **说明：**
+> **说明**
 > 
 > 可自行修改 `job.setNumReduceTasks()` 中 Reduce 数目。
 

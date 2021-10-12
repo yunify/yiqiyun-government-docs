@@ -1,5 +1,5 @@
 ---
-title: "大数据服务 Storm"
+title: "Storm 服务"
 linkTitle: "Storm 服务"
 weight: 60
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: Storm
-  vice_title: 大数据服务 Storm 是一个开源的分布式实时计算系统，通常被比作 "实时的 Hadoop"。Storm 为实时计算提供了一些简单优美的原语，支持多种编程语言，并内建流式窗口 API 及分布式缓存 API，极大简化了流式数据处理过程。
+  vice_title: Storm 服务是一个开源的分布式实时计算系统，通常被比作 "实时的 Hadoop"。Storm 为实时计算提供了一些简单优美的原语，支持多种编程语言，并内建流式窗口 API 及分布式缓存 API，极大简化了流式数据处理过程。
 
 Section2:
   title: 用户指南

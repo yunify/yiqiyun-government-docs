@@ -1,5 +1,5 @@
 ---
-title: "大数据服务 ZooKeeper"
+title: "ZooKeeper 服务"
 linkTitle: "ZooKeeper"
 weight: 50
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: ZooKeeper
-  vice_title: 大数据服务 ZooKeeper 是一个高可用的分布式数据管理与系统协调软件服务。
+  vice_title: ZooKeeper 服务是一个高可用的分布式数据管理与系统协调软件服务。
 
 Section2:
   title: 用户指南

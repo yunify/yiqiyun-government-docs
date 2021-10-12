@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-目前 ZooKeeper 支持创建 ZooKeeper 的参与者节点，参与者节点是指参与投票选举的节点，包括 Leader、Follower、单节点 Standalone 三种服务模式。为了确保集群可以正常工作，通常需要保证有足够多的参与者节点，这样当某个或某几个节点坏掉以后，参与者的数量 （Quorum） 还可以保证选举出 Leader 。
+ZooKeeper 支持创建 ZooKeeper 的参与者节点，参与者节点是指参与投票选举的节点，包括 Leader、Follower、单节点 Standalone 三种服务模式。为了确保集群可以正常工作，通常需要保证有足够多的参与者节点，这样当某个或某几个节点坏掉以后，参与者的数量 （Quorum） 还可以保证选举出 Leader 。
 
 > **注意**
 > 
@@ -34,12 +34,9 @@ draft: false
 当 ZooKeeper 需增加节点以适应客户端逐步增多带来的压力时，可以在 AppCenter 管理控制台增加 ZooKeeper 节点。
 
 1. 登录管理控制台。
-2. 选择**产品与服务** > **大数据服务** > **大数据服务 ZooKeeper**，进入集群管理页面。
+2. 选择**产品与服务** > **大数据服务** > **ZooKeeper 服务**，进入集群管理页面。
 3. 选择目标集群，点击目标集群 ID，进入集群详情页面。
 4. 在**节点**页签，点击**新增节点**，弹出节点配置窗口。
-
-   <img src="../../_images/add_node.png" alt="增加节点" style="zoom:50%;" />
-
 5. 配置节点信息。
 
 6. 点击**提交**，返回节点列表页面。
@@ -82,8 +79,6 @@ draft: false
 3. 配置待扩容集群信息。
 
     配置节点 CPU、内存和磁盘大小。
-
-    <img src="../../_images/scale_up_down.png" alt="扩容节点" style="zoom:50%;" />
 
 4. 点击**提交**，返回集群详情页面。
 

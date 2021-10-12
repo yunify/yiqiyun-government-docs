@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-的 ELK 集群服务具备以下功能特点：
+ELK 集群服务具备以下功能特点：
 
 - 为 Elasticsearch 提供了更强大的分词功能支持，集成了 [IK Analysis](https://github.com/medcl/elasticsearch-analysis-ik) 中文分词插件，并为该插件提供了 [结巴分词](https://github.com/fxsjy/jieba/blob/master/jieba/dict.txt) 的词库和 IK 自带的搜狗词库，同时还支持用户上传自定义词典。
 

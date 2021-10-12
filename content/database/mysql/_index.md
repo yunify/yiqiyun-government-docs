@@ -1,5 +1,5 @@
 ---
-title: "云数据库 MySQL Plus"
+title: "关系型数据库 MySQL Plus"
 linkTitle: "MySQL Plus"
 weight: 01
 collapsible: true
@@ -7,7 +7,7 @@ type: "product"
 
 section1:
   title: MySQL Plus
-  vice_title: 云数据库 MySQL Plus 是一款基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警、自动扩容等管理功能。
+  vice_title: MySQL Plus 是一款基于 MySQL 提供的数据库服务，支持一主多从高可用架构，集成 InnoDB + TokuDB 双存储引擎，支持自动备份、监控告警、自动扩容等管理功能。
 
 Section2:
   title: 用户指南
