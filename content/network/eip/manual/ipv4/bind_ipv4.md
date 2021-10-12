@@ -1,5 +1,5 @@
 ---
-title: "使用公网 IP"
+title: "分配公网 IPv4"
 description: test
 weight: 20
 draft: false
@@ -14,7 +14,7 @@ draft: false
 
 2. 右键点击需要使用公网 IP， 根据您的需求进行分配或绑定。
 
-   <img src="../../_images/assign_eip.png"  style="zoom:70%;" />
+   <img src="../../../_images/assign_eip.png"  style="zoom:70%;" />
    
    可绑定到 VPC 网络、云服务器、负载均衡器以及 NAT 网关。
 
@@ -24,6 +24,6 @@ draft: false
 
    绑定完成后，该公网 IP 条目的状态将显示为**已分配**，并显示绑定到的资源，如下图所示。
 
-   ![公网IP绑定状态](../../_images/already_eip_for_user.png)
+   ![公网IP绑定状态](../../../_images/already_eip_for_user.png)
 
 

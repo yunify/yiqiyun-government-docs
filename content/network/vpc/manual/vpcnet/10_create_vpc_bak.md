@@ -50,10 +50,11 @@ weight: 10
   	<td>IPv4 地址范围</td>
   	<td>VPC 的 IPv4 网段。<br>VPC 网络创建后，IPv4 网段不可修改。<br></td>
   </tr>
-  <!-- <tr>
+<tr>
   	<td>IPv6 地址范围</td>
-  	<td>选择是否为 VPC 网络分配 IPv6 网段。<li><b>关闭 IPv6</b>：默认选项，即不分配 IPv6 网段。</li><li><b>系统自动分配</b>：开启 IPv6 功能，并自动分配 IPv6 网段。</li></td>
-  </tr> -->
+  	<td><div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b>：<br>仅在互联网域可用区下，支持该选项。
+      </div>仅在互联网域可用区下，支持该选项。选择是否为 VPC 网络分配 IPv6 网段。<li><b>关闭 IPv6</b>：默认选项，即不分配 IPv6 网段。</li><li><b>系统自动分配</b>：开启 IPv6 功能，并自动分配 IPv6 网段。</li></td>
+  </tr>
    <tr>
   	<td>类型</td>
   	<td>支持免费型、小型、中型、大型及超大型，不同类型可支持的管理流量转发能力不同。 <br>

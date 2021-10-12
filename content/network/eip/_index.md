@@ -28,7 +28,7 @@ Section2:
 
     - title: 操作指南
       content: 操作指南
-      url: "manual/outband_ipv4/"
+      url: "manual/ipv4/apply_ipv4/"
 
     #- title: 最佳实践
     #  content: 最佳实践

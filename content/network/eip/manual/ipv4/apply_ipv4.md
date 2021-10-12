@@ -1,5 +1,5 @@
 ---
-title: "申请公网 IP"
+title: "申请公网 IPv4"
 description: test
 weight: 10
 draft: false
@@ -7,7 +7,7 @@ draft: false
 
 ## 操作场景
 
-通过申请一个外部绑定公网 IP，然后分配公网IP给服务器，便可实现云服务器公网访问，无须再做额外配置。
+申请公网 IP 后，您可以将申请到的公网 IP 地址与任意云服务器（包括私有网络内的云服务器）、VPC 网络、负载均衡器绑定，并随时可以解绑或再分配到其他资源上。
 
 ## 操作步骤
 
@@ -17,7 +17,7 @@ draft: false
 
 3. 填写公网 IP 信息。
 
-   <img src="../../_images/create_eip.png" alt="填写申请公网IP信息" style="zoom:50%;" />
+   <img src="../../../_images/create_eip.png" alt="填写申请公网IP信息" style="zoom:50%;" />
 
    - 名称：为您申请的 IP 地址取个名字，方便记忆与使用。可选。
    - 地址：IP 地址。

@@ -1,10 +1,10 @@
 ---
-title: "绑定 IPv6 公网 IP"
+title: "公网 IPv6"
 description: test
 weight: 5
 _build:
  render: false
-draft: true
+draft: false
 collapsible: true
 ---
 

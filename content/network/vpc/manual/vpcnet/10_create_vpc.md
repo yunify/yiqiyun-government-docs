@@ -37,10 +37,11 @@ weight: 10
   	<td>IPv4 地址范围</td>
   	<td>选择 VPC 的 IPv4 网段。为 VPC 网络划分子网时，子网必须在该地址范围内。<br>目前支持网段范围：192.168.0.0/16、172.16.0.0/16-172.31.0.0/16。</td>
   </tr>
-<!--   <tr>
-  	<td>IPv6网络地址</td>
-  	<td>选择是否为 VPC 网络分配 IPv6 网段。<li><b>关闭IPv6</b>：默认选项，即不分配IPv6网段</li><li><b>系统自动分配</b>：开启 IPv6 功能，并自动为子网分配 IPv6 网段。</li></td>
-  </tr> -->
+<tr>
+  	<td>IPv6 地址范围</td>
+  	<td><div style="background-color: #D8ECDE;padding: 10px 24px; margin: 10px 0;border-left:3px solid #00a971;"><b>说明</b>：<br>仅在<b>互联网域</b>可用区下，支持该选项。
+      </div>仅在互联网域可用区下，支持该选项。选择是否为 VPC 网络分配 IPv6 网段。<li><b>关闭 IPv6</b>：默认选项，即不分配 IPv6 网段。</li><li><b>系统自动分配</b>：开启 IPv6 功能，并自动分配 IPv6 网段。</li></td>
+  </tr>
    <tr>
   	<td colspan="2">管理路由器属性</td>
   </tr>
