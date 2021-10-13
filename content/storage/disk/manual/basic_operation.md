@@ -9,8 +9,8 @@ keyword: 山河，硬盘
 
 **进入硬盘页面**
 
-1. 登录 [山河 shanhe 管理控制台](https://console.shanhe.com/login)。
-2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **硬盘**，进入**硬盘**页面。
+1. 登录 [控制台](http://console.yiqiyun.sd.cegn.cn/login)。
+2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **云硬盘**，进入**硬盘**页面。
 
 ## 创建硬盘
 
@@ -20,7 +20,7 @@ keyword: 山河，硬盘
 
 1. 在硬盘列表右键点击需要修改的硬盘，选择**修改**，弹出**修改硬盘[*硬盘ID*号]属性**界面。
 
-   <img src="../_images/basic_operation_1.png" alt="修改硬盘属性" style="zoom:50%;" />
+   <img src="../_images/create_basic_8.png" alt="修改硬盘属性" style="zoom:50%;" />
 
 2. 编辑硬盘的属性，包括名称和描述，然后点击**修改**。
 
@@ -29,7 +29,7 @@ keyword: 山河，硬盘
 
 1. 在硬盘列表右键点击需要扩容的硬盘，选择**扩容**，弹出**扩容硬盘**界面。
 
-   <img src="../_images/basic_operation_2.png" alt="扩容硬盘" style="zoom:50%;" />
+   <img src="../_images/create_basic_expansion.png" alt="扩容硬盘" style="zoom:50%;" />
 
 2. 拖动容量滑块或直接输入容量值，点击**提交**即可。
 
@@ -41,7 +41,7 @@ keyword: 山河，硬盘
 
 1. 在**硬盘**页面，点击**标签**，选择**创建标签**。
 
-   ![创建标签](../_images/basic_operation_3.png)
+   ![创建标签](../_images/create_basic_tag.png)
 
 2. 输入标签名称，选择标签颜色，点击**提交**。
 
@@ -51,7 +51,7 @@ keyword: 山河，硬盘
 
 1. 在硬盘列表右键点击需要绑定标签的硬盘，选择**标签** > **绑定**，弹出**选择标签**页面。
 
-   <img src="../_images/basic_operation_4.png" alt="绑定硬盘标签" style="zoom:50%;" />
+   <img src="../_images/create_basic_12.png" alt="绑定硬盘标签" style="zoom:50%;" />
 
 2. 在标签列表中勾选想要绑定的标签，点击**提交**。
 
@@ -67,7 +67,7 @@ keyword: 山河，硬盘
 
 1. 在云硬盘列表右键点击需要加入到项目的硬盘，选择**项目** > **加入**，弹出**添加到项目**页面。
 
-   <img src="../_images/basic_operation_5.png" alt="添加到项目" style="zoom:50%;" />
+   <img src="../_images/create_basic_project.png" alt="添加到项目" style="zoom:50%;" />
 
    > **说明**：
    >
@@ -77,13 +77,13 @@ keyword: 山河，硬盘
 
    添加完成后，在硬盘列表可以查看硬盘所属的项目，如下图。
 
-   ![添加硬盘到项目](../_images/basic_operation_6.png)
+   ![添加硬盘到项目](../_images/create_basic_project2.png)
 
 ## 硬盘监控
 
 硬盘挂载到云服务器后，点击硬盘条目，便可查看硬盘监控情况。
 
-![硬盘监控](../_images/basic_operation_7.png)
+![硬盘监控](../_images/硬盘监控.png)
 
 硬盘 IOPS 及硬盘吞吐量实时监控数据默认为关闭状态，点击右侧关闭按钮便可切换为开启状态，查看硬盘 IOPS 和吞吐量实时数据。默认显示最近6小时数据，用户可选择查看最近一天、最近两周、最近一个月、最近6个月以及自定义起止日期内的数据。
 
@@ -106,7 +106,7 @@ keyword: 山河，硬盘
 
 在硬盘列表，单击硬盘ID后的预留资源图标<img src="../_images/reserve_resource.png" alt="预留资源" style="zoom:50%;" />，进入硬盘绑定的预留合约详情页。
 
-![硬盘预留合约](../_images/basic_operation_8.png)
+![硬盘预留合约](../_images/disk_reserve_contract.png)
 
 - 在页面上方，可查看合约生命周期，以及进行合约的续订、退订、配置调整等操作。
 

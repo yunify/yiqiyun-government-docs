@@ -8,7 +8,7 @@ weight: 3
 ---
 
 
-QingStor Go SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [GitHub 项目页面](https://github.com/qingstor/qingstor-sdk-go) ，和[Godoc](https://godoc.org/github.com/qingstor/qingstor-sdk-go)。
+山东省计算中心云平台 Go SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [GitHub 项目页面](https://github.com/qingstor/qingstor-sdk-go) ，和[Godoc](https://godoc.org/github.com/qingstor/qingstor-sdk-go)。
 
 ## 安装
 
@@ -32,7 +32,7 @@ QingStor Go SDK 已在 GitHub 开源，下文为简要使用文档。更多详�
 
 ## 快速开始
 
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+使用 SDK 之前请先在 [控制台](http://console.yiqiyun.sd.cegn.cn/access_keys) 申请 access key 。
 
 ## 代码示例
 
@@ -51,7 +51,7 @@ configuration, _ := config.New("ACCESS_KEY_ID", "SECRET_ACCESS_KEY")
 qsService, _ := qs.Init(configuration)
 ```
 
-上面代码初始化了一个 QingStor Service
+上面代码初始化了一个 对象存储 Service
 
 ### 获取账户下的 Bucket 列表
 

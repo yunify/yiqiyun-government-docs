@@ -10,11 +10,11 @@ weight: 3
 
 伴随着移动互联网的浪潮，移动应用 App 的开发需求越来越多样化，无论何种功能都离不开文件存储。在以前，应用开发者需要自行开发构建文件服务器，用于保存数据文件，并面向互联网提供访问，例如社交网络中的用户照片，视频网站中的影音内容，电商平台中的商品图片。
 
-然而这些数据通常由终端用户直接生产和消费，伴随着用户增长，服务器的压力也会日益增大，开发者很难构建一个兼具高可用性、高扩展性和低成本的文件服务器。QingStor 刚好填补了这方面的需求，可为移动开发者提供一站式的文件存储解决方案。
+然而这些数据通常由终端用户直接生产和消费，伴随着用户增长，服务器的压力也会日益增大，开发者很难构建一个兼具高可用性、高扩展性和低成本的文件服务器。山东省计算中心云平台的对象存储服务刚好填补了这方面的需求，可为移动开发者提供一站式的文件存储解决方案。
 
-QingStor 提供 HTTP RESTful 风格的访问接口，并辅助与编程语言相关的 SDK 工具，帮助开发者用极少的开发成本，将移动应用 App 对接到 QingStor。本文将介绍三种在不同使用场景下，与 QingStor 对接的方案：
+对象存储服务提供 HTTP RESTful 风格的访问接口，并辅助与编程语言相关的 SDK 工具，帮助开发者用极少的开发成本，将移动应用 App 对接到 对象存储服务。本文将介绍三种在不同使用场景下，与对象存储服务对接的方案：
 
-1. 使用 QingStor SDK
+1. 使用 对象存储服务 SDK
 1. 开发者实现签名服务器
 1. 表单 POST 上传
 
@@ -24,7 +24,7 @@ QingStor 提供 HTTP RESTful 风格的访问接口，并辅助与编程语言相
 
 ### 创建 Bucket 存储空间
 
-1. 打开 Console 控制台，进入存储 -> 对象存储页面（对象存储已在 北京3区-A 和 上海1区-A 开放）
+1. 打开控制台，进入**产品与服务** > **存储服务** > **对象存储**页面（对象存储服务已在 公共服务域 和 互联网域 开放）
 1. 选择创建 Bucket
 1. 在对话框中输入 Bucket 名称，点击创建
 
@@ -32,18 +32,18 @@ QingStor 提供 HTTP RESTful 风格的访问接口，并辅助与编程语言相
 
 ### 创建 Access Key
 
-1. 打开 Console 控制台，进入 API 密钥页面
+1. 打开控制台，进入 **产品与服务** > **访问与授权** > **API密钥**页面
 1. 点击创建 -> 提交
 
 ![](create_access_key.png)
 
 1. 在随后的对话框中下载密钥文件，并用文本打开查看
 
-## 使用 QingStor SDK
+## 使用 对象存储服务 SDK
 
-QingStor 目前已提供多种语言 SDK，包括开发 iPhone App 使用的 Swift 语言，以及开发 Android App 使用的 Java 语言。App 开发者将 SDK 嵌入到客户端程序中，通过调用 SDK 通过的方法和接口与 QingStor 服务端通信
+对象存储目前已提供多种语言 SDK，包括开发 iPhone App 使用的 Swift 语言，以及开发 Android App 使用的 Java 语言。App 开发者将 SDK 嵌入到客户端程序中，通过调用 SDK 通过的方法和接口与对象存储的服务端通信
 
-接下来我们将演示开发一个上传照片的 iPhone App，讲解如何使用 QingStor SDK for Swift 将 App 接入到 QingStor。
+接下来我们将演示开发一个上传照片的 iPhone App，讲解如何使用 对象存储服务SDK for Swift 将 App 接入到 QingStor。
 
 ### 配置 CocoaPods
 
@@ -109,7 +109,7 @@ func application(_ application: UIApplication, didFinishLaunchingWithOptions lau
 }
 ```
 
-为了让大家能集中精力学习 QingStor SDK，而不是花费时间来研究 UI，关于例子中用到的页面大概讲解一下。
+为了让大家能集中精力学习 对象存储服务 SDK，而不是花费时间来研究 UI，关于例子中用到的页面大概讲解一下。
 
 Main.storyboard UI结构图：
 
@@ -131,7 +131,7 @@ override func viewDidLoad() {
 }
 ```
 
-为了灵活使用，除了上述那种初始化 QingStor 服务的方法之外，SDK 也支持在服务初始化的时候传入配置信息，首先修改 Config.plist 内容如下
+为了灵活使用，除了上述那种初始化 对象存储服务的方法之外，SDK 也支持在服务初始化的时候传入配置信息，首先修改 Config.plist 内容如下
 
 ```plist
 
@@ -289,15 +289,15 @@ bucketService.putObject(objectKey: key, input: input) { response, error in
 
 key 值是存储的文件名，以后对应的删除下载操作，都需要传递这个 key 值，这里只是简单的获取了一下时间戳当做文件名。
 
-最后用 bucketService 来把文件上传到 QingStor，通过调用 putObject 方法来实现。
+最后用 bucketService 来把文件上传到 对象存储服务中，通过调用 putObject 方法来实现。
 
 这个简单的教程到这里就告一段落了，例子里面还加了一个侧滑删除的操作，大家有兴趣可以 [下载源码](https://github.com/qychrisyang/qingstor-sdk-swift-demo) 看看。
 
 ## 开发者实现签名服务器
 
-上文中介绍的使用 SDK 调用 QingStor，适用于 bucket 被个人用户所拥有的情况。如果 bucket 为 App 开发者所拥有，由于需要将签名密钥内置到客户端程序中，会带来安全方面的隐患。为了保证签名密钥的安全，开发者可以根据 QingStor 签名方法，自己搭建并实现一个签名服务器。用于签名的密钥只需要在服务端保存，客户端不需要拿到，从而避免了认证信息泄漏的隐患。
+上文中介绍的使用 SDK 调用 对象存储，适用于 bucket 被个人用户所拥有的情况。如果 bucket 为 App 开发者所拥有，由于需要将签名密钥内置到客户端程序中，会带来安全方面的隐患。为了保证签名密钥的安全，开发者可以根据对象存储签名方法，自己搭建并实现一个签名服务器。用于签名的密钥只需要在服务端保存，客户端不需要拿到，从而避免了认证信息泄漏的隐患。
 
-QingStor 官方提供了一个签名服务器的 [样例](https://github.com/yunify/qingstor-demo-auth-server) 供 App 开发者参考。网页端使用 JavaScript SDK 配合签名服务器进行上传可以参考官方提供的 [Demo 项目](https://github.com/yunify/qingstor-sdk-js-demo)
+对象存储官方提供了一个签名服务器的 [样例](https://github.com/yunify/qingstor-demo-auth-server) 供 App 开发者参考。网页端使用 JavaScript SDK 配合签名服务器进行上传可以参考官方提供的 [Demo 项目](https://github.com/yunify/qingstor-sdk-js-demo)
 
 如果要自己开发签名服务，需要注意：
 
@@ -384,7 +384,7 @@ SDK 参考例子:
 
 最后我们介绍一种不同于请求头签名的认证方式，该方法适用于 bucket 为私有权限，但是需要分享文件下载链接给其它用户，或者其它设置请求头签名不方便的客户端：
 
-如果开发者想要生成一个 QingStor 访问链接，将链接分享给其他用户，可以该签名方式，即请求参数签名。下面是一个请求示例
+如果开发者想要生成一个 对象存储服务 访问链接，将链接分享给其他用户，可以该签名方式，即请求参数签名。下面是一个请求示例
 
 ```http
 GET /music.mp3?access_key_id=PLLZOBTTZXGBNOWUFHZZ&expires=1479107162&signature=tuXu/KcggHWPAfEmraUHDwEUdiIPSXVRsO%2BT2rxomBQ%3D HTTP/1.1

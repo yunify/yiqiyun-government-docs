@@ -14,7 +14,7 @@ weight: 39
 
 ![s3-browser-1](/storage/object-storage/_images/s3-browser-1.png)
 
-### 2.获取青云的api秘钥
+### 2.获取的山东省计算中心云平台API秘钥
 
 2.1右上角账户-API秘钥
 
