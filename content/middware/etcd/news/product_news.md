@@ -4,13 +4,18 @@ collapsible: false
 weight: 10
 
 product:
-    - time: 2021-10-22
-      title: etcd 服务上线
-      content: etcd 是一个为分布式系统设计的分布式的高可用键值存储服务，主要用于提供注册服务，配置服务等功能，应用程序可以从 etcd 中读取写入数据，监控数据变化。
-      url: intro/introduction
+    - time: 2021-04-14
+      title: etcd 3.2.24 - YiQiYun 2.0.1 版本上线
+      content: 新增配额管理参数 quota-backend-bytes。
+      url: /middware/etcd/manual/man05_main_operation/
+
+    - time: 2020-10-22
+      title: etcd 3.1.0 - YiQiYun 1.1.1 版本上线
+      content: 1.使用 etcd 3.1.0 构建 etcd 集群;<br>2.提供 etcd 节点和 etcd 代理功能。
+      url: /middware/etcd/quickstart/qs10_deploy_etcd/
 
 
 
-
+ 
 ---
 
