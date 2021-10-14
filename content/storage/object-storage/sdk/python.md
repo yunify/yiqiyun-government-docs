@@ -8,11 +8,11 @@ weight: 2
 ---
 
 
-QingStor 对象存储的新版 Python SDK 项目为 qingstor-sdk-python, 已在 GitHub 开源， 下文为简要使用文档。
+山东省计算中心云平台对象存储的新版 Python SDK 项目为 yiqiyun-sdk-python, 已在 GitHub 开源， 下文为简要使用文档。
 更多详细信息请参见 [GitHub 项目页面](https://github.com/qingstor/qingstor-sdk-python)，
 和[Python SDK API 文档](https://qingstor-sdk-python.readthedocs.io/en/latest/)。
 Python SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，
-各个调用的均与具体的 [Qingstor Restful API](https://docs.qingcloud.com/qingstor/api/) 对应，
+各个调用的均与具体的 [对象存储 Restful API](https://docs.qingcloud.com/qingstor/api/)对应，
 返回码、请求头、错误码等规定请参照具体 API 文档的描述。
 
 使用 Pip 安装:
@@ -21,7 +21,7 @@ Python SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，
 > pip install qingstor-sdk
 ```
 
-使用 SDK 之前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key 。
+使用 SDK 之前请先在 [控制台](http://console.yiqiyun.sd.cegn.cn/access_keys) 申请 access key 。
 
 ## 初始化服务
 

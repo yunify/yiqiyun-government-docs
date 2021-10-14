@@ -23,9 +23,9 @@ weight: 6
 * replace_policy.json
   
   类型替换策略
-  
-config.json 定义用户在 shanhe 控制台部署应用时需要填写的表单。控制台支持语言国际化，默认情况下，所有语言都会按配置项中的 label 和 description 展示表单。另外，cluster.json.mustache 文件中的 custom service、监控项等，会使用 key 作为国际化展示。如果您想要适应不同的语言，需要在提交的应用中包含一个 locale 文件夹，并添加对应语言的翻译文件，如：
-  
+
+config.json 定义用户在 山东省计算中心云平台 控制台部署应用时需要填写的表单。控制台支持语言国际化，默认情况下，所有语言都会按配置项中的 label 和 description 展示表单。另外，cluster.json.mustache 文件中的 custom service、监控项等，会使用 key 作为国际化展示。如果您想要适应不同的语言，需要在提交的应用中包含一个 locale 文件夹，并添加对应语言的翻译文件，如：
+
 * locale/en.json
 
   英文翻译文件
@@ -34,7 +34,7 @@ config.json 定义用户在 shanhe 控制台部署应用时需要填写的表单
 
   中文翻译文件
 
-具体的翻译文件格式，请参考 [国际化](#国际化)
+具体的翻译文件格式，请参考 [国际化](#国际化)。
 
 >注：以上文件不支持 "UTF-8 Unicode (with BOM) text" 文本格式，windows下的编辑器编辑文件默认是此格式，可通过 "格式-> 以utf-8无BOM格式编码" 进行转换。
 
@@ -317,7 +317,7 @@ resource\_group|用来说明当前这个集群支持哪些配置组合，必须�
 
 
 ### cluster.json.mustache
-该文件是在用户创建应用时需要传给山河 API 的参数，这些信息的具体值是来自用户在 UI 上根据 config.json 定义的变量的输入，每个字段的具体描述如下：
+该文件是在用户创建应用时需要传给山东省计算中心云平台 API 的参数，这些信息的具体值是来自用户在 UI 上根据 config.json 定义的变量的输入，每个字段的具体描述如下：
 
 >注： 右上角带3个星号(*)表示该项有 sibling (兄弟)节点，开发者提交的时候也要去掉这个标记。advanced_actions 的内容可以添加在国际化中，在控制台用户操作时展示。
 
@@ -648,7 +648,7 @@ zone|镜像制作时所属区域 (如果是 docker 镜像，则无需填写该�
 
 ##### cpu_model
 
-节点的 CPU 体系结构，可选值范围：Westmere、SandyBridge、IvyBridge、Haswell、Broadwell、Skylake、CascadeLake。 [查看对应的 CPU 指令集](https://docs.shanhe.com/product/computing/cpu_instruction_set)
+节点的 CPU 体系结构，可选值范围：Westmere、SandyBridge、IvyBridge、Haswell、Broadwell、Skylake、CascadeLake。 [查看对应的 CPU 指令集](https://docs.yiqiyun.sd.cegn.cn/product/computing/cpu_instruction_set)
 
 ##### memory
 
@@ -661,7 +661,7 @@ zone|镜像制作时所属区域 (如果是 docker 镜像，则无需填写该�
 
 ##### gpu
 
-每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 济南1区-A(jn1a)，济南1区(jn1b，jn1c，jn1d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 云服务器](/compute/vm/manual/gpu_instance/)
+每个节点 gpu 个数，可选值范围：0, 1, 2, 4, 8。目前仅在 济南1区-A(jn1a)，济南1区(jn1b，jn1c，jn1d) 和 上海1区(sh1a) 可创建带 gpu 的集群, 具体使用方式参考[GPU 云服务器](/compute/vm/manual/gpu_instance/)。
 
 ##### gpu\_class
 
@@ -681,7 +681,7 @@ size|每个节点数据容量大小，单位 GiB，注：是单个节点总容�
 mount\_point|每个节点数据盘挂载路径，可以是单个数据盘， 也可以有多个数据盘，多个数据盘以数组形式表示，如 "mount\_point": ["/data1","/data2"]。如果image是基于 Linux 操作系统，默认挂载路径为 /data; 如果 image 是基于 Windows 操作系统，默认挂载路径是 d:, 挂载路径是盘符（后面须带冒号，可选的盘符名从 d 开始，z 结束）。目前最大支持3块数据盘挂载到节点上。请注意，如果挂载了多块数据盘，config.json 对应的 volume\_size 部分，最好设置一下 min，step 这 2 个值，以配置创建集群、扩容集群时的范围和步长。例如挂载盘数为3，可以指定 `{min: 30, step: 30}` 。
 mount\_options|描述数据盘的挂接方式，默认值 ext4 是 defaults,noatime，xfs 是 rw,noatime,inode64,allocsize=16m。
 filesystem|数据盘文件系统类型。如果 image 是基于 Linux 操作系统，目前支持 ext4 和 xfs，默认为 ext4; 如果 image 是基于 Windows 操作系统，目前支持 ntfs, 默认为 ntfs。
-class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性能盘，3 表示超高性能盘，2 表示容量盘，5 表示 NeonSAN，6 表示 NeonSAN 容量盘，100 表示基础型硬盘，200 表示企业性硬盘。可选项，如果不写此项，数据盘类型和云服务器类型一样，即性能云服务器挂载性能硬盘，超高性能云服务器挂载超高性能硬盘，基础型云服务器挂载基础型硬盘，企业型云服务器和专业增强型云服务器挂载企业型硬盘。容量盘、NeonSAN、NeonSAN 容量盘可以挂载在不同类型云服务器上，容量盘是通过网络协议挂载的，所以性能相对来说比较差，通常来说如果不是提供必须基于容量盘的服务，最好去掉这个选项，大容量存储可以考虑 [NeonSAN](https://www.shanhe.com/products/qingstor-neonsan/) 或者[对象存储 对象存储服务OIS](/storage/object-storage/intro/object-storage/)。
+class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性能盘，3 表示超高性能盘，2 表示容量盘，5 表示 NeonSAN，6 表示 NeonSAN 容量盘，100 表示基础型硬盘，200 表示企业性硬盘。可选项，如果不写此项，数据盘类型和云服务器类型一样，即性能云服务器挂载性能硬盘，超高性能云服务器挂载超高性能硬盘，基础型云服务器挂载基础型硬盘，企业型云服务器和专业增强型云服务器挂载企业型硬盘。容量盘、NeonSAN、NeonSAN 容量盘可以挂载在不同类型云服务器上，容量盘是通过网络协议挂载的，所以性能相对来说比较差，通常来说如果不是提供必须基于容量盘的服务，最好去掉这个选项，大容量存储可以考虑 [NeonSAN](https://www.yiqiyun.sd.cegn.cn/products/qingstor-neonsan/) 或者[对象存储 对象存储服务OIS](/storage/object-storage/intro/object-storage/)。
 
 > 建议值：100, 200。其中 0, 3 这两种云服务器类型，会逐步做下架处理，故不建议使用。
 
@@ -717,7 +717,7 @@ class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性�
 
 ##### passphraseless　
 
-生成密钥信息，即提供此类节点能无密码登录其它节点的可能性，但山河调度系统只负责把此信息注册到 metadata service 中，开发者自行去获取密钥配置云服务器。目前支持 ssh-dsa, ssh-rsa，非必填项。
+生成密钥信息，即提供此类节点能无密码登录其它节点的可能性，但山东省计算中心云平台调度系统只负责把此信息注册到 metadata service 中，开发者自行去获取密钥配置云服务器。目前支持 ssh-dsa, ssh-rsa，非必填项。
 
 ##### vertical\_scaling\_policy
 
@@ -741,7 +741,7 @@ class|数据盘类型，支持 0、2、3、5、6、100、200 其中 0 表示性�
 
 ##### services　
 
-应用本身服务的初始化、启停等指令，山河 AppCenter 调度系统会发送这些命令到指定节点执行，非必填项。
+应用本身服务的初始化、启停等指令，山东省计算中心云平台 AppCenter 调度系统会发送这些命令到指定节点执行，非必填项。
 
 ###### init　
 
@@ -811,7 +811,7 @@ allow\_force |是否允许强制删除, 默认值为 true 表示允许强制删�
 
 | 参数 | 描述 |
 | --- | --- |
-  | event | 可选值：upgrade, rollback, scale_vertical。表示在定义的生命周期到来时，使用 get_nodes_order 中 cmd 的执行结果作为该生命周期节点的操作顺序。 |
+| event | 可选值：upgrade, rollback, scale_vertical。表示在定义的生命周期到来时，使用 get_nodes_order 中 cmd 的执行结果作为该生命周期节点的操作顺序。 |
 
 ###### rollback
 
@@ -861,7 +861,7 @@ type |custom 表示这个服务是自定义的， 自定义的名字 (即 key，
 
 ##### agent\_installed
 
-如果用户想利用这套框架管理纯云服务器集群，则可以不用装山河提供的 App agent，同时需要指定这个参数为 false，否则系统会提示错误，该参数默认为 true。
+如果用户想利用这套框架管理纯云服务器集群，则可以不用装山东省计算中心云平台提供的 App agent，同时需要指定这个参数为 false，否则系统会提示错误，该参数默认为 true。
 
 ##### custom\_metadata
 
@@ -1103,5 +1103,5 @@ config.json 中的 label 和 description 在控制台呈现时，默认使用配
 - config.json 文件中，角色名称、节点配置、私有网络、外部依赖、环境变量 env 各配置项的 label 作为待填写项名称，description 作为待填项的描述。label 和 description 会进行国际化。
 - cluster.json.mustache 文件中 type 为 custom 的 service，会使用 service 的 key 作为用户执行自定义服务的展示内容，并进行国际化。
 - cluster.json.mustache 文件中 monitor 部分的 group_name，item_name，会在用户看到的监控视图中，作为监控项名称展示，并进行国际化。
-- type 为 custom 的 service、新增节点、删除节点在执行 cmd 返回非 0 值时，视为操作失败，可以将 err_code 后面跟着退出码（err_code1）作为 key，value 为展示给用户的错误提示，样例参考：[执行操作失败时如何展示给用户错误提示](/appcenter/dev-platform/faq/cluster-faqs#21-执行操作失败时如何展示给用户错误提示)
-- 升级操作时可给用户弹出提示，key 为 notice_when_upgrade，value 为提示内容。样例参考：[升级操作时如何给用户弹出提示](/appcenter/dev-platform/faq/cluster-faqs#37-升级操作时如何给用户弹出提示)
+- type 为 custom 的 service、新增节点、删除节点在执行 cmd 返回非 0 值时，视为操作失败，可以将 err_code 后面跟着退出码（err_code1）作为 key，value 为展示给用户的错误提示，样例参考：[执行操作失败时如何展示给用户错误提示](/appcenter/dev-platform/faq/cluster-faqs#21-执行操作失败时如何展示给用户错误提示)。
+- 升级操作时可给用户弹出提示，key 为 notice_when_upgrade，value 为提示内容。样例参考：[升级操作时如何给用户弹出提示](/appcenter/dev-platform/faq/cluster-faqs#37-升级操作时如何给用户弹出提示)。

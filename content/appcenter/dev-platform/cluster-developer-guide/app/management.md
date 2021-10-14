@@ -17,7 +17,7 @@ weight: 1
 ## 应用管理
 
 ### 创建应用
-首先登录[应用管理平台](https://appcenter.shanhe.com/developer)，点击**应用**部分的<b>+</b>号按钮，开始创建第一个应用。
+首先登录[应用管理平台](http://appcenter.yiqiyun.sd.cegn.cn/developer)，点击**应用**部分的<b>+</b>号按钮，开始创建第一个应用。
 
 ![应用管理首页](/appcenter/dev-platform/cluster-images/home.png)
 
@@ -48,8 +48,6 @@ weight: 1
 完善的 大数据服务HBase 应用信息如下：
 
 ![应用信息1](/appcenter/dev-platform/cluster-images/app_info1.png)
-![应用信息2](/appcenter/dev-platform/cluster-images/app_info2.png)
-![应用信息3](/appcenter/dev-platform/cluster-images/app_info3.png)
 
 在应用中心中呈现给最终用户的效果如下：
 

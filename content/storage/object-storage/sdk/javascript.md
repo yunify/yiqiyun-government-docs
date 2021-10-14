@@ -3,7 +3,7 @@ title: "JavaScript SDK"
 ---
 
 
-QingStor JavaScript SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [https://github.com/yunify/qingstor-sdk-js](https://github.com/yunify/qingstor-sdk-js) 。
+山东省计算中心云平台对象存储 JavaScript SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [https://github.com/yunify/qingstor-sdk-js](https://github.com/yunify/qingstor-sdk-js) 。
 
 ## 安装
 
@@ -31,7 +31,7 @@ yarn add qingstor-sdk
 
 ## 快速开始
 
-QingStor SDK 使用 ES6 的语法编写，所以使用前请确保你配置了合适的构建环境。
+对象存储 SDK 使用 ES6 的语法编写，所以使用前请确保你配置了合适的构建环境。
 
 ### 浏览器环境
 
@@ -118,7 +118,7 @@ node -r esm index.js
 
 ### 请求签名
 
-发往 QingStor 对象存储的请求需要使用 Access Key 和 Secret Key 对请求签名，请前往 [青云控制台 Console](https://console.qingcloud.com/access_keys/) 创建和下载。下载到的密钥文件格式如下，请妥善保存你的密钥:
+发往山东省计算中心云平台对象存储的请求需要使用 Access Key 和 Secret Key 对请求签名，请前往 [控制台](http://console.yiqiyun.sd.cegn.cn/access_keys) 创建和下载。下载到的密钥文件格式如下，请妥善保存你的密钥:
 
 ```
 access_key_id: 'ACCESS_KEY_ID_EXAMPLE'
@@ -270,7 +270,7 @@ listObjects();
 
 ## 请求返回格式说明
 
-QingStor SDK 使用 [axios](https://github.com/axios/axios) 作为 http 客户端，所有请求的返回都是一个 Promise。axios 的 response 结构如下:
+对象存储 SDK 使用 [axios](https://github.com/axios/axios) 作为 http 客户端，所有请求的返回都是一个 Promise。axios 的 response 结构如下:
 
 ```javascript
 // copied from https://github.com/axios/axios/blob/master/README.md
