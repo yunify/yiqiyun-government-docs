@@ -10,21 +10,25 @@ weight: 10
 
 ### 通过 VNC 登录
 
-可以直接在青云控制台通过客户端节点的 VNC 窗口免密登录其他节点，客户端节点的用户名密码是 `root / <cluster id>`，初次登录会提示修改密码。建议选用至少 8 位字符的复杂密码增强安全性。
+可以直接在控制台通过客户端节点的 VNC 窗口免密登录其他节点，客户端节点的用户名密码是 `root / <cluster id>`，初次登录会提示修改密码。建议选用至少 8 位字符的复杂密码增强安全性。
 
-> **注意：** `v2.0.0 - KubeSphere v2.1.1` 及更老的版本，其初始化用户名密码为 `root / k8s`。
+> **注意** 
+>
+>`v2.0.0 - KubeSphere v2.1.1` 及更老的版本，其初始化用户名密码为 `root / k8s`。
+>
+> 老版本升级之后再关闭重启集群，客户端节点密码会更新为新版本的初始密码。
 
-> 老版本升级之后再关闭重启集群，客户端节点密码会更新为新版本的初始密码
-
-> ![VNC 登录](../../_images/vnc-login.png)
+![VNC 登录](../../_images/vnc-login.png)
 
 ### 通过 SSH 登录
 
 也可以先在集群参数配置 SSH Key，然后直接免密登录所有节点。注意 SSH 密钥格式，要以算法（比如 ssh-rsa）开头，参照下面表格中的说明。
 
-> 注意：所有节点的 SSH 服务已禁止以密码形式登录，请按照本文档使用 SSH 密钥的形式来增强安全性。
+> **注意**
+>
+>所有节点的 SSH 服务已禁止以密码形式登录，请按照本文档使用 SSH 密钥的形式来增强安全性。
 
-> ![集群参数](../../_images/cluster_params.png)
+![集群参数](../../_images/cluster_params.png)
 
 | 参数 | 说明
 | --- | ---
@@ -34,15 +38,17 @@ weight: 10
 
 通过公网 EIP 访问 Kubernetes 资源，需要以下几个步骤：
 
-1. 更新 QKE 参数：在 QKE 配置 Kubernetes EIP 地址
+1. 更新 YKE 参数：在 YKE 配置 Kubernetes EIP 地址
 1. 防火墙放行：确保 EIP 与 Kubernetes Apiserver 相连通
 1. 下载 kubeconfig：复制 kubeconfig 内容到本地
 
-> 此示例中，VPC 绑定的 EIP 为 139.198.14.13
+>**说明**
+>
+>此示例中，VPC 绑定的 EIP 为 139.198.14.13。
 
-### 更新 QKE 参数
+### 更新 YKE 参数
 
-QKE 的 Kubernetes EIP 地址可以在 QKE 创建时指定，也可以在 QKE 运行时更新。运行时修改 QKE 的 Kubernetes EIP 地址会造成 Kubernetes Apiserver 重启，不建议频繁更新。配置后，此 EIP 地址会自动更新到 Apiserver 的 TLS 证书中。
+YKE 的 Kubernetes EIP 地址可以在 YKE 创建时指定，也可以在 YKE 运行时更新。运行时修改 YKE 的 Kubernetes EIP 地址会造成 Kubernetes Apiserver 重启，不建议频繁更新。配置后，此 EIP 地址会自动更新到 Apiserver 的 TLS 证书中。
 
 ![](../../_images/access-kubernetes-qke-config.png)
 
@@ -52,18 +58,20 @@ EIP 可以有两种方式与 K8s Apiserver 相连接：VPC 端口转发和通过
 
 #### 通过 VPC 端口转发
 
-对于 QKE 所在 VPC 绑定了 EIP 可以采用此方法。
+对于 YKE 所在 VPC 绑定了 EIP 可以采用此方法。
 
-找到访问 Kubernetes Apiserver 的私有网络 IP 地址。对于一个主节点的 QKE，到 QKE 详情页查询 QKE 主节点私有网络 IP 地址。
+找到访问 Kubernetes Apiserver 的私有网络 IP 地址。对于一个主节点的 YKE，到 YKE 详情页查询 YKE 主节点私有网络 IP 地址。
 
 ![](../../_images/access-kubernetes-vxnet-ip-single.png)
 
-对于高可用的 QKE，访问 Kubernetes Apiserver 的私有网络 IP 地址应为 QKE 创建时创建的私有网络负载均衡器的 IP，负载均衡器名为 QKE 集群 ID。
+对于高可用的 YKE，访问 Kubernetes Apiserver 的私有网络 IP 地址应为 YKE 创建时创建的私有网络负载均衡器的 IP，负载均衡器名为 YKE 集群 ID。
 
 ![](../../_images/access-kubernetes-vxnet-ip-ha-lb-ip.png)
 
 VPC 配置转发规则，源端口可以根据用户实际情况配置，内网 IP 为访问 Kubernetes Apiserver 的私有网络 IP 地址，内网端口为 6443。
 
+>**说明**
+>
 > 此示例中 VPC 端口转发源端口为 16443。
 
   ![](../../_images/acees-kubernetes-vpc-port-forward.png)
@@ -74,13 +82,15 @@ VPC 配置转发规则，源端口可以根据用户实际情况配置，内网 
 
 将转发端口 16443 保存至 `Kubernetes 外网端口` 中。
 
+>**说明**
+>
 > 该参数为 `v3.0.0 - KubeSphere v3.0.0` 版本新增参数，用来主动修改 kubeconfig。如果使用的是老版本 QKE，则只能使用默认的 `6443` 端口，不可修改。
 
 ![](../../_images/kubernetes-eport.png)
 
 #### 通过负载均衡器
 
-对于通过负载均衡器访问到 QKE Kubernetes Apiserver 的集群可以采用此方法。
+对于通过负载均衡器访问到 YKE Kubernetes Apiserver 的集群可以采用此方法。
 
 将外部绑定类型 EIP 绑定至负载均衡器。
 
@@ -88,13 +98,17 @@ VPC 配置转发规则，源端口可以根据用户实际情况配置，内网 
 
 ### 下载 kubeconfig
 
+>**说明**
+>
 > 请确保用户本地云服务器可访问 EIP。
 
-在 Kubeconfig 标签页将 QKE 的 Kubernetes Kubeconfig 拷贝到用户本地云服务器，即可使用。
+在 Kubeconfig 标签页将 YKE 的 Kubernetes Kubeconfig 拷贝到用户本地云服务器，即可使用。
 
-> **注意：** `v2.0.0 - KubeSphere v2.1.1` 及更老的版本需要修改 kubeconfig 文件中的 server 字段
-
-> `v3.0.0 - KubeSphere v3.0.0` 该版本会主动修改该字段，其优先级为：kubernetes 外网访问地址 > 负载均衡器 vip > 第一个主节点 ip
+> **注意** 
+>
+>`v2.0.0 - KubeSphere v2.1.1` 及更老的版本需要修改 kubeconfig 文件中的 server 字段。
+>
+> `v3.0.0 - KubeSphere v3.0.0` 该版本会主动修改该字段，其优先级为：kubernetes 外网访问地址 > 负载均衡器 vip > 第一个主节点 ip。
 
 ![](../../_images/access-kubernetes-kubeconfig.png)
 
@@ -193,7 +207,9 @@ redis-ha-server-1                        2/2     Running   0          14m
 redis-ha-server-2                        2/2     Running   0          13m
 ```
 
-> 首次登录 KubeSphere 请使用如下默认管理员账户信息, 登录后务必及时修改密码！
+>**说明**
+>
+> 首次登录 KubeSphere 请使用如下默认管理员账户信息，登录后务必及时修改密码。
 >
 > 用户名：`admin@kubesphere.io`
 >
@@ -203,13 +219,17 @@ redis-ha-server-2                        2/2     Running   0          13m
 
 KubeSphere Dashboard 以 NodePort 的形式暴露在端口 30880，您可以在 VPC 上设置端口转发到任一集群节点 (非Client节点) 的此端口来访问 KubeSphere Dashboard。还需要配置的如下图所示。
 
+>**说明**
+>
 > 此示例中，端口是30880，在实际使用中，您需要根据 `kubectl get svc -n kubesphere-system ks-console` 命令返回结果来查看具体端口号。
 
 ![](../../_images/kubesphere-port-forward.png)
 
-> 用户通过公网 IP 访问 KubeSphere Dashboard 需要配置 VPC 所绑定的防火墙的下行规则，放行通过公网 IP 对 30880 端口的访问。
+>**说明**
 >
-> ![](../../_images/kubesphere-firewall-rule.png)
+> 用户通过公网 IP 访问 KubeSphere Dashboard 需要配置 VPC 所绑定的防火墙的下行规则，放行通过公网 IP 对 30880 端口的访问。
+
+![](../../_images/kubesphere-firewall-rule.png)
 
 配置规则保存后，您就可以使用 VPC 的公网 IP 地址来访问 KubeSphere 了，如下图
 
@@ -217,15 +237,15 @@ KubeSphere Dashboard 以 NodePort 的形式暴露在端口 30880，您可以在 
 
 ### 通过负载均衡器
 
-可在 QingCloud 控制台 QKE 集群详情页的 "KubeSphere 控制台链接" 标签页找到 KubeSphere 控制台访问链接。
+可在控制台 YKE 集群详情页的 "KubeSphere 控制台链接" 标签页找到 KubeSphere 控制台访问链接。
 
 ![](../../_images/ks-console-url-display.png)
 
 可直接单击链接访问 KubeSphere 控制台。
 
-## 指定负载均衡器服务类型
+<!-- ## 指定负载均衡器服务类型
 
-从 `QKE v1.0.1` 版本起集成了 [QingCloud 负载均衡器插件](https://github.com/yunify/qingcloud-cloud-controller-manager) 支持将 KubeSphere 内部的服务和 QingCloud IaaS 的负载均衡器关联起来，通过负载均衡器将服务暴露给集群外部调用。LB 插件具体用法请参考[文档](https://github.com/yunify/qingcloud-cloud-controller-manager/blob/v1.3.4/docs/configure.md)。根据中国大陆工信部的规定，所有在大陆境内运行的服务都必须进行 ICP 备案。只要在互联网能访问并且使用大陆公网 IP 地址的域名都需要备案。
+从 `YKE v1.0.1` 版本起集成了 [负载均衡器插件](https://github.com/yunify/qingcloud-cloud-controller-manager) 支持将 KubeSphere 内部的服务和 YiQiYun IaaS 的负载均衡器关联起来，通过负载均衡器将服务暴露给集群外部调用。LB 插件具体用法请参考[文档](https://github.com/yunify/qingcloud-cloud-controller-manager/blob/v1.3.4/docs/configure.md)。根据中国大陆工信部的规定，所有在大陆境内运行的服务都必须进行 ICP 备案。只要在互联网能访问并且使用大陆公网 IP 地址的域名都需要备案。
 
 Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 annotations:
 
@@ -239,7 +259,7 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 
 以下是完整示例。
 
-1）QingCloud 控制台创建公网 IP。
+1）创建公网 IP。
 
 ![](../../_images/lb-create-eip.png)
 
@@ -255,15 +275,15 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 
 4）通过公网 IP 访问到集群内部服务。
 
-![](../../_images/lb-nginx-webpage.png)
+![](../../_images/lb-nginx-webpage.png) -->
 
 ## 挂载云平台块存储
 
-从 `QKE v1.0.1` 版本起内置了 [QingCloud CSI](https://github.com/yunify/qingcloud-csi)，可以动态创建基于 QingCloud IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。KubeSphere 的存储卷使用方法见[文档](https://kubesphere.com.cn/en/docs/installing-on-linux/introduction/storage-configuration/)。
+从 `YKE v1.0.1` 版本起内置了 [YiQiYun CSI](https://github.com/yunify/qingcloud-csi)，可以动态创建基于 YiQiYun IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。KubeSphere 的存储卷使用方法见[文档](https://kubesphere.com.cn/en/docs/installing-on-linux/introduction/storage-configuration/)。
 
 ### 使用 NeonSAN 硬盘
 
-QKE 在支持 NeonSAN 硬盘的区创建了 neonsan 存储类型，用户可以在 KubeSphere 控制台创建 NeonSAN 存储卷。
+YKE 在支持 NeonSAN 硬盘的区创建了 neonsan 存储类型，用户可以在 KubeSphere 控制台创建 NeonSAN 存储卷。
 
 #### 创建存储卷
 
@@ -279,13 +299,15 @@ QKE 在支持 NeonSAN 硬盘的区创建了 neonsan 存储类型，用户可以�
 
 ## 对接 NFS 服务端
 
-QKE 预安装了 NFS 客户端程序，用户对接 NFS 服务端时应确保 QKE 各节点有权限挂载 NFS 服务端文件夹。用户可以使用 [Kubernetes 官方方法对接 NFS 服务端](https://kubernetes.io/docs/concepts/storage/volumes/#nfs)，这是一种静态分配存储卷方法，分配和回收存储卷过程复杂，可对接多个 NFS 服务端。为了方便用户对接 NFS 服务端，QKE 预置了 [NFS 动态分配器](https://github.com/helm/charts/tree/master/stable/nfs-client-provisioner)，支持动态分配存储卷，分配和回收存储卷过程简便，可对接一个 NFS 服务端。
+YKE 预安装了 NFS 客户端程序，用户对接 NFS 服务端时应确保 YKE 各节点有权限挂载 NFS 服务端文件夹。用户可以使用 [Kubernetes 官方方法对接 NFS 服务端](https://kubernetes.io/docs/concepts/storage/volumes/#nfs)，这是一种静态分配存储卷方法，分配和回收存储卷过程复杂，可对接多个 NFS 服务端。为了方便用户对接 NFS 服务端，YKE 预置了 [NFS 动态分配器](https://github.com/helm/charts/tree/master/stable/nfs-client-provisioner)，支持动态分配存储卷，分配和回收存储卷过程简便，可对接一个 NFS 服务端。
 
+>**说明**
+>
 > 示例 NFS 服务端 IP 为 192.168.0.4，NFS 共享文件夹为 /data。
 
 ### 安装 NFS 分配器
 
-在 QKE client 节点，执行 Helm 安装命令
+在 YKE client 节点，执行 Helm 安装命令
 
 ```
 $ helm install --name ks stable/nfs-client-provisioner --set nfs.server=192.168.0.4 --set nfs.path=/data --set image.repository=kubesphere/nfs-client-provisioner --namespace=kube-system
@@ -295,10 +317,10 @@ NAMESPACE: kube-system
 STATUS: DEPLOYED
 ```
 
-> `QKE v1.0.1` 及更早版本请执行下面的命令：
-> ```
-> $ helm install --name ks /opt/kubernetes/k8s/addons/nfs-client-provisioner/ --set nfs.server=192.168.0.4 --set nfs.path=/data --namespace kube-system
-> ```
+`QKE v1.0.1` 及更早版本请执行下面的命令：
+ ```
+ $ helm install --name ks /opt/kubernetes/k8s/addons/nfs-client-provisioner/ --set nfs.server=192.168.0.4 --set nfs.path=/data --namespace kube-system
+ ```
 
 ### 验证安装结果
 

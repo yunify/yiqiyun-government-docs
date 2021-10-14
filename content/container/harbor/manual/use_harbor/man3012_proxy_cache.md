@@ -23,19 +23,19 @@ Harbor 提供的代理缓存功能允许您使用 Harbor 来代理和缓存来�
 >
 > 本操作中截图以 Harbor v2.2.1 为例，仅供参考，请以您部署的 Harbor 实际版本为准。
 
-1. [登录 Harbor Web界面](http://localhost:1313/container/harbor/quickstart/qs18_access_harbor/#浏览器登录)。
+1. [登录 Harbor Web界面](../../../quickstart/qs18_access_harbor/#浏览器登录)。
 
 2. 创建目标仓库。
 
    进入**仓库管理**页面，点击**新建目标**，创建您需要被代理和缓存的目标镜像仓库。
 
-   <img src="/container/harbor/_images/man3008_new_dest.png" alt="new_dest" style="zoom:50%;" />
+   <img src="../../../_images/man3008_new_dest.png" alt="new_dest" style="zoom:50%;" />
 
 3. 创建代理缓存项目。
 
    进入**项目**页面，点击新建项目，创建镜像代理项目。
 
-   <img src="/container/harbor/_images/man3012_new_project.png" alt="new_project" style="zoom:50%;" />
+   <img src="../../../_images/man3012_new_project.png" alt="new_project" style="zoom:50%;" />
 
    > **说明**：
    >
