@@ -19,7 +19,7 @@ weight: 3
 
 ```http
 PUT /<object-name>?upload_id=<upload-id>&part_number=<part-number> HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -29,7 +29,7 @@ Authorization: <authorization-string>
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
 | upload_id | String | 初始化分段上传时，响应消息体里返回的 upload_id | Yes |
-| part_number | Integer | 分段序号，合并时需按照序号从小到大顺序，数值必须大于等于0, 小于等于10000 | Yes |
+| part_number | Integer | 分段序号，合并时需按照序号从小到大顺序，数值必须大于等于0，小于等于10000 | Yes |
 
 ## Request Headers
 
@@ -49,18 +49,18 @@ Authorization: <authorization-string>
 
 ## Status Code
 
-成功则返回 201; 若 upload_id 不存在则返回 404 upload_not_exists; 其他失败的返回码参考[错误码列表](../../../error_code/)
+成功则返回 201；若 upload_id 不存在则返回 404 upload_not_exists；其他失败的返回码参考[错误码列表](../../../error_code/)。
 
 
 ## Response Headers
 
-参见[公共响应头](../../../common_header/#响应头字段-response-header)
+参见[公共响应头](../../../common_header/#响应头字段-response-header)。
 
-若对象被加密，服务端将返回[加密响应头](../../../common/encryption/#加密响应头)
+若对象被加密，服务端将返回[加密响应头](../../../common/encryption/#加密响应头)。
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
+正常情况下没有响应消息体，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../../error_code/)。
 
 ## Example
 
@@ -68,7 +68,7 @@ Authorization: <authorization-string>
 
 ```http
 PUT /large-object?upload_id=4d26b37a469230619604ecdc0e314782&part_number=0 HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 13:25:10 GMT
 Content-Length: 7987
 Authorization: authorization string

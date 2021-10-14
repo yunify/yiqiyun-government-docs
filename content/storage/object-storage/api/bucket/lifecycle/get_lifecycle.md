@@ -12,50 +12,50 @@ weight: 2
 获取 Bucket Lifecycle 设置，lifecycle 是存储空间的子资源（subresource），
 只有存储空间所有者才能获取。
 
-更新 Lifecycle 设置请参见 [PUT Bucket Lifecycle](../put_lifecycle)
+更新 Lifecycle 设置请参见 [PUT Bucket Lifecycle](../put_lifecycle)。
 
-删除 Lifecycle 设置请参见 [DELETE Bucket Lifecycle](../delete_lifecycle)
+删除 Lifecycle 设置请参见 [DELETE Bucket Lifecycle](../delete_lifecycle)。
 
 ## Request Syntax
 
 ```http
 GET /?lifecycle HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.zw.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)。
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Status Code
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
+正常会返回 200，失败的返回码参考[错误码列表](../../../error_code/)。
 
 ## Response Headers
 
-参见[公共响应头](../../../common_header/#响应头字段-response-heaader)
+参见[公共响应头](../../../common_header/#响应头字段-response-heaader)。
 
 ## Response Body
 
-正常情况下会有一个 Json 消息体; 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
+正常情况下会有一个 Json 消息体；错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../../error_code/)。
 
 GET Bucket Lifecycle 的 Response Body 包括两部分:
-一部分与 PUT Bucket Lifecycle 相同, 参见 PUT Bucket Lifecycle [Request Body](../put_lifecycle#request-body),
-及 GET Bucket Lifecycle 特有的 Request Body, 如下表：
+一部分与 PUT Bucket Lifecycle 相同，参见 PUT Bucket Lifecycle [Request Body](../put_lifecycle#request-body)，
+及 GET Bucket Lifecycle 特有的 Request Body，如下表：
 
 | Name | Type | Description |
 | --- | --- | --- |
-| state | String | 可能返回的值为 “unchecked” 和 “ready”, 表示对规则创建之前的资源 (对象和分段上传) 应用此规则所处的状态, "ready" 表示已经应用完毕，“unchecked” 表示还未应用或正在应用。|
+| state | String | 可能返回的值为 “unchecked” 和 “ready”，表示对规则创建之前的资源 (对象和分段上传) 应用此规则所处的状态，"ready" 表示已经应用完毕，“unchecked” 表示还未应用或正在应用。|
 | created | Integer | 规则创建时间，UNIX 时间戳，精确到秒。|
 
 ## Example
@@ -64,7 +64,7 @@ GET Bucket Lifecycle 的 Response Body 包括两部分:
 
 ```http
 GET /?lifecycle HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

@@ -11,7 +11,7 @@ weight: 3
 
 创建或更新 Bucket Logging 设置，只有存储空间所有者才能设置。
 
-开启 Bucket 日志功能后，QingStor 对象存储会保存 Bucket 的访问日志，按照固定的规则，
+开启 Bucket 日志功能后，对象存储会保存 Bucket 的访问日志，按照固定的规则，
 并以小时为单位上传至用户指定的 Bucket 的中。
 
 获取 Bucket Logging 请参见 [GET Bucket Logging](../get_logging) 。
@@ -22,7 +22,7 @@ weight: 3
 
 ```http
 PUT /?logging HTTP/1.1
-Host: <source-bucket-name>.pek3a.qingstor.com
+Host: <source-bucket-name>.zw.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 {
@@ -42,24 +42,24 @@ Json 消息体
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)。
 
 ## Status Code
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
+正常会返回 200，失败的返回码参考[错误码列表](../../../error_code/)。
 
 
 ## Response Headers
 
-参见[公共响应头](../../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../../common_header/#响应头字段-request-header)。
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
+正常情况下没有响应消息体，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../../error_code/)。
 
 
 ## Example
@@ -68,7 +68,7 @@ Json 消息体
 
 ```http
 PUT /?logging HTTP/1.1
-Host: <source-bucket-name>.pek3a.qingstor.com
+Host: <source-bucket-name>.zw.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Content-Length: 66
 Authorization: authorization string

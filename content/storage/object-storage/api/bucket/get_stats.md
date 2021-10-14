@@ -9,43 +9,43 @@ title: "GET Bucket Statistics"
 
 ```http
 GET /?stats HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
-参见[公共请求头](../../common_header#请求头字段-request-header)
+参见[公共请求头](../../common_header#请求头字段-request-header)。
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Status Code
 
-成功则返回 200; 其他失败的返回码参考[错误码列表](../../error_code/)
+成功则返回 200; 其他失败的返回码参考[错误码列表](../../error_code/)。
 
 ## Response Headers
 
-参见[公共响应头](../../common_header#响应头字段-request-header)
+参见[公共响应头](../../common_header#响应头字段-request-header)。
 
 ## Response Body
 
-正常情况下会有一个 Json 消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+正常情况下会有一个 Json 消息体，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../error_code/)。
 
 | Name | Type | Description |
 | --- | --- | --- |
 | count | Integer | 存储空间存储的对象的数量 |
 | size | Integer | 存储空间存储的对象（实际）大小，标准存储 size 和 billing_size 是相等的值，低频存储的 billing_size 大于等于 size，因为低频存储类型有最小存储计费时间的限制。|
-| storage_classes | dict | 有效的键值为存储类型 "STANDARD"（标准存储） 和 "STANDARD_IA" （低频存储）, 对应的值为相应存储类型的统计 subdict, subdict 的有效键值为"count", "size", "billing_size" 的统计值。其中billing_size为属于该 storage-class 的对象的总计费大小 |
+| storage_classes | dict | 有效的键值为存储类型 "STANDARD"（标准存储） 和 "STANDARD_IA" （低频存储），对应的值为相应存储类型的统计 subdict，subdict 的有效键值为"count"，"size"，"billing_size" 的统计值。其中billing_size为属于该 storage-class 的对象的总计费大小 |
 | location | String | 存储空间所在区域(zone)名称 |
 | created | Date | 存储空间的创建时间 |
-| status | Enum | 存储空间的状态，枚举值：active, suspended |
+| status | Enum | 存储空间的状态，枚举值：active，suspended |
 
 ## Example
 
@@ -53,7 +53,7 @@ Authorization: <authorization-string>
 
 ```http
 GET /?stats HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
@@ -74,7 +74,7 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     "status": "active",
     "name": "mybucket",
     "created": "2015-07-22T02:23:04.000Z",
-    "url": "mybucket.pek3a.qingstor.com",
+    "url": "mybucket.zw.obs.yiqiyun.sd.cegn.cn",
     "location": "pek3a",
     "storage_classes": {
         "STANDARD": {
