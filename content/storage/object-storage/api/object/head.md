@@ -17,7 +17,7 @@ weight: 3
 
 ```http
 HEAD /<object-name> HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.zw.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 Range: bytes=<byte-range>
@@ -25,19 +25,19 @@ Range: bytes=<byte-range>
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Request Headers
 
-参见[公共请求头](../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../common_header/#请求头字段-request-header)。
 
-对象加密，参见[加密请求头](../../common/encryption/#加密请求头)
+对象加密，参见[加密请求头](../../common/encryption/#加密请求头)。
 
-若对象附有标准 HTTP 头或自定义元数据，参见[如何获取对象元数据](../../metadata/#如何获取对象元数据)
+若对象附有标准 HTTP 头或自定义元数据，参见[如何获取对象元数据](../../metadata/#如何获取对象元数据)。
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -48,9 +48,9 @@ Range: bytes=<byte-range>
 
 ## Response Headers
 
-参见[公共响应头](../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-request-header)。
 
-若对象被加密，服务端将返回[加密响应头](../../common/encryption/#加密响应头)
+若对象被加密，服务端将返回[加密响应头](../../common/encryption/#加密响应头)。
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -64,11 +64,11 @@ Range: bytes=<byte-range>
 
 ## status code
 
-该 API 为幂等操作. 成功则返回 200; object 或 bucket 不存在会返回 404. 其他失败的返回码参考[错误码列表](../../error_code/)
+该 API 为幂等操作。成功则返回 200；object 或 bucket 不存在会返回 404；其他失败的返回码参考[错误码列表](../../error_code/)。
 
 ## Response Body
 
-根据 HTTP 规范, 任何情况下(无论是成功或失败)都没有响应消息体.
+根据 HTTP 规范，任何情况下(无论是成功或失败)都没有响应消息体。
 
 ## Example
 
@@ -76,7 +76,7 @@ Range: bytes=<byte-range>
 
 ```http
 HEAD /myphoto.jpg HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

@@ -63,19 +63,19 @@ http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.20
 
 ### Content-Length
 
-服务端返回的消息实体的传输长度，以字节为单位
+服务端返回的消息实体的传输长度，以字节为单位。
 
 http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.13
 
 ### Content-Type
 
-服务端返回的消息实体的MIME类型。初期将只支持application/json格式
+服务端返回的消息实体的MIME类型。初期将只支持application/json格式。
 
 http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.17
 
 ### Connection
 
-连接是否已关闭，有效值为keep-alive和close
+连接是否已关闭，有效值为keep-alive和close。
 
 http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.10
 
@@ -101,7 +101,7 @@ http://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.38
 
 ### x-qs-request-id
 
-服务端会为每个请求生成并返回一个唯一标示，提交工单时如果能附带此 ID 将有助于我们定位问题
+服务端会为每个请求生成并返回一个唯一标示，提交工单时如果能附带此 ID 将有助于我们定位问题。
 
 ### Content-Range
 
