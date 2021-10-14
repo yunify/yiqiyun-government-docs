@@ -4,22 +4,22 @@ date: 2020-01-30T00:39:25+09:00
 description: Test description
 draft: false
 enableToc: false
-keyword: 镜像, QingCloud
+keyword: 镜像, 山河
 ---
 
 
 ## 通过云服务器备份捕获的镜像
 用户在 "计算" - "云服务器" 先将自己的某个云服务器关机，右键选择"创建备份"，创建可以制作为镜像的备份。 
 
-![](/compute/vm/intro/_images/create_instance_snapshot.png)
+![](../_images/create_instance_snapshot.png)
 
 待备份完成之后，在控制台上选择 "存储" - "备份"，找到之前的备份，并右键选择"制作新镜像"。 
 
-![](/compute/vm/intro/_images/capture-instance-from-snapshot.png)
+![](../_images/capture-instance-from-snapshot.png)
 
 待完成之后，可以在 "计算" - "镜像" - "自有" 中看到刚才创建的镜像。
 
-![](/compute/vm/intro/_images/user_defined_image.png)
+![](../_images/user_defined_image.png)
 
 
 ## 通过数据盘备份捕获的镜像
@@ -81,8 +81,6 @@ keyword: 镜像, QingCloud
 8. 将云硬盘制作备份；
 
 9. 根据云硬盘备份创建用户自定义镜像。 
-
-![](/compute/vm/intro/_images/capture-image-from-vol-snapshot.png)
 
 创建镜像完成之后，可以在 "计算" - "镜像" - "自有" 中看到刚才创建的镜像。 选择镜像， 并点击 "基于镜像创建云服务器"　可以创建新的云服务器。 
 

@@ -4,7 +4,7 @@ date: 2020-01-30T00:36:25+09:00
 description: Test description
 draft: false
 enableToc: false
-keyword: 安置策略组, QingCloud
+keyword: 安置策略组
 ---
 
 
@@ -19,7 +19,9 @@ keyword: 安置策略组, QingCloud
 
 ![](/compute/instance_group/manual/_images/create_instance_group_2.png)
 
->注意: 安置策略组关系在创建后无法修改
+>**说明**
+>
+>安置策略组关系在创建后无法修改
 
 ## 云服务器加入安置策略组
 
@@ -27,8 +29,9 @@ keyword: 安置策略组, QingCloud
 
 ![](/compute/instance_group/manual/_images/join_instance_group_2.png)
 
->注意：
-一个云服务器只能加入一个安置策略组，如果组内的云服务器多于 1 台，其中的云服务器可能会根据集中或分散类型的策略发生迁移。
+>**说明**
+>
+>一个云服务器只能加入一个安置策略组，如果组内的云服务器多于 1 台，其中的云服务器可能会根据集中或分散类型的策略发生迁移。
 
 
 ## 云服务器离开安置策略组
@@ -44,5 +47,6 @@ keyword: 安置策略组, QingCloud
 
 ![](/compute/instance_group/manual/_images/delete_instance_group_1.png)
 
->注意:
-删除安置策略组时，确保安置策略组内没有云服务器资源，需要解绑安置策略组内所有云服务器。
+>说明
+>
+>删除安置策略组时，确保安置策略组内没有云服务器资源，需要解绑安置策略组内所有云服务器。
