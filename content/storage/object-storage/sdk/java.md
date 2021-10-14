@@ -5,7 +5,7 @@ title: "Java SDK"
 
 山东省计算中心云平台对象存储 Java SDK 已在 GitHub 开源，下文为简要使用文档。更多详细信息请参见 [GitHub 项目页面](https://github.com/yunify/qingstor-sdk-java)，
 和[Java SDK API 文档](https://qingstor.github.io/qingstor-sdk-java/)。Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，
-各个调用的均与具体的 [对象存储 Restful API](https://docs.qingcloud.com/qingstor/api/) 对应，
+各个调用的均与具体的 [对象存储 Restful API](/storage/object-storage/api/overview/) 对应，
 返回码、请求头、错误码等规定请参照具体 API 文档的描述。
 
 SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/blob/master/docs/examples_zh-CN.md) 

@@ -18,9 +18,9 @@ Section2:
       content: 硬盘简介
       url: "/storage/disk/intro/introduction/"
 
-    - title: 计费指南
-      content: 硬盘计费指南
-      url: "/storage/disk/billing/price/"
+    #- title: 计费指南
+      #content: 硬盘计费指南
+      #url: "/storage/disk/billing/price/"
 
     - title: 快速入门
       content: 硬盘快速入门

@@ -16,7 +16,7 @@ keyword: 山河
 
 ## 操作步骤
 
-1. 登录 [控制台](http://console.yiqiyun.sd.cegn.cn/login)。
+1. 登录管理控制台。<!-- [控制台](http://console.yiqiyun.sd.cegn.cn/login)。-->
 
 2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **云硬盘**，进入**硬盘**页面。
 

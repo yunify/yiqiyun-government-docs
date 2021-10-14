@@ -4,7 +4,7 @@ title: "C SDK 快速指南"
 
 
 
-在开始使用 SDK 之前，请确认您已经了解 [山东省计算中心云平台对象存储基本概念](https://docs.qingcloud.com/qingstor/api/common/overview.html) ，如 Zone，Service，Bucket，Object 等。
+在开始使用 SDK 之前，请确认您已经了解 [山东省计算中心云平台对象存储基本概念](/storage/object-storage/api/overview/) ，如 Zone，Service，Bucket，Object 等。
 
 ## 准备工作
 

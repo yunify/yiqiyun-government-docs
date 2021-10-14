@@ -12,7 +12,7 @@ weight: 2
 更多详细信息请参见 [GitHub 项目页面](https://github.com/qingstor/qingstor-sdk-python)，
 和[Python SDK API 文档](https://qingstor-sdk-python.readthedocs.io/en/latest/)。
 Python SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，
-各个调用的均与具体的 [对象存储 Restful API](https://docs.qingcloud.com/qingstor/api/)对应，
+各个调用的均与具体的 [对象存储 Restful API](/storage/object-storage/api/_index/)对应，
 返回码、请求头、错误码等规定请参照具体 API 文档的描述。
 
 使用 Pip 安装:

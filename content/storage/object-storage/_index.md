@@ -23,9 +23,9 @@ Section2:
       content: 产品简介
       url: "/storage/object-storage/intro/object-storage"
 
-    - title: 计费指南
-      content: 计费指南
-      url: "/storage/object-storage/billing/price"
+    #- title: 计费指南
+      #content: 计费指南
+      #url: "/storage/object-storage/billing/price"
 
     - title: 操作指南
       content: 操作指南

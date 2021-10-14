@@ -37,7 +37,7 @@ weight: 1
 1. 用户发起获取对象的请求
 1. 对象在 对象存储服务 Bucket 中已存在，直接返回。
 
-> 外部镜像 API 请参考文档 [Bucket External Mirror](https://docs.qingcloud.com/qingstor/api/bucket/external_mirror/index.html)
+> 外部镜像 API 请参考文档 [Bucket External Mirror](/stortage/object-storage/api/bucket/external_mirror/_index/)
 >
 > 外部镜像或 Fetch 功能，需要源站在提供下载文件时能返回 Content-Length 头，否则回源失败。
 

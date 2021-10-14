@@ -10,35 +10,35 @@ product:
       content: 新增对于跨区域复制功能的支持；新增对上传对象元数据的键值解析。<a target="_blank" href="https://github.com/qingstor/qingstor-sdk-ruby#v240---2021-01-05">更多变更日志</a>
       url: /storage/object-storage/sdk/ruby/
       
-    - time: 2020-05-15
-      title: 开放雅加达（ap3）区
-      content: 青云QingCloud 雅加达区日前正式开放对象存储服务。此次对象存储服务在雅加达区的开放，将为出海及海外企业提供面向海量非结构化数据的通用数据平台，提供安全可靠、低成本的云存储服务，进一步满足中国企业国际化业务的开展、国际化企业全球市场的开拓，以及海外本地企业对云能力的需求。这是青云QingCloud 自 2019 年 12 月正式开放雅加达区提供公有云服务以来，又一次重要的能力输出。<a target="_blank" href="https://log.qingcloud.com/archives/7013">更多详细内容</a>
+    #- time: 2020-05-15
+      #title: 开放雅加达（ap3）区
+      #content: 青云QingCloud 雅加达区日前正式开放对象存储服务。此次对象存储服务在雅加达区的开放，将为出海及海外企业提供面向海量非结构化数据的通用数据平台，提供安全可靠、低成本的云存储服务，进一步满足中国企业国际化业务的开展、国际化企业全球市场的开拓，以及海外本地企业对云能力的需求。这是青云QingCloud 自 2019 年 12 月正式开放雅加达区提供公有云服务以来，又一次重要的能力输出。<a target="_blank" href="https://log.qingcloud.com/archives/7013">更多详细内容</a>
 
-    - time: 2020-02-23
-      title: 新增 Append Object 接口
-      content: 用于以追加写的方式上传对象到存储桶，通过 Append Object 接口创建的对象类型为 appendable。
+   # - time: 2020-02-23
+      #title: 新增 Append Object 接口
+     # content: 用于以追加写的方式上传对象到存储桶，通过 Append Object 接口创建的对象类型为 appendable。
       # todo update url
-      url: /storage/object-storage/api/object/append/
+     # url: /storage/object-storage/api/object/append/
 
-    - time: 2019-09-04
-      title: List Buckets 接口支持分页
-      url: /storage/object-storage/api/bucket/list_multipart_uploads
+    #- time: 2019-09-04
+      #title: List Buckets 接口支持分页
+      #url: /storage/object-storage/api/bucket/list_multipart_uploads
 
-    - time: 2018-08-01
-      title: 图片处理功能增加部分 Exif 信息支持
-      url: /storage/object-storage/manual/data_process/image_process/
+   # - time: 2018-08-01
+      #title: 图片处理功能增加部分 Exif 信息支持
+     # url: /storage/object-storage/manual/data_process/image_process/
 
-    - time: 2018-08-01
-      title: List Objects (Bucket Get) 接口 增加 "has_more" 标志
-      url: /storage/object-storage/api/bucket/get
+   # - time: 2018-08-01
+     # title: List Objects (Bucket Get) 接口 增加 "has_more" 标志
+      #url: /storage/object-storage/api/bucket/get
 
-    - time: 2018-05-16
-      title: 上线生命周期功能
-      url: /storage/object-storage/manual/lifecycle
+    #- time: 2018-05-16
+     # title: 上线生命周期功能
+     # url: /storage/object-storage/manual/lifecycle
 
-    - time: 2018-05-16
-      title: 上线低频存储功能
-      url: /storage/object-storage/billing/price
+    #- time: 2018-05-16
+     # title: 上线低频存储功能
+     # url: /storage/object-storage/billing/price
 
     - time: 2017-12-08
       title: 兼容 AWS S3 v2/v4 参数签名
