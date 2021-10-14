@@ -20,7 +20,7 @@ weight: 1
 通过 Bucket Policy，可以向其他云平台用户赋予相应存储空间及其对象的访问权限, 其语义覆盖 API ACL，及 Resource ACL。
 Bucket Policy 对于对象存储资源的访 问控制粒度介于 Bucket ACL 和 Object ACL(对象访问控制列表，尚未推出) 的一种访问控 制方式。Bucket Policy 可以通过细致地指定 API 级别的控制，实现Bucket ACL 和 Object ACL 所不能实现的一些功能， 比如，防盗链。
 
-一般情况下通过对象存储Console 界面进行[配置](http://console.yiqiyun.sd.cegn.cn/zw/) 即可，也支持通过以下 API 来设置。
+一般情况下通过对象存储 Console 界面进行[配置](http://console.yiqiyun.sd.cegn.cn/zw/) 即可，也支持通过以下 API 来设置。
 
 ### 相关API
 
