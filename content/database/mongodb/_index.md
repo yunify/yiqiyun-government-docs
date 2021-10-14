@@ -6,8 +6,8 @@ collapsible: true
 type: "product"
 
 section1:
-  title: MongoDB
-  vice_title: MongoDB 是一款开源的文档型数据库，具有高性能、高可用等优点。
+  title: 文档数据库 MongoDB
+  vice_title: 文档数据库 MongoDB 是一款开源的文档型数据库，具有高性能、高可用等优点。
 
 Section2:
   title: 用户指南
@@ -20,9 +20,9 @@ Section2:
       content: 产品简介
       url: "intro/introduction/"
 
-    - title: 计费指南
-      content: 计费指南
-      url: "billing/price/"
+  #  - title: 计费指南
+  #    content: 计费指南
+  #    url: "billing/price/"
 
     - title: 快速入门
       content: 快速入门
@@ -54,7 +54,7 @@ section3:
 section4:
   children:
     - title: 了解
-      content: 什么是 MongoDB
+      content: 什么是文档数据库 MongoDB
       vice_title: 了解的第一步
       children:
         - title: 产品简介
@@ -64,7 +64,7 @@ section4:
       content: 学习如何创建、管理、使用 MongoDB 集群
       vice_title: 上手的第一步
       children: 
-        - title: 创建 MongoDB
+        - title: 创建 MongoDB 实例
           url: "quickstart/create_mongodb_cluster/"
 
         - title: MongoDB 服务功能

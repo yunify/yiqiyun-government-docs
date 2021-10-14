@@ -1,7 +1,6 @@
 ---
 title: "在私有网络中创建资源"
 linkTitle: "在私有网络中创建资源"
-date: 2021-05-20T10:08:56+09:00
 description:
 draft: false
 weight: 20
@@ -17,7 +16,7 @@ weight: 20
 
 ## 操作步骤
 
-1. 登录[管理控制台](https://console.shanhe.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **VPC 网络**，进入**VPC 网络**页面。
 
