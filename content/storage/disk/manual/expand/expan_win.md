@@ -22,9 +22,9 @@ keyword: 山河
 
 4. 右键点击磁盘 ID 号 ，扩容磁盘容量并提交修改。
 
-   ![图片](/storage/disk/quickstart/_images/expan_win_3.png)
+   ![图片](/storage/disk/quickstart/_images/image-1568774930715.png)
 
-   ![图片](/storage/disk/quickstart/_images/expan_win_4.png)
+   ![图片](/storage/disk/quickstart/_images/image-1568774933959.png)
 
 5. 将扩容后的磁盘加载到云服务器。
 

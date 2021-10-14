@@ -21,7 +21,7 @@ collapsible: true
     * [使用方法](backup/#id4)
 * [移动 App 接入方案](app_integration/)
     * [准备工作](app_integration/#id1)
-    * [使用 QingStor SDK](app_integration/#qingstor-sdk)
+    * [使用 山东省计算中心云平台对象存储服务 SDK](app_integration/#qingstor-sdk)
     * [开发者实现签名服务器](app_integration/#id2)
     * [表单 POST 上传](app_integration/#post)
     * [请求参数签名](app_integration/#id3)
