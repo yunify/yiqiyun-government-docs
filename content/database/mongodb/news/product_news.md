@@ -4,10 +4,15 @@ collapsible: false
 weight: 11
 
 product:
-    - time: 2021-09-11
-      title: 文档数据库 MongoDB 正式上线
-      content: 文档数据库 MongoDB 服务基于原生 [MongoDB](https://www.mongodb.com/) ReplicaSet 构建的云服务，提供多节点高可用架构，具备弹性扩容、容灾、备份恢复、性能优化等功能。
-      url: ../../intro/introduction/
+    - time: 2021-05-11
+      title: MongoDB 4.0.3 - YiQiYun 1.7.0 版本正式上线
+      content: 基于MongoDB v4.0.3版本构建。支持从 MongoDB v3.6.8 滚动升级，支持查看和修改特性功能版本。
+      url: ../../intro/version/
+    
+    - time: 2021-04-28
+      title: MongoDB 3.6.8 - YiQiYun 1.6.1 版本正式上线
+      content: 基于MongoDB v3.0.6版本构建。支持从 MongoDB v3.4.5 滚动升级，支持查看和修改特性功能版本。
+      url: ../../intro/version/
 ---
 
 <!-- 设置上述参数可生成产品动态页  -->

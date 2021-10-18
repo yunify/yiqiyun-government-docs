@@ -15,7 +15,7 @@ weight: 1
 >
 > Docker 支持 Mac OS、Windows及Linux多个平台上安装，请根据您的实际需求下载匹配的安装包进行安装。
 
-- 已登录镜像仓库。具体操作请参见 [Docker 登录](/container/harbor/quickstart/qs18_access_harbor/#docker-登录)。
+- 已登录镜像仓库。具体操作请参见 [Docker 登录](../../../quickstart/qs18_access_harbor/#docker-登录)。
 
 ## 拉取镜像
 
@@ -27,7 +27,7 @@ docker pull Harbor_address/ProjectName/Repsitory[:Tag]
 
 其中：
 
-- `Harbor_address` 表示您的 Harbor 镜像仓库地址，需要与[参数配置页面](/container/harbor/manual/man08_mdy_para/)中的 **Harbor 地址**保持一致。
+- `Harbor_address` 表示您的 Harbor 镜像仓库地址，需要与[参数配置页面](../../../manual/man08_mdy_para/)中的 **Harbor 地址**保持一致。
 - `ProjectName` 表示项目名称。
 - `Repsitory` 表示镜像仓库名称。
 - `Tag` 表示镜像标签，通常表示镜像版本。
