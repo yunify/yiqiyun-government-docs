@@ -243,7 +243,7 @@ KubeSphere Dashboard 以 NodePort 的形式暴露在端口 30880，您可以在 
 
 可直接单击链接访问 KubeSphere 控制台。
 
-<!-- ## 指定负载均衡器服务类型
+## 指定负载均衡器服务类型
 
 从 `YKE v1.0.1` 版本起集成了 [负载均衡器插件](https://github.com/yunify/qingcloud-cloud-controller-manager) 支持将 KubeSphere 内部的服务和 YiQiYun IaaS 的负载均衡器关联起来，通过负载均衡器将服务暴露给集群外部调用。LB 插件具体用法请参考[文档](https://github.com/yunify/qingcloud-cloud-controller-manager/blob/v1.3.4/docs/configure.md)。根据中国大陆工信部的规定，所有在大陆境内运行的服务都必须进行 ICP 备案。只要在互联网能访问并且使用大陆公网 IP 地址的域名都需要备案。
 
@@ -263,9 +263,7 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 
 ![](../../_images/lb-create-eip.png)
 
-2）得到公网 IP 的 ID。
-
-![](../../_images/lb-get-eip.png)
+2）查看公网 IP 的 ID。
 
 3）在 KubeSphere Dashboard 创建 LoadBalancer 类型服务。
 
@@ -275,7 +273,7 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 
 4）通过公网 IP 访问到集群内部服务。
 
-![](../../_images/lb-nginx-webpage.png) -->
+![](../../_images/lb-nginx-webpage.png) 
 
 ## 挂载云平台块存储
 

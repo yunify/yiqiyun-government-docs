@@ -33,7 +33,7 @@ Section2:
       url: "manual/service/"
 
     - title: 最佳实践
-      content: MongoDB 的最佳实践
+      content: MongoDB 的最佳实践g˝
       url: "best-practices/data_import_and_export/"
 
 section3:

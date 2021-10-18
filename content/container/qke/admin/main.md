@@ -254,7 +254,7 @@ YKE 默认仅最小化安装 KubeSphere，可通过“选装组件”参数开�
 
 ### 验证
 
-YKE 集群创建完成之后可以进行验证，创建集群一般在 612 分左右（视选装的组件而定）。找到客户端节点，点击 vnc 图标。
+YKE 集群创建完成之后可以进行验证，创建集群一般在 6-12 分左右（视选装的组件而定）。找到客户端节点，点击 vnc 图标。
 
 使用 `root / <cluster id>` 登录。首次登录需要修改密码。登录客户端节点后可以通过 ssh 免密登录其他节点。
 
@@ -264,7 +264,6 @@ YKE 集群创建完成之后可以进行验证，创建集群一般在 612 分�
 
 ![](../../_images/client-status.png)
 
-![](../../_images/login-password.png)
 
 您也可以通过在客户端节点加载 ssh 密钥，使用 ssh 免密登录。
 
@@ -282,13 +281,12 @@ kubectl get pods --all-namespaces
 
 ### 增加节点
 
-当 YKE 需增加节点以应付应用逐步增多带来的压力，您可以在 YKE 详情页点击“新增节点”按钮，建议新增节点类型与集群主节点类型一致。添加成功详情页会显示服务状态为活跃。
+当 YKE 需增加节点以应付应用逐步增多带来的压力，您可以在 YKE 详情页点击**新增节点**按钮，建议新增节点类型与集群主节点类型一致。添加成功详情页会显示服务状态为活跃。
 
 > __注意__：
 >
 > `YKE v1.0.1` 以及更老的版本只支持同一种类型的工作节点，如果之前是性能型节点，那么之后也只能增加性能型节点，如果增加了其他类型的节点，可能会导致需要挂载硬盘的工作负载无法启动。
 
-![](../../_images/add-node-manually1.png)
 
 ![](../../_images/add-node-manually2.png)
 
@@ -298,11 +296,10 @@ kubectl get pods --all-namespaces
 
 ![](../../_images/del-node-manually1.png)
 
-![](../../_images/del-node-manually2.png)
 
 ### 自动伸缩
 
-使用 Console 控制台运维工具的[自动伸缩](https://docs.qingcloud.com/product/operation/autoscaling)功能，选择指定的 YKE 集群以及节点类型，操作类型选择“调整应用节点数量”
+使用 Console 控制台运维工具的[自动伸缩](/operation/autoscaling/manual/autoscaling/)功能，选择指定的 YKE 集群以及节点类型，操作类型选择**调整应用节点数量**。
 
 ![](../../_images/autoscale-node-qke.png)
 
@@ -314,7 +311,10 @@ kubectl get pods --all-namespaces
 
 ## 纵向伸缩
 
-如果需要给节点增强配置或降低配置，可以使用扩容集群的功能。`注意`：此操作会造成扩容节点暂时不可用，操作前请保证 YKE 集群内有足够资源容纳迁移的 Pod。
+如果需要给节点增强配置或降低配置，可以使用扩容集群的功能。
+> **注意**
+>
+>此操作会造成扩容节点暂时不可用，操作前请保证 YKE 集群内有足够资源容纳迁移的 Pod。
 
 ![](../../_images/vertical-scale-click.png)
 
@@ -341,11 +341,11 @@ kubectl get pods --all-namespaces
 - 升级一般需要 12 小时，请耐心等待。
 - `YKE v1.0.0` 基于 `Ubuntu 16.04` 操作系统，在升级完成后，可能会在 KubeSphere 页面上遇到 CPU 使用率显示不正确的情况，这是由操作系统内核原因造成，需要在升级后根据业务情况关闭集群然后再开启集群来解决（此操作会把操作系统替换成 `Ubuntu 18.04`）。
 
-## 监控
+<!-- ## 监控
 
 使用 Console 控制台运维工具的 [监控Dashboard](/monitor_service/cloudsat/dashboard/intro/intro/) 功能，创建监控面板和图表，选择指定的 YKE 集群、节点以及指标，
 
-![](../../_images/dashboard-monitor.png)
+![](../../_images/dashboard-monitor.png) -->
 
 ## 删除
 
