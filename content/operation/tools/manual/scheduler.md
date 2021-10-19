@@ -3,7 +3,7 @@ title: "定时器"
 description: Test description
 draft: false
 enableToc: false
-keyword: 定时器, QingCloud
+keyword: 定时器, 山河
 ---
 
 
@@ -31,7 +31,6 @@ keyword: 定时器, QingCloud
 *   [创建备份](#创建备份定时备份)
 *   跨区复制备份
 *   调整公网 IP 带宽上限（每天每个公网 IP 带宽调整次数最多 100 次）
-*   调整公网 IP计费模式
 *   开启VPC网络
 *   关闭VPC网络
 *   启动负载均衡器
