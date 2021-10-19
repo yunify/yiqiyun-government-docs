@@ -189,7 +189,7 @@ signature是:1i700cIAv0yVLdEJ8H5e%2FBnjFkchoSdVnHmD6Wqpzdw%3D
                 "features": 64
             }, 
             "graphics_passwd": "2oyPo0IAbpR9jG21Ih6CQnwqZUQfvV1s", 
-            "console_id": "qingcloud", 
+            "console_id": "yiqiyun", 
             "create_time": "2020-09-08T02:29:49Z", 
             "alarm_status": "", 
             "owner": "usr-CT3owI01", 
