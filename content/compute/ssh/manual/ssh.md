@@ -4,13 +4,14 @@ date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false
 enableToc: false
-keyword: SSH, QingCloud,ssh密钥
+keyword: SSH, ssh密钥
 ---
 
 
 ## 通过 SSH 密钥连接云服务器
->注解
-相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，云服务器内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
+>**说明**
+>
+>相对于用户名密码方式，密钥方式拥有更强的安全性，也可以很大程度阻止暴力破解的发生。目前常用的密钥都是非对称性的加密方式，云服务器内置公钥，而用户则拥有私钥。由于采用非对称加密，入侵者试图通过公钥去破解私钥难度会远远超出密码的破解。
 
 ### 1. 准备密钥
 
@@ -22,7 +23,7 @@ keyword: SSH, QingCloud,ssh密钥
 
 您可以在创建云服务器时选择密钥
 
-![](/compute/ssh/manual/_images/creat-instance-key.png)
+![](../_images/creat-instance-key.png)
 
 也可以给现有云服务器加载密钥,选择云服务器右键 - ssh 密钥 - 加载
 
