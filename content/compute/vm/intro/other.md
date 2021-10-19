@@ -1,5 +1,5 @@
 ---
-title: "其它类型云服务器"
+title: "云服务器类型"
 date: 2020-01-30T00:40:25+09:00
 description: Test description
 draft: false

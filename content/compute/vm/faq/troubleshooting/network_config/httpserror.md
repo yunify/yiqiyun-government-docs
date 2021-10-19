@@ -18,9 +18,9 @@ enableToc: false
 
 操作步骤：负载均衡器 -> lb-xxxxxxx，进入负载均衡器后修改监听器，如下图
 
-![modify_lb](../../../_images/modify_lb.jpg)
+![modify_lb](../../../_images/modify_lb.png)
 
-![lb_tcp](../../../_images/lb_tcp.jpg)
+![lb_tcp](../../../_images/lb_tcp.png)
 
 
 
