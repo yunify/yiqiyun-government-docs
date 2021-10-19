@@ -1,21 +1,22 @@
 {
-  "name": "shanhe-docs",
+  "name": "qingcloud-docs",
   "version": "0.0.1",
-  "description": "shanhe documentation 2.0.",
+  "description": "QingCloud documentation 2.0.",
   "main": "none.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yunify/shanhe-docs.git"
+    "url": "git+https://github.com/yunify/qingcloud-docs.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yunify/shanhe-docs/issues"
+    "url": "https://github.com/yunify/qingcloud-docs/issues"
   },
-  "homepage": "https://github.com/yunify/shanhe-docs#readme",
+  "homepage": "https://github.com/yunify/qingcloud-docs#readme",
+  "dependencies": {},
   "devDependencies": {
     "autoprefixer": "^9.8.6",
     "postcss-cli": "^5.0.1"
