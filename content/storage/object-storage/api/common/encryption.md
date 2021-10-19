@@ -3,9 +3,9 @@ title: "数据加密"
 ---
 
 
-QingStor 对象存储支持由用户提供密钥的加密方式，服务端用用户提供的密钥对上传的 对象进行加密处理。
+对象存储支持由用户提供密钥的加密方式，服务端用用户提供的密钥对上传的 对象进行加密处理。
 
-> QingStor 对象存储服务端不保存用户的密钥。
+> 对象存储服务端不保存用户的密钥。
 
 ## 加密过程
 
@@ -55,9 +55,9 @@ QingStor 对象存储支持由用户提供密钥的加密方式，服务端用�
 | [PUT Object](/storage/object-storage/api/object/put) | 向存储空间上传一个对象时，可指定 [加密请求头](#加密请求头) 一节中定义的 Header，以加密对象。 |
 | [PUT Object - Copy](/storage/object-storage/api/object/copy) | 如果源对象是加密的，则参考 [如何 Copy 加密过的对象](#如何Copy加密过的对象) 指定源对象加密 Header。如果想为目标对象加密，可指定 [加密请求头](#加密请求头)。 |
 | [PUT Object - Move](/storage/object-storage/api/object/move) | 如果源对象是加密的，那么目标对象也会使用一样的加密方式，Move 后会保留所有密文和元数据。对加密过的源对象调用该 API 不需要提供额外的 Header。 |
-| [HEAD Object](/storage/object-storage/api/object/head) | 获取加密对象的元信息时，可以不提供加密相关的头部。也可以使用 [加密请求头](#加密请求头) 一节中定义的 Header, 来验证加密算法和密钥是否正确。 |
+| [HEAD Object](/storage/object-storage/api/object/head) | 获取加密对象的元信息时，可以不提供加密相关的头部。也可以使用 [加密请求头](#加密请求头) 一节中定义的 Header，来验证加密算法和密钥是否正确。 |
 | [Initiate Multipart Upload](/storage/object-storage/api/object/multipart/initiate) | 使用 [加密请求头](#加密请求头) 一节中定义的 Header 来初始化一个加密对象的分段上传。我们仅会保存密钥的 MD5 来验证后续上传分段的密钥是否相同。 |
 | [Upload Object Part](/storage/object-storage/api/object/multipart/upload) | 上传一个分段时，使用 [加密请求头](#加密请求头) 一节中定义的加密请求头部，以加密分段。注意加密算法和密钥必须跟初始化分段时提供的相同。 |
 | [Copy Object Part](/storage/object-storage/api/object/multipart/copy) | 如果源对象是加密的，则需要使用 [如何 Copy 加密过的对象](#如何copy加密过的对象) 一节中定义的 Header。如果想为目标对象加密，可指定 [加密请求头](#加密请求头) 一节中定义的 Header。 |
-| [Complete Multipart Upload](/storage/object-storage/api/object/multipart/complete) | 完成加密对象的分段上传, 不需要提供加密请求头。 |
+| [Complete Multipart Upload](/storage/object-storage/api/object/multipart/complete) | 完成加密对象的分段上传，不需要提供加密请求头。 |
 | [Abort Multipart Upload](/storage/object-storage/api/object/multipart/abort) | 中止加密对象的分段上传，不需要提供加密请求头。 |

@@ -15,28 +15,28 @@ weight: 3
 
 如果希望在数据真正上传以前，提前得知该请求是否能被对象存储系统正确接受和处理，可以只发送 HTTP 请求头（不附带请求实体），并在请求头中包含 Expect: 100-continue。此方式主要使用场景是，当上传的对象实体非常庞大，为了提前知道该上传请求是否能被接受和处理（如认证信息是否正确，请求域名是否需要重定向等），减少不必要的数据传输。
 
-> 存储空间中的文件夹是模拟概念，控制台展现文件列表时，会自动根据对象名称中的斜杠(/)生成文件夹。如果用户想创建一个空文件夹，可以调用此接口上传空对象，对象名以斜杠(/)结尾
+> 存储空间中的文件夹是模拟概念，控制台展现文件列表时，会自动根据对象名称中的斜杠(/)生成文件夹。如果用户想创建一个空文件夹，可以调用此接口上传空对象，对象名以斜杠(/)结尾。
 
 ## Request Syntax
 
 ```http
 PUT /<object-name> HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
-参见[公共请求头](../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../common_header/#请求头字段-request-header)。
 
-对象加密，参见[加密请求头](../../common/encryption/#加密请求头)
+对象加密，参见[加密请求头](../../common/encryption/#加密请求头)。
 
-如果要给对象附带支持的标准 HTTP 头或自定义元数据，参见[如何创建对象元数据](../../metadata/#如何创建对象元数据)
+如果要给对象附带支持的标准 HTTP 头或自定义元数据，参见[如何创建对象元数据](../../metadata/#如何创建对象元数据)。
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -48,21 +48,21 @@ Authorization: <authorization-string>
 
 ## Request Body
 
-对象实体内容
+对象实体内容。
 
 ## Response Headers
 
-参见[公共响应头](../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-request-header)。
 
-若对象被加密，服务端将返回[加密响应头](../../common/encryption/#加密响应头)
+若对象被加密，服务端将返回[加密响应头](../../common/encryption/#加密响应头)。
 
 ## Status Code
 
-该 API 为幂等操作. 成功则返回 201, 失败的返回码参考[错误码列表](../../error_code/)
+该 API 为幂等操作。成功则返回 201，失败的返回码参考[错误码列表](../../error_code/)。
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+正常情况下没有响应消息体，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../error_code/)。
 
 
 ## Example
@@ -71,7 +71,7 @@ Authorization: <authorization-string>
 
 ```http
 PUT /myphoto.jpg HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Content-Length: 7987
 Authorization: authorization string

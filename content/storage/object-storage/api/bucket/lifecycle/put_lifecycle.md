@@ -12,23 +12,23 @@ weight: 2
 创建或更新 Bucket Lifecycle 设置，lifecycle 是存储空间的子资源（subresource），
 只有存储空间所有者才能设置。
 
-QingStor 对象存储会按照用户所设置的生命周期规则，定期对所匹配的 Object 执行相应的操作。
-目前支持的操作有: 删除对象 (Expiration),
-取消未完成的分段上传 (Abort Incomplete Multipart Uploads), 变更存储级别 (Transition)。
+对象存储会按照用户所设置的生命周期规则，定期对所匹配的 Object 执行相应的操作。
+目前支持的操作有: 删除对象 (Expiration)，
+取消未完成的分段上传 (Abort Incomplete Multipart Uploads)，变更存储级别 (Transition)。
 
 > 注意:
 >
 > 以防用户误操作，新增或修改的 Lifecycle 规则，至少在创建时间或最后修改时间的 24 小时以后才会开始生效。
 
-获取 Lifecycle 设置请参见 [GET Bucket Lifecycle](../get_lifecycle)
+获取 Lifecycle 设置请参见 [GET Bucket Lifecycle](../get_lifecycle)。
 
-删除 Lifecycle 设置请参见 [DELETE Bucket Lifecycle](../delete_lifecycle)
+删除 Lifecycle 设置请参见 [DELETE Bucket Lifecycle](../delete_lifecycle)。
 
 ## Request Syntax
 
 ```http
 PUT /?lifecycle HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.zw.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 
@@ -82,15 +82,15 @@ Authorization: <authorization-string>
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)。
 
 ## Status Code
 
-正常会返回 200,  失败的返回码参考[错误码列表](../../../error_code/)
+正常会返回 200，失败的返回码参考[错误码列表](../../../error_code/)。
 
 ## Request Body
 
@@ -98,7 +98,7 @@ Json 消息体
 
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
-| rule | List | rule 的元素为 Lifecycle 规则。规则为 Dict 类型，有效的键为 "id"、"status"、"filter"、"expiration"、"abort_incomplete_multipart_upload" 和 "transition"。规则总数不能超过 100 条，且每条规则中只允许存在一种类型的操作。同一 bucket, prefix 和 支持操作（ expiration, abort_incomplete_multipart_upload, transition) 不能有重复，否则返回 400 invalid_request 包含重复的规则信息 [参见错误信息](../../../error_code/)。 | Yes |
+| rule | List | rule 的元素为 Lifecycle 规则。规则为 Dict 类型，有效的键为 "id"、"status"、"filter"、"expiration"、"abort_incomplete_multipart_upload" 和 "transition"。规则总数不能超过 100 条，且每条规则中只允许存在一种类型的操作。同一 bucket，prefix 和 支持操作（ expiration, abort_incomplete_multipart_upload，transition) 不能有重复，否则返回 400 invalid_request 包含重复的规则信息 [参见错误信息](../../../error_code/)。 | Yes |
 | id | String | 规则的标识符。可为任意 UTF-8 编码字符，长度不能超过 255 个字节，在一个 Bucket Lifecycle 中，规则的标识符必须唯一。该字符串可用来描述策略的用途。如果 id 有重复，会返回 400 invalid_request 。| Yes |
 | status | String | 该条规则的状态。其值可为 "enabled" (表示生效) 或 "disabled" (表示禁用)。| Yes |
 | filter | Dict | 用于匹配 Object 的过滤条件，有效的键为 "prefix"。| Yes |
@@ -112,11 +112,11 @@ Json 消息体
 
 ## Response Headers
 
-参见[公共响应头](../../../common_header/#响应头字段-response-header)
+参见[公共响应头](../../../common_header/#响应头字段-response-header)。
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
+正常情况下没有响应消息体，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../../error_code/)。
 
 
 ## Example
@@ -125,7 +125,7 @@ Json 消息体
 
 ```http
 PUT /?lifecycle HTTP/1.1
-Host: example.pek3a.qingstor.com
+Host: example.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Content-Length: 66
 Authorization: authorization string

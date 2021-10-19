@@ -30,36 +30,36 @@ weight: 1
 - `[X]` mybucket-
 - `[X]` my_bucket
 
-> 匿名用户无法调用此 API ，请先注册青云账户并创建 Access Key ID 和 Secret Access Key 对 。
+> 匿名用户无法调用此 API ，请先注册云平台账户并创建 Access Key ID 和 Secret Access Key 对。
 
 ## Request Syntax
 
 ```http
 PUT / HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
-参见[公共请求头](../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../common_header/#请求头字段-request-header)。
 
 ## Status Code
 
-成功则返回 201; 若 Bucket 已存在则 409 bucket_already_exists. Bucket 个数配额超出限制(可通过发工单提高) 返回 403 too_many_buckets.  其他失败的返回码参考[错误码列表](../../error_code/)
+成功则返回 201；若 Bucket 已存在则 409 bucket_already_exists。Bucket 个数配额超出限制(可通过发工单提高) 返回 403 too_many_buckets。其他失败的返回码参考[错误码列表](../../error_code/)。
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Response Headers
 
-参见[公共响应头](../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-request-header)。
 
 ## Example
 
@@ -67,7 +67,7 @@ Authorization: <authorization-string>
 
 ```http
 PUT / HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

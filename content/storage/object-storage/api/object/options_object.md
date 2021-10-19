@@ -7,15 +7,15 @@ weight: 3
 ---
 
 
-用户或浏览器向 QingStor 的 Object 发起预检请求(preflight request),用以确定是否能向该跨源请求发出回应。
+用户或浏览器向对象存储的 Object 发起预检请求(preflight request)，用以确定是否能向该跨源请求发出回应。
 
-> 当用户的请求属于跨源请求时,需要在正式通信前,增加一次 HTTP 的查询请求(OPTIONS)，询问服务器当前所在的源，是否在服务器的白名单中, 以及哪些 HTTP 动作，头信息 是其可以使用的。 这些策略通过 [PUT Bucket CORS](../../bucket/cors/put_cors/) 来设置。
+> 当用户的请求属于跨源请求时,需要在正式通信前，增加一次 HTTP 的查询请求(OPTIONS)，询问服务器当前所在的源，是否在服务器的白名单中，以及哪些 HTTP 动作，头信息是其可以使用的。这些策略通过 [PUT Bucket CORS](../../bucket/cors/put_cors/) 来设置。
 
 ## Request Syntax
 
 ```http
 OPTIONS /<object-name> HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 Origin: Origin
@@ -25,7 +25,7 @@ Access-Control-Request-Headers: <request-header>
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
@@ -37,7 +37,7 @@ Access-Control-Request-Headers: <request-header>
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Response Headers
 
@@ -51,4 +51,4 @@ Access-Control-Request-Headers: <request-header>
 
 ## Response Body
 
-没有响应内容
+没有响应内容。

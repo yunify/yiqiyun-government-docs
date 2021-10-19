@@ -17,7 +17,7 @@ weight: 3
 
 ```http
 POST /<object-name>?upload_id=<upload-id> HTTP/1.1
-Host: <bucket-name>.pek3a.qingstor.com
+Host: <bucket-name>.zw.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -30,9 +30,9 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)。
 
-对象加密，参见[加密请求头](../../../common/encryption/#加密请求头)
+对象加密，参见[加密请求头](../../../common/encryption/#加密请求头)。
 
 | Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -52,17 +52,17 @@ part_number 不一定需要连续，但需要递增。允许在最终合并的�
 
 ## Status Code
 
-成功则返回 201, 失败的返回码参考[错误码列表](../../../error_code/)
+成功则返回 201，失败的返回码参考[错误码列表](../../../error_code/)。
 
 ## Response Headers
 
-参见[公共响应头](../../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../../common_header/#响应头字段-request-header)。
 
-若对象被加密，服务端将返回[加密响应头](../../../common/encryption/#加密请求头)
+若对象被加密，服务端将返回[加密响应头](../../../common/encryption/#加密请求头)。
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
+正常情况下没有响应消息体，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../../error_code/)。
 
 
 ## Example
@@ -71,7 +71,7 @@ part_number 不一定需要连续，但需要递增。允许在最终合并的�
 
 ```http
 POST /large-object?upload_id=4d26b37a469230619604ecdc0e314782 HTTP/1.1
-Host: mybucket.<zone-id>.qingstor.com
+Host: mybucket.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 13:25:10 GMT
 Authorization: authorization string
 ETag: "0c2f573d81194064b129e940edcefe9b"

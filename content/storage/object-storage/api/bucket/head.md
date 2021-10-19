@@ -14,34 +14,34 @@ weight: 2
 
 ```http
 HEAD / HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
-参见[公共请求头](../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../common_header/#请求头字段-request-header)。
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Status Code
 
-成功则返回 200; 其他失败的返回码参考[错误码列表](../../error_code/)
+成功则返回 200；其他失败的返回码参考[错误码列表](../../error_code/)。
 
 ## Response Headers
 
-参见[公共响应头](../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../common_header/#响应头字段-request-header)。
 
 ## Response Body
 
-根据 HTTP 规范, 任何情况下(无论是成功或失败)都没有响应消息体.
+根据 HTTP 规范，任何情况下(无论是成功或失败)都没有响应消息体.
 
 ## Example
 
@@ -49,7 +49,7 @@ Authorization: <authorization-string>
 
 ```http
 HEAD / HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```
