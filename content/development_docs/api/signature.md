@@ -10,7 +10,7 @@ collapsible: false
 
 ## API 密钥签名
 
-您需要先在控制台创建[API密钥](https://console.qingcloud.com/access_keys/)，获得 accesss_key_id 和 secret_access_key，这里我们假设
+您需要先在控制台创建[API密钥](http://console.yiqiyun.sd.cegn.cn/access_keys/)，获得 accesss_key_id 和 secret_access_key，这里我们假设
 
 ```
 access_key_id = 'QYACCESSKEYIDEXAMPLE'
@@ -30,7 +30,7 @@ secret_access_key = 'SECRETACCESSKEY'
   "instance_name":"demo",
   "image_id":"centos64x86a",
   "login_mode":"passwd",
-  "login_passwd":"QingCloud20130712",
+  "login_passwd":"yiqiyun20130712",
   "version":1,
   "access_key_id":"QYACCESSKEYIDEXAMPLE",
   "action":"RunInstances",
@@ -57,7 +57,7 @@ secret_access_key = 'SECRETACCESSKEY'
   "instance_name":"demo",
   "instance_type":"small_b",
   "login_mode":"passwd",
-  "login_passwd":"QingCloud20130712",
+  "login_passwd":"yiqiyun20130712",
   "signature_method":"HmacSHA256",
   "signature_version":1,
   "time_stamp":"2013-08-27T14:30:10Z",
@@ -80,7 +80,7 @@ secret_access_key = 'SECRETACCESSKEY'
   "instance_name":"demo",
   "instance_type":"small_b",
   "login_mode":"passwd",
-  "login_passwd":"QingCloud20130712",
+  "login_passwd":"yiqiyun20130712",
   "signature_method":"HmacSHA256",
   "signature_version":1,
   "time_stamp":"2013-08-27T14%3A30%3A10Z",
@@ -103,7 +103,7 @@ secret_access_key = 'SECRETACCESSKEY'
 参数名和参数值之间用 “=” 号连接，参数和参数之间用 “＆” 号连接，构造后的URL请求为
 
 ```
-access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
+access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=yiqiyun20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
 ```
 
 **4\. 构造被签名串**
@@ -117,7 +117,7 @@ access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64
 假设 HTTP 请求方法为 GET 请求的uri路径为 “/iaas/” , 则被签名串为
 
 ```
-GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
+GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=yiqiyun20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a
 ```
 
 **5\. 计算签名**
@@ -143,7 +143,7 @@ import urllib
 from hashlib import sha256
 
 # 前面生成的被签名串
-string_to_sign = 'GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a'
+string_to_sign = 'GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=yiqiyun20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a'
 h = hmac.new(secret_access_key, digestmod=sha256)
 h.update(string_to_sign)
 sign = base64.b64encode(h.digest()).strip()
@@ -162,7 +162,7 @@ access_key_id=QYACCESSKEYIDEXAMPLE
 &instance_name=demo
 &instance_type=small_b
 &login_mode=passwd
-&login_passwd=QingCloud20130712
+&login_passwd=yiqiyun20130712
 &signature_method=HmacSHA256
 &signature_version=1
 &time_stamp=2013-08-27T14%3A30%3A10Z
@@ -182,7 +182,7 @@ https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
 &instance_name=demo
 &instance_type=small_b
 &login_mode=passwd
-&login_passwd=QingCloud20130712
+&login_passwd=yiqiyun20130712
 &signature_method=HmacSHA256
 &signature_version=1
 &time_stamp=2013-08-27T14%3A30%3A10Z
@@ -195,14 +195,14 @@ https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE
 实际URL为
 
 ```
-https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=QingCloud20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a&signature=byjccvWIvAftaq%2BoublemagH3bYAlDWxxLFAzAsyslw%3D
+https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&image_id=centos64x86a&instance_name=demo&instance_type=small_b&login_mode=passwd&login_passwd=yiqiyun20130712&signature_method=HmacSHA256&signature_version=1&time_stamp=2013-08-27T14%3A30%3A10Z&version=1&vxnets.1=vxnet-0&zone=pek3a&signature=byjccvWIvAftaq%2BoublemagH3bYAlDWxxLFAzAsyslw%3D
 ```
 
 ## IAM 身份签名
 
 您需要先到IAM控制面板创建一个基于特定信任载体类型的身份，并将身份绑定到 API 执行设备上。
 
-这里我们假设您的 API 执行设备为 QingCloud 广东 2 区 id 为 i-7lchv5u3 的云服务器：
+这里我们假设您的 API 执行设备为亿栖云 公共服务域 id 为 i-7lchv5u3 的云服务器：
 
 ![iam_role](../../../authorization/iam/_images/iam_role.png)
 
