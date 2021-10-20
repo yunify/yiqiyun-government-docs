@@ -34,7 +34,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=DissociateEipsFromLoadBalancer
 &loadbalancer=lb-1234abcd
 &eips.1=eip-1234abcd
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

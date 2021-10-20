@@ -27,7 +27,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| loadbalancer_policy_set | Array | JSON 格式的转发策略数据列表，每项参数可见下面 [Response Item](#response-item) |
+| loadbalancer_policy_set | Array | JSON 格式的转发策略数据列表，每项参数可见下述 **Response Item** 部分|
 | total_count | Integer | 根据过滤条件得到的转发策略总数 |
 
 **Response Item**
@@ -37,7 +37,7 @@ draft: false
 | loadbalancer_policy_id | String | 转发策略ID |
 | loadbalancer_policy_name | String | 转发策略名称 |
 | loadbalancer_ids | Array | 使用此转发策略的负载均衡器 ID 列表<br/>只有在请求参数 verbose=1 时才会返回此信息。 |
-| create_time | TimeStamp | 转发策略创建时间，为 UTC 时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
+| create_time | TimeStamp | 转发策略创建时间，为 UTC 时间，格式可参见 ISO8601 (访问地址：http://www.w3.org/TR/NOTE-datetime)。|
 | is_applied | Integer | 是否已应用修改，1为是，0为否。只有应用修改后，对负载策略的改动才会生效。 |
 
 **Example**

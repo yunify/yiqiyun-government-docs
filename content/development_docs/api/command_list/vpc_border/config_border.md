@@ -36,7 +36,7 @@ _Example Request_
 https://api.qingcloud.com/iaas/?action=ConfigBorder
 &border=irt-2zevtm67
 &operation=ConfigRoute
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

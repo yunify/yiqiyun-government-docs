@@ -20,7 +20,7 @@ draft: false
 | place_group | String | 网络组件节点使用的安置组。 | No |
 | repl | Integer | 网络组件使用的副本策略。 | No |
 | nfv_name | String | 网络组件名称。 | No |
-| security_group | String | 网络组件所加入的私有网络所加载的防火墙ID，若未提供，则默认加载缺省防火墙。 | No |
+| security_group | String | 网络组件所加入的私有网络所加载的安全组ID，若未提供，则默认加载缺省安全组。 | No |
 | hypervisor | String | 网络组件节点使用的虚拟化方式，可以使用 kvm 或者　lxc。 | No |
 | zone | String | 区域 ID，注意要小写。 | Yes |
 

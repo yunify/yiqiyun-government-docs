@@ -34,7 +34,7 @@ https://api.qingcloud.com/iaas/?action=DeleteRouterStatics
 &router_statics.1=rtrs-wls7otet
 &router_statics.2=rtrs-j1tsul7v
 &router_statics.3=rtrs-b3epyxu5
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

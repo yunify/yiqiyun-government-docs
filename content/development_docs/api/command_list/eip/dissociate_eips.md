@@ -32,7 +32,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=DissociateEips
 &eips.1=eip-12djpg8q
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 
