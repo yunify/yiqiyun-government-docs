@@ -38,17 +38,18 @@ weight: 3
 
 下载山东省计算中心云平台提供的 app agent [Linux 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-linux-amd64.tar.gz), 
 [Windows 版本](/appcenter/dev-platform/cluster-developer-guide/scripts/app-agent-windows-386.zip)，
-解压后运行 ./install.sh (Windows 下双击 install.bat)。此 agent 中包含了自动配置文件程序 confd，
-该程序是在开源 [confd](https://github.com/kelseyhightower/confd/blob/master/docs/quick-start-guide.md) 
+解压后运行 ./install.sh (Windows 下双击 install.bat)。
+
+此 agent 中包含了自动配置文件程序 confd，
+该程序是在开源 confd （链接请参见：https://github.com/kelseyhightower/confd/blob/master/docs/quick-start-guide.md) 
 的基础上修改了一些 bug 并且增加了一些算术功能，
-详情见 [yiqiyun confd](https://github.com/yunify/confd/)。
+详情见 yiqiyun confd （链接请参见：https://github.com/yunify/confd/）。
 
 ### 创建模板文件
 
 开发一些必须的模板文件，这些文件会监听山东省计算中心云平台 metadata service 的变化从而更新自己应用的配置文件。
 这些文件后缀名为 toml 和 tmpl，例如，大数据服务Storm 有两个配置文件 zoo.cfg 和 myid，
-每个配置文件需要一套相应的 toml 和 tmpl 模板对应，
-详情请见 [nextcloud](https://github.com/yiqiyunAppcenter/nextcloud/tree/master/nextcloud-nodes/code/conf.d/)。
+每个配置文件需要一套相应的 toml 和 tmpl 模板对应。
 
 #### /etc/confd/conf.d/zoo.cfg.toml
 
@@ -62,7 +63,7 @@ weight: 3
   reload_cmd = "/opt/zookeeper/bin/restart-server.sh"
   ```
 
-  toml 文件中 src 代表模板文件名，dest 即应用的配置文件，这个配置文件会根据 src 模板刷新 dest 内容，keys 即进程 confd 监控山东省计算中心云平台 metadata service 关于该节点所在集群信息的更新，有变化则更新，如果模板中需要用到某个 key 的信息，则需要监听这个 key，也可以直接监听根目录"/"。reload_cmd 则是配置文件被刷新后的操作，脚本开发者自行提供脚本，如果不需要触发动作可以去掉 reload_cmd 这一行。toml 文件里可加上权限控制 比如 uid，gid，mode 等，详情请见 [confd](https://github.com/yunify/confd/blob/master/docs/quick-start-guide.md)
+  toml 文件中 src 代表模板文件名，dest 即应用的配置文件，这个配置文件会根据 src 模板刷新 dest 内容，keys 即进程 confd 监控山东省计算中心云平台 metadata service 关于该节点所在集群信息的更新，有变化则更新，如果模板中需要用到某个 key 的信息，则需要监听这个 key，也可以直接监听根目录"/"。reload_cmd 则是配置文件被刷新后的操作，脚本开发者自行提供脚本，如果不需要触发动作可以去掉 reload_cmd 这一行。toml 文件里可加上权限控制 比如 uid，gid，mode 等，详情请见 confd (链接请参见：https://github.com/yunify/confd/blob/master/docs/quick-start-guide.md)。
 
 #### /etc/confd/templates/zoo.cfg.tmpl
 
@@ -85,7 +86,7 @@ weight: 3
   server.3=192.168.100.4:2888:3888
   ```
 
-更多模板语法参见 [confd templates](https://github.com/kelseyhightower/confd/blob/master/docs/templates.md)，注意的是山东省计算中心云平台的 confd 在开源基础上增加了一些对算术的支持，如 add,div,mul,sub,eq,ne,gt,ge,lt,le,mod 等。
+更多模板语法参见 confd templates (链接请参见：https://github.com/kelseyhightower/confd/blob/master/docs/templates.md)，注意的是山东省计算中心云平台的 confd 在开源基础上增加了一些对算术的支持，如 add,div,mul,sub,eq,ne,gt,ge,lt,le,mod 等。
 
 ## 制作 Docker 镜像
 
@@ -103,12 +104,17 @@ AppCenter 的镜像同时支持 kvm 和 docker，但由于需要实现配置变�
 4. 将应用的 confd 相关配置以及模板，还有脚本添加到镜像。
 5. 将 confd 设置为 ENTRYPOINT，容器启动时先启动 confd，然后应用通过 confd 来启动。
 
-平台提供了一些基础镜像，包含 confd，以及相关系统配置，方便制作镜像。为了降低镜像的大小，建议通过平台的基础镜像基于 [alpine](https://alpinelinux.org/) 来制作。
+平台提供了一些基础镜像，包含 confd，以及相关系统配置，方便制作镜像。为了降低镜像的大小，建议通过平台的基础镜像基于 alpine (链接请参见：https://alpinelinux.org/) 来制作。
 
 ### 基础镜像
 
-1. [confd](https://github.com/yunify/docker-images/tree/master/confd)  dockerhub.yiqiyun.sd.cegn.cn/yiqiyun/confd:v0.13.7
-2. [jdk8](https://github.com/yunify/docker-images/tree/master/jdk) dockerhub.yiqiyun.sd.cegn.cn/yiqiyun/jdk8:confd-v0.13.7
+1. confd  dockerhub.yiqiyun.sd.cegn.cn/yiqiyun/confd:v0.13.7
+
+   [confd] 链接请参见：https://github.com/yunify/docker-images/tree/master/confd
+
+2. jdk8 dockerhub.yiqiyun.sd.cegn.cn/yiqiyun/jdk8:confd-v0.13.7
+
+   [jdk8] 链接请参见：https://github.com/yunify/docker-images/tree/master/jdk
 
 ### 配置文件
 
@@ -126,9 +132,10 @@ image 为 docker 镜像的地址。docker 镜像是全局的，不区分区域�
 
 ### 示例
 
-- 镜像参看 [zookeeper](https://github.com/yunify/docker-images/tree/master/zookeeper)
+镜像参见 [zookeeper] （链接请参见：https://github.com/yunify/docker-images/tree/master/zookeeper)
 
 ### 本地开发环境
 
 为了方便本地调试镜像，可以通过 Docker 在本地模拟一个集群环境，来测试 confd 的配置以及相关脚本。
-具体参看 [zookeeper/dev/start_cluster.sh](https://github.com/yunify/docker-images/blob/master/zookeeper/dev/start_cluster.sh)
+
+具体参见 [zookeeper/dev/start_cluster.sh]（链接请参见 ：https://github.com/yunify/docker-images/blob/master/zookeeper/dev/start_cluster.sh)。
