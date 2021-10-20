@@ -15,7 +15,7 @@ weight: 3
 
 ```http
 GET /<object-name> HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 Range: bytes=<byte-range>
@@ -34,15 +34,15 @@ Range: bytes=<byte-range>
 | response-content-type | String | 设置响应头中的 Content-Type 字段 | No |
 | response-content-language | String | 设置响应头中的 Content-Language 字段 | No |
 | response-content-encoding | String | 设置响应头中的 Content-Encoding 字段 | No |
-| response-content-disposition | String | 设置响应头中的 Content-Disposition 字段。若要支持指定浏览器下载的文件名中带中文，需要拼接参数 "?response-content-disposition=" + url_quote('attachment; filename="'+url_quote(filename) + "\"; filename=*utf-8''" + url_quote(filename)) 具体见下边请求样例。 | No |
+| response-content-disposition | String | 设置响应头中的 Content-Disposition 字段。若要支持指定浏览器下载的文件名中带中文，需要拼接参数 "?response-content-disposition=" + url_quote('attachment；filename="'+url_quote(filename) + "\"；filename=*utf-8''" + url_quote(filename)) 具体见下边请求样例。 | No |
 
 ## Request Headers
 
-参见[公共请求头](../../common_header/)
+参见[公共请求头](../../common_header/)。
 
-若对象需要加密，参见[加密请求头](../../common/encryption/#加密请求头)
+若对象需要加密，参见[加密请求头](../../common/encryption/#加密请求头)。
 
-若对象附有标准 HTTP 头或自定义元数据，参见[如何获取对象元数据](../../metadata/)
+若对象附有标准 HTTP 头或自定义元数据，参见[如何获取对象元数据](../../metadata/)。
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
@@ -54,21 +54,21 @@ Range: bytes=<byte-range>
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Response Headers
 
-参见[公共响应头](../../common_header/)
+参见[公共响应头](../../common_header/)。
 
-若对象被加密，服务端将返回加密响应头, 具体请参见[加密响应头](../../common/encryption/#加密响应头)
+若对象被加密，服务端将返回加密响应头, 具体请参见[加密响应头](../../common/encryption/#加密响应头)。
 
 ## Status Code
 
-该 API 为幂等操作. 成功则返回 200; object 或 bucket 不存在会返回 404; 假如开启了外部镜像功能并且对象在 Bucket 中不存在, 有可能返回 302 重定向. 失败的返回码参考[错误码列表](../../error_code/)
+该 API 为幂等操作。成功则返回 200；object 或 bucket 不存在会返回 404；假如开启了外部镜像功能并且对象在 Bucket 中不存在，有可能返回 302 重定向。失败的返回码参考[错误码列表](../../error_code/)。
 
 ## Response Body
 
-正常情况下为对象实体内容, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+正常情况下为对象实体内容，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../error_code/)。
 
 ## Example
 
@@ -76,7 +76,7 @@ Range: bytes=<byte-range>
 
 ```http
 GET /myphoto.jpg HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

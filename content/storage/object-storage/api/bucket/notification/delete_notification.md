@@ -19,26 +19,26 @@ weight: 2
 
 ```http
 DELETE /?notification HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)。
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Response Headers
 
-参见[公共响应头](../../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../../common_header/#响应头字段-request-header)。
 
 ## Example
 
@@ -46,7 +46,7 @@ Authorization: <authorization-string>
 
 ```http
 DELETE /?notification HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Authorization: authorization string
 ```

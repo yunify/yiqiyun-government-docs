@@ -22,51 +22,51 @@ weight: 3
 ```http
 PUT /<object-name> HTTP/1.1
 x-qs-copy-source: /source-bucket/source-object
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
 
 ## Request Parameters
 
-没有请求参数
+没有请求参数。
 
 ## Request Headers
 
-参见[公共请求头](../../common_header/)
+参见[公共请求头](../../common_header/)。
 
-如果源对象是加密的，参见[如何Copy加密过的对象](../../common/encryption/#如何copy加密过的对象)
+如果源对象是加密的，参见[如何Copy加密过的对象](../../common/encryption/#如何copy加密过的对象)。
 
-为目标对象加密，参见[加密请求头](../../common/encryption/#加密请求头)
+为目标对象加密，参见[加密请求头](../../common/encryption/#加密请求头)。
 
-如果要复制源对象附带的元数据给目标对象，或用请求头中的支持的 HTTP 头和自定义元数据作为目标对象附带的元数据，参见[如何复制或替换对象元数据](../../metadata/#如何复制或替换对象元数据)
+如果要复制源对象附带的元数据给目标对象，或用请求头中的支持的 HTTP 头和自定义元数据作为目标对象附带的元数据，参见[如何复制或替换对象元数据](../../metadata/#如何复制或替换对象元数据)。
 
 | Header Name | Type | Description | Required |
 | --- | --- | --- | --- |
 | x-qs-copy-source | String | 指定源对象，格式为：`/source-bucket/source-object`， 需进行URL编码。格式错误将返回 400 INVALID ARGUMENT | Yes |
-| x-qs-copy-source-if-modified-since | Date | 如果源对象自从指定时间往后被修改过，则正常复制对象, 否则返回 412 PRECONDITION FAILED | No |
-| x-qs-copy-source-If-Unmodified-Since | Date | 如果源对象自从指定时间往后没有被修改过，则正常复制对象, 否则返回 412 PRECONDITION FAILED | No |
+| x-qs-copy-source-if-modified-since | Date | 如果源对象自从指定时间往后被修改过，则正常复制对象，否则返回 412 PRECONDITION FAILED | No |
+| x-qs-copy-source-If-Unmodified-Since | Date | 如果源对象自从指定时间往后没有被修改过，则正常复制对象，否则返回 412 PRECONDITION FAILED | No |
 | x-qs-copy-source-If-Match | String | 如果源对象内容的 ETag 值符合给定的值，则正常复制对象，否则返回 412 PRECONDITION FAILED | No |
 | x-qs-copy-source-If-None-Match | String | 如果源对象内容的 ETag 值不同于给定的值，则正常复制对象，否则返回 412 PRECONDITION FAILED | No |
 | x-qs-storage-class | String | 指定该对象的存储级别，支持的存储级别为 "STANDARD" 和 "STANDARD_IA"，默认存储级别为"STANDARD"。如果 Copy Source 与该对象相同，将变更该对象的存储级别。存储级别错误将返回 400 INVALID_REQUEST | No |
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Status Code
 
-复制成功返回 201, 假如源 object 不存在或目标 Bucket 不存在返回 404; 其他失败的返回码参考[错误码列表](../../error_code/).
+复制成功返回 201，假如源 object 不存在或目标 Bucket 不存在返回 404；其他失败的返回码参考[错误码列表](../../error_code/)。
 
 ## Response Headers
 
-参见[公共响应头](../../common_header/#响应头字段)
+参见[公共响应头](../../common_header/#响应头字段)。
 
-若目标对象被加密，服务端将返回加密响应头, 具体请参见[加密响应头](../../common/encryption/#加密响应头)
+若目标对象被加密，服务端将返回加密响应头, 具体请参见[加密响应头](../../common/encryption/#加密响应头)。
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+正常情况下没有响应消息体，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../error_code/)。
 
 ## Example
 
@@ -74,7 +74,7 @@ Authorization: <authorization-string>
 
 ```http
 PUT /myphoto.jpg HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 x-qs-copy-source: /source-bucket/source-object
 Authorization: authorization string

@@ -5,6 +5,7 @@ _build:
  render: false 
 weight: 120
 collapsible: true
+draft: true
 icon: "/images/icons/product-icon-AppCenter.svg"
 ---
 

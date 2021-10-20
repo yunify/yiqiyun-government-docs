@@ -15,7 +15,7 @@ weight: 39
 
 ## 存储空间有文件数量和类型的限制吗？
 
-QingStor 对象存储是面向海量非结构化数据的通用存储，没有针对文件数量和类型的限制。
+山东省计算中心云平台对象存储是面向海量非结构化数据的通用存储，没有针对文件数量和类型的限制。
 
 ## 如何同步本地目录到对象存储？
 
@@ -23,7 +23,7 @@ QingStor 对象存储是面向海量非结构化数据的通用存储，没有�
 
 ## 对象存储是否可以创建文件夹？
 
-QingStor 对象存储的存储空间本质上是一个平级结构，但控制台界面会根据 “/” 来模拟文件系统的层级结构。如果使用 API 调用，可以请求 GET Bucket API ，通过 prefix 和 delimiter 参数来获取按照文件夹归类的文件列表。
+山东省计算中心云平台对象存储的存储空间本质上是一个平级结构，但控制台界面会根据 “/” 来模拟文件系统的层级结构。如果使用 API 调用，可以请求 GET Bucket API ，通过 prefix 和 delimiter 参数来获取按照文件夹归类的文件列表。
 
 ## 是否有针对文件夹操作的接口？
 
@@ -31,11 +31,11 @@ QingStor 对象存储的存储空间本质上是一个平级结构，但控制�
 
 ## 是否有 API 请求频率限制？
 
-QingStor 对象存储不对 API 请求频率做限制。
+山东省计算中心云平台对象存储不对 API 请求频率做限制。
 
 ## 是否兼容 AWS S3 的上传工具？
 
-QingStor 对象存储兼容 AWS S3 的主要 API，所以您可以直接使用 AWS S3 相关的上传工具以上传数据到 QingStor 对象存储，兼容工具列表可以参考[文档](/storage/object-storage/s3) 。
+山东省计算中心云平台的对象存储服务兼容 AWS S3 的主要 API，所以您可以直接使用 AWS S3 相关的上传工具以上传数据到对象存储，兼容工具列表可以参考[文档](/storage/object-storage/s3) 。
 
 ## Bucket 能否像 AWS S3 一样 mount 到云服务器上？
 
@@ -81,7 +81,7 @@ qsctl 支持使用 `--force` 参数来进行强制覆盖。
 
 ## 从哪里获取对象存储的 Access Key ？
 
-Access Key 可以在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请。
+Access Key 可以在 [控制台](https://console.yiqiyun.sd.cegn.cn/access_keys/) 申请。
 
 更详细内容请参考文档 [API 指南–签名验证](/storage/object-storage/api/signature) 。
 
@@ -99,9 +99,9 @@ Access Key 可以在 [青云控制台](https://console.qingcloud.com/access_keys
 | 上传 | 不限制 | 40Mb/s |
 | 下载 | 32Mb/s | 1Mb/s |
 
-## QingStor 是否支持服务端压缩和解压缩？
+## 山东省计算中心云平台的对象存储服务是否支持服务端压缩和解压缩？
 
-对于下载请求，QingStor 支持文本和图片文件的压缩下载 (请求头需要携带 Accept-Encoding: gzip)，但不支持已压缩文件的解压下载。
+对于下载请求，山东省计算中心云平台支持文本和图片文件的压缩下载 (请求头需要携带 Accept-Encoding: gzip)，但不支持已压缩文件的解压下载。
 
 对于上传请求，想通过压缩节约上传时间和流量，您需要在客户端自行压缩，上传时携带请求头 Content-Encoding: gzip，下载时 QingStor 会返回压缩文件和响应头 Content-Encoding，客户端根据该响应头自行解压 (浏览器会自动识别这个响应头并进行解压)。
 
@@ -147,7 +147,7 @@ keytool -trustcacerts -keystore "$JAVA_HOME/jre/lib/security/cacerts" -storepass
 
 ## 对出错的请求原因有疑问
 
-QingStor 对每个请求都生成了唯一的 Request ID, 在返回中会放在 x-qs-request-id 头字段中。
+云平台对每个请求都生成了唯一的 Request ID, 在返回中会放在 x-qs-request-id 头字段中。
 每一个错误返回都有一个 json 格式内容, 包含 Code (返回码) 和 Message (具体原因), 参考 [错误信息](/storage/object-storage/api/error_code)。
 如果用户对错误的原因有疑问, 或者比如调试签名串计算方式之类的问题, 都可以记录好 x-qs-request-id 并在工单提供给我们。
 

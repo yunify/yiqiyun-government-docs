@@ -17,7 +17,7 @@ weight: 3
 
 ```http
 GET /<object-name>?upload_id=<upload-id> HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -32,23 +32,23 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-参见[公共请求头](../../../common_header/#请求头字段-request-header)
+参见[公共请求头](../../../common_header/#请求头字段-request-header)。
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Status Code
 
-成功则返回 200; 若 upload_id 不存在则返回 404 upload_not_exists; 其他失败的返回码参考[错误码列表](../../../error_code/)
+成功则返回 200；若 upload_id 不存在则返回 404 upload_not_exists；其他失败的返回码参考[错误码列表](../../../error_code/)。
 
 ## Response Headers
 
-参见[公共响应头](../../../common_header/#响应头字段-request-header)
+参见[公共响应头](../../../common_header/#响应头字段-request-header)。
 
 ## Response Body
 
-正常情况下会有一个 Json 消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../../error_code/)
+正常情况下会有一个 Json 消息体，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../../error_code/)。
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -65,7 +65,7 @@ Authorization: <authorization-string>
 
 ```http
 GET /large-object?upload_id=4d26b37a469230619604ecdc0e314782 HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 16 Aug 2015 13:25:10 GMT
 Content-Length: 0
 Authorization: authorization string

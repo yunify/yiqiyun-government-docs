@@ -7,10 +7,10 @@ type: "product"
 
 section1:
   title: 对象存储
-  vice_title: QingStor™ 对象存储为用户提供可无限扩展的通用数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。
+  vice_title: 山东省计算中心云平台对象存储为用户提供可无限扩展的通用数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。
   # todo add qingstor introduction video
-  video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_bucket.mp4"
-  video_img: "/images/video.png"
+  # video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_bucket.mp4"
+  # video_img: "/images/video.png"
 
 Section2:
   title: 用户指南
@@ -23,9 +23,9 @@ Section2:
       content: 产品简介
       url: "/storage/object-storage/intro/object-storage"
 
-    - title: 计费指南
-      content: 计费指南
-      url: "/storage/object-storage/billing/price"
+    #- title: 计费指南
+    #  content: 计费指南
+    #  url: "/storage/object-storage/billing/price"
 
     - title: 操作指南
       content: 操作指南

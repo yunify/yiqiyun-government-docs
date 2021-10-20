@@ -15,7 +15,7 @@ title: "List Multipart Uploads"
 
 ```http
 GET /?uploads HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -32,23 +32,23 @@ Authorization: <authorization-string>
 
 ## Request Headers
 
-> 参见[公共请求头](../../common_header#请求头字段-request-header)
+> 参见[公共请求头](../../common_header#请求头字段-request-header)。
 
 ## Request Body
 
-没有请求消息体
+没有请求消息体。
 
 ## Status Code
 
-成功则返回 200; 其他失败的返回码参考[错误码列表](../../error_code/)
+成功则返回 200; 其他失败的返回码参考[错误码列表](../../error_code/)。
 
 ## Response Headers
 
-参见[公共响应头](../../common_header#响应头字段-request-header)
+参见[公共响应头](../../common_header#响应头字段-request-header)。
 
 ## Response Body
 
-正常情况下会有一个 Json 消息体, 错误情况下会有返回码对应的 Json 消息, 参考[错误码列表](../../error_code/)
+正常情况下会有一个 Json 消息体，错误情况下会有返回码对应的 Json 消息，参考[错误码列表](../../error_code/)。
 
 | Name | Type | Description |
 | --- | --- | --- |
@@ -57,10 +57,10 @@ Authorization: <authorization-string>
 | delimiter | Char | 请求参数 delimiter |
 | marker | String | 请求参数 marker |
 | limit | Integer | 请求参数 limit |
-| next_key_marker | String | 本次返回列表里的最后一个 key 或 common prefix, 当已经列取完全部的内容将返回空 |
+| next_key_marker | String | 本次返回列表里的最后一个 key 或 common prefix，当已经列取完全部的内容将返回空 |
 | next_upload_id_marker | String | 如果有多个同名的分段上传，翻页时可能会被截断，该值是本次返回结果里最后一个 upload id，用于下一次请求参数 upload_id_marker 代表下一页的起始标志 |
 | uploads | List | 正在进行的分段上传对象列表 |
-| common_prefixes | String | 如果请求中指定了 delimiter 参数 , 那么返回所有以 prefix 开头到第一个 delimiter 之间的分段上传对象名称的集合 |
+| common_prefixes | String | 如果请求中指定了 delimiter 参数，那么返回所有以 prefix 开头到第一个 delimiter 之间的分段上传对象名称的集合 |
 
 ## Example
 
@@ -68,7 +68,7 @@ Authorization: <authorization-string>
 
 ```http
 GET /?uploads&prefix=Movies/&delimiter=/&limit=6 HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Sun, 25 Dec 2016 19:02:00 GMT
 Authorization: authorization string
 ```
@@ -121,4 +121,4 @@ x-qs-request-id: aa08cf7a43f611e5
 }
 ```
 
-> 该接口只列出未完成的对象，假设还有一个目录叫 “Sci-Fi/” 但是目录下没有未完成的分段上传，那么不会列出这个目录
+> 该接口只列出未完成的对象，假设还有一个目录叫 “Sci-Fi/” 但是目录下没有未完成的分段上传，那么不会列出这个目录。

@@ -1,7 +1,6 @@
 ---
 title: "加入 VPC 网络"
 linkTitle: "加入 VPC 网络"
-date: 2021-05-20T10:08:56+09:00
 description:
 draft: false
 weight: 8
@@ -17,7 +16,7 @@ weight: 8
 
 ## 操作步骤
 
-1. 登录[管理控制台](https://console.shanhe.com/login)。
+1. 登录管理控制台。
 
 2. 在控制台导航栏中，选择**产品与服务** > **网络服务** > **私有网络**，进入**私有网络**页面。
 

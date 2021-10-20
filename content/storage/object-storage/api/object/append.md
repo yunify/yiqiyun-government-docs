@@ -20,7 +20,7 @@ weight: 3
 
 ```http
 POST /<object-name>?append&position=<position> HTTP/1.1
-Host: <bucket-name>.<zone-id>.qingstor.com
+Host: <bucket-name>.<zone-id>.obs.yiqiyun.sd.cegn.cn
 Date: <date>
 Authorization: <authorization-string>
 ```
@@ -41,7 +41,7 @@ Authorization: <authorization-string>
 | Content-Length     | String | 本次追加写入的数据的大小                                        | Yes      |
 | Content-Type       | String | 对象的类型, 首次写入的时候指定                                   | No       |
 | Content-MD5 	     | String |	本次追加写入的数据的 MD5 值，用于检查数据在传输过程中是否出错或被篡改 | No       |
-| x-qs-storage-class | String | 指定该对象的存储级别，支持的存储级别为 "STANDARD" 和 "STANDARD_IA"，默认存储级别为"STANDARD"。存储级别错误将返回 400 INVALID_REQUEST; 首次写入的时候指定 | No       |
+| x-qs-storage-class | String | 指定该对象的存储级别，支持的存储级别为 "STANDARD" 和 "STANDARD_IA"，默认存储级别为"STANDARD"。存储级别错误将返回 400 INVALID_REQUEST；首次写入的时候指定 | No       |
 
 ## Request Body
 
@@ -61,7 +61,7 @@ Authorization: <authorization-string>
 
 ## Response Body
 
-正常情况下没有响应消息体, 错误情况下会有返回码对应的 JSON 消息, 参考[错误码列表](../../error_code/)
+正常情况下没有响应消息体，错误情况下会有返回码对应的 JSON 消息，参考[错误码列表](../../error_code/)
 
 ## Example
 
@@ -69,7 +69,7 @@ Authorization: <authorization-string>
 
 ```http
 POST /obj-append?append&position=0 HTTP/1.1
-Host: mybucket.pek3a.qingstor.com
+Host: mybucket.zw.obs.yiqiyun.sd.cegn.cn
 Date: Dec, 16 Aug 2019 09:05:00 GMT
 Content-Length: 1024
 Authorization: authorization string

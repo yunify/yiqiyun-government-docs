@@ -3,13 +3,13 @@ title: "C/C++ SDK"
 ---
 
 
-QingStor 对象存储的 C and C++ SDK 项目为 qingstor-sdk-cpp , 已在 GitHub 开源，本 SDK 使用 SDK 生成工具 [Snips](https://github.com/yunify/snips) 生成和维护，详细信息请参考其相关文档。
+山东省计算中心云平台对象存储的 C and C++ SDK 项目为 yiqiyun-sdk-cpp , 已在 GitHub 开源，本 SDK 使用 SDK 生成工具 [Snips](https://github.com/yunify/snips) 生成和维护，详细信息请参考其相关文档。
 
 下文为简要使用文档。更多详细信息请参见 [https://github.com/yunify/qingstor-sdk-cpp](https://github.com/yunify/qingstor-sdk-cpp)。
 
 ## 安装
 
-这个部分的文档介绍 qingstor-sdk 的安装。使用任何软件的第一步是正确的安装它。
+这个部分的文档介绍 yiqiyun-sdk 的安装。使用任何软件的第一步是正确的安装它。
 
 本SDK目前仅支持源码编译安装方式:
 
@@ -35,7 +35,7 @@ Visual Studio 2013 或更高版本
 
 ### 从源码安装
 
-qingstor-sdk 目前正在 GitHub 上活跃开发中，代码开源在
+yiqiyun-sdk 目前正在 GitHub 上活跃开发中，代码开源在
 [此处](https://github.com/yunify/qingstor-sdk-cpp)
 
 你也可以 clone 这个公开的仓库:
@@ -74,5 +74,5 @@ SDK 默认编译不生成标准 C 接口，如果你希望编译包含标准 C �
 本SDK提供了 C 和 C++ 两套接口，这两套接口在使用上方式上有所差别，请您阅读相应的使用说明文档，了解具体细节。
 
 ## 快速开始
-- [qingstor-sdk 标准 C 接口使用快速指南](c/)
-- [qingstor-sdk 标准 C++ 接口使用快速指南](cpp/)
+- [yiqiyun-sdk 标准 C 接口使用快速指南](c/)
+- [yiqiyun-sdk 标准 C++ 接口使用快速指南](cpp/)

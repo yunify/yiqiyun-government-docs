@@ -11,7 +11,7 @@ draft: false
 
 ### 一、解绑
 
-将需要扩容的硬盘从NAS服务器上解绑，并点击【应用修改】
+将需要扩容的硬盘从NAS服务器上解绑，并点击 **应用修改**。
 
 ![VirtualNAS](/storage/vnas/manual/_images/vnas_expansion1.png)
 
@@ -29,7 +29,7 @@ draft: false
 
 ### 四、扩容
 
-控制台右键云硬盘-扩容
+控制台右键云硬盘，选择 **扩容**。
 
 ![VirtualNAS](/storage/vnas/manual/_images/vnas_expansion4.png)
 
@@ -62,7 +62,7 @@ The filesystem on /dev/vdc is now 5242880 blocks long.
 
 ### 五、重新绑定到NAS服务器
 
-从Linux云服务器上卸载硬盘后重新加到NAS服务器上，点击【应用修改】后完成整个扩容过程。
+从Linux云服务器上卸载硬盘后重新加到NAS服务器上，点击 **应用修改** 后完成整个扩容过程。
 
 ![VirtualNAS](/storage/vnas/manual/_images/vnas_expansion5.png)
 
