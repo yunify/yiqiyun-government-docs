@@ -3,7 +3,7 @@ title: "更改云服务器配置"
 date: 2020-02-12T21:08:00+09:00
 description: Test description
 weight: 20
-draft: false
+draft: true
 enableToc: false
 ---
 
@@ -15,7 +15,7 @@ enableToc: false
 
 ### 针对按需计费模式的云服务器操作方法
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
+1. 登录管理控制台，选择**产品与服务** > **计算** > **云服务器**，进入域名列表页。
 
 2. 右键云服务器的ID，选择 **更多操作** > **更改配置**，在左侧的**计算基础服务**导航栏
 
@@ -27,19 +27,11 @@ enableToc: false
 
 3. 操作完成之后开机即可。
 
-   <img src="../../../_images/homer/vm_pic_04.png" width="80%" height="60%">
-
-   备注：系统盘扩容之后不支持缩容，请谨慎操作。
+   系统盘扩容之后不支持缩容，请谨慎操作。
 
 ### 针对合约计费的云服务器操作方法
 
-1. 合约云服务器更改配置需要先在合约界面解绑资源后再进行更改
-
-   <img src="../../../_images/homer/vm_pic_05.png" width="80%" height="60%">
-
-   <img src="../../../_images/homer/vm_pic_06.png" width="80%" height="60%">
-
-2. 解绑后再对云服务器的配置进行更改，可以参考以上按需计费的云服务器操作模式
+1. 对云服务器的配置进行更改，可以参考以上按需计费的云服务器操作模式
 
 3. 云服务器配置更改完成后需要对合约配置进行更改，如下图
 
