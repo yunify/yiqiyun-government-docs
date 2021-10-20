@@ -7,20 +7,18 @@ type: "product"
 
 section1:
   title: 访问鉴权管理
-  vice_title: 访问鉴权管理（Identity and Access Management，IAM）是一款在 QingCloud 平台上提供身份识别和访问控制的 Web 服务。通过使用 IAM 来统一管理和控制接入实体的认证和授权，能更安全地自主管控本账户下的任意资源访问权限。
-  video: "https://portal-qingcloud-v1.pek3b.qingstor.com/IAM/IAM_100P001C202009_IAM%E6%98%AF%E4%BB%80%E4%B9%88.mp4"
-  video_img: "_images/video.png"
-
+  vice_title: 访问鉴权管理（Identity and Access Management，IAM）是一款在 YiQiYun 平台上提供身份识别和访问控制的 Web 服务。通过使用 IAM 来统一管理和控制接入实体的认证和授权，能更安全地自主管控本账户下的任意资源访问权限。
+  
 section2:
   title: IAM 用户文档
   children:
-    - title: 最新动态
-      content: 2020-11-12 产品资源类身份支持[上海1区]<br>2020-09-13 产品资源类身份支持[亚太2区-A]
+    - title: 动态与公告
+      content: 产品动态
       url: "news/product_news"
   
     - title: 产品介绍
       content: 访问鉴权管理相关产品介绍。
-      url: "introduction/glossary"
+      url: "introduction/product_features"
 
     - title: 操作指南
       content: 学习上手如何管理身份和策略，如何使用策略模拟器，以及查看操作日志等。
@@ -28,7 +26,7 @@ section2:
 
     - title: 最佳实践
       content: 场景一：免密钥应用开发<br>场景二：跨账号管理协作
-      url: "best-practices/"
+      url: "best-practices/scenario1"
 
 section4:
   children:
