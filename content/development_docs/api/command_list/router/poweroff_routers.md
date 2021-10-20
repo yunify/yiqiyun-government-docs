@@ -38,7 +38,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=PowerOffRouters
 &routers.1=rtr-s5nqo8mr
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

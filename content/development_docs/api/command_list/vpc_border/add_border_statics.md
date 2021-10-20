@@ -47,7 +47,7 @@ https://api.qingcloud.com/iaas/?action=AddBorderStatics
 &statics.0.val2=rtr-e5m6sr20
 &statics.0.val3=0
 &statics.0.vpc=rtr-e5m6sr20
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

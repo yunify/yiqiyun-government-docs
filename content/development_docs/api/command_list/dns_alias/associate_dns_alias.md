@@ -41,7 +41,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=AssociateDNSAlias
 &prefix=database
 &resource=i-opv1n2brh
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 
@@ -51,7 +51,7 @@ _Example Response_:
 {
   "action":"AssociateDNSAliasResponse",
   "dns_alias_id":"da-ivgvz1cb"
-  "domain_name":"database.xwxjic.pek3a.qingcloud.com"
+  "domain_name":"database.xwxjic.zw.yiqiyun.sd.cegn.cn"
   "job_id":"j-pp51vko0",
   "ret_code":0
 }

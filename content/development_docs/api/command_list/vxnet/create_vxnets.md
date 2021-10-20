@@ -8,9 +8,9 @@ draft: false
 
 创建新的私有网络。
 
-青云私有网络有两种类型： 受管私有网络 ( vxnet_type=1 ) 和 自管私有网络 ( vxnet_type=0 ) ，
+计算中心云平台的私有网络有两种类型： 受管私有网络 ( vxnet_type=1 ) 和 自管私有网络 ( vxnet_type=0 ) ，
 
-*   受管私有网络可以使用青云路由器来配置和管理其网络，使得网络搭建更方便快捷。
+*   受管私有网络可以使用路由器来配置和管理其网络，使得网络搭建更方便快捷。
 *   自管私有网络需要您自行配置和管理网络，适用于对底层网络有特殊需求的用户。
 
 **Request Parameters**
@@ -41,7 +41,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=CreateVxnets
 &vxnet_name=demo
 &vxnet_type=1
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

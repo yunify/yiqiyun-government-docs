@@ -40,7 +40,7 @@ https://api.qingcloud.com/iaas/?action=DescribeBorderVxnets
 &border=irt-2zevtm67
 &offset=0
 &limit=100
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 
@@ -71,11 +71,11 @@ _Example Response_:
             "transition_status":"",
             "controller":"self",
             "domain_servers":"",
-            "border_zone_id":"pek3b",
+            "border_zone_id":"zwb",
             "dyn_ipv6_start":"",
             "manager_ipv6":"",
             "vpc_router_id":"rtr-e5m6sr20",
-            "vxnet_zone_id":"pek3",
+            "vxnet_zone_id":"zw",
             "root_user_id":"usr-1gIBrASt",
             "mode":1
         }

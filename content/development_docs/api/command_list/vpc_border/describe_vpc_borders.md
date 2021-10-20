@@ -44,7 +44,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=DescribeVpcBorders
 &verbose=1
 &vpc_borders.0=irt-2zevtm67
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 
@@ -59,7 +59,7 @@ _Example Response_:
             "router_id":"rtr-e5m6sr20",
             "status":"active",
             "border_name":"ABC",
-            "zone_id":"pek3b",
+            "zone_id":"zwb",
             "tags":[],
             "vpc_border_id":
             "irt-oiyxqojg","border_type":1,

@@ -32,7 +32,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=StopLoadBalancers
 &loadbalancers.1=lb-1234abcd
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 
