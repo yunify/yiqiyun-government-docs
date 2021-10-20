@@ -1,5 +1,5 @@
 ---
-title: "山河主机之间的网络带宽是多少？ "
+title: "山东省计算中心云平台主机之间的网络带宽是多少？ "
 date: 2020-01-30T00:38:25+09:00
 description: Test description
 draft: false

@@ -4,7 +4,7 @@ date: 2020-01-30T00:39:25+09:00
 description: Test description
 draft: false
 enableToc: false
-keyword: 镜像, 山河
+keyword: 镜像, 山东省计算中心云平台
 ---
 
 

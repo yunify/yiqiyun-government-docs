@@ -12,7 +12,7 @@ enableToc: false
 
 本文主要介绍在不同操作系统中检查TCP 80端口是否正常工作的方法。
 
->以下文档是基于用户已经在山河完成备案操作，关于未完成备案导致80端口无法访问，可以查看文档[为什么80端口被禁用](https://docsv3.qingcloud.com/compute/vm/faq/high_requency_problem/port_80_disabled/)
+>以下文档是基于用户已经在山东省计算中心云平台完成备案操作，关于未完成备案导致80端口无法访问，可以查看文档[为什么80端口被禁用](https://docsv3.qingcloud.com/compute/vm/faq/high_requency_problem/port_80_disabled/)
 
 ## 排查思路
 

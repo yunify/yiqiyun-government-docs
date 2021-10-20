@@ -13,7 +13,7 @@ enableToc: false
 
   OS：CentOS 7.5 64 bit
 
-  山河centos7镜像默认为最小化部署，需要自行安装图形化桌面
+  山东省计算中心云平台 centos7 镜像默认为最小化部署，需要自行安装图形化桌面
 
   本次示例为安装 GNOME 图形化
 
