@@ -53,7 +53,7 @@ section4:
       content: 学习如何管理账号
       vice_title: 上手的第一步
       children: 
-        - title: 账号认证
+        - title: 账号设置
           url: "manual/user_verify/"
 
 
