@@ -49,9 +49,6 @@
 							{{ end }}
 							<a href="{{ .url }}" class="card-link">了解更多 →</a>
 						</div>
-						<!--
-						<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}','{{ .title }}');"><i class="fa fa-download"></i>PDF</a>
-						-->
 					</div>
 				</div>
 			{{ end }}
@@ -76,7 +73,6 @@
 							<p class="card-text">{{ .content | markdownify }}</p>
 							<a href="{{ .url }}" class="card-link">了解更多 →</a>
 						</div>
-						<a href="javascript:;" class="pdf-download-btn" onclick="download_pdf('{{ .url }}','{{ .title }}');"><i class="fa fa-download"></i>PDF</a>
 					</div>
 				</div>
 			{{ end }}
@@ -132,7 +128,7 @@
 {{ end }}
         {{ block "main" . }}{{ end }}
 </main>
-      
+    {{ partial "footer.html" . }}  
     {{ partialCached "scripts.html" . }}
   </body>
 </html>

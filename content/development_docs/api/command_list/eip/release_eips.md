@@ -34,7 +34,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=ReleaseEips
 &eips.1=eip-uydrnlax
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

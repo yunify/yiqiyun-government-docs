@@ -37,7 +37,7 @@ _Example Request_
 https://api.qingcloud.com/iaas/?action=LeaveBorder
 &border=irt-2zevtm67
 &vxnets.0=vxnet-gonkgpv
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

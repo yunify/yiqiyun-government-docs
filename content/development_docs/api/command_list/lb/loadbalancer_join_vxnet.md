@@ -40,7 +40,7 @@ https://api.qingcloud.com/iaas/?action=LoadBalancerJoinVxnet
 &vxnet=vxnet-q8f2bu
 &loadbalancer=lb-ciy73nib
 &private_ip=192.168.131.45
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

@@ -43,7 +43,7 @@ https://api.qingcloud.com/iaas/?action=DescribeBorderStatics
 &verbose=1
 &offset=0
 &limit=100
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

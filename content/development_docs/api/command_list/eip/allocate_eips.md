@@ -6,13 +6,13 @@ draft: false
 
 
 
-从IP池中分配一个公网IP，分配时可指定带宽、数量、IP组、名称及是否需要备案。
+从 IP 池中分配一个公网 IP，分配时可指定带宽、数量、IP 组、名称及是否需要备案。
 
-分配后的公网IP可跟云服务器或路由器绑定。
+分配后的公网 IP 可跟云服务器或路由器绑定。
 
 注解
 
-无论公网IP是否与其他资源绑定，一旦分配成功，此IP的计费就会开始。
+无论公网 IP 是否与其他资源绑定，一旦分配成功，此 IP 的计费就会开始。
 
 **Request Parameters**
 
@@ -23,7 +23,6 @@ draft: false
 | associate_mode | Integer | 公网IP绑定模式：0为外部绑定，1为内部绑定，默认是0 | No |
 | eip_name | String | 公网IP名称 | No |
 | count | Integer | 创建公网IP的数量，默认是1 | No |
-| need_icp | Integer | 是否需要备案，1为需要，0为不需要，默认是0 | No |
 | target_user | String | 目标用户 ID ，可用于主账号为其子账号创建资源。 | No |
 | zone | String | 区域 ID，注意要小写 | Yes |
 
@@ -46,7 +45,7 @@ https://api.qingcloud.com/iaas/?action=AllocateEips
 &bandwidth=2
 &billing_mode=bandwidth
 &eip_name=dev
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

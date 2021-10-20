@@ -40,7 +40,7 @@ https://api.qingcloud.com/iaas/?action=GetNFVMonitor
 &meters.2=interface
 &start_time==2014-02-09T21:47:00.820Z
 &end_time=2014-02-10T03:47:00.820Z
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

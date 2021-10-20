@@ -35,7 +35,7 @@ https://api.qingcloud.com/iaas/?action=LeaveVxnet
 &vxnet=vxnet-q8f2bu7
 &instances.1=i-opv1n2brh
 &instances.2=i-m163jcqw1
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 
