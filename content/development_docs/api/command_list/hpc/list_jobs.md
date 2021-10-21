@@ -49,7 +49,7 @@ weight: 30
 | categories           | string | share_queue                           | 作业所属队列类型可能值share_queue 共享队列dedicated_queue 专属队列 |
 | cmd_line             | string | sleep 10                              | 作业执行命令由用户自行输入                                   |
 | core_limit           | int    | 1                                     | 核心限制数                                                   |
-| exec_cwd             | string | /public/shanhe/s0723                  | 执行命令路径                                                 |
+| exec_cwd             | string | /public/qingcloud/s0723               | 执行命令路径                                                 |
 | hpcjob_uuid          | string | hpcjoc-o0ov1wbb                       | hpc作业uuid                                                  |
 | hpcqueue_id          | string | hpcq-df3u98dr                         | hpc队列id                                                    |
 | hpq_name             | string | 2222333vis22                          | 作业所属队列名称                                             |
@@ -76,7 +76,7 @@ weight: 30
 _Example Request_:
 
 ```
-https://hpc.api.shanhe.com:443/api/job/list
+https://hpc.api.qingcloud.com:443/api/job/list
 ```
 
 _Example Response_:
@@ -90,7 +90,7 @@ hpc_job_set: [
 
 core_limit: 1
 
-exec_cwd: "/public/shanhe/s0723"
+exec_cwd: "/public/qingcloud/s0723"
 
 hpcjob_uuid: "hpcjob-vka21yhq"
 

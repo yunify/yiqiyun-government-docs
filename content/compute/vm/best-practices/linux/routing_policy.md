@@ -15,7 +15,7 @@ draft: false
 
 ### 1.如何申请一张网卡
 
-登录[QingCloud 管理控制台](https://console.qingcloud.com/login)，选择**计算** > **网卡** > **申请网卡**，目前只能网卡只能分配私有网络地址，不支持分配基础网络地址，申请方式如图所示
+登录管理控制台，选择**计算** > **网卡** > **申请网卡**，目前只能网卡只能分配私有网络地址，不支持分配基础网络地址，申请方式如图所示
 <img src="../../_images/homer/network_nic_01.png" width="60%" height="60%">
 <img src="../../_images/homer/network_nic_02.png" width="60%" height="60%">
 
@@ -25,7 +25,7 @@ draft: false
 
 ### 3.登录到云服务器，查看网卡ip地址信息
 
-<img src="../../_images/homer/network_nic_04.png" width="60%" height="60%">
+<img src="../..=/_images/homer/network_nic_04.png" width="60%" height="60%">
 
 ### 4.使用以下的命令创建两张路由表
 

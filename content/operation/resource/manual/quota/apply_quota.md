@@ -3,7 +3,11 @@ title: "提升资源配额"
 description: test
 weight: 3
 draft: false
+<<<<<<< Updated upstream:content/operation/resource/manual/quota/apply_quota.md
+keyword: 配额管理, 山东省计算中心云平台
+=======
 keyword: 配额管理, 山河
+>>>>>>> Stashed changes:content/services/quota/manual/apply_quota.md
 
 ---
 

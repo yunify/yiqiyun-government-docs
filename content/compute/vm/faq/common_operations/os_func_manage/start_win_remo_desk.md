@@ -9,11 +9,11 @@ enableToc: false
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)，在云服务器列表里找到这台云服务器。
+1. 登录管理控制台，在云服务器列表里找到这台云服务器。
 
    ![图片](/compute/vm/_images/image.png)
 
-2. 通过 [QingCloud 管理控制台](https://console.qingcloud.com/login)> **网络** > **公网 IP** > **申请**，进入**公网 IP** 申请页面。
+2. 通过管理控制台> **网络** > **公网 IP** > **申请**，进入**公网 IP** 申请页面。
 
    ![图片](/compute/vm/_images/image-1568884014191.png)
 
@@ -35,7 +35,7 @@ enableToc: false
 
    ![图片](/compute/vm/_images/image-1568884099948.png)
 
-6. 放行青云平台云服务器绑定的安全组规则下行3389端口。并应用修改安全组。
+6. 放行山东省计算中心云平台云服务器绑定的安全组规则下行3389端口。并应用修改安全组。
 
    ![图片](/compute/vm/_images/image-1568884118279.png)
 

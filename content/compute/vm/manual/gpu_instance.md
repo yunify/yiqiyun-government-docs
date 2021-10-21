@@ -1,7 +1,7 @@
 ---
 title: "GPU 云服务器"
 description: test
-draft: false
+draft: true
 ---
 
 为了满足用户对高性能计算、视频处理或图形渲染的需求，青云特推出GPU云服务器给有需求的用户使用，用户可以在青云控制台上进行GPU云服务器的创建和使用。

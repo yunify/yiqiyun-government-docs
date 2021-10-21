@@ -39,7 +39,7 @@ weight: 20
 _Example Request_:
 
 ```
-https://hpc.api.shanhe.com:443/api//user/addUser
+https://hpc.api.qingcloud.com:443/api//user/addUser
 ```
 
 _Example Response_:

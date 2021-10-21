@@ -3,7 +3,11 @@ title: "查看我的配额"
 description: test
 weight: 2
 draft: false
+<<<<<<< Updated upstream:content/operation/resource/manual/quota/view_quota.md
+keyword: 配额管理, 山东省计算中心云平台
+=======
 keyword: 配额管理, 山河
+>>>>>>> Stashed changes:content/services/quota/manual/view_quota.md
 
 ---
 

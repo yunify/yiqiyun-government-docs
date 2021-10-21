@@ -1,5 +1,5 @@
 ---
-title: "将ECS迁移到青云QingCloud"
+title: "将ECS迁移到山东省计算中心云平台"
 date: 2021-03-09T10:08:56+09:00
 description: test
 draft: false
@@ -49,7 +49,7 @@ draft: false
 
 1、选择导出镜像选项（如没有该选项，可通过工单申请开通）。
 
-![img](../../_images/ecs2qing.assets/clip_image020.png)
+![](../../_images/ecs2qing.assets/clip_image020.png)
 
 
 2、选择我们之前创建的bucket，并输入object前缀，点击确定。
@@ -63,11 +63,11 @@ draft: false
 
 
 
-## 镜像导入到QingCloud
+## 镜像导入到山东省计算中心云平台
 
 ### 第1步：下载镜像
 
-1、我们在青云的虚机里下载该镜像。没有wget需要先下载安装wget工具，并且注意下面命令里面的两个单引号。
+1、我们在山东省计算中心云平台的虚机里下载该镜像。没有wget需要先下载安装wget工具，并且注意下面命令里面的两个单引号。
 
 `wget ‘下载链接’`
 
@@ -87,9 +87,9 @@ draft: false
 
 ![img](../../_images/ecs2qing.assets/clip_image037.jpg)
 
-### 第2步：制作QingCloud自定义镜像
+### 第2步：制作山东省计算中心云平台自定义镜像
 
-1、在[QingCloud 管理控制台](https://console.qingcloud.com/login)上创建一个硬盘并挂载到下载镜像的云服务器上，注意硬盘的大小需要和原云服务器的系统盘大小一致。
+1、在管理控制台上创建一个硬盘并挂载到下载镜像的云服务器上，注意硬盘的大小需要和原云服务器的系统盘大小一致。
 
 `fdisk -l`
 
@@ -125,14 +125,16 @@ draft: false
 
 ![img](../../_images/ecs2qing.assets/clip_image053.png)
 
->  注意，需要选择一个系统镜像，我需要导入的镜像是centos7.5版本，所以选择QingCloud对应的centos7.5即可，然后提交。
+>  **说明**
+>
+>  需要选择一个系统镜像，我需要导入的镜像是centos7.5版本，所以选择山东省计算中心云平台对应的centos7.5即可，然后提交。
 
 ![img](../../_images/ecs2qing.assets/clip_image055.png)
 
 ![img](../../_images/ecs2qing.assets/clip_image057.png)
 
 
-7、镜像创建完成，我们便可以在镜像 - - 自有 界面看到我们刚才创建的镜像，然后基于该镜像在QingCloud上创建虚机即可。
+7、镜像创建完成，我们便可以在镜像 - - 自有 界面看到我们刚才创建的镜像，然后基于该镜像在山东省计算中心云平台上创建虚机即可。
 
 ![img](../../_images/ecs2qing.assets/clip_image059.png)
 

@@ -21,7 +21,8 @@ draft: false
 ![服务](../../../_images/win_share_4.png)
 
 剩下的【Function Discovery Resource Publication】【SSDP Discovery】【UPnP Device Host 】【computer browser】也进行同样的操作
->注解
+>**说明**
+>
 >共享无法开启网络发现主要原因是“网络发现”所依赖的服务没有启用，或者被禁用。
 
 ### 配置网卡选项

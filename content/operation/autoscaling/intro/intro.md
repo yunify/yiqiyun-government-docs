@@ -1,10 +1,10 @@
 ---
 title: "产品简介"
-date: 2020-12-10T00:39:25+09:00
+date: 2021-10-19T00:39:25+09:00
 description: Test description
 draft: false
 enableToc: false
-keyword: 自动伸缩, QingCloud
+keyword: 自动伸缩, YiQiYun
 ---
 
 
