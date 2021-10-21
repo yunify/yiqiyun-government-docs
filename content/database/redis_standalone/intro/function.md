@@ -12,7 +12,7 @@ draft: false
 
 ## 高可用性
 
-集成 **[Redis Sentinel](https://redis.io/topics/sentinel)** 机制，支持秒级主从切换，并提供一个对外的读写 vip，在保证高可用性的同时，无需手动切换主节点 IP 地址。
+集成 **Redis Sentinel** 机制，支持秒级主从切换，并提供一个对外的读写 vip，在保证高可用性的同时，无需手动切换主节点 IP 地址。
 
 **各节点数支持的高可用数：**
 

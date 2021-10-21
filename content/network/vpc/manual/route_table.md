@@ -6,7 +6,7 @@ draft: false
 weight: 40
 ---
 
-[路由表 ( Routing Table )](https://zh.wikipedia.org/wiki/%E8%B7%AF%E7%94%B1%E8%A1%A8)可以为资源提供 IP 网络的[路由](https://www.ietf.org/rfc/rfc1812.txt)选择，通过配置**目标网络**及其**下一跳**，指定网络的路由方向，从而实现网络的连通和优化。
+路由表 (Routing Table)可以为资源提供 IP 网络的路由选择，通过配置**目标网络**及其**下一跳**，指定网络的路由方向，从而实现网络的连通和优化。
 
 目前可以支持为私有网络 ( Vxnet ) 和负载均衡器 ( Load Balancer, LB ) 绑定路由表。
 

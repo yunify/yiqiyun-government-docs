@@ -11,7 +11,7 @@ draft: false
 
 针对 Redis 2.6.0 至 5.0.0版本，包括 2.6.0 版本数据迁移，可以选择 **redis-port** 迁移方式。
  
-1. 下载 [redis_port](https://github.com/CodisLabs/redis-port/releases)工具。
+1. 下载 [redis_port](/database/redis_cluster/attach/redis-port-v1.2.1-go1.7.5-linux.tar.gz)工具。
  
  2. 执行以下命令开始迁移。
    `./redis-sync -m [源地址:端口号] -t [目标地址:端口号] `。
@@ -20,7 +20,6 @@ draft: false
    
    ![redis_port](../../_images/migrate.png)
    
-> redis_port 也支持 RDB 文件导入，更多说明请参见[redis_port 介绍](https://github.com/CodisLabs/redis-port)。
 
 ## 从 RDB 文件恢复数据
 

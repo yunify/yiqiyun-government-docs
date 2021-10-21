@@ -19,7 +19,6 @@ Harbor 提供镜像复制功能，允许用户以推送和拉取方式在不同 
 
 ## 操作步骤
 
-详细操作说明，请参见 [Harbor 官方文档](https://goharbor.io/docs/2.2.0/administration/configuring-replication/)，以下为步骤要点。
 
 >**说明**：
 >
