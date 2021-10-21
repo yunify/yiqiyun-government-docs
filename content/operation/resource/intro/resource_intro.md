@@ -3,7 +3,11 @@ title: "什么是资源共享"
 description: Test description
 draft: false
 weight: 2
+<<<<<<< Updated upstream:content/operation/resource/intro/resource_intro.md
 keyword: 消息中心, 山东省计算中心云平台
+=======
+keyword: 消息中心, 山河
+>>>>>>> Stashed changes:content/resource/resource_share/intro/introduction.md
 
 
 ---
@@ -12,9 +16,15 @@ keyword: 消息中心, 山东省计算中心云平台
 
 ## 应用场景
 
+<<<<<<< Updated upstream:content/operation/resource/intro/resource_intro.md
 在使用山东省计算中心云平台服务的过程中，您会创建多个私有网络。某些场景下，您需要其他账号的资源，加入到您的私有网络中。
 
 使用山东省计算中心云平台提供的资源共享功能，您可以将自己的私有网络分享给其他账号，分享者可以在您的私有网络中创建资源，或者将自己已有的资源加入您的私有网络中。
+=======
+在使用山河服务的过程中，您会创建多个私有网络。某些场景下，您需要其他账号的资源，加入到您的私有网络中。
+
+使用山河提供的资源共享功能，您可以将自己的私有网络分享给其他账号，分享者可以在您的私有网络中创建资源，或者将自己已有的资源加入您的私有网络中。
+>>>>>>> Stashed changes:content/resource/resource_share/intro/introduction.md
 
 ## 产品介绍
 

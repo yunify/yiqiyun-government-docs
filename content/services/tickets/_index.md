@@ -7,7 +7,11 @@ type: "product"
 
 section1:
   title: 工单服务
+<<<<<<< Updated upstream
   vice_title: 用户在使用山东省计算中心云平台产品的过程中，遇到问题或者需要帮助时可以通过工单服务，寻求山东省计算中心云平台的客户服务支持。
+=======
+  vice_title: 用户在使用山河产品的过程中，遇到问题或者需要帮助时可以通过工单服务，寻求山河的客户服务支持。
+>>>>>>> Stashed changes
   #video: ""
   #video_img: "/images/video.png"
 
