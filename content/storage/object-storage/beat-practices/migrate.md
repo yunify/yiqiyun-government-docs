@@ -20,7 +20,7 @@ weight: 1
 
 对于已经设置了外部镜像的对象存储 Bucket，当请求的 Object 在 Bucket 中不存在时，对象存储服务端会把 Object Key 拼接在外部镜像源站后作为抓取的源链接，然后自动从源站抓取（回源），并写入到 Bucket 当中。在回源过程中，请求这个 Object 的客户端，有可能会下载到源站文件，也有可能收到重定向到源站相应路径的 302 请求。在回源完成后，客户端能够直接从 对象存储的 Bucket 中获取这个 Object。 对象存储建议用户可先使用 [Head Object](/storage/object-storage/api/object/basic_opt/head/) 返回 200 成功来确认 Object 存在。
 
-![](bucket_external_mirror_diagram.png)
+<!--![](bucket_external_mirror_diagram.png)-->
 
 
 下面结合示意图，说明外部镜像的工作原理: 
