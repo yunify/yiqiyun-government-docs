@@ -51,7 +51,7 @@ k8s 上的工作负载需要拉取 Docker 镜像，请确保集群所在私网�
 
 > 如果使用公网镜像仓库，比如 docker.io，请确保 VPC 绑定了公网 IP。  
 
-> 如果使用私有镜像仓库，比如青云提供的 [Harbor 镜像仓库](https://docs.qingcloud.com/product/container/harbor.html)，请确保 YKE 所有节点可以访问到 Harbor 的负载均衡器地址。注意：如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 YKE 所有节点可以访问到 QingStor 对象存储。
+> 如果使用私有镜像仓库，比如政务云平台提供的 [Harbor 镜像仓库](/container/harbor/)，请确保 YKE 所有节点可以访问到 Harbor 的负载均衡器地址。注意：如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 YKE 所有节点可以访问到 QingStor 对象存储。
 
 ## 防火墙
 

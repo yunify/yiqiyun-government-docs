@@ -58,7 +58,7 @@ weight: 10
 
   > **说明**：
   >
-  > 每次对 etcd 键值的更新或设置操作都会被记录在数据文件中，可开启定时自动进行数据清理以防止性能下降和空间耗尽。相关原理可参考官方说明文档 [Compaction](https://github.com/etcd-io/etcd/blob/release-3.2/Documentation/op-guide/maintenance.md#history-compaction)。
+  > 每次对 etcd 键值的更新或设置操作都会被记录在数据文件中，可开启定时自动进行数据清理以防止性能下降和空间耗尽。相关原理可参考官方说明文档(参考地址：https://github.com/etcd-io/etcd/blob/release-3.2/Documentation/op-guide/maintenance.md#history-compaction)。
 
 - **etcd quota-backend-bytes**：存储大小限制，单位是字节，范围为 2147483648 - 8589934592，默认大小为 2147483648字节（即2GB）。
 
@@ -100,17 +100,17 @@ etcd 创建完成之后，您可以查看每个节点的运行状态。当节点
 
 您可以在与 etcd 集群节点同一私有网络或跨网络的客户端上进行连接测试。
 
-测试前请先下载 [etcd](https://github.com/etcd-io/etcd/releases/tag/v3.2.24) 并解压。
+测试前请先下载 etcd (官方下载地址：https://github.com/etcd-io/etcd/releases/) 并解压。
 
 现假设客户端和 etcd 在同一私有网络，etcd 集群有三个节点，IP 地址分别为192.168.100.10、192.168.100.11、192.168.100.12， 您可以通过如下命令连接 etcd：
 
 > **说明**：
 >
-> etcdctl 支持 v2 和 v3 两个版本，以下以 v3 为例，详细说明请查阅[官方文档](https://github.com/etcd-io/etcd/tree/v3.2.24/etcdctl)。
+> etcdctl 支持 v2 和 v3 两个版本，以下以 v3 为例，详细说明请查阅官方文档(https://github.com/etcd-io/etcd/tree/v3.2.24/etcdctl)。
 
 ```
 # ETCDCTL_API=3 ./etcdctl --endpoints http://192.168.100.10:2379,http://192.168.100.11:2379,http://192.168.100.12:2379 endpoint health
 ```
 
-同时该应用也提供了 REST 接口，详情请参考[官方文档](https://coreos.com/etcd/docs/latest/getting-started-with-etcd.html#reading-and-writing-to-etcd)。
+同时该应用也提供了 REST 接口，详情请查阅官方开发者文档（https://etcd.io/docs/v3.5/dev-guide/）。
 

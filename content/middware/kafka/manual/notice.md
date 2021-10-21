@@ -10,7 +10,7 @@ draft: false
 - 开发的时候客户端尽量选择与服务端对应的版本。
 - 可以使用 Kafka-manager 管理和修改 Topic 配置、监控集群，也可以使用客户端节点或者自己安装客户端，使用命令行形式管理和使用集群
 - offsets.topic.replication.factor 参数必须小于或者等于 Kafka broker 节点数，不能大于 Kafka broker 节点数，否则就会消费不了消息，直至集群中 Kafka broker 节点数大于或者等于此参数
-- 您可以使用计算中心云平台的[云监控CloudSat](/monitor_service/cloudsat/)与[自动伸缩](/operation/autoscaling/)功能为集群节点提供更强大的保障。
+- 您可以使用计算中心云平台的[自动伸缩](/operation/autoscaling/)功能为集群节点提供更强大的保障。
 
 在使用过程中如果遇到问题可以通过提交工单来获取帮助，我们将竭诚为您服务。
 

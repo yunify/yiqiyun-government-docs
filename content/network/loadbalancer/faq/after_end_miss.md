@@ -26,4 +26,4 @@ weight: 40
 
 ![](../../_images/ping_telnet.png)
 
-如均未问题可[提交工单](https://console.shanhe.com/tickets/)找技术工程师协助排查。
+如均未问题可提交工单找技术工程师协助排查。

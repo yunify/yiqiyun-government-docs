@@ -15,9 +15,9 @@ draft: false
 
  Redis 提供了从 Redis Standalone (包括 2.8.17 版本) 迁移数据到 Redis Cluster　的工具 `redis-trib.rb`。
  
-- [Redis 4.x](http://download.redis.io/releases/redis-4.0.6.tar.gz) 
+- [Redis 4.x](../../attach/redis-4.0.6.tar.gz) 
   
-- [Redis 5.x](http://download.redis.io/releases/redis-5.0.3.tar.gz) 
+- [Redis 5.x](../../attach/redis-5.0.3.tar.gz) 
    > 在 Redis 5.x 包执行 shell 命令时需添加 `--copy` 或者 `--cluster-copy` 参数，否则会导致仅迁移数据而不是复制数据。
 
 
@@ -48,7 +48,7 @@ Redis Cluster B：主节点为 192.168.2.14:6379、192.168.2.17:6379、192.168.2
 
 > 仅适用于 Redis 4.x 版本迁移数据。
   
-1. 在选择 redis-port 迁移 slots 时，需先通过[集群节点命令](https://redis.io/commands/cluster-nodes)检查 A 和 B 的 slots 分布是否一致。
+1. 在选择 redis-port 迁移 slots 时，需先通过集群节点命令检查 A 和 B 的 slots 分布是否一致。
 
    ```shell
    ./redis-cli -h 192.168.2.31 cluster nodes
@@ -58,11 +58,11 @@ Redis Cluster B：主节点为 192.168.2.14:6379、192.168.2.17:6379、192.168.2
    
    > 注意：
    > `源地址`与`目标地址`的 slots 分布必须一致。
-   > 在不一致的情况下，可以参考 [migrateSlots.sh](https://github.com/QingCloudAppcenter/redis/tree/master/operations) 将 B 的 slots 分布迁移至与 A 一致。
+   > 在不一致的情况下，可以参考 [migrateSlots.sh](../../attach/migrateSlots.zip) 将 B 的 slots 分布迁移至与 A 一致。
 
 2. 迁移数据。
    
-   下载并安装 [redis-port](https://github.com/CodisLabs/redis-port/releases) 程序。
+   下载并安装 [redis_port](../../attach/redis-port-v1.2.1-go1.7.5-linux.tar.gz)。
    
    执行如下命令，迁移数据。
 
@@ -70,7 +70,7 @@ Redis Cluster B：主节点为 192.168.2.14:6379、192.168.2.17:6379、192.168.2
 
     回显信息提示完成100%时，即可终止程序。
    
-   > `redis-port`工具也支持 [RDB 文件方式导入](https://github.com/CodisLabs/redis-port)。
+   > `redis-port`工具也支持 RDB 文件方式导入。
 
 ### RDB 文件迁移方式
 
@@ -82,7 +82,7 @@ Redis Cluster B：主节点为 192.168.2.14:6379、192.168.2.17:6379、192.168.2
    
    先关闭 `redis-server` 实例，复制待迁移的 RDB 文件到 `redis-server` 的数据目录，并重启该虚机的 `redis-server` 实例。
     
-3. 参考[从 Redis Standalone 迁移数据到 Redis Cluster](#从-redis-standalone-迁移数据到-redis-cluster))，将 `redis-server` 中的数据迁移至目标集群。
+3. 参考[从 Redis Standalone 迁移数据到 Redis Cluster](#从-redis-standalone-迁移数据到-redis-cluster)，将 `redis-server` 中的数据迁移至目标集群。
     
 4. 参考1～3，依次将 RDB 文件迁移至目标集群。
    
