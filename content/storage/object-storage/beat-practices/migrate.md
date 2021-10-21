@@ -25,11 +25,11 @@ weight: 1
 
 下面结合示意图，说明外部镜像的工作原理: 
 
-假设用户的外部镜像源站为 `http://img.example.com`，在 QingStor 对象存储的 Bucket 的默认域名为 `http://bucketname.pek3a.qingstor.com`。
+假设用户的外部镜像源站为 `http://img.example.com`，在对象存储的 Bucket 的默认域名为 `http://bucketname.zw.obs.yiqiyun.sd.cegn.cn`。
 
 **示意图左侧为首次请求:**
 
-1. 用户发起获取 Object 的请求，如 `http://bucketname.pek3a.qingstor.com/blog.png`；
+1. 用户发起获取 Object 的请求，如 `http://bucketname.zw.obs.yiqiyun.sd.cegn.cn/blog.png`；
 2. Object 在 对象存储的 Bucket 中不存在，且用户已经为该 Bucket 设置了外部镜像源站，此时，对象存储服务端会将 Object Key `blog.png` 拼接到源站，生成源链接 `http://img.example.com/blog.png`；
 3. 对象存储服务端从该源链接抓取；
 4. 在抓取过程中，请求该 Object 的客户端，有可能会下载到源站文件，也有可能收到重定向到源站相应路径的 302 请求。
@@ -65,23 +65,23 @@ weight: 1
 
 ## 用户主动迁移 - qscamel
 
-qscamel 是把 HTTP(s) 形式的数据高效地批量迁移到 QingStor 对象存储的命令行工具。其输入可以是包含源链接的文件，也可以是其他对象存储平台的 Bucket 名称。更多介绍请参考 [qscamel](/storage/object-storage/manual/tool/qscamel/)
+qscamel 是把 HTTP(s) 形式的数据高效地批量迁移到对象存储的命令行工具。其输入可以是包含源链接的文件，也可以是其他对象存储平台的 Bucket 名称。更多介绍请参考 [qscamel](/storage/object-storage/manual/tool/qscamel/)
 
 **qscamel 有如下特点:**
 
 1. 支持并行迁移，即同时迁移多个对象。
 2. 支持给迁移任务命名，用来继续迁移未完成的迁移任务。qscamel 会记录本次迁移任务中成功迁移的源站。在退出后、重新执行时，qscamel 会跳过已经成功迁移的源站资源，迁移剩下未完成的源站资源。
-3. 支持灵活的覆盖模式。qscamel 默认进行增量迁移，即通过比较源站资源和 QingStor 对象存储的 Bucket 中 Object 的最后修改时间，仅同步 QingStor 对象存储的 Bucket 中已存在但非最新的 Object，及 QingStor 对象存储的 Bucket 中不存在的 Object。
+3. 支持灵活的覆盖模式。qscamel 默认进行增量迁移，即通过比较源站资源和 QingStor 对象存储的 Bucket 中 Object 的最后修改时间，仅同步 对象存储的 Bucket 中已存在但非最新的 Object，及 对象存储的 Bucket 中不存在的 Object。
 4. 除了默认的增量迁移外，qscamel 还支持参数 `--ignore-existing`，即：不覆盖 对象存储的 Bucket 中已存在的 Object；以及参数 `--overwrite` ，强制覆盖 对象存储的 Bucket 中已存在的 Object。
 5. 支持指定日志文件。qscamel 默认输出到标准输出，也可以指定输出到日志文件。
 
 
 ## 推荐使用步骤
 
-1. 通过命令行工具 qscamel 将冷数据批量迁移到 QingStor 对象存储。
+1. 通过命令行工具 qscamel 将冷数据批量迁移到 对象存储。
 2. 更改业务的数据上传路径，将路径设置为对象存储的 Bucket 默认域名，或者对象存储的 Bucket 所绑定的自定义域名。
 3. 配置外部镜像功能，以使得访问不存在的 Object 时触发回源。
-4. 外部镜像功能只针对 Object 不存在的情况，不会从源站拉取新版本 Object。如果业务逻辑中没有覆盖更新同一 Object 的场景，可以直接让业务从 对象存储中读取；如果业务逻辑中有覆盖更新同一 Object 的逻辑，建议先更新业务代码，让业务上传数据时同时更新到源站和 QingStor 对象存储，然后就可以使用 对象存储来承载业务。
+4. 外部镜像功能只针对 Object 不存在的情况，不会从源站拉取新版本 Object。如果业务逻辑中没有覆盖更新同一 Object 的场景，可以直接让业务从 对象存储中读取；如果业务逻辑中有覆盖更新同一 Object 的逻辑，建议先更新业务代码，让业务上传数据时同时更新到源站和对象存储，然后就可以使用 对象存储来承载业务。
 5. 再次使用命令行工具 qscamel 增量同步，以保证源站到  对象存储的 Bucket 数据迁移完成，没有遗漏。
 6. 停止源站的使用。
 
