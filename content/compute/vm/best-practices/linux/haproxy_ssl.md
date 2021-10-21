@@ -16,7 +16,7 @@ HAProxy 是一款可实现负载均衡的优秀软件，它可用于 TCP 代理�
 ## 准备事项
 
 * 主机已安装 HAProxy
-* 已申请并签发了 SSL 证书，如没有证书，请[购买SSL证书](https://console.qingcloud.com/ssl_certificates)
+* 已申请并签发了 SSL 证书，如没有证书，请购买SSL证书。
 * 申请 SSL 证书时绑定的域名已解析到服务器 IP
 * 后端可正常访问
 
@@ -24,13 +24,13 @@ HAProxy 是一款可实现负载均衡的优秀软件，它可用于 TCP 代理�
 
 > HAProxy 代理 SSL 有两种方式
 >
->​    1、HAProxy 本身绑定 SSL 证书，后面的 Web 服务器走正常的 HTTP ，这种方式 HAProxy 需要支持 SSL
+>​    1. HAProxy 本身绑定 SSL 证书，后面的 Web 服务器走正常的 HTTP ，这种方式 HAProxy 需要支持 SSL
 >
->​    2、HAProxy 本身只提供反向代理，后面的 Web 服务器走 HTTPS ,这种方式 HAProxy 不需要支持 SSL
+>​    2. HAProxy 本身只提供反向代理，后面的 Web 服务器走 HTTPS ,这种方式 HAProxy 不需要支持 SSL
 
 ### 方式一( HAProxy 绑定 SSL 证书)：
 
-1、查看已安装的 HAProxy 是否支持 SSL：
+1. 查看已安装的 HAProxy 是否支持 SSL：
 
 ​	1）执行`haproxy -vv` 
 
@@ -52,9 +52,9 @@ make install
         libssl.so.10 => /lib64/libssl.so.10 (0x00007f5ab8264000)
 ```
 
-注意：`TAGET`值为内核版本，使用`uname -r`查看，2.6以上的都用 linux26
+`TAGET`值为内核版本，使用`uname -r`查看，2.6以上的都用 linux26
 
-2、下载证书，并上传到云服务器，将证书私钥合并处理
+2. 下载证书，并上传到云服务器，将证书私钥合并处理
 
 ```bash
 [root@i-3d6dbe9x cert]# ls
@@ -62,7 +62,7 @@ www.linuxcamp.club.key  www.linuxcamp.club.pem
 [root@i-3d6dbe9x cert]# cat www.linuxcamp.club.pem www.linuxcamp.club.key | tee linuxcamp.pem
 ```
 
-3、修改`haproxy.cfg`配置文件
+3. 修改`haproxy.cfg`配置文件
 
 ```bash
 global
@@ -121,7 +121,7 @@ backend web        ## 后端
 
 ### 方式二( HAProxy 代理 SSL 请求)：
 
-1、后端绑定好 SSL 证书，可参考[Apache配置SSL](https://docsv3.qingcloud.com/compute/vm/best-practices/linux/confighttpdssl/)、[Nginx配置SSL](https://docsv3.qingcloud.com/compute/vm/best-practices/linux/nginx_ssl/)
+1. 后端绑定好 SSL 证书。
 
 ```bash
 frontend https_frontend
@@ -138,5 +138,5 @@ backend web_server
   server web2 192.168.0.200:443 maxconn 1024 check inter 2000 rise 2 fall 3
 ```
 
-注意，这种模式下 mode 必须是 tcp 模式，经测试 frontend 采用 mode tcp 时，只认可 default_backend 这一个后端,无法使用 acl
+这种模式下 mode 必须是 tcp 模式，经测试 frontend 采用 mode tcp 时，只认可 default_backend 这一个后端,无法使用 acl
 

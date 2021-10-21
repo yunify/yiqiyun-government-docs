@@ -33,7 +33,7 @@ yum install python-pip
 wget https://www.python.org/ftp/python/3.7.0/Python-3.7.0.tgz
 ```
 
-###5.解压缩
+### 5.解压缩
 
 ```
 tar -zxvf Python-3.7.0.tgz
@@ -53,7 +53,7 @@ ln -s /usr/local/python3/bin/python3.7 /usr/bin/python3.7
 ln -s /usr/local/python3/bin/pip3.7 /usr/bin/pip3.7
 ```
 
-###8.测试是否安装成功了 
+### 8.测试是否安装成功了 
 
 ```
 python -V

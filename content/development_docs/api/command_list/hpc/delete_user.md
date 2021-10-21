@@ -41,7 +41,7 @@ weight: 10
 _Example Request_:
 
 ```
-https://hpc.api.shanhe.com:443/api/user/deleteUser
+https://hpc.api.qingcloud.com:443/api/user/deleteUser
 ```
 
 _Example Response_:

@@ -10,7 +10,7 @@ draft: false
 
 # qsftpd介绍
 
-qsftpd 是一个将 QingStor 对象存储作为存储后端的 FTP Server，用户通过简单的配置，即可通过 FTP 协议使用对象存储服务。
+qsftpd 是一个将对象存储作为存储后端的 FTP Server，用户通过简单的配置，即可通过 FTP 协议使用对象存储服务。
 
 qsftpd 已在 GitHub 开源，更多详情可参见[GitHub](https://github.com/yunify/qsftpd)。
 
@@ -27,8 +27,6 @@ qsftpd 已在 GitHub 开源，更多详情可参见[GitHub](https://github.com/y
 控制台---个人信息---api密钥，点击创建，提交，然后下载到本地，注意：此链接仅能下载一次。
 
 配额不够可以开工单申请。
-
-![](../../_images/qsftpd_use/qsftpd_use2.png)
 
 ### 3) 下载安装
 

@@ -3,7 +3,7 @@ title: "提升资源配额"
 description: test
 weight: 3
 draft: false
-keyword: 配额管理, 山河
+keyword: 配额管理, 山东省计算中心云平台
 
 ---
 
