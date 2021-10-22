@@ -6,7 +6,7 @@ draft: false
 
 
 
-qingcloud-cli 是管理青云资源的命令行接口 (_Command Line Interface_)， 可以通过它对资源进行查看、创建和操作。目前支持 Linux, Mac 及 Windows。 当前最新版本是 1.0.1
+qingcloud-cli 是管理山东省计算中心云平台资源的命令行接口 (_Command Line Interface_)， 可以通过它对资源进行查看、创建和操作。目前支持 Linux, Mac 及 Windows。 当前最新版本是 1.0.1。
 
 警告
 
