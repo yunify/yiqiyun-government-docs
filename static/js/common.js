@@ -28,6 +28,18 @@ function download_pdf(url='',pdf_name=''){
 	window.location.href='/download.php?url='+url+'&pdf_name='+pdf_name;
 }
 
+// 导出所有的pdf
+function download_all_pdf(name='') {
+	var url = 'pdf/'+window.location.pathname;
+
+	// 查找标题
+	if (name == '') {
+		name = $('.td-main h1.title').html();
+	}
+
+	window.location.href="/download.php?&type=all&url="+url + '&pdf_name='+name;
+}
+
 $(function(){
 	//查看链接结尾是否/结尾
 	$('a').each(function(){
@@ -40,12 +52,18 @@ $(function(){
 			var start = url.length-1;
 			var last = url.substr(start,1);
 			if(last != '/'){
-				$(this).attr('href',url+'/');
+				//只有青云的链接才加
+				if(url.indexOf('http') == '-1' || url.indexOf('docsv3.qingcloud') != '-1'){
+					$(this).attr('href',url+'/');
+				}
 			}
 		}
 		var reg = new RegExp(/.+#/);
 		if(url != null && url != '' && url != 'undefined' && url.indexOf('#') != '-1' && url.indexOf('/#') == '-1' && reg.test(url)){
-			$(this).attr('href',url.replace('#','/#'));
+			//只有青云的链接才加
+			if(url.indexOf('http') == '-1' || url.indexOf('docsv3.qingcloud') != '-1'){
+				$(this).attr('href',url.replace('#','/#'));
+			}
 		}
 
 		//判断是否是外链 外链需在父页面打开
@@ -56,6 +74,12 @@ $(function(){
 			}
 		}
 	});
+
+	var current_url = window.location.href;
+	if(current_url.indexOf('docsv3.qingcloud') != '-1'){
+		$('.pdf-all-download-btn').hide();
+	}
+
 
 	$('.product-learn-icon').click(function(){
 		if($(this).attr('src')=='/images/icons/caret-down.svg'){
@@ -89,8 +113,21 @@ $(function(){
 	if(max_width>1024){
 		$(window).scroll(funScroll);
 	}
+
 })
 
+function getQueryData() {
+  var url = location.search
+  var theRequest = new Object()
+  if (url.indexOf("?") != -1) {
+    var str = url.substr(1)
+    params = str.split("&")
+    for(var i = 0; i < params.length; i ++) {
+      theRequest[params[i].split("=")[0]]=decodeURI(params[i].split("=")[1])
+    }
+  }
+  return theRequest;
+}
 
 //滚动事件方法
 function funScroll() {

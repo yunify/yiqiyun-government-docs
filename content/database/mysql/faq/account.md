@@ -1,5 +1,5 @@
 ---
-title: "用户账号"
+title: "数据库用户账号"
 description: 本小节主要介绍 MySQL Plus 用户账号常见问题。 
 keywords: mysql plus 用户账号问题
 weight: 20

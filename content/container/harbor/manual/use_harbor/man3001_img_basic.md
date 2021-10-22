@@ -9,7 +9,7 @@ weight: 1
 
 ## 前提条件
 
-- 已安装 Docker。具体操作，请参见[安装Docker](https://docs.docker.com/get-docker/)。
+- 已安装 Docker。具体操作，请参见官方文档：https://docs.docker.com/get-docker/。
 
 > 说明：
 >

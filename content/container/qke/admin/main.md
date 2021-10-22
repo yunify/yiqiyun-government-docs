@@ -84,7 +84,7 @@ k8s 集群使用 etcd 作为后端存储，建议使用 [etcd 服务](/middware/
 
 > **说明**：
 >
-> etcd 集群和 YKE 集群需部署在同一 VPC 或基础网络下。更多详情可参考 k8s 官方文档 [Options for Highly Available topology](https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology)。
+> etcd 集群和 YKE 集群需部署在同一 VPC 或基础网络下。更多详情可参考 k8s 官方文档 **Options for Highly Available topology**：https://kubernetes.io/docs/setup/production-environment/tools/kubeadm/ha-topology。
 
 如果创建 YKE 集群时没有选择独立的 etcd 服务，系统将使用内置在主节点的 etcd。
 
@@ -94,7 +94,7 @@ k8s 集群使用 etcd 作为后端存储，建议使用 [etcd 服务](/middware/
 
 ##### ELK 服务
 
-YKE 集群的日志组件使用 [Elasticsearch](https://github.com/elastic/elasticsearch) 作为后端存储，建议使用 [ELK 服务](/bigdata/elk/)单独部署和管理，以获得更好的可用性和可维护性。
+YKE 集群的日志组件使用 Elasticsearch 作为后端存储，建议使用 [ELK 服务](/bigdata/elk/)单独部署和管理，以获得更好的可用性和可维护性。
 
 > **说明**：
 >

@@ -1,10 +1,8 @@
 ---
-title: "安装青云SDK"
+title: "安装山东省计算中心云平台 SDK"
 description: test
 draft: false
 ---
-
-
 
 可使用 pip 安装:
 

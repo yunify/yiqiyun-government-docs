@@ -10,7 +10,7 @@ draft: false
 
 
 
-MySQL Plus 支持开启 SSL 传输加密服务，更多详细介绍可参考 [MySQL SSL](https://dev.mysql.com/doc/refman/5.7/en/creating-ssl-rsa-files.html)。
+MySQL Plus 支持开启 SSL 传输加密服务，更多详细介绍可参考 MySQL SSL (https://dev.mysql.com/doc/refman/5.7/en/creating-ssl-rsa-files.html)。
 
 > **注意**
 > 

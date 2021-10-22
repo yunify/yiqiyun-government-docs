@@ -32,7 +32,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=DeleteServerCertificates
 &server_certificates.1=sc-1234abcd
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

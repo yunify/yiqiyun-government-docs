@@ -39,7 +39,7 @@ https://api.qingcloud.com/iaas/?action=JoinBorder
 &vxnets.1=vxnet-gonkgpv
 &border_private_ips.0.vxnet_id=vxnet-gonkgpv
 &border_private_ips.0.border_private_ip=192.168.0.254
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

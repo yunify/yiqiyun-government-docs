@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-文档数据库 MongoDB 通过使用 `mongodb-org-tools` 中的工具 [mongodump](https://docs.mongodb.com/manual/reference/program/mongodump/) 和 [mongorestore](https://docs.mongodb.com/manual/reference/program/mongorestore/)，实现 MongoDB 数据的导出和导入。
+文档数据库 MongoDB 通过使用官方工具包 `mongodb-org-tools` 中的工具 `mongodump` (安装及使用方法参考：https://docs.mongodb.com/manual/reference/program/mongodump/) 和 `mongorestore` (安装及使用方法参考：https://docs.mongodb.com/manual/reference/program/mongorestore/)，实现 MongoDB 数据的导出和导入。
 
 - 使用 `mongodump` 工具可以将文档数据库 MongoDB 中的数据导出。
 - 使用 `mongorestore` 工具可以将 `mongodump` 导出的数据导入到文档数据库 MongoDB 中。

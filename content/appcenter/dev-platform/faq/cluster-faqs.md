@@ -15,15 +15,15 @@ weight: 1
 解压后运行 ./install.sh (Windows 下双击 install.bat)。    
 
 此 agent 中包含了自动配置文件程序 confd，该程序是在开源 confd 的基础上修改了一些 bug 并且增加了一些算术功能，
-详情见 [yiqiyun confd](https://github.com/yunify/confd/)。  
+详情见 [yiqiyun confd] (链接请参见：https://github.com/yunify/confd/)。  
 
 > 注意：
 >
-> 具体配置请参考文档 [制作 KVM 镜像](/appcenter/dev-platform/cluster-developer-guide/image-build/build/#制作-kvm-镜像)  
+> 具体配置请参考文档 [制作 KVM 镜像](/appcenter/dev-platform/cluster-developer-guide/image-build/build/#制作-kvm-镜像)。
 
 ### 2. 如何创建 toml 和 tmpl 的模板文件？  
 
-具体配置请参考文档 [制作 KVM 镜像](/appcenter/dev-platform/cluster-developer-guide/image-build/build/#制作-kvm-镜像)
+具体配置请参考文档 [制作 KVM 镜像](/appcenter/dev-platform/cluster-developer-guide/image-build/build/#制作-kvm-镜像)。
 
 **关键字**： 创建模板文件
 
@@ -45,7 +45,7 @@ curl http://[IP]/self
 curl http://metadata/self
 ```
 
->具体配置请参考文档 [Metadata 服务](/appcenter/dev-platform/cluster-developer-guide/metadata/metadata-service)
+>具体配置请参考文档 [Metadata 服务](/appcenter/dev-platform/cluster-developer-guide/metadata/metadata-service)。
 
 ### 4. 如何查看日志？  
 
@@ -126,9 +126,12 @@ init脚本在创建集群的时候调用，并且只在创建集群的时候调�
 ```
 
 如何检查数据持久化是否配置成功？  
+
 关闭集群，再启动集群，打开应用实例查看数据是否还在。
 
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications) 关键字：init
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications) 
+
+**关键字：init**
 
 ### 6. 如何写健康检查的配置和脚本？  
 
@@ -155,7 +158,7 @@ init脚本在创建集群的时候调用，并且只在创建集群的时候调�
 > check_cmd 的内容为根据你的应用自己编写的脚本，appcenter 会根据 exit code 判断是否健康，
 exit code 为 0 则健康，非 0 则不健康。action_cmd 的内容为在服务不健康的情况下需要做的动作。
 
-具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：health_check
 
@@ -196,7 +199,7 @@ exit code 为 0 则健康，非 0 则不健康。action_cmd 的内容为在服�
 ![faq_monitor.png](/appcenter/dev-platform/cluster-images/faq_monitor.png)
 >cmd的内容为根据你的应用自己编写的脚本，其返回结果是特定格式的json。
 
-具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：monitor
 
@@ -230,7 +233,7 @@ exit code 为 0 则健康，非 0 则不健康。action_cmd 的内容为在服�
 ![faq_customservice.png](/appcenter/dev-platform/cluster-images/faq_customservice.png)
 > cmd 的内容为根据你的应用自己编写的脚本，自定义服务的内容。
 
-具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**："type": "custom"
 
@@ -295,7 +298,7 @@ curl http://metadata/self/cluster/endpoints/reserved_ips/vip/value
 
 如果配置了此参数，在控制台集群列表的`配置参数`tab页可以查看具体配置信息。
 ![faq_params.png](/appcenter/dev-platform/cluster-images/faq_params.png)
->角色节点级别的示例和具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>角色节点级别的示例和具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：env
 
@@ -327,7 +330,8 @@ curl http://metadata/self/cluster/endpoints/reserved_ips/vip/value
 
 如果配置了此参数，输入非法数据，在提交创建应用的时候会提示错误信息。
 ![faq_pattern.png](/appcenter/dev-platform/cluster-images/faq_pattern.png)
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：pattern
 
@@ -368,7 +372,7 @@ cmd内容为采集的数据需执行的命令，必填项。
 labels 表示表格第一行的标题，是个 list，最多可定义5列；    
 data标示表格里面每行数据，要求data是个list，list下是多个子list，最多255个。 
 其中每个子list标示一行数据，元素个数需和labels中一致。  
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：display_tabs
 
@@ -399,7 +403,7 @@ data标示表格里面每行数据，要求data是个list，list下是多个子l
 
 ![faq_vnc2.png](/appcenter/dev-platform/cluster-images/faq_vnc2.png)   
 
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：user_access
 
@@ -480,7 +484,7 @@ incremental_backup_supported
 }
 ```
 
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：backup_policy、backup、incremental_backup_supported
 
@@ -528,7 +532,7 @@ incremental_backup_supported
 * 新版本直接支持从旧版本无缝升级到新版本，在新版本的镜像中同时安装新旧2个版本，在 upgrade 的 cmd 编写脚本，
 将数据从旧版本转换成新版本可直接读取的文件格式。  
 
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：upgrade_policy、upgrade  
 
@@ -548,7 +552,7 @@ incremental_backup_supported
 
 如果配置了此参数，在控制台上集群信息左侧会出现 VIP 的具体信息。   
 ![faq_vip.png](/appcenter/dev-platform/cluster-images/faq_vip.png)
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：reserved_ips		
 
@@ -581,7 +585,7 @@ incremental_backup_supported
 ```
 
 config.json 定义用户在 山东省计算中心云平台 控制台部署应用时需要填写的表单。
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：国际化		
 
@@ -633,7 +637,7 @@ config.json 定义用户在 山东省计算中心云平台 控制台部署应用
 其中 limits 参数的值为 app-id***: [app-version***]。若 version 列表为空，表示该应用所有版本均可支持。
 如果配置了此参数，在控制台上新建集群的时候会出现当前实例所在的私网下存在的所依赖的服务。   
 ![faq_depend.png](/appcenter/dev-platform/cluster-images/faq_depend.png)
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：links、limits
 
@@ -700,7 +704,7 @@ config.json 定义用户在 山东省计算中心云平台 控制台部署应用
 
 如果配置了此参数，在控制台上集群节点列表上会出现新增节点的按钮。
 ![faq_scale.png](/appcenter/dev-platform/cluster-images/faq_scale.png)
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：advanced_actions、scale_horizontal、scale_out、scale_in
 
@@ -722,7 +726,7 @@ config.json 定义用户在 山东省计算中心云平台 控制台部署应用
 
 如果配置了此参数，在控制台上集群列表选中集群右键会出现切换私有网络菜单。
 ![faq_vxnet.png](/appcenter/dev-platform/cluster-images/faq_vxnet.png)
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：advanced_actions、change_vxnet
 
@@ -744,7 +748,7 @@ config.json 定义用户在 山东省计算中心云平台 控制台部署应用
 }
 ```
 
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：advanced_actions、associate_eip
 
@@ -752,7 +756,7 @@ config.json 定义用户在 山东省计算中心云平台 控制台部署应用
 
 在配置依赖服务的时候，配置参数需要知道所依赖的服务的 AppID 和 AppVersionID。     
 
-在[AppCenter应用开发](https://appcenter.山东省计算中心云平台.com/apps/)搜索找到你需要的应用，打开可以看到相关信息。  
+在[AppCenter应用开发](http://appcenter.yiqiyun.sd.cegn.cn/apps/)搜索找到你需要的应用，打开可以看到相关信息。  
 
 ![faq_appid.png](/appcenter/dev-platform/cluster-images/faq_appid.png)
 
@@ -825,7 +829,7 @@ split的用法
 {{index $replicaIPs 0}}.{{index $replicaIPs 1}}.{{index $replicaIPs 2}}.0/24
 ```
 
-更多 template 的函数使用示例请参考[yunify/confd](https://github.com/yunify/confd/blob/master/docs/templates.md) 	
+更多 template 的函数使用示例请参考[yunify/confd] (链接请参见：https://github.com/yunify/confd/blob/master/docs/templates.md) 。
 
 ### 26. confd 日志显示 key 找不到的错误信息
 
@@ -838,7 +842,8 @@ split的用法
 
 ### 27. 上传配置包时报错：配置验证失败,报[config.json] Not valid json错误？
 
-需要检查 config.json 文本内容，是否有中文符号或其他不符合 json 格式的部分，可以通过在线工具验证合法性，比如 [jsonlint](http://jsonlint.com/)。   
+需要检查 config.json 文本内容，是否有中文符号或其他不符合 json 格式的部分，可以通过在线工具验证合法性，比如 [jsonlint] (链接请参见：http://jsonlint.com/)。   
+
 同时配置包中文件不支持 "UTF-8 Unicode (with BOM) text" 文本格式，windows下的编辑器编辑文件默认是此格式也会报此错误，
 可通过 "格式-> 以utf-8无BOM格式编码" 进行转换。
 
@@ -887,7 +892,7 @@ cd /tmp
 
 ### 31. 使用说明和服务条款的 Markdown 语法说明
 
-- 支持标准的 [Markdown 语法](https://www.appinn.com/markdown/)，同时你也可以直接使用 HTML 代码
+- 支持标准的 [Markdown 语法] (链接请参见：https://www.appinn.com/markdown/)，同时你也可以直接使用 HTML 代码
 - Markdown 转换后的内容是没有样式，如果你想再添加样式，可以将下面的 HTML 代码添加到你输入的内容之前：
 
  ```html
@@ -1114,14 +1119,13 @@ curl http://metadata/self/env/access_key/secret_access_key
 }
 ```
 
-当 s3_type 值为 none 时，access_key、s3_access_key 和 s3_secret_key 都不显示
+当 s3_type 值为 none 时，access_key、s3_access_key 和 s3_secret_key 都不显示。
 ![s3_type_none.png](/appcenter/dev-platform/cluster-images/s3_type_none.png)
 
-当 s3_type 值为 minio 时，s3_access_key 和 s3_secret_key 显示，access_key 不显示
+当 s3_type 值为 minio 时，s3_access_key 和 s3_secret_key 显示，access_key 不显示。
 ![s3_type_minio.png](/appcenter/dev-platform/cluster-images/s3_type_minio.png)
 
-当 s3_type 值为 对象存储服务OIS 时，access_key 显示，s3_access_key 和 s3_secret_key 都不显示
-![s3_type_对象存储服务OIS.png](/appcenter/dev-platform/cluster-images/s3_type_对象存储服务OIS.png)
+当 s3_type 值为 对象存储服务OIS 时，access_key 显示，s3_access_key 和 s3_secret_key 都不显示。
 
 ### 35. 如何定义原地升级方式？
 

@@ -26,7 +26,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| dns_alias_set | Array | JSON 格式的内网域名别名数据列表，每项数据可见下面 [ResponseItemType](#responseitemtype) |
+| dns_alias_set | Array | JSON 格式的内网域名别名数据列表，每项数据可见下述 **ResponseItemType** 部分 |
 | total_count | Integer | 根据过滤条件得到的内网域名别名总数 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
@@ -38,7 +38,7 @@ draft: false
 | dns_alias_id | String | 内网域名别名 ID |
 | resource_id | String | 内网域名别名关联的资源 ID |
 | dns_alias_name | String | 内网域名别名名称 |
-| create_time | TimeStamp | 创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
+| create_time | TimeStamp | 创建时间，为UTC时间，格式可参见 ISO8601 (访问地址：http://www.w3.org/TR/NOTE-datetime)。 |
 
 **Example**
 

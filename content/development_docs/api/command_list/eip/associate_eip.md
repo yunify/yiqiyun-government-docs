@@ -40,7 +40,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=AssociateEip
 &eip=eip-12djpg8q
 &instance=i-12345678,
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

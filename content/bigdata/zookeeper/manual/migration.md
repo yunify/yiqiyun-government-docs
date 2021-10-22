@@ -8,7 +8,7 @@ draft: false
 ---
 
 
-ZooKeeper 的数据可借助 [zkcopy](https://github.com/ksprojects/zkcopy)  在不同的 ZooKeeper 集群间进行迁移。
+ZooKeeper 的数据可借助 zkcopy (https://github.com/ksprojects/zkcopy)  在不同的 ZooKeeper 集群间进行迁移。
 
 本小节简要介绍如何将把 /zk-test 下的数据从源集群迁移到目标集群。
 

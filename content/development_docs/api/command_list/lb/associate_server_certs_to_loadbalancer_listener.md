@@ -33,7 +33,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=AssociateServerCertsToLBListener
 &server_certificates.1=sc-1234abcd
 &loadbalancer_listener=lbl-xsfe0u8d
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

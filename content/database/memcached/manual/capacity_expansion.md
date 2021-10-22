@@ -15,7 +15,7 @@ draft: false
 
 键值数据库 Memcached 支持多个缓存节点。当容量或者性能不足时，可以通过增加缓存节点来提升。 
 
-> 默认的 Memcached 客户端使用简单 Hash 来进行数据分片，当增加或删除节点时可能会造成大量的缓存失效。可以采用支持一致性 Hash 算法的 Memcached 客户端来避免这个问题，例如 [hash_ring](https://pypi.python.org/pypi/hash_ring)  客户端。
+> 默认的 Memcached 客户端使用简单 Hash 来进行数据分片，当增加或删除节点时可能会造成大量的缓存失效。可以采用支持一致性 Hash 算法的 Memcached 客户端来避免这个问题，例如 `hash_ring` (官网地址：https://pypi.python.org/pypi/hash_ring) 客户端。
 
 1. 在集群管理页面，点击集群 ID，进入集群详情页面。
 2. 在**节点**页签，点击**新增节点**。

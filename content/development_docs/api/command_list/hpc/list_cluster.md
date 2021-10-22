@@ -46,7 +46,7 @@ weight: 1
 _Example Request_:
 
 ```
-https://hpc.api.shanhe.com:443/api/cluster/list
+https://hpc.api.qingcloud.com:443/api/cluster/list
 ```
 
 _Example Response_:
@@ -84,9 +84,9 @@ mem_hours: 1.76339637934081
 
 nas_id: "2cgki7pe"
 
-nas_mount_point: "/public/shanhe/s0723"
+nas_mount_point: "/public/qingcloud/s0723"
 
-nas_path: "10.0.0.7@o2ib:/lustrefs/shanhe/s0723"
+nas_path: "10.0.0.7@o2ib:/lustrefs/qingcloud/s0723"
 
 nas_shared_path: "/s0723"
 

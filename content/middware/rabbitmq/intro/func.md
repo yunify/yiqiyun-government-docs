@@ -37,4 +37,4 @@ keyword: RabbitMQ，消息队列服务，HAProxy + Keepalived
 
 ## 插件支持
 
-磁盘节点支持消息延迟队列插件，[使用方法参考](https://github.com/rabbitmq/rabbitmq-delayed-message-exchange)；RabbitMQ 节点支持消息追踪插件，[使用方法参考](http://www.rabbitmq.com/firehose.html)。
+磁盘节点支持消息延迟队列插件，使用方法参考：https://github.com/rabbitmq/rabbitmq-delayed-message-exchange；RabbitMQ 节点支持消息追踪插件，使用方法参考：http://www.rabbitmq.com/firehose.html。

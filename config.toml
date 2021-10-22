@@ -1,5 +1,5 @@
 baseURL = "/"
-title = "shanhe Docs 2.0"
+title = "山东政务云 Docs"
 
 enableRobotsTXT = true
 
@@ -31,17 +31,12 @@ resampleFilter = "CatmullRom"
 quality = 75
 anchor = "smart"
 
-[services]
-[services.googleAnalytics]
-# Comment out the next line to disable GA tracking. Also disables the feature described in [params.ui.feedback].
-id = "UA-00000000-0"
-
 # Language configuration
 
 [languages]
 [languages.zh]
-title = "山河文档"
-description = "山河超算文档站点"
+title = "山东政务云 文档"
+description = "山东政务云 文档站点"
 languageName ="中文"
 contentDir = "content"
 # Weight used for sorting.
@@ -60,10 +55,6 @@ time_format_blog = "2020-12-01"
       unsafe = true
 
 # Everything below this are Site Params
-
-[params]
-copyright = "The Docsy Authors"
-privacy_policy = "https://policies.google.com/privacy"
 
 # First one is picked as the Twitter card image if not set on page.
 # images = ["images/project-illustration.png"]
@@ -87,9 +78,9 @@ version = "0.0"
 url_latest_version = "https://example.com"
 
 # Repository configuration (URLs for in-page links to opening issues and suggesting changes)
-github_repo = "https://github.com/yunify/shanhe-docs"
+github_repo = "https://github.com/yunify/yiqiyun-government-docs"
 # An optional link to a related project repo. For example, the sibling repository where your product code lives.
-github_project_repo = "https://github.com/yunify/shanhe-docs"
+github_project_repo = "https://github.com/yunify/yiqiyun-government-docs"
 
 # Specify a value here if your content directory is not in your repo's root directory
 # github_subdir = ""
@@ -102,6 +93,9 @@ algolia_docsearch = false
 
 # Enable Lunr.js offline search
 offlineSearch = false
+
+# Domain url
+domain = "http://docsv3.yiqiyun.sd.cegn.cn"
 
 # User interface configuration
 [params.ui]
@@ -166,3 +160,5 @@ enable = false
 	icon = "fa fa-envelope"
         desc = "Discuss development issues around the project"
 
+[outputs]
+  page = ["HTML", "JSON"]

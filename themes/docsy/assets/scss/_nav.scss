@@ -14,7 +14,7 @@
 }
 
 nav.navbar {
-    background-color: #052C5C;
+    background-color: rgba(48, 48, 58, .2);
     border-bottom: 1px solid rgba(255, 255, 255, .1);
     min-height: 25px;
 
@@ -50,6 +50,7 @@ nav.navbar {
 
 .navbar .field .button {
     height: 36px;
+    background-color: #01c1e2;
 }
 
 .navbar .field .button:hover {
@@ -564,7 +565,11 @@ nav.navbar {
         padding: 0;
         z-index: 1000;
         text-align: center;
-        background-color: #052C5C;
+        background-color: #06234a;
+        color: #fff;
+        background-size: contain;
+        background-position: top center;
+        background-repeat: no-repeat;
     }
     .nav-wrapper-index{
         background-color: transparent;
@@ -1117,7 +1122,7 @@ nav.navbar {
         display: inline-block;
     }
 
-    .navmenu .menu-logo .shanhe-logo {
+    .navmenu .menu-logo .qingcloud-logo {
         width: 93px;
         height: 29px;
         background: url(/static/assets/images/menu/qing-cloud.svg?v=2) left center no-repeat;

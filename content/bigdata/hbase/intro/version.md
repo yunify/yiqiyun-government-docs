@@ -9,8 +9,8 @@ draft: false
 
 大数据服务 HBase 包含 HBase 数据库服务、HDFS 分布式文件系统、Phoenix 查询引擎。压缩格式方面支持 GZIP、BZIP2、LZO、SNAPPY。
 
-- 关于 HBase 更多的详细信息，可参阅 [HBase 官方文档](http://hbase.apache.org/book.html)。
-- 关于 Phoenix 查询引擎的详细信息，可参阅 [Phoenix 官方网站](http://phoenix.apache.org/)。
+- 关于 HBase 更多的详细信息，可参阅 HBase 官方文档(http://hbase.apache.org/book.html)。
+- 关于 Phoenix 查询引擎的详细信息，可参阅 Phoenix 官方网站(http://phoenix.apache.org/)。
 
 当前支持的组件及版本如下：
 

@@ -15,7 +15,7 @@ draft: false
 
 `MongoDB v3.0.15 (MMAPv1)` 单节点不允许升级，如果您点了升级，不用担心，升级失败后您可以关闭集群然后选择**版本回退**。
 
-由于 3.6 以上的版本不再支持对名字为 `*` 的索引的操作，所以您需要在升级前将名字为 `*` 的索引删除或者重命名，详情见 [Compatibility Changes in MongoDB 3.6](https://docs.mongodb.com/manual/release-notes/3.6-compatibility/#general-compatibility-changes) 。
+由于 3.6 以上的版本不再支持对名字为 `*` 的索引的操作，所以您需要在升级前将名字为 `*` 的索引删除或者重命名，详情见 **Compatibility Changes in MongoDB 3.6** (访问地址：https://docs.mongodb.com/manual/release-notes/3.6-compatibility/#general-compatibility-changes) 。
 
 升级集群期间，客户端无法连接 mongo 服务，为了避免客户端的操作影响到升级的过程，在这期间禁掉了客户端对 mongo 服务的访问。 
 

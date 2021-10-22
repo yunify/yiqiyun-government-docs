@@ -34,7 +34,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=LeaveRouter
 &vxnets.1=vxnet-rzg2llb
 &router=rtr-9iy0lt3s
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

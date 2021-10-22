@@ -3,7 +3,7 @@ title: "更改云服务器类型"
 date: 2020-02-12T21:08:00+09:00
 description: Test description
 weight: 20
-draft: false
+draft: true
 enableToc: false
 ---
 

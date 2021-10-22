@@ -14,7 +14,7 @@ PVC 是一种 k8s 中比较常见的持久化存储方案，其后端一般是�
 
 在学习 Kubernetes 的持久化存储体系之前，以下几个概念需要先了解一下
 
-- Volume（卷） 所谓容器的 Volume，其实就是将一个宿主机上的目录，跟一个容器里的目录绑定挂载在了一起。在k8s中卷的类型有很多，不同类型的卷的功能都不一样，具体可以参照文档：[Kubernetes Volume _ Kubernetes(K8S)中文文档_Kubernetes中文社区](http://docs.kubernetes.org.cn/429.html#i)
+- Volume（卷） 所谓容器的 Volume，其实就是将一个宿主机上的目录，跟一个容器里的目录绑定挂载在了一起。在k8s中卷的类型有很多，不同类型的卷的功能都不一样，具体可以参照k8s文档 **Kubernetes Volume**：http://docs.kubernetes.org.cn/429.html#i。
 - PV  描述的是持久化存储数据卷。所谓的“持久化 Volume”，指的就是这个宿主机上的目录，具备“持久性”。即：这个目录里面的内容，既不会因为容器的删除而被清理掉，也不会跟当前的宿主机绑定。
 - PVC 描述的则是 Pod 所希望使用的持久化存储的属性，比如，Volume 存储的大小、可读写权限等等。
 - StorageClass 对象的作用其实就是创建 PV 的模板。

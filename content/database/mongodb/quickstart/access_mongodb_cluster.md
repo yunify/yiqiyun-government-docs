@@ -13,7 +13,7 @@ draft: false
 
 ## 通过 mongo 客户端连接
 
-MongoDB 集群实例创建完成之后可以进行连接测试，下载并安装 [mongodb-org-shell](https://docs.mongodb.com/manual/administration/install-on-linux/ )。
+MongoDB 集群实例创建完成之后可以进行连接测试，下载并安装 `mongodb-org-shell`(下载地址：https://docs.mongodb.com/manual/administration/install-on-linux/ )。
 
 在 MongoDB 实例同一私有网络或跨网络的客户端上测试。现假设客户端和 MongoDB 实例在同一私有网络，MongoDB 集群有三个节点，IP 地址分别为`192.168.0.23,192.168.0.24,192.168.0.27`， 创建的用户名为`qc_test`，密码为`Pwd00000`，可以通过如下命令连接 MongoDB。
 
@@ -53,7 +53,7 @@ db.createUser({ user: "test_user1", pwd: "Pwd00001", roles: [ "readWrite" ]});
 mongo mongodb://test_user1:Pwd00001@192.168.0.23,192.168.0.24,192.168.0.27/db1?replicaSet=foobar
 ```
 
-更多权限管理说明，请参见[Enable Access Control](https://docs.mongodb.com/manual/tutorial/enable-authentication/)。
+更多权限管理说明，请参见官方文档的 “Enable Access Control” 章节 (参考地址：https://docs.mongodb.com/manual/tutorial/enable-authentication/)。
 
 ## 通过代码连接
 
@@ -68,4 +68,4 @@ mongo mongodb://test_user1:Pwd00001@192.168.0.23,192.168.0.24,192.168.0.27/db1?r
 - replicaSet=foobar 是默认 **replicaSet** 配置，值为 `foobar`。
 - authSource=admin 是指定验证数据库为 `admin`。
   
-更多参数说明，请参见[Connection String URI Format](https://docs.mongodb.com/manual/reference/connection-string/)。
+更多参数说明，请参见官方文档 “Connection String URI Format” 章节 (参考地址：https://docs.mongodb.com/manual/reference/connection-string/)。

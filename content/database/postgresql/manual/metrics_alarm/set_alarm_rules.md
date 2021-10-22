@@ -88,4 +88,4 @@ PostgreSQL 支持对每个缓存节点配置指标告警策略。当业务发生
 
    > **说明**
    >
-   > 更多告警策略管理说明，请参见**云监控 CloudSat** [告警服务](../../../../../monitor_service/cloudsat/manual/alarm_service)。
+   > 更多告警策略管理说明，请参见**云监控 CloudSat** 告警服务。

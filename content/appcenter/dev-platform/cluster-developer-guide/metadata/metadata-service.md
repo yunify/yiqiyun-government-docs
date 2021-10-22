@@ -8,8 +8,9 @@ weight: 4
 
 ## 基本信息
 
-山东省计算中心云平台 AppCenter 的 metadata service 是在存储服务存储服务存储服务etcd 基础之上进行了二次开发，主要增加了 self 属性，即每个节点只能从该服务获取到自身相关的信息，如本机 IP、server ID 等，
-此项目已在 [github](https://github.com/yunify/metad) 上开源。
+山东省计算中心云平台 AppCenter 的 metadata service 是在存储服务存储服务存储服务etcd 基础之上进行了二次开发，主要增加了 self 属性，即每个节点只能从该服务获取到自身相关的信息，如本机 IP、server ID 等。
+
+此项目已在 [github]（链接请参见：https://github.com/yunify/metad) 上开源。
 
 ## 元数据结构
 每个应用集群在 metadata server 中存储元信息如下结构：

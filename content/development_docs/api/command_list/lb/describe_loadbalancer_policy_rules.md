@@ -27,7 +27,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| loadbalancer_policy_rule_set | Array | JSON 格式的转发策略规则数据列表, 每项参数可见下面 [Response Item](#response-item) |
+| loadbalancer_policy_rule_set | Array | JSON 格式的转发策略规则数据列表, 每项参数可见下述 **Response Item** 部分|
 | total_count | Integer | 根据过滤条件得到的转发策略规则总数 |
 
 **Response Item**

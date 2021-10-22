@@ -8,8 +8,8 @@ type: "product"
 Section2:
   title: CLI文档
   children:
-    - title: 安装青云CLI
-      content: 通过pip安装青云CLI。
+    - title: 安装山东省计算中心云平台 CLI
+      content: 通过 pip 安装山东省计算中心云平台 CLI。
       url: "install/install/"
 
     - title: 操作指南
