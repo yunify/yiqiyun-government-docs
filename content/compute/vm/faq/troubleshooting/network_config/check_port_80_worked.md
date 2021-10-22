@@ -12,8 +12,6 @@ enableToc: false
 
 本文主要介绍在不同操作系统中检查TCP 80端口是否正常工作的方法。
 
->以下文档是基于用户已经在青云完成备案操作，关于未完成备案导致80端口无法访问，可以查看文档[为什么80端口被禁用](https://docsv3.qingcloud.com/compute/vm/faq/high_requency_problem/port_80_disabled/)
-
 ## 排查思路
 
 如果云服务器无法对外提供HTTP服务，可以按以下思路检查Web服务的端口（默认为80端口）是否正常工作。
