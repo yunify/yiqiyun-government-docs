@@ -10,7 +10,7 @@ collapsible: false
 
 ## API 密钥签名
 
-您需要先在控制台创建[API密钥](http://console.yiqiyun.sd.cegn.cn/access_keys/)，获得 accesss_key_id 和 secret_access_key，这里我们假设
+您需要先在控制台创建 [API 密钥](http://console.yiqiyun.sd.cegn.cn/access_keys/)，获得 accesss_key_id 和 secret_access_key，这里我们假设
 
 ```
 access_key_id = 'QYACCESSKEYIDEXAMPLE'
@@ -124,7 +124,7 @@ GET\n/iaas/\naccess_key_id=QYACCESSKEYIDEXAMPLE&action=RunInstances&count=1&imag
 
 计算被签名串的签名 signature。
 
-*   将API密钥的私钥 ( secret_access_key ) 作为key，生成被签名串的 HMAC-SHA256 或者 HMAC-SHA1 签名，更多信息可参见 [RFC2104](http://www.ietf.org/rfc/rfc2104.txt)
+*   将API密钥的私钥 ( secret_access_key ) 作为key，生成被签名串的 HMAC-SHA256 或者 HMAC-SHA1 签名，更多信息可参见 [RFC2104] (链接请参见：http://www.ietf.org/rfc/rfc2104.txt)
 
 *   将签名进行 Base64 编码
 
