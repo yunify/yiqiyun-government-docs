@@ -13,7 +13,7 @@ draft: false
 
 1. 在集群列表页面的 Logstash 节点上点击节点 ID 右侧的显示器图标，打开 Web 终端。输入默认用户名 `ubuntu`、密码 `p12cHANgepwD`，进入 shell。
 
-2. 用如下命令创建自定义插件，其中 `filter` 可替换为您想要定制的插件的类型，类型包括 `{input, filter, codec, output}` ，`abcd` 可替换为您要开发的插件的名称，更多详情请参考 [官方文档](https://www.elastic.co/guide/en/logstash/6.7/contributing-to-logstash.html)：
+2. 用如下命令创建自定义插件，其中 `filter` 可替换为您想要定制的插件的类型，类型包括 `{input, filter, codec, output}` ，`abcd` 可替换为您要开发的插件的名称，更多详情请参考 https://www.elastic.co/guide/en/logstash/6.7/contributing-to-logstash.html。
 
    ```bash
    /usr/share/logstash/bin/logstash-plugin generate --type filter --name abcd --path /data/logstash/plugins
@@ -31,12 +31,12 @@ draft: false
 
 5. 重启 Logstash 节点：在集群列表页面右键点击您的ELK集群，点击重启，选择 Logstash 节点，点击提交，此时 Logstash 节点将会重启。
 
-6. 参考 [Logstash 基本用法](#ls-intro) 发送一条数据：
+6. 参考 [Logstash 基本用法] 发送一条数据：
 
    ```bash
    curl -d "shanhe" $LS_IP:9700
    ```
 
-   参照 [Kibana 基本用法](#kibana-intro) 在浏览器打开 Kibana 并进行必要配置，点击左侧的 Discover 菜单项，显示近期接收到的日志，如图，示例中的 `logstash_filter_abcd` 成功将原消息中的 `shanhe` 替换为了 `Hello World!` ，说明插件配置生效。
+   参照 [Kibana 基本用法] 在浏览器打开 Kibana 并进行必要配置，点击左侧的 Discover 菜单项，显示近期接收到的日志，如图，示例中的 `logstash_filter_abcd` 成功将原消息中的 `shanhe` 替换为了 `Hello World!` ，说明插件配置生效。
 
    ![log_display](../../_images/log_display.png)

@@ -32,7 +32,7 @@ Elasticsearch 节点可提供远程扩展字典及热更新，Logstash 节点提
 
 ## 节点使用方法
 
-ELK 提供的是 HTTP RESTful 接口，可以使用很多兼容的工具进行交互。为了方便理解，下文将交叉使用 [Kibana Console 语法](https://www.elastic.co/guide/en/kibana/current/console-kibana.html#console-api) 和 `curl` 语法来演示与 ELK 的交互，比如下面两段请求是等价的：
+ELK 提供的是 HTTP RESTful 接口，可以使用很多兼容的工具进行交互。为了方便理解，下文将交叉使用 Kibana Console 语法(https://www.elastic.co/guide/en/kibana/current/console-kibana.html#console-api) 和 `curl` 语法来演示与 ELK 的交互，比如下面两段请求是等价的：
 
 Kibana Console 语法（可通过 Kibana 的 Dev Tools 直接执行）：
 
@@ -78,7 +78,7 @@ Elasticsearch 用索引（index）来组织数据，用户向 Elasticsearch 发�
 
 > **说明**：
 >
-> Elasticsearch 从 6.x 版本起，新创建的 index 不再支持多 mapping types（在老版本创建的可以在 6.x 版本继续使用），官方建议使用 `_doc` 作为唯一的 mapping type，更多详情请查阅 [官方说明](https://www.elastic.co/guide/en/elasticsearch/reference/6.7/removal-of-types.html)；如果是 5.x 版本，mapping type 不能以下划线开头，需要把下面的 `_doc` 改成 `doc` 或者其他任意名称。
+> Elasticsearch 从 6.x 版本起，新创建的 index 不再支持多 mapping types（在老版本创建的可以在 6.x 版本继续使用），官方建议使用 `_doc` 作为唯一的 mapping type，更多详情请查阅 https://www.elastic.co/guide/en/elasticsearch/reference/6.7/removal-of-types.html；如果是 5.x 版本，mapping type 不能以下划线开头，需要把下面的 `_doc` 改成 `doc` 或者其他任意名称。
 
 ```
 POST access-log-2019.05.13/_doc
@@ -114,7 +114,7 @@ Kibana 是 Elasticsearch 的可视化工具，可通过浏览器访问。在浏�
 
 > **说明**：
 >
-> 如果显示 "Unable to fetch mapping. Do you have indices matching the pattern?"，可参考 [Logstash 基本用法](#ls-intro) 发送一些数据。
+> 如果显示 "Unable to fetch mapping. Do you have indices matching the pattern?"，可参考 [Logstash 基本用法] 发送一些数据。
 
 ![config_index](../../_images/config_index.png)
 
@@ -124,5 +124,5 @@ index pattern 创建成功后可点击左侧栏的 `Discover` 菜单查看导入
 
 > **说明**：
 >
-> 关于 Kibana 更多的使用方式，请参考[官方文档](https://www.elastic.co/guide/en/kibana/6.7/index.html)。
+> 关于 Kibana 更多的使用方式，请参考https://www.elastic.co/guide/en/kibana/6.7/index.html。
 
