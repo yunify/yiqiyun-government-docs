@@ -1,5 +1,5 @@
 ---
-title: "监控"
+title: "数据库监控"
 description: 本小节主要介绍 MySQL Plus 监控常见问题。 
 keywords: mysql plus 监控问题
 weight: 25

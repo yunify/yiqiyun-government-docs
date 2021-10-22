@@ -19,7 +19,7 @@ draft: false
 
    > **说明**：
    >
-   > 详细的 synonym.txt 文件配置说明请参考 [官方文档](https://www.elastic.co/guide/en/elasticsearch/reference/6.7/analysis-synonym-tokenfilter.html)。
+   > 详细的 synonym.txt 文件配置说明请参考 https://www.elastic.co/guide/en/elasticsearch/reference/6.7/analysis-synonym-tokenfilter.html。
    
 2. 通过如下命令在 **所有** Elasticsearch 节点和 Elasticsearch 专有主节点上传词典：
 

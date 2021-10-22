@@ -40,4 +40,4 @@ draft: false
 - topology.eventlogger.executors: Event Logger 的进程个数
 - topology.acker.executors: Acker 的进程个数
 
-配置项的详细解释请参见 [Storm 官方文档](https://storm.apache.org/releases/)。
+配置项的详细解释请参见 Storm 官方文档(https://storm.apache.org/releases/)。

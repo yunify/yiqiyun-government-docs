@@ -13,7 +13,7 @@ draft: false
 
 > **说明**
 > 
-> 更多配置参数说明，请参见 [HBase 官方配置文件](http://hbase.apache.org/book.html#config.files)
+> 更多配置参数说明，请参见 HBase 官方配置文件(http://hbase.apache.org/book.html#config.files)
 
 本小节主要介绍 AppCenter 中各 HBase 配置参数的含义。
 

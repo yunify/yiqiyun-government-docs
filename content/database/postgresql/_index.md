@@ -21,10 +21,6 @@ Section2:
       content: 产品简介
       url: "intro/introduction/"
 
-    - title: 计费指南
-      content: 计费指南
-      url: "billing/price/"
-
     - title: 快速入门
       content: 快速入门
       url: "quickstart/create_cluster/"
