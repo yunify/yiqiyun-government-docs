@@ -35,7 +35,7 @@ MySQL Plus 的 MySQL 版本为 8.0.19 、5.7.29 、5.6.42，且开启了 GTID �
 mysqldump --all-databases --single-transaction --triggers --routines --events  --host=192.168.0.100 --port=3306 --user=mysql_dev -p --ignore-table=mysql.user --ignore-table=mysql.db --ignore-table=mysql.tables_priv --set-gtid-purged=OFF > dump.sql
 ```
 
-也可选择导出数据库部分数据，详细命令说明请参考 [mysqldump](https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html)。
+也可选择导出数据库部分数据，详细命令说明请参考 mysqldump (https://dev.mysql.com/doc/refman/5.7/en/mysqldump.html)。
 
 ## 步骤二：数据导入
 

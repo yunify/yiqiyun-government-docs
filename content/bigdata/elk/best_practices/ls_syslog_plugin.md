@@ -11,7 +11,7 @@ Logstash 预置了 logstash-input-syslog 插件，通过此插件可在 Logstash
 
 > **说明**：
 >
-> 更多的预置 Logstash 插件请参见 [Logstash 预置插件列表](#logstash-plugins)。
+> 更多的预置 Logstash 插件请参见 [Logstash 预置插件列表]。
 
 ## 操作步骤
 
@@ -25,7 +25,7 @@ Logstash 预置了 logstash-input-syslog 插件，通过此插件可在 Logstash
    >
    > 请注意不要使用 22、80、9600 端口。
    >
-   > 请根据您的具体配置替换上面的配置，其他配置参数详情请参见[官方文档](https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-syslog.html)。
+   > 请根据您的具体配置替换上面的配置，其他配置参数详情请参见 https://www.elastic.co/guide/en/logstash/6.7/plugins-inputs-syslog.html。
 
 2. 重启 Logstash 节点：在集群列表页面右键点击您的ELK集群，点击重启，选择 Logstash 节点，点击提交，此时 Logstash 节点将会重启。
 

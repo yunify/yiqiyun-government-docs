@@ -16,7 +16,7 @@ draft: false
 
 - 已获取管理控制台登录账号和密码，且已获取集群操作权限。
 - 已创建 PostgreSQL 集群，且集群状态为**活跃**。
-- 已安装 Zabbix 客户端，并下载 [Zabbix Templates](https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/postgresql)。
+- 已安装 Zabbix 客户端，并下载 Zabbix Templates(https://git.zabbix.com/projects/ZBX/repos/zabbix/browse/templates/db/postgresql)。
 
 ## 启动 Zabbix 客户端服务
 

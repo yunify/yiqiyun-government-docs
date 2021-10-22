@@ -72,9 +72,9 @@ AppCenter 应用市场为用户提供了种类丰富的应用。用户可以通�
 
 ## 应用购买
 
-用户可在[应用管理平台](https://appcenter.shanhe.com/)的应用市场进行应用的购买，同时还可在[控制管理平台](https://console.shanhe.com/)的应用中心或者常用应用界面选择应用进行部署购买。
+用户可在[应用管理平台](http://appcenter.yiqiyun.sd.cegn.cn/)的应用市场进行应用的购买，同时还可在[控制管理平台](http://console.yiqiyun.sd.cegn.cn/)的应用中心或者常用应用界面选择应用进行部署购买。
 
-在[控制管理平台](https://console.shanhe.com/)的应用中心，可以选择应用进行部署购买。
+在[控制管理平台](http://console.yiqiyun.sd.cegn.cn/)的应用中心，可以选择应用进行部署购买。
 
 1. 进入AppCenter控制台的应用中心后，选择应用，点击**立即部署**，进入部署页面。
 

@@ -53,7 +53,7 @@ weight: 8
 
 |操作|API|说明|
 |--|--|--|
-|设置 Bucket Lifecycle|[PUT Bucket Lifecycle](/storage/object-storage/api/bucket/policy/put_lifecycle)|用于设置 Bucket 的生命周期规则|
-|获取 Bucket Lifecycle|[GET Bucket Lifecycle](/storage/object-storage/api/bucket/policy/put_lifecycle)|用于获取已设置的 Bucket 生命周期规则|
-|删除 Bucket Lifecycle|[DELETE Bucket Lifecycle](/storage/object-storage/api/bucket/policy/put_lifecycle)|用于删除已经设置的 Bucket 策略生命周期规则|
+|设置 Bucket Lifecycle|[PUT Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)|用于设置 Bucket 的生命周期规则|
+|获取 Bucket Lifecycle|[GET Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)|用于获取已设置的 Bucket 生命周期规则|
+|删除 Bucket Lifecycle|[DELETE Bucket Lifecycle](/storage/object-storage/api/bucket/lifecycle/put_lifecycle)|用于删除已经设置的 Bucket 策略生命周期规则|
 

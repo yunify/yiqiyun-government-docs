@@ -9,8 +9,8 @@ draft: false
 
 本小节主要介绍 Elasticsearch 集成插件列表。
 
-* [elasticsearch-analysis-ik](https://github.com/medcl/elasticsearch-analysis-ik)
-* [elasticsearch-analysis-pinyin](https://github.com/medcl/elasticsearch-analysis-pinyin) 
+* elasticsearch-analysis-ik https://github.com/medcl/elasticsearch-analysis-ik
+* elasticsearch-analysis-pinyin https://github.com/medcl/elasticsearch-analysis-pinyin
 * repository-s3
 * analysis-icu 
 * analysis-kuromoji 
