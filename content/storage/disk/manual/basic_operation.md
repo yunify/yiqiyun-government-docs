@@ -4,12 +4,12 @@ description: Test description
 draft: false
 enableToc: false
 weight: 10
-keyword: 山河，硬盘
+keyword: 硬盘
 ---
 
 **进入硬盘页面**
 
-1. 登录 [控制台](http://console.yiqiyun.sd.cegn.cn/login)。
+1. 登录管理控制台。
 2. 在控制台导航栏中，选择**产品与服务** > **存储服务** > **云硬盘**，进入**硬盘**页面。
 
 ## 创建硬盘
@@ -102,15 +102,6 @@ keyword: 山河，硬盘
 1. 在硬盘列表，右键单击需要删除的硬盘，选择**删除**。
 2. 在弹出的提示框中，单击**确认**。
 
-## 硬盘预留合约
-
-在硬盘列表，单击硬盘ID后的预留资源图标<img src="../_images/reserve_resource.png" alt="预留资源" style="zoom:50%;" />，进入硬盘绑定的预留合约详情页。
-
-![硬盘预留合约](../_images/disk_reserve_contract.png)
-
-- 在页面上方，可查看合约生命周期，以及进行合约的续订、退订、配置调整等操作。
-
-- 在页面下方的**预留资源**页签，可从合约中解绑现有硬盘资源或绑定其他硬盘资源。
 
   
 
