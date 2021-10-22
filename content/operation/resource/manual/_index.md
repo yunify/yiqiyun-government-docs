@@ -24,4 +24,4 @@ collapsible: true
 配额管理具体操作内容如下所示：
 
 - [查看我的配额](quota/view_quota)
-- [提升资源配额](
+- [提升资源配额](quota/apply_quota)
