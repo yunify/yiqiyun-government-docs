@@ -1,7 +1,7 @@
 ---
 title: "资源监控"
 description: 
-draft: true
+draft: false
 collapsible: true
 weight: 29
 ---
