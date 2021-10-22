@@ -67,14 +67,10 @@ section4:
       content: 公网 IP 的绑定模式分为两类：外部绑定与内部绑定。
       vice_title: 上手的第一步
       children:
-        - title: 外部绑定 IPv4 公网 IP
-          url: "manual/ipv4/outband_ipv4/" 
-        - title: 内部绑定 IPv4 公网 IP
-          url: "manual/ipv4/inband_ipv4/"  
-        - title: 外部绑定 IPv6 公网 IP
-          url: "manual/ipv6/outband_ipv6/"      
-        - title: 内部绑定 IPv6 公网 IP
-          url: "manual/ipv6/inband_ipv6/"  
+        - title: 申请 IPv4 公网 IP
+          url: "manual/ipv4/apply_ipv4/" 
+        - title: 绑定 IPv4 公网 IP
+          url: "manual/ipv4/bind_ipv4/"   
 
 ---
 

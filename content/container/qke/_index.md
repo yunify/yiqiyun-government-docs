@@ -29,10 +29,10 @@ section2:
     url: "manual/main"
   - title: 最佳实践
     content: YKE 集群的最佳实践
-    url: "best-practice/k8s_pv_pvc_storageclass/"  
+    url: "best-practices/k8s_pv_pvc_storageclass/"  
   - title: 常见问题
     content: 介绍 YKE 集群的常见问题与解决办法
-    url: "qke/faq/main"
+    url: "faq/main"
 
 
 section4:
