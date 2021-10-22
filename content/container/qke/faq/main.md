@@ -10,7 +10,7 @@ weight: 10
 
 如果 VPC 选择 172.30.0.0/16，需要修改 Docker 默认网段，避免冲突。
 
-> ![集群参数](../../_images/cluster_params.png)
+![集群参数](../../_images/cluster_params.png)
 
 | 参数 | 默认值
 | --- | ---
@@ -20,7 +20,7 @@ weight: 10
 
 [安装 KubeSphere] 参数在创建集群后无法修改，请在创建集群前规划好集群用途。
 
-> ![集群参数](../../_images/cluster_params.png)
+![集群参数](../../_images/cluster_params.png)
 
 | 参数 | 默认值
 | --- | ---
@@ -41,23 +41,25 @@ spec:
   # ...
 ```
 
-> 当前集群支持的存储类型可通过 KubeSphere 页面 `http://ks-console-ip:port/infrastructure/storageclasses` 查看。
->
-> ![存储类型](../../_images/sc.png)
+当前集群支持的存储类型可通过 KubeSphere 页面 `http://ks-console-ip:port/infrastructure/storageclasses` 查看。
+
+![存储类型](../../_images/sc.png)
 
 ## 镜像仓库连通性
 
 k8s 上的工作负载需要拉取 Docker 镜像，请确保集群所在私网能够访问相应的镜像仓库。
 
-> 如果使用公网镜像仓库，比如 docker.io，请确保 VPC 绑定了公网 IP。  
-
-> 如果使用私有镜像仓库，比如政务云平台提供的 [Harbor 镜像仓库](/container/harbor/)，请确保 YKE 所有节点可以访问到 Harbor 的负载均衡器地址。注意：如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 YKE 所有节点可以访问到 QingStor 对象存储。
+> **说明**
+>
+> - 如果使用公网镜像仓库，比如 docker.io，请确保 VPC 绑定了公网 IP。  
+>
+> - 如果使用私有镜像仓库，比如政务云平台提供的 [Harbor 镜像仓库](/container/harbor/)，请确保 YKE 所有节点可以访问到 Harbor 的负载均衡器地址。注意：如果 Harbor 后端使用的是 QingStor 对象存储，还要确保 YKE 所有节点可以访问到 QingStor 对象存储。
 
 ## 防火墙
 
 基础网络部署请将集群缺省防火墙开通 6443 和节点端口范围（默认为 30000-32767，请以创建集群时选择的范围为准）。
 
-> ![集群参数](../../_images/cluster_params.png)
+![集群参数](../../_images/cluster_params.png)
 
 | 参数 | 默认值
 | --- | ---

@@ -11,7 +11,6 @@ weight: 20
 
 ### 1、下载openvpn客户端windows版本
 
-<a href="https://myftp-server.pek3b.qingstor.com/openvpn-install-2.4.7-I603.exe" target="_blank">点击下载到本地</a>
 
 ### 2、安装openvpn步骤
 

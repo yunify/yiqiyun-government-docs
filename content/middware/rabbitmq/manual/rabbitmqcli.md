@@ -6,7 +6,7 @@ draft: false
 keyword: RabbitMQ, rabbitmq,  消息队列服务, 消息中间件
 ---
 
-官网参考地址：[http://www.rabbitmq.com/management-cli.html](http://www.rabbitmq.com/management-cli.html)
+官网参考地址：http://www.rabbitmq.com/management-cli.html
 
 > **注意**
 >
