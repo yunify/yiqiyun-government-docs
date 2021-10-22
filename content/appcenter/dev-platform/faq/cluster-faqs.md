@@ -129,7 +129,9 @@ init脚本在创建集群的时候调用，并且只在创建集群的时候调�
 
 关闭集群，再启动集群，打开应用实例查看数据是否还在。
 
->具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications) 关键字：init
+>具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications) 
+
+**关键字：init**
 
 ### 6. 如何写健康检查的配置和脚本？  
 
@@ -328,6 +330,7 @@ curl http://metadata/self/cluster/endpoints/reserved_ips/vip/value
 
 如果配置了此参数，输入非法数据，在提交创建应用的时候会提示错误信息。
 ![faq_pattern.png](/appcenter/dev-platform/cluster-images/faq_pattern.png)
+
 >具体配置请参考文档 [云应用开发模板规范 - 完整版](/appcenter/dev-platform/cluster-developer-guide/specifications/specifications)。
 
 **关键字**：pattern
@@ -1116,14 +1119,13 @@ curl http://metadata/self/env/access_key/secret_access_key
 }
 ```
 
-当 s3_type 值为 none 时，access_key、s3_access_key 和 s3_secret_key 都不显示
+当 s3_type 值为 none 时，access_key、s3_access_key 和 s3_secret_key 都不显示。
 ![s3_type_none.png](/appcenter/dev-platform/cluster-images/s3_type_none.png)
 
-当 s3_type 值为 minio 时，s3_access_key 和 s3_secret_key 显示，access_key 不显示
+当 s3_type 值为 minio 时，s3_access_key 和 s3_secret_key 显示，access_key 不显示。
 ![s3_type_minio.png](/appcenter/dev-platform/cluster-images/s3_type_minio.png)
 
-当 s3_type 值为 对象存储服务OIS 时，access_key 显示，s3_access_key 和 s3_secret_key 都不显示
-![s3_type_对象存储服务OIS.png](/appcenter/dev-platform/cluster-images/s3_type_对象存储服务OIS.png)
+当 s3_type 值为 对象存储服务OIS 时，access_key 显示，s3_access_key 和 s3_secret_key 都不显示。
 
 ### 35. 如何定义原地升级方式？
 

@@ -650,7 +650,7 @@ zone|镜像制作时所属区域 (如果是 docker 镜像，则无需填写该�
 
 节点的 CPU 体系结构，可选值范围：Westmere、SandyBridge、IvyBridge、Haswell、Broadwell、Skylake、CascadeLake。
 
-详情信息请参见[查看对应的 CPU 指令集](/compute/vm/faq/common_operations/server_func/cpu_instruction_set/)
+详情信息请参见[查看对应的 CPU 指令集](/compute/vm/faq/common_operations/server_func/cpu_instruction_set/)。
 
 ##### memory
 
