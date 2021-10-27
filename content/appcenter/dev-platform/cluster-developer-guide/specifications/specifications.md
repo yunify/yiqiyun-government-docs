@@ -169,8 +169,8 @@ config.json 定义用户在 山东省计算中心云平台 控制台部署应用
                 "label": "Instance Class",
                 "description": "The instance type for the cluster to run，such as high performance，high performance plus",
                 "type": "integer",
-                "default": 101,
-                "range": [101, 202],
+                "default": 6,
+                "range": [6, 7],
                 "required": "yes"
             }, {
                 "key": "gpu_class",

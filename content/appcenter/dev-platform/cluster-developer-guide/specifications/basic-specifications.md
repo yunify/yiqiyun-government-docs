@@ -81,8 +81,8 @@ weight: 5
 				"label": "Instance Class",
 				"description": "The instance type for the cluster to run，such as high performance，high performance plus",
 				"type": "integer",
-				"default": 101,
-				"range": [101, 202],
+				"default": 6,
+				"range": [6, 7],
 				"required": "yes"
 			}, {
 				"key": "count",
