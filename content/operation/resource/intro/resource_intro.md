@@ -1,7 +1,7 @@
 ---
 title: "什么是资源共享"
 description: Test description
-draft: false
+draft: true
 weight: 2
 keyword: 消息中心, 山东省计算中心云平台
 
