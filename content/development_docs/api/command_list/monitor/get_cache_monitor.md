@@ -71,7 +71,7 @@ https://api.qingcloud.com/iaas/?action=GetCacheMonitor
 &start_time==2015-05-01T10%3A39%3A40.091Z
 &end_time=2015-05-01T16%3A39%3A40.091Z
 &step=5m
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 
@@ -113,7 +113,7 @@ https://api.qingcloud.com/iaas/?action=GetCacheMonitor
 &start_time==2015-05-01T16%3A00%3A40.091Z
 &end_time=2015-05-01T16%3A39%3A40.091Z
 &step=5m
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

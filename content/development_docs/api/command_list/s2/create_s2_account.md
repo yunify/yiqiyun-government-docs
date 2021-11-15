@@ -44,7 +44,7 @@ https://api.qingcloud.com/iaas/?action=CreateS2Account
 &account_type=NFS
 &account_name=nfstest
 &nfs_ipaddr=192.168.1.10
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

@@ -97,7 +97,7 @@ https://api.qingcloud.com/iaas/?action=DescribeClusters
 &limit=20
 &reverse=1
 &scope=app
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

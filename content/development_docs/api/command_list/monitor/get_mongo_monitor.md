@@ -40,7 +40,7 @@ https://api.qingcloud.com/iaas/?action=GetMongoMonitor
 &meters.1=status
 &start_time=2015-06-21T01:10:10Z
 &end_time=2015-06-22T01:10:10Z
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

@@ -51,7 +51,7 @@ _Example Response_:
   "zone_set":[
     {
       "status":"active",
-      "zone_id":pek3a
+      "zone_id":zw1b
     },
     {
       "status":"active",

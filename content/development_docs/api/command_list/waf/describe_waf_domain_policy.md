@@ -43,7 +43,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=DescribeWAFDomainPoliciesResponse
 &domain_policies.1=wafdp-uv6qtfm5
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

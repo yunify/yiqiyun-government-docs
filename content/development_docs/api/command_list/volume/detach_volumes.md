@@ -38,7 +38,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=DetachVolumes
 &volumes.1=vol-12djpg8q
 &instance_id=i-12345678,
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

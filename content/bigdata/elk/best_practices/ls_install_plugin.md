@@ -57,7 +57,7 @@ draft: false
 7. 参考 [Logstash 基本用法]发送一条数据。
 
    ```bash
-   curl -d "shanhe" $LS_IP:9700
+   curl -d "yiqiyun" $LS_IP:9700
    ```
 
    如成功，则 influxdb 中将新增一条 point ，说明插件配置生效，如发现 influxdb 中没有新增 point ，请查看 logstash 日志，位置为 `/data/logstash/logs/logstash-plain.log`。

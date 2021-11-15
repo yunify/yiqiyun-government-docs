@@ -36,7 +36,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=ResizeVolumes
 &volumes.1=vol-r4jnbhui
 &size=50
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

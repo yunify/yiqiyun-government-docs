@@ -39,7 +39,7 @@ https://api.qingcloud.com/iaas/?action=ModifyImageAttributes
 &image=img-rtyv0968
 &image_name=sample
 &description=staging_env
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

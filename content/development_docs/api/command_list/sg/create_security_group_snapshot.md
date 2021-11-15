@@ -33,7 +33,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=CreateSecurityGroupSnapshot
 &security_group=sg-q36kwq5r
 &name=sg_snapshot
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 
