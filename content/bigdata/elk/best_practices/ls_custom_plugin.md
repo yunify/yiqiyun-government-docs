@@ -37,6 +37,6 @@ draft: false
    curl -d "yiqiyun" $LS_IP:9700
    ```
 
-   参照 [Kibana 基本用法] 在浏览器打开 Kibana 并进行必要配置，点击左侧的 Discover 菜单项，显示近期接收到的日志，如图，示例中的 `logstash_filter_abcd` 成功将原消息中的 `yi qi yun` 替换为了 `Hello World!` ，说明插件配置生效。
+   参照 [Kibana 基本用法] 在浏览器打开 Kibana 并进行必要配置，点击左侧的 Discover 菜单项，显示近期接收到的日志，如图，示例中的 `logstash_filter_abcd` 成功将原消息中的 `yiqiyun` 替换为了 `Hello World!` ，说明插件配置生效。
 
    ![log_display](../../_images/log_display.png)
