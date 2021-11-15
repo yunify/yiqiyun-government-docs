@@ -17,7 +17,7 @@ collapsible: false
 | Name | Description | Notes |
 | --- | --- | --- |
 | **action** | 每个 API 都有自己的 action，用来标识所请求指令。例如 RunInstances。 | 完整的指令名称列表请参见 [_API指令列表_](../command_list/instance/)。 |
-| **zone** | 区域 ID，当 API 请求是需要在某个具体的区域执行时，需要加上该参数。例如：global。 | 目前支持的区域 ID 有：<br/>global：zw1b<br/>sub：zw1a |
+| **zone** | 区域 ID，当 API 请求是需要在某个具体的区域执行时，需要加上该参数。例如：zw1b。 | 目前支持的区域 ID 有：<br/>zw1b：公共服务域<br/>zw1a：互联网域 |
 | **time_stamp** | 请求串生成时间，格式为 YYYY-MM-DDThh:mm:ssZ，例如”2013-08-27T13:58:35Z”，具体格式可以参见 [ISO8601] (链接请参见：http://www.w3.org/TR/NOTE-datetime). | 这个时间为 UTC 时间，假设您的本地时间为北京时间 UTC+8 ，您需要将其转化为 UTC+0 的时间。 |
 | **access_key_id** | 申请的 API密钥ID，例如”QYACCESSKEYIDEXAMPLE”。 |   |
 | **version** | API的版本号，目前只支持版本号为 1。 |   |
