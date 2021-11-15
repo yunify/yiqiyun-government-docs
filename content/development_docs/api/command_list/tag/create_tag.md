@@ -36,7 +36,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=CreateTag
 &tag_name=test
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

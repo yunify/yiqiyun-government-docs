@@ -64,7 +64,7 @@ https://api.qingcloud.com/iaas/?action=GetMonitor
 &start_time==2014-02-09T21%3A47%3A00.820Z
 &end_time=2014-02-10T03%3A47%3A00.820Z
 &step=5m
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

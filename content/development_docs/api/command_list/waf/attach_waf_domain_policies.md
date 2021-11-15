@@ -33,7 +33,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=AttachWAFDomainPolicies
 &resourcies.1=lbl-ivifra2j
 &domain_policies.1=wafdp-rvbldlnf
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

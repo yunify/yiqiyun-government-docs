@@ -40,7 +40,7 @@ https://api.qingcloud.com/iaas/?action=CreateS2Group
 &group_type=NFS_GROUP
 &group_name=nfstest
 &s2_accounts.1=s2g-m2k3r0w2
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

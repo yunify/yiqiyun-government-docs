@@ -60,7 +60,7 @@ https://api.qingcloud.com/iaas/?action=AddWAFRules
 &rules.1.list_color=60
 &rules.1.list_content=/url
 &rules.1.val1=/referer
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

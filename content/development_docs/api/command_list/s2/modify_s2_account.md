@@ -39,7 +39,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=ModifyS2Account
 &s2_account=s2a-cpuwpquf
 &nfs_ipaddr=1.2.3.4
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

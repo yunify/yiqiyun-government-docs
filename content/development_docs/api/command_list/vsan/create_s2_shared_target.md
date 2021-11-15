@@ -46,7 +46,7 @@ https://api.qingcloud.com/iaas/?action=CreateS2SharedTarget
 &s2_server=s2-lxqjtu3l
 &export_name=demo
 &description=demo_descritpion
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

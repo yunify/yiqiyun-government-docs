@@ -37,7 +37,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=ModifySecurityGroupAttributes
 &security_group=sg-rtyv0968
 &security_group_name=sample
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

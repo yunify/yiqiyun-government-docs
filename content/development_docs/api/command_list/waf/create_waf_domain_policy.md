@@ -37,7 +37,7 @@ https://api.qingcloud.com/iaas/?action=CreateWAFDomainPolicy
 &domain_policy_name=test
 &domain_name=*.yunify.com
 &affect_mode=0
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

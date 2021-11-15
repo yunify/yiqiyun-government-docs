@@ -34,7 +34,7 @@ https://api.qingcloud.com/iaas/?action=AssociateAlarmPolicy
 &alarm_policy=alp-hp55o9i5
 &resources.1=i-xxxxx
 &resources.2=i-xxxxx
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

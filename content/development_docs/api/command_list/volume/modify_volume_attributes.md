@@ -38,7 +38,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=ModifyVolumeAttributes
 &volume=vol-rtyv0968
 &volume_name=sample
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

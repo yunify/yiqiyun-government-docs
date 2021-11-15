@@ -33,7 +33,7 @@ template => "/data/elasticsearch/dicts/logstash.json"
 3. 待 Logstash 重启完成后，向 Logstash 发送数据。
 
 ```bash
-curl -d "shanhe123" $LS_IP:9700
+curl -d "yiqiyun123" $LS_IP:9700
 ```
 
 1. 参照 [Kibana 基本用法] 在浏览器中访问 Kibana 节点并配置 index pattern，然后点击左侧的 `Discover` 菜单项，显示近期接收到的日志，在搜索栏中输入“中国”，点击右侧的“搜索”按钮。如图，“中国”被高亮显示并且中间没有空格分隔，测试成功。
