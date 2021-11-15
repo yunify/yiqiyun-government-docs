@@ -14,7 +14,7 @@ weight: 3
 
 对象存储提供 HTTP RESTful 风格的访问接口，并辅助于编程语言相关的 SDK 工具，帮助开发者用极少的开发成本，将移动应用 App 对接到 对象存储。本文将介绍三种不同使用场景下，与对象存储对接的方案：
 
-- 使用 QingStor 对象存储 SDK
+- 使用对象存储 SDK
 - 开发者实现签名服务器
 - 表单 POST 上传
 
@@ -34,7 +34,7 @@ weight: 3
 
 对象存储目前已提供多种语言的 SDK，包括开发 iPhone App 使用的 Swift 语言，以及开发 Android App 使用的 Java 语言。App 开发者将 SDK 嵌入到客户端程序中，通过调用 SDK 提供的方法和接口与对象存储服务端通信。
 
-这里将以开发一个上传照片的 iPhone App 为例，讲解如何使用 QingStor 对象存储的 SDK for Swift 将 App 接入到对象存储。
+这里将以开发一个上传照片的 iPhone App 为例，讲解如何使用对象存储的 SDK for Swift 将 App 接入到对象存储。
 
 ### 配置 CocoaPods
 
@@ -60,7 +60,7 @@ target '' do
 end
 ```
 
-4. 最后，输入以下命令来安装 QingStor 对象存储 SDK 的依赖包
+4. 最后，输入以下命令来安装对象存储 SDK 的依赖包
 
 ```bash
 pod install
@@ -68,7 +68,7 @@ pod install
 
 ### 开始编码
 
-本文目的是学习 QingStor 对象存储的 SDK，而不是花费时间来研究 UI，关于例子中用到的页面大概讲解如下：
+本文目的是学习对象存储的 SDK，而不是花费时间来研究 UI，关于例子中用到的页面大概讲解如下：
 
 **Main.storyboard UI结构图：**
 
@@ -117,7 +117,7 @@ override func viewDidLoad() {
 }
 ```
 
-5. 为了灵活使用，除了上述初始化 QingStor 对象存储服务的方法之外，SDK 也支持在服务初始化的时候传入配置信息：
+5. 为了灵活使用，除了上述初始化对象存储服务的方法之外，SDK 也支持在服务初始化的时候传入配置信息：
 
 - 首先修改 Config.plist 内容如下：
 
@@ -289,9 +289,9 @@ bucketService.putObject(objectKey: key, input: input) { response, error in
 
 ## 开发者实现签名服务器
 
-上文中介绍的使用 SDK 对接 QingStor 对象存储服务，适用于 Bucket 被个人用户所拥有的情况。如果 Bucket 为 App 开发者所拥有，由于需要将签名密钥内置到客户端程序中，会带来安全方面的隐患。为了保证签名密钥的安全，开发者可以根据 QingStor 对象存储签名方法，自己搭建并实现一个签名服务器。用于签名的密钥只需要在服务端保存，客户端不需要拿到，从而避免了认证信息泄漏的隐患。
+上文中介绍的使用 SDK 对接对象存储服务，适用于 Bucket 被个人用户所拥有的情况。如果 Bucket 为 App 开发者所拥有，由于需要将签名密钥内置到客户端程序中，会带来安全方面的隐患。为了保证签名密钥的安全，开发者可以根据对象存储签名方法，自己搭建并实现一个签名服务器。用于签名的密钥只需要在服务端保存，客户端不需要拿到，从而避免了认证信息泄漏的隐患。
 
-QingStor 对象存储提供了一个签名服务器的 [样例](https://github.com/yunify/qingstor-demo-auth-server) 供 App 开发者参考。网页端使用 JavaScript SDK 配合签名服务器进行上传可以参考官方提供的 [Demo 项目](https://github.com/yunify/qingstor-sdk-js-demo)。
+对象存储提供了一个签名服务器的 [样例](https://github.com/yunify/qingstor-demo-auth-server) 供 App 开发者参考。网页端使用 JavaScript SDK 配合签名服务器进行上传可以参考官方提供的 [Demo 项目](https://github.com/yunify/qingstor-sdk-js-demo)。
 
 ### 注意事项
 
@@ -343,7 +343,7 @@ curl -H "Content-Type: application/json" -d '{"method":"GET", "url":"/", "header
 QS PLLZOBTTZXGBNOWUFHZZ:vIWg/qAxvXlcFRb9uzYmdIM9tiF6EuM6SC3i13yLzH8=
 ```
 
-3. 将该结果附加到请求头中，作为最终发送给 QingStor 对象存储的请求
+3. 将该结果附加到请求头中，作为最终发送给对象存储的请求
 
 ```http
 GET /mybucket/music.mp3 HTTP/1.1
@@ -367,7 +367,7 @@ SDK 参考例子：[Java 使用服务端签名](/storage/object-storage/sdk/java
     .pek3a.qingstor.com" method="POST" enctype="multipart/form-data">
 ```
 
-3. 用户通过表单上传文件以及 Signature 给 QingStor 对象存储。表单上传的具体方法，请见 [表单上传](/storage/object-storage/api/object/post/)
+3. 用户通过表单上传文件以及 Signature 给对象存储。表单上传的具体方法，请见 [表单上传](/storage/object-storage/api/object/post/)
 
 ## 请求参数签名
 

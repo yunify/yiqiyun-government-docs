@@ -65,7 +65,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 201 CREATED
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Content-Length: 0
 Connection: close

@@ -71,7 +71,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Content-Type: application/json
 Content-Length: 222
@@ -84,7 +84,7 @@ x-qs-request-id: aa08cf7a43f611e5886952542e6ce14b
     "name": "mybucket",
     "created": "2015-07-22T02:23:04.000Z",
     "url": "mybucket.zw.obs.yiqiyun.sd.cegn.cn",
-    "location": "pek3a",
+    "location": "zw",
     "storage_classes": {
         "STANDARD": {
             "count": 5,

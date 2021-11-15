@@ -91,7 +91,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 16 Aug 2015 13:25:10 GMT
 Content-Type: application/json
 Content-Length: 90

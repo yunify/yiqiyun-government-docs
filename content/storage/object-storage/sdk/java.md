@@ -5,7 +5,7 @@ title: "Java SDK"
 
 对象存储的 Java SDK 已在 GitHub 开源，本文为简要使用文档。更多详细信息请参见 [GitHub 项目](https://github.com/yunify/qingstor-sdk-java) 和 [Java SDK API 文档](https://github.com/qingstor/qingstor-sdk-java/blob/master/README_zh-CN.md)。
 
-Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接口调用的均与 QingStor 对象存储的 API 相对应。其返回码、请求头、错误码等规定请参照具体的 [Qingstor Restful API 文档](/storage/object-storage/api/)。
+Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接口调用的均与对象存储的 API 相对应。其返回码、请求头、错误码等规定请参照具体的 [Restful API 文档](/storage/object-storage/api/)。
 
 SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/blob/master/docs/examples_zh-CN.md)。
 
