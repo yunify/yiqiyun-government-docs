@@ -18,13 +18,13 @@ Kafka 创建完后，客户端节点预装的 Kafka Manager 会自动加载 Kafk
 
 > **说明**
 >
->如果使用的版本是 Kafka 0.10.2.1 - QingCloud 1.1.6，可使用集群内任意节点的 IP。
+>如果使用的版本是 Kafka 0.10.2.1 - YiQiYun 1.1.6，可使用集群内任意节点的 IP。
 
 ![](../../_images/clusters.png)
 
 1. 如果配置时指定需要登录，请使用配置的帐号登录。
 
-2. 选择 **Cluster** -> **Add Cluster**。
+2. 选择 **Cluster** > **Add Cluster**。
 
 3. 自定义一个名字，填写所连接的 Kafka 集群地址，Kafka 服务对应的命名空间路径为：zkhost1: port , zkhost2 : port… / kafka / 集群ID。
 
