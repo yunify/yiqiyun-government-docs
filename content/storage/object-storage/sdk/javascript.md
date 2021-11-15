@@ -22,7 +22,7 @@ npm install qingstor-sdk
 yarn add qingstor-sdk
 ```
 
-**方式三：** 也可以请前往 [Release](https://github.com/yunify/qingstor-sdk-js/releases) 页面下载打包好的 SDK 文件，然后在 HTML 中加上如下格式的 Script 标签引入 SDK，QingStor 对象存储建议用户在开发时使用未压缩的版本，方便调试，在生产环境中使用 `qingstor-sdk.min.js` 版本。
+**方式三：** 也可以请前往 [Release](https://github.com/yunify/qingstor-sdk-js/releases) 页面下载打包好的 SDK 文件，然后在 HTML 中加上如下格式的 Script 标签引入 SDK，对象存储建议用户在开发时使用未压缩的版本，方便调试，在生产环境中使用 `qingstor-sdk.min.js` 版本。
 
 ```html
 <script src="https://example.com/path/to/qingstor-sdk.js"></script>

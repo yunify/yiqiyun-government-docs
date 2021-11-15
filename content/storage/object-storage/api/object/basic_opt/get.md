@@ -96,7 +96,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Last-Modified: Fri, 14 Aug 2015 09:10:39 GMT
 Content-Type: image/jpeg

@@ -45,7 +45,7 @@ Host: obs.yiqiyun.sd.cegn.cn
 | locations | List |  Location 列表|
 | id | String | `Location` 的健值，Location ID。 |
 | name | String | `Location` 的健值，根据请求参数 `lang` 指定语言的翻译。 |
-| endpoint | String | `Location` 的健值，Location Endpoint，如 Location ID 为 pek3a 的 Endpoint 是 zw.obs.yiqiyun.sd.cegn.cn。 |
+| endpoint | String | `Location` 的健值，Location Endpoint，如 Location ID 为 zw 的 Endpoint 是 zw.obs.yiqiyun.sd.cegn.cn。 |
 
 ## 错误码
 
@@ -64,7 +64,7 @@ Host: obs.yiqiyun.sd.cegn.cn
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Mon, 23 Oct 2017 12:08:19 GMT
 Content-Type: application/json
 Content-Length: 177
@@ -74,12 +74,12 @@ x-qs-request-id: dc05ee1cb7ea11e7b8da5254dda2bdf5
     "locations": [
         {
             "endpoint": "zw.obs.yiqiyun.sd.cegn.cn",
-            "id": "pek3a",
+            "id": "zw",
             "name": "\u5317\u4eac3\u533a"
         },
         {
             "endpoint": "zw.obs.yiqiyun.sd.cegn.cn",
-            "id": "sh1a",
+            "id": "zw",
             "name": "\u4e0a\u6d771\u533a"
         }
     ]

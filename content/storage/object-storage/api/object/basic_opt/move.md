@@ -77,7 +77,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 201 CREATED
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 ETag: "0c2f573d81194064b129e940edcefe9b"
 Content-Length: 0

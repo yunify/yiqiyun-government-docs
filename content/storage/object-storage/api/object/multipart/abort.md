@@ -63,7 +63,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 204 NoContent
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 16 Aug 2015 13:25:10 GMT
 Content-Length: 0
 Connection: close

@@ -52,7 +52,7 @@ weight: 2
 对象存储提供多种安全功能用于维护数据的完整性，并有助于确保目标用户可以访问相应的资源。用户可通过如下方式控制资源的访问权限：
 - Bucket ACL：Bucket 访问控制列表。Bucket 的拥有者默认具备所有权限，用户根据需求，可配置公开读或公开写（即不附带认证信息的匿名访问），也可以针对特定青云用户来配置读写权限。
 - Bucket Policy：Bucket 策略。用户可通过设置 Bucket 策略，赋予其他用户相应 Bucket 及其 Object 的访问权限。Bucket 策略可以通过细致地指定 API 级别的控制，实现 Bucket ACL 和 Object ACL 所不能实现的一些功能，比如防盗链。
-- Bucket CORS：Bucket 的跨域资源共享策略。当用户利用 JavaScript AJAX 向 QingStor 对象存储发起的请求属于跨源请求时，默认情况下浏览器出于安全考虑，不允许调用不同域名下的资源，这种情况下需要为 Bucket 配置 CORS 规则。
+- Bucket CORS：Bucket 的跨域资源共享策略。当用户利用 JavaScript AJAX 向对象存储发起的请求属于跨源请求时，默认情况下浏览器出于安全考虑，不允许调用不同域名下的资源，这种情况下需要为 Bucket 配置 CORS 规则。
 
 **参考操作**：
   - [设置 Bucket ACL](/storage/object-storage/manual/console/bucket_manage/access_control/#存储空间访问控制列表bucket-acl)
@@ -100,7 +100,7 @@ weight: 2
   - [日志归档](/storage/object-storage/manual/console/bucket_manage/logging/)
 
 ## Bucket 跨区域复制
-跨区域复制 (Bucket Cross-Region Replication) 允许用户开启跨不同的 QingStor 对象存储区域（数据中心）之间的 Bucket 自动、异步的复制 Object。
+跨区域复制 (Bucket Cross-Region Replication) 允许用户开启跨不同的对象存储区域（数据中心）之间的 Bucket 自动、异步的复制 Object。
 
 用户可能基于多种原因需要使用跨区域复制功能，如:
 

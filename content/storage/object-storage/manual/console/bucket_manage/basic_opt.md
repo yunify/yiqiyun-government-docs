@@ -86,7 +86,7 @@ Bucket 是独立的文件存储、监控与计费单元。Bucket 详情页分为
  ![](../../_images/bucket_info8.png)
 
 ## 查看 Bucket 列表
-用户创建的所有 Bucket 均显示在对象存储主页面。用户可进入 QingStor 对象存储主页面查看 Bucket 列表。
+用户创建的所有 Bucket 均显示在对象存储主页面。用户可进入对象存储主页面查看 Bucket 列表。
 
 ![](../../_images/create_bucket_list.png)
 
@@ -101,7 +101,7 @@ Bucket 是独立的文件存储、监控与计费单元。Bucket 详情页分为
 
  ![](../../_images/bucket_view2.png)
 
-3. 点击列表视图的图标，退回 Bucket 列表视图页面。QingStor 对象存储主页面默认为列表视图：
+3. 点击列表视图的图标，退回 Bucket 列表视图页面。对象存储主页面默认为列表视图：
 
  ![](../../_images/bucket_view3.png)
 

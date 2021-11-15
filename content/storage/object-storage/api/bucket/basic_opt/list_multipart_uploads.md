@@ -88,7 +88,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 25 Dec 2016 19:02:00 GMT
 Content-Length: 604
 Connection: close

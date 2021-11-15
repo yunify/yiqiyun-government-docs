@@ -34,7 +34,7 @@ Authorization: <authorization-string>
 
 | 字段 | 类型 | 说明 | 是否必须 |
 | --- | --- | --- | --- |
-| Location | Enum | 限定 Bucket 所在的区域。目前支持：`pek3a`，`sh1a`。 | 否 |
+| Location | Enum | 限定 Bucket 所在的区域。 | 否 |
 
 除以上请求头以外，此接口还需要包含 Host、Date 等公共请求头。详细内容可参见 [公共请求头](/storage/object-storage/api/common_header/#请求头字段-request-header)。
 
@@ -74,7 +74,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Content-Length: 256
 Connection: close

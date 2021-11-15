@@ -74,7 +74,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: <date>
 Content-Length: 0
 Connection: close
