@@ -86,7 +86,7 @@ weight: 2
 
 以 DescribeInstances 为例:
 
->https://api.qingcloud.com/iam/?access_key_id=0z7dO3oN03byx1CepBDTyl
+>http://api.yiqiyun.sd.cegn.cn/iam/?access_key_id=0z7dO3oN03byx1CepBDTyl
 >&action=DescribeInstances
 >&req_id=35430c022b694133a6a758b62e21067b
 >&signature_method=HmacSHA256

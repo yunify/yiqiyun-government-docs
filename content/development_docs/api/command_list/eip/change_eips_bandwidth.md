@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeEipsBandwidth
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ChangeEipsBandwidth
 &eips.1=eip-r4jnbhui
 &bandwidth=5
 &zone=zw

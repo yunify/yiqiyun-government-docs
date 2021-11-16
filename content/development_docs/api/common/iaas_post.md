@@ -31,7 +31,7 @@ import datetime
 
 access_key_id = 'xxxxxx'
 secret_access_key = 'xxxxxx'
-URL = 'https://api.qingcloud.com/iaas/'
+URL = 'http://api.yiqiyun.sd.cegn.cn/iaas/'
 time_stamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
 
 

@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?&action=StartClusters
+http://api.yiqiyun.sd.cegn.cn/iaas/?&action=StartClusters
 &clusters.1=cl-q1witcdk
 &zone=pek3b
 &COMMON_PARAMS

@@ -116,7 +116,7 @@ weight: 25
 _Example Request_:
 
 ```
-https://hpc.api.qingcloud.com:443/api/cluster/listNodes
+https://hpc.api.yiqiyun.sd.cegn.cn:443/api/cluster/listNodes
 ```
 
 _Example Response_:

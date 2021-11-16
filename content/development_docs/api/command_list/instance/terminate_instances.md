@@ -36,7 +36,7 @@ weight: 4
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=TerminateInstances
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=TerminateInstances
 &instances.1=i-rtyv0968
 &zone=zw1b
 &COMMON_PARAMS

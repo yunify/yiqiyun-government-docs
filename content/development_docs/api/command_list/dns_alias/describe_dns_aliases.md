@@ -45,7 +45,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeDNSAliases
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeDNSAliases
 &dns_aliases.1=da-xxxxxxxx
 &COMMON_PARAMS
 ```

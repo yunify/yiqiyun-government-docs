@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyKeyPairAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyKeyPairAttributes
 &keypair=kp-rtyv0968
 &keypair_name=sample
 &zone=zw1b

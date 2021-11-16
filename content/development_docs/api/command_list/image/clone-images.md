@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CloneImages
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CloneImages
 &image=img-rtyv0968
 &count=1
 &image_name=clone

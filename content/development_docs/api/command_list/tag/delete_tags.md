@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteTags
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteTags
 &tags.1=tag-axbkmf20
 &tags.2=tag-axbkmf21
 &zone=zw1b

@@ -45,7 +45,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeNotificationItems
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeNotificationItems
 &COMMON_PARAMS
 ```
 

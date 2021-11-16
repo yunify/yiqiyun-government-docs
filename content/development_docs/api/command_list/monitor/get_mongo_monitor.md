@@ -35,7 +35,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GetMongoMonitor
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=GetMongoMonitor
 &resource=mi-ole0pgn1
 &meters.1=status
 &start_time=2015-06-21T01:10:10Z

@@ -36,7 +36,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyS2Account
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyS2Account
 &s2_account=s2a-cpuwpquf
 &nfs_ipaddr=1.2.3.4
 &zone=zw1b
