@@ -33,7 +33,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=DeleteTags
 &tags.1=tag-axbkmf20
 &tags.2=tag-axbkmf21
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

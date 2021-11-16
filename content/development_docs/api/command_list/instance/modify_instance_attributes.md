@@ -36,7 +36,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=ModifyInstanceAttributes
 &instance=i-rtyv0968
 &instance_name=sample
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

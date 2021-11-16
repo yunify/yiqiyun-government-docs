@@ -88,7 +88,7 @@ Content-MD5: Dd11y+x5Jegm/fUJ6mOuhg==
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 16 Aug 2015 09:05:00 GMT
 Content-Length: 71
 Connection: close

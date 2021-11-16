@@ -43,7 +43,7 @@ _Example Request_
 ```
 https://api.qingcloud.com/iaas/?action=DescribeInstanceTypes
 &instance_types.1=c1m1
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 
@@ -60,7 +60,7 @@ _Example Response_:
       "description":"",
       "instance_type_name":"1核1G",
       "instance_type_id":"c1m1",
-      "zone_id":"pek3a",
+      "zone_id":"zw1b",
       "memory_current":1024
     }
   ],

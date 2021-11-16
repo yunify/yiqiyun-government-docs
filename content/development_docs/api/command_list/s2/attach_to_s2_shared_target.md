@@ -35,7 +35,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=AttachToS2SharedTarget
 &shared_target=s2st-eawpunuj
 &volumes.1=vol-02x95cwp
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

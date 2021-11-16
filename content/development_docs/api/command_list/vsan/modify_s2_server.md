@@ -35,7 +35,7 @@ https://api.qingcloud.com/iaas/?action=ModifyS2Server
 &s2_server=s2-lxqjtu3l
 &name=demo
 &description=demo_descritpion
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

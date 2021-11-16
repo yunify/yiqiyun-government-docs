@@ -8,7 +8,7 @@ weight: 1
 
 山东省计算中心云平台YiQiYun控制台是界面形式的 Web 应用程序，直观易用。用户可以通过YiQiYun控制台，进入 对象存储的相关界面，将数据、日志、静态分发资源等多种文件类型，通过控制台上传至一个 Bucket 中，以供 HTTP 访问或数据分析使用。
 
-本文档描述在青云 QingCloud 控制台上创建、使用和管理对象存储 Bucket。如果您是开发者，还可以通过 对象存储 API 或 SDK 来管理 Bucket。详细内容，请参考：[对象存储 API 文档](/storage/object-storage/api/) 与 [QingStor 对象存储 SDK 文档](/storage/object-storage/sdk/)
+本文档描述在管理控制台上创建、使用和管理对象存储 Bucket。如果您是开发者，还可以通过 对象存储 API 或 SDK 来管理 Bucket。详细内容，请参考：[对象存储 API 文档](/storage/object-storage/api/) 与 [对象存储 SDK 文档](/storage/object-storage/sdk/)
 
 关于对象存储的功能介绍及应用场景，请参考 [对象存储功能概述](/storage/object-storage/intro/function_list/)
 

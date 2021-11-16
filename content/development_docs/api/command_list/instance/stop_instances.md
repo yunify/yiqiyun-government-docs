@@ -42,7 +42,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=StopInstances
 &instances.1=i-rtyv0968
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

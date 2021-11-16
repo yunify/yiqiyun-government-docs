@@ -33,7 +33,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerAttributes
 &loadbalancer=lb-rtyv0968
 &waf_pg=wafpg-3t1b0ldm
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

@@ -43,7 +43,7 @@ input {
 
 ## 使用
 
-配置完成之后执行如下命令行启动 Logstash，即可读取 QingStor 对象存储指定 Bucket 中的日志文件。
+配置完成之后执行如下命令行启动 Logstash，即可读取对象存储指定 Bucket 中的日志文件。
 
 ```bash
 $./bin/logstash -f qs_input.conf

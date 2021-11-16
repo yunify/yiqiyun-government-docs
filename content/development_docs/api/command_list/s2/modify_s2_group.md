@@ -37,7 +37,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=ModifyS2Group
 &s2_group=s2g-k01j1qtk
 &description=testgroup
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

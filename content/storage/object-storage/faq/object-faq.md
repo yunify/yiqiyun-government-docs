@@ -16,11 +16,11 @@ weight: 39
 
 ## 如何同步本地目录到对象存储？
 
-可以使用高级命令行工具 qsctl，其中的 `sync` 命令支持将本地目录和 QingStor 对象存储目录进行同步，详情请参考 [qsctl 文档](/storage/object-storage/manual/tool/qsctl/)。
+可以使用高级命令行工具 qsctl，其中的 `sync` 命令支持将本地目录和对象存储目录进行同步，详情请参考 [qsctl 文档](/storage/object-storage/manual/tool/qsctl/)。
 
 ## 对象存储的 Bucket 是否可以创建文件夹？
 
-QingStor 对象存储的 Bucket 本质上是一个平级结构，但控制台界面会根据 `/` 来模拟文件系统的层级结构。如果使用 API 调用，可以使用 [GET Bucket API](/storage/object-storage/api/bucket/basic_opt/get/) ，通过 `prefix` 和 `delimiter` 参数来获取按照文件夹归类的文件列表。
+对象存储的 Bucket 本质上是一个平级结构，但控制台界面会根据 `/` 来模拟文件系统的层级结构。如果使用 API 调用，可以使用 [GET Bucket API](/storage/object-storage/api/bucket/basic_opt/get/) ，通过 `prefix` 和 `delimiter` 参数来获取按照文件夹归类的文件列表。
 
 ## 对象存储是否有针对文件夹操作的接口？
 
@@ -49,7 +49,7 @@ qsctl 在覆盖文件时的处理逻辑为：
 
 可以使用 PUT 方法上传，如果文件很大的话，还可以考虑使用 [分段上传 API](/storage/object-storage/api/object/multipart)。
 
-PUT 方法上传的 Object 允许最大 5GB；分段上传的 Object 最大可达 50TB，每个分段最大为 5GB。如果通过广域网上传，QingStor 对象存储建议几百兆以上大小的文件都使用分段上传。
+PUT 方法上传的 Object 允许最大 5GB；分段上传的 Object 最大可达 50TB，每个分段最大为 5GB。如果通过广域网上传，对象存储建议几百兆以上大小的文件都使用分段上传。
 
 ## 使用分段上传时，如果一个分段上传失败，可以只对这个分段断点续传吗？
 
@@ -63,13 +63,13 @@ PUT 方法上传的 Object 允许最大 5GB；分段上传的 Object 最大可�
 
 ## 如何批量取消未完成的分段上传？
 
-使用 QingStor 对象存储的应用通常会使用分段上传，假如初始化了分段上传后未调用 [完成分段上传](/storage/object-storage/api/object/multipart/complete) 或者 [终止分段上传](/storage/object-storage/api/object/multipart/abort)，这些未完成的上传记录仍然会占用 Bucket 空间。
+使用对象存储的应用通常会使用分段上传，假如初始化了分段上传后未调用 [完成分段上传](/storage/object-storage/api/object/multipart/complete) 或者 [终止分段上传](/storage/object-storage/api/object/multipart/abort)，这些未完成的上传记录仍然会占用 Bucket 空间。
 
 对于大量的未完成分段上传，可通过配置 [生命周期](/storage/object-storage/manual/console/bucket_manage/lifecycle/) 规则自动删除。
 
 ## 如何使根目录对匿名用户显示所有的文件？
 
-从用户的数据安全角度考虑，假如 Bucket 配置了公开访问权限，而 QingStor 对象存储默认不允许匿名请求访问 List Objects 接口，也就是说访问 `bucket.zone.qingstor.com` 根路径将返回 Permission Deny。如果用户需要使用 List Objects 这个接口对匿名请求也能返回结果，则需配置如下 Bucket Policy：
+从用户的数据安全角度考虑，假如 Bucket 配置了公开访问权限，而对象存储默认不允许匿名请求访问 List Objects 接口，也就是说访问 `bucket.zone.qingstor.com` 根路径将返回 Permission Deny。如果用户需要使用 List Objects 这个接口对匿名请求也能返回结果，则需配置如下 Bucket Policy：
 
 ![](/storage/object-storage/_images/faq-1.png)
 
@@ -100,7 +100,7 @@ Access Key 可以在 管理控制台申请。
 
 对于下载请求，对象存储支持文本和图片文件的压缩下载，需携带请求头 `Accept-Encoding: gzip`，但不支持已压缩文件的解压下载。
 
-对于上传请求，想通过压缩节约上传时间和流量，用户需要在客户端自行压缩，上传时携带请求头 `Content-Encoding: gzip`，下载时 QingStor 对象存储会返回压缩文件和响应头 `Content-Encoding`，客户端根据该响应头自行解压，浏览器会自动识别这个响应头并进行解压。
+对于上传请求，想通过压缩节约上传时间和流量，用户需要在客户端自行压缩，上传时携带请求头 `Content-Encoding: gzip`，下载时对象存储会返回压缩文件和响应头 `Content-Encoding`，客户端根据该响应头自行解压，浏览器会自动识别这个响应头并进行解压。
 
 ## 访问对象存储出现 HTTPS 证书问题的解决办法
 
@@ -140,5 +140,5 @@ Let's Encrypt 是由 Mozilla、Cisco、Akamai、IdenTrust、EFF 等组织人员�
 
 对象存储对每个请求都生成了唯一的 Request ID，在返回中会放在 `x-qs-request-id` 头字段中。每一个错误返回都有一个 json 格式内容，包含 Code (返回码) 和 Message (具体原因)，具体可参考 [错误信息](/storage/object-storage/api/error_code)。
 
-如果用户对错误的原因有疑问，可以记录 `x-qs-request-id` 并在工单中提供给 QingStor 对象存储研发团队。
+如果用户对错误的原因有疑问，可以记录 `x-qs-request-id` 并在工单中提供给对象存储研发团队。
 

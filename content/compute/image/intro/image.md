@@ -29,7 +29,8 @@ keyword: 镜像, YiQiYun
 
 Ubuntu: `http://mirrors.ks.YiQiYun.com`
 支持区域:
-  * 北京3区
+  * 互联网域
+  * 公共服务域
 
 使用方法
 

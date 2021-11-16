@@ -127,7 +127,7 @@ Authorization: <authorization string>
 
 ```http
 HTTP/1.1 201 CREATED
-Server: QingStor
+Server: YiQiYun
 Date: Thu, 05 Jul 2018 11:01:40 GMT
 x-qs-request-id: <x-qs-request-id>
 ```
@@ -151,7 +151,7 @@ Authorization: <authorization string>
 
 ```http
 HTTP/1.1 201 CREATED
-Server: QingStor
+Server: YiQiYun
 Date: Thu, 05 Jul 2018 11:01:40 GMT
 x-qs-request-id: <x-qs-request-id>
 ```
@@ -171,7 +171,7 @@ Authorization: <authorization string>
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Thu, 05 Jul 2018 11:01:40 GMT
 Cache-Control: max-age=31536000
 x-qs-meta-id: 1
@@ -197,7 +197,7 @@ Authorization: <authorization string>
 
 ```http
 HTTP/1.1 201 CREATED
-Server: QingStor
+Server: YiQiYun
 Date: Thu, 05 Jul 2018 11:01:40 GMT
 x-qs-request-id: <x-qs-request-id>
 ```
@@ -218,7 +218,7 @@ Authorization: <authorization string>
 
 ```http
 HTTP/1.1 201 CREATED
-Server: QingStor
+Server: YiQiYun
 Date: Thu, 05 Jul 2018 11:01:40 GMT
 x-qs-request-id: <x-qs-request-id>
 ```
@@ -238,7 +238,7 @@ Authorization: <authorization string>
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Thu, 05 Jul 2018 11:01:40 GMT
 Cache-Control: no-cache
 x-qs-meta-id: 0
@@ -264,7 +264,7 @@ Authorization: <authorization string>
 
 ```http
 HTTP/1.1 201 CREATED
-Server: QingStor
+Server: YiQiYun
 Date: Thu, 05 Jul 2018 11:01:40 GMT
 x-qs-request-id: <x-qs-request-id>
 ```
@@ -287,7 +287,7 @@ Authorization: <authorization string>
 
 ```http
 HTTP/1.1 201 CREATED
-Server: QingStor
+Server: YiQiYun
 Date: Thu, 05 Jul 2018 11:01:40 GMT
 x-qs-request-id: <x-qs-request-id>
 ```
@@ -307,7 +307,7 @@ Authorization: <authorization string>
 
 ```http
 HTTP/1.1 200 OK
-Server: QingStor
+Server: YiQiYun
 Date: Thu, 05 Jul 2018 11:01:40 GMT
 Cache-Control: max-age=31536000
 x-qs-meta-id: 1

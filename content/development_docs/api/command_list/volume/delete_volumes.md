@@ -32,7 +32,7 @@ _Example Request_:
 ```
 https://api.qingcloud.com/iaas/?action=DeleteVolumes
 &volumes.1=vol-uydrnlax
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

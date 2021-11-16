@@ -58,7 +58,7 @@ Authorization: authorization string
 
 ```http
 HTTP/1.1 204 NoContent
-Server: QingStor
+Server: YiQiYun
 Date: <date>
 Content-Length: 0
 Connection: close

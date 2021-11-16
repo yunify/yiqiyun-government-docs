@@ -33,7 +33,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=DeleteKeyPairs
 &keypairs.1=kp-2yjg8qnj
 &keypairs.2=kp-ld23cdzc
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

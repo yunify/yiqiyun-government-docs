@@ -62,7 +62,7 @@ _Example Request_:
 https://api.qingcloud.com/iaas/?action=DescribeS2Servers
 &s2_servers.1=s2-lxqjtu3l
 &verbose=1
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

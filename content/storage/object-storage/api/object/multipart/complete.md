@@ -96,7 +96,7 @@ ETag: "0c2f573d81194064b129e940edcefe9b"
 
 ```http
 HTTP/1.1 201 CREATED
-Server: QingStor
+Server: YiQiYun
 Date: Sun, 16 Aug 2015 13:25:10 GMT
 Content-Length: 0
 Connection: close

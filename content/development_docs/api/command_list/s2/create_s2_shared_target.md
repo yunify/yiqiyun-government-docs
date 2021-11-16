@@ -44,7 +44,7 @@ https://api.qingcloud.com/iaas/?action=CreateS2SharedTarget
 &export_name=demo
 &target_type=ISCSI
 &description=demo_descritpion
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 
@@ -69,7 +69,7 @@ https://api.qingcloud.com/iaas/?action=CreateS2SharedTarget
 &target_type=SMB
 &s2_group=s2g-1a1212sa
 &description=demo_descritpion
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 
