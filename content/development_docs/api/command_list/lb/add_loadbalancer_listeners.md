@@ -42,7 +42,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=AddLoadBalancerListeners
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AddLoadBalancerListeners
 &loadbalancer=lb-1234abcd
 &listeners.1.listener_port=80
 &listeners.1.listener_protocol=tcp

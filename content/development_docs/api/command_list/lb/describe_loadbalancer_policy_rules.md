@@ -44,7 +44,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeLoadBalancerPolicyRules
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeLoadBalancerPolicyRules
 &loadbalancer_policy=lbp-1234abcd
 &COMMON_PARAMS
 ```

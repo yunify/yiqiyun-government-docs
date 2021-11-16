@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateEipsFromLoadBalancer
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateEipsFromLoadBalancer
 &loadbalancer=lb-1234abcd
 &eips.1=eip-1234abcd
 &zone=zw

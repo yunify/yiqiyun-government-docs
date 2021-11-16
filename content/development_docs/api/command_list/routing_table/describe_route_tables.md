@@ -34,7 +34,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeRouteTables
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeRouteTables
 &verbose=1
 &routing_tables.1=rt-h5nqxml7
 &COMMON_PARAMS

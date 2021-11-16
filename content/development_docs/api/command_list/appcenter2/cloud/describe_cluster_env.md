@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?
+http://api.yiqiyun.sd.cegn.cn/iaas/?
 &action=DescribeClusterEnvironment
 &cluster_id=cl-2gi2b3oc
 &zone=pek3b

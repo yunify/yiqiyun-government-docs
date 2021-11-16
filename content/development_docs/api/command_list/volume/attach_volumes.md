@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=AttachVolumes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AttachVolumes
 &volumes.1=vol-12djpg8q
 &instance_id=i-12345678,
 &zone=zw1b

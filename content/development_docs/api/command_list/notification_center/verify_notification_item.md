@@ -29,7 +29,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=VerifyNotificationItem
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=VerifyNotificationItem
 &notification_item_content=test@example.com
 &verification_code=xxxxxxxxxxxxxxx
 &COMMON_PARAMS

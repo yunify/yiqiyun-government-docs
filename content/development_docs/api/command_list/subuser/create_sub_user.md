@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateSubUser
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateSubUser
 &email=masteruser@test.com#subuser1
 &passwd=Passw0rd
 &COMMON_PARAMS

@@ -37,7 +37,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateVolumes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateVolumes
 &volume_name=demo
 &size=20
 &zone=zw1b

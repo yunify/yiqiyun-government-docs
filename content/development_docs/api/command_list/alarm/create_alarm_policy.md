@@ -46,7 +46,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateAlarmPolicy
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateAlarmPolicy
 &alarm_policy_type=eip
 &period=5m
 &zone=zw1b

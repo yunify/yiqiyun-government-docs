@@ -24,7 +24,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateGroupRoles
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateGroupRoles
 &group_role_name=T1
 &COMMON_PARAMS
 ```

@@ -56,7 +56,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=GetMonitor
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=GetMonitor
 &resource=i-1234abcd
 &meters.1=cpu
 &meters.2=if-52%3A54%3Af4%3A98%3A5d%3Af3

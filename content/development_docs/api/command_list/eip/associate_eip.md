@@ -37,7 +37,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=AssociateEip
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AssociateEip
 &eip=eip-12djpg8q
 &instance=i-12345678,
 &zone=zw

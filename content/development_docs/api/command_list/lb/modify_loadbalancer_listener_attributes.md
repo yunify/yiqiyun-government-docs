@@ -39,7 +39,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyLoadBalancerListenerAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyLoadBalancerListenerAttributes
 &loadbalancer_listener=lbl-1234abcd
 &balance_mode=roundrobin
 &session_sticky=insert|3600

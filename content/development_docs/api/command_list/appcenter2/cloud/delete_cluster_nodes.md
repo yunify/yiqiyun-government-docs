@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?
+http://api.yiqiyun.sd.cegn.cn/iaas/?
 action=DeleteClusterNodes
 &cluster=cl-q1witcdk
 &force=0

@@ -32,7 +32,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ReleaseEips
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ReleaseEips
 &eips.1=eip-uydrnlax
 &zone=zw
 &COMMON_PARAMS

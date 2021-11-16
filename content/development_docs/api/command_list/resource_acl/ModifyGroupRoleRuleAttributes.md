@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyGroupRoleRuleAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyGroupRoleRuleAttributes
 &group_role_rule=grr-613v0o2p
 &policy=all.describe
 &COMMON_PARAMS

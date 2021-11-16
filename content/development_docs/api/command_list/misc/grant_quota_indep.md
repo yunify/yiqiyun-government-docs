@@ -54,7 +54,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=GrantQuotaIndep
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=GrantQuotaIndep
 &user=usr-P9P3grKr
 &zone=test
 &volume=10

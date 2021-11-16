@@ -47,7 +47,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeAlarms
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeAlarms
 &resource=i-xxxxxx
 &COMMON_PARAMS
 ```

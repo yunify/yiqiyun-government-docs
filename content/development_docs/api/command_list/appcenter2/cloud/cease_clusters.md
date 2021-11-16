@@ -29,7 +29,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?&action=CeaseClusters
+http://api.yiqiyun.sd.cegn.cn/iaas/?&action=CeaseClusters
 &clusters.1=cl-2gi2b3oc
 &zone=pek3b
 &COMMON_PARAMS

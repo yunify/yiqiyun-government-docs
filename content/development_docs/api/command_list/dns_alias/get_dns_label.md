@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=GetDNSLabel
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=GetDNSLabel
 &zone=zw
 &COMMON_PARAMS
 ```

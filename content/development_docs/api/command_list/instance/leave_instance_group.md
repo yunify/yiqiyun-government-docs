@@ -30,7 +30,7 @@ weight: 18
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=LeaveInstanceGroup
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=LeaveInstanceGroup
 &instances.1=i-ipot8lz8
 &instance_group=ig-st962mj0
 &zone=gd2

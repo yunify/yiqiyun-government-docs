@@ -29,7 +29,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeUserGroupMembers
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeUserGroupMembers
 &search_word=deleted
 &COMMON_PARAMS
 ```

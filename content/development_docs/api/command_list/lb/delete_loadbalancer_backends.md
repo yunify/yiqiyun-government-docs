@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteLoadBalancerBackends
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteLoadBalancerBackends
 &loadbalancer_backends.1=lbb-1234abcd
 &loadbalancer_backends.2=lbb-5678hjkl
 &zone=zw

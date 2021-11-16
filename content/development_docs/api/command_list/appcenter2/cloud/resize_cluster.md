@@ -40,7 +40,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ResizeCluster
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ResizeCluster
 &cluster=cl-q1witcdk
 &cpu=2
 &memory=4096

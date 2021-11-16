@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=RestartClusterService
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=RestartClusterService
 &cluster=cl-95av0jxo
 &zone=pek3b
 &COMMON_PARAMS

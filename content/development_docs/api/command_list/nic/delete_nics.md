@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteNics
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteNics
 &nics.1="52:54:00:00:12:34",
 &zone=zw1b
 &COMMON_PARAMS

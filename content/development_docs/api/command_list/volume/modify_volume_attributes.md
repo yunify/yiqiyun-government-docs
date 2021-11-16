@@ -35,7 +35,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyVolumeAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyVolumeAttributes
 &volume=vol-rtyv0968
 &volume_name=sample
 &zone=zw1b

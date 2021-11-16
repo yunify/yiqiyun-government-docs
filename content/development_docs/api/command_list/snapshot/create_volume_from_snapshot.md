@@ -34,7 +34,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateVolumeFromSnapshot
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateVolumeFromSnapshot
 &snapshot=ss-zlcorbog
 &volume_name=volume_from_snapshot
 &zone=gd2

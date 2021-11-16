@@ -32,7 +32,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DetachFromS2SharedTarget
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DetachFromS2SharedTarget
 &shared_target=s2st-eawpunuj
 &volumes.1=vol-02x95cwp
 &zone=zw1b

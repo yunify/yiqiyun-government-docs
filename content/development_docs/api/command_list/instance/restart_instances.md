@@ -31,7 +31,7 @@ weight: 7
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=RestartInstances
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=RestartInstances
 &instances.1=i-rtyv0968
 &zone=zw1b
 &COMMON_PARAMS

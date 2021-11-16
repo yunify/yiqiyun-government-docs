@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?&action=StopClusters
+http://api.yiqiyun.sd.cegn.cn/iaas/?&action=StopClusters
 &clusters.1=cl-q1witcdk
 &zone=pek3b
 &COMMON_PARAMS

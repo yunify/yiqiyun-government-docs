@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateSecurityGroupIPSet
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateSecurityGroupIPSet
 &ipset_type=1
 &val=10000-15000
 &zone=zw1b

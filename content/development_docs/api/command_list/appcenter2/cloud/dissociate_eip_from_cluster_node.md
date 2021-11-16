@@ -27,7 +27,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateEipFromClusterNode
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateEipFromClusterNode
 &eips.1=eip-ek3scgap
 &zone=pek3b
 &COMMON_PARAMS

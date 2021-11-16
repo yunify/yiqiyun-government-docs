@@ -28,7 +28,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeGroupRoleRules
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeGroupRoleRules
 &group_roles.1=gr-tirat7zw
 &status.1=enabled
 &COMMON_PARAMS

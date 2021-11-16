@@ -32,7 +32,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteVxnets
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteVxnets
 &vxnets.1=vxnet-7mwzdbs
 &vxnets.2=vxnet-f3y0h3q
 &zone=zw

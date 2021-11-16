@@ -40,7 +40,7 @@ weight: 6
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=StopInstances
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=StopInstances
 &instances.1=i-rtyv0968
 &zone=zw1b
 &COMMON_PARAMS

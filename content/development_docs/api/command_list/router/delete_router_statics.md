@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteRouterStatics
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteRouterStatics
 &router_statics.1=rtrs-wls7otet
 &router_statics.2=rtrs-j1tsul7v
 &router_statics.3=rtrs-b3epyxu5

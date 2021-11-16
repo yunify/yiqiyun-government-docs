@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateVpcBorders
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateVpcBorders
 &border_name=ABC
 &border_type=1
 &zone=zw

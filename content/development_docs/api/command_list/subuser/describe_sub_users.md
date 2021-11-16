@@ -44,7 +44,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeSubUsers
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeSubUsers
 &limit=20
 &offset=0
 &COMMON_PARAMS

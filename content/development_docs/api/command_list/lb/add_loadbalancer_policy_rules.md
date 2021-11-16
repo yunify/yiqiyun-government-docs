@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=AddLoadBalancerPolicyRules
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AddLoadBalancerPolicyRules
 &loadbalancer_policy=lbp-1234abcd
 &rules.1.rule_type=domain
 &rules.1.val=qingcloud.com

@@ -29,7 +29,7 @@ weight: 15
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateInstanceGroups
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateInstanceGroups
 &relation=repel
 &zone=gd2
 &COMMON_PARAMS

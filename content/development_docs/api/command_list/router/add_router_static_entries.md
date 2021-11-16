@@ -32,7 +32,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=AddRouterStaticEntries
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AddRouterStaticEntries
 &router_static=rtrs-hcnwdfwc
 &entries.1.val1=admin
 &entries.1.val2=passwOrd

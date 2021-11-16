@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteAlarmPolicyRules
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteAlarmPolicyRules
 &alarm_policy_rules.1=alpr-13cooxdd
 &alarm_policy_rules.2=alpr-c25rz9c1
 &alarm_policy_rules.3=alpr-191d8eb5

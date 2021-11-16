@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyLoadBalancerAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyLoadBalancerAttributes
 &loadbalancer=lb-rtyv0968
 &loadbalancer_name=sample
 &zone=zw

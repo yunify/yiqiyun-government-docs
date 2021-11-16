@@ -22,7 +22,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=AddUserGroupMembers
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AddUserGroupMembers
 &user_group=ug-6zp387ak
 &users.1=usr-iKf0yJEZ
 &COMMON_PARAMS

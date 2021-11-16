@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ResizeNFV
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ResizeNFV
 &nfvs.1=nfv-1234abcd
 &nfv_spec=2
 &COMMON_PARAMS

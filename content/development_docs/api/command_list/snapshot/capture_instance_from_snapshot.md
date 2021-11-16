@@ -34,7 +34,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CaptureInstanceFromSnapshot
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CaptureInstanceFromSnapshot
 &snapshot=ss-webd026j
 &image_name=image_from_snapshot
 &zone=gd2

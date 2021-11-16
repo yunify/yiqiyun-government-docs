@@ -33,7 +33,7 @@ weight: 10
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyInstanceAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyInstanceAttributes
 &instance=i-rtyv0968
 &instance_name=sample
 &zone=zw1b

@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifySecurityGroupAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifySecurityGroupAttributes
 &security_group=sg-rtyv0968
 &security_group_name=sample
 &zone=zw1b

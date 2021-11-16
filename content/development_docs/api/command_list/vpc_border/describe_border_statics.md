@@ -38,7 +38,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeBorderStatics
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeBorderStatics
 &border=irt-2zevtm67
 &verbose=1
 &offset=0

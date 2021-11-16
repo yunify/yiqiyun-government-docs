@@ -50,7 +50,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeRouterVxnets
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeRouterVxnets
 &router=rtr-b0u6sdj6
 &COMMON_PARAMS
 ```

@@ -41,7 +41,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeVpcBorders
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeVpcBorders
 &verbose=1
 &vpc_borders.0=irt-2zevtm67
 &zone=zw

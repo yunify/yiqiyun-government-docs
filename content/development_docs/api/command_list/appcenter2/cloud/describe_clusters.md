@@ -92,7 +92,7 @@ Cluster的格式
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeClusters
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeClusters
 &clusters.1=cl-q1witcdk
 &limit=20
 &reverse=1

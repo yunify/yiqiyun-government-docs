@@ -29,7 +29,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=RestoreSubUsers
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=RestoreSubUsers
 &users.1=usr-abcd1234
 &COMMON_PARAMS
 ```

@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=UpdateRouters
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=UpdateRouters
 &routers.1=rtr-xt37nm9j
 &zone=zw
 &COMMON_PARAMS

@@ -29,7 +29,7 @@ weight: 16
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteInstanceGroups
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteInstanceGroups
 &instance_groups.1=ig-c7v8lro1
 &zone=gd2
 &COMMON_PARAMS

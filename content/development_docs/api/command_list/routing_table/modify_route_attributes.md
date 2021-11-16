@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyRouteAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyRouteAttributes
 &routing_table_rule=r-qdkyht01
 &network=172.31.0.0/24
 &nexthop_type=2

@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateResourceGroups
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateResourceGroups
 &COMMON_PARAMS
 ```
 

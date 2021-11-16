@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteSecurityGroupSnapshots
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteSecurityGroupSnapshots
 &security_group_snapshots.1=sgs-wx55xhix
 &COMMON_PARAMS
 ```

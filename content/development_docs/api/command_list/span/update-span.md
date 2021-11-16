@@ -30,7 +30,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=UpdateSpanMembers
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=UpdateSpanMembers
 &span=span-1234abcd
 &COMMON_PARAMS
 ```

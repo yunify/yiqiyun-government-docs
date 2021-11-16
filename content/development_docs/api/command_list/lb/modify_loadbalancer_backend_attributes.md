@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyLoadBalancerBackendAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyLoadBalancerBackendAttributes
 &loadbalancer_backend=lbb-1234abcd
 &port=80
 &weight=5

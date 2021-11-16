@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyAlarmPolicyAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyAlarmPolicyAttributes
 &alarm_policy=alarm_policy-axbkmf21
 &alarm_policy_name=sample
 &zone=zw1b

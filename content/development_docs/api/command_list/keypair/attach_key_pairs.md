@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=AttachKeyPairs
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AttachKeyPairs
 &keypairs.1=kp-12djpg8q
 &instances.1=i-12345678,
 &zone=zw1b

@@ -30,7 +30,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteSnapshots
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteSnapshots
 &snapshots.1=ss-qhnolmyt
 &snapshots.2=ss-ibk50c1o
 &zone=gd2

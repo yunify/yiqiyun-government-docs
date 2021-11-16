@@ -50,7 +50,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeSecurityGroups
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeSecurityGroups
 &verbose=1
 &COMMON_PARAMS
 ```

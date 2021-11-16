@@ -36,7 +36,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteS2Servers
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteS2Servers
 &s2_servers.1=s2-s5nqo8mr
 &zone=zw1b
 &COMMON_PARAMS

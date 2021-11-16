@@ -52,7 +52,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=Describekeypairs
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=Describekeypairs
 &verbose=1
 &COMMON_PARAMS
 ```

@@ -40,7 +40,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateRouters
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateRouters
 &router_name=demo
 &zone=zw
 &COMMON_PARAMS

@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateAlarmPolicy
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateAlarmPolicy
 &alarm_policy=alp-hp55o9i5
 &resources.1=i-xxxxx
 &zone=zw1b

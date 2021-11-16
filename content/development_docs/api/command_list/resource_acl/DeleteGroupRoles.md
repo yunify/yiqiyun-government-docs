@@ -21,7 +21,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteGroupRoles
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteGroupRoles
 &group_roles.1=gr-rlj5c72r
 &COMMON_PARAMS
 ```

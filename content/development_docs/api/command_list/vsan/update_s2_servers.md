@@ -32,7 +32,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=UpdateS2Servers
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=UpdateS2Servers
 &s2_servers.1=s2-lxqjtu3l
 &zone=zw1b
 &COMMON_PARAMS

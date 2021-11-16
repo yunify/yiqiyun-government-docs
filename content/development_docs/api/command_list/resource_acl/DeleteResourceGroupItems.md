@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteResourceGroupItems
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteResourceGroupItems
 &resource_group=rg-c7hmvt8u
 &zone=beta
 &resources.1=i-i8wewg3l

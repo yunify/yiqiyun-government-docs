@@ -38,7 +38,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=AddClusterNodes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AddClusterNodes
 &cluster=cl-q1witcdk
 &node_count=2
 &node_name=

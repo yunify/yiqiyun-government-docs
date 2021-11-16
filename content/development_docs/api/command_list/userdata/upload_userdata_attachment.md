@@ -35,7 +35,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=UploadUserDataAttachment
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=UploadUserDataAttachment
 &attachment_content=MTIxMjEyMTIxMjEyMTIxMjEy
 &attachment_name=name1
 &zone=zw

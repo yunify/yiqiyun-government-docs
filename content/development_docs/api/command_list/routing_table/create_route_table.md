@@ -32,7 +32,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateRouteTable
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateRouteTable
 &routing_table_name=Test
 &routing_table_type=0
 &rtable_rtype=1

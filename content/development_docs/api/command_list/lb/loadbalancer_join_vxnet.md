@@ -36,7 +36,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=LoadBalancerJoinVxnet
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=LoadBalancerJoinVxnet
 &vxnet=vxnet-q8f2bu
 &loadbalancer=lb-ciy73nib
 &private_ip=192.168.131.45

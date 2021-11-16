@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyTagAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyTagAttributes
 &tag=tag-axbkmf21
 &tag_name=sample
 &zone=zw1b

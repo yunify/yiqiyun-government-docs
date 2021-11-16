@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateEipsFromNFV
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateEipsFromNFV
 &nfv=nfv-1234abcd
 &eips.1=eip-ek3scgap
 &eips.2=eip-ek4scgam

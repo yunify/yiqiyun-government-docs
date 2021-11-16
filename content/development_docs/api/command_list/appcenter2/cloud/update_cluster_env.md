@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.yiqiyun.sd.cegn.cn/iaas/?action=UpdateClusterEnvironment
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=UpdateClusterEnvironment
 &cluster=cl-2gi2b3oc
 &env=%7B%22maxmemory-percent%22%3A60%2C%22hash-max-ziplist-entries%22%3A1024%7D
 &zone=pek3b
