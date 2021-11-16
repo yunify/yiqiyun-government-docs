@@ -42,7 +42,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeAppVersionAttachments
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeAppVersionAttachments
 &attachment_ids.1=ca-nx8rerlv
 &content_keys.1=config.json
 &content_keys.2=cluster.json.mustache

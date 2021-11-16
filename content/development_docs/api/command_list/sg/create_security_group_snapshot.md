@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateSecurityGroupSnapshot
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateSecurityGroupSnapshot
 &security_group=sg-q36kwq5r
 &name=sg_snapshot
 &zone=zw1b

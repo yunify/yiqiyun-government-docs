@@ -80,7 +80,7 @@ weight: 35
 _Example Request_:
 
 ```
-https://hpc.api.qingcloud.com:443/api/queue/getCurrentQueue
+https://hpc.api.yiqiyun.sd.cegn.cn:443/api/queue/getCurrentQueue
 ```
 
 _Example Response_:

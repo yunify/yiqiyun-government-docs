@@ -54,7 +54,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeS2SharedTargets
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeS2SharedTargets
 &s2_shared_targets.1=s2st-o0lf1gqu
 &verbose=1
 &COMMON_PARAMS
@@ -93,7 +93,7 @@ _Example Response_:
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeS2SharedTargets
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeS2SharedTargets
 &target_types.1=NFS
 &verbose=1
 &COMMON_PARAMS

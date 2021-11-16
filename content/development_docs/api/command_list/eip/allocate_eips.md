@@ -41,7 +41,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AllocateEips
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=AllocateEips
 &bandwidth=2
 &billing_mode=bandwidth
 &eip_name=dev

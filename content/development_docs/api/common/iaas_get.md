@@ -31,7 +31,7 @@ class QingApi:
         self.access_key_id = 'xxxxxx'
         self.secret_access_key = 'xxxxxxx'
         self.time_stamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
-        self.url = "https://api.qingcloud.com/iaas/"
+        self.url = "https://api.yiqiyun.sd.cegn.cn/iaas/"
         self.url_path = '/iaas/'
         self.methods = 'GET'
 

@@ -35,7 +35,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyEipAttributes
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyEipAttributes
 &eip=eip-rtyv0968
 &eip_name=jenkins
 &zone=zw

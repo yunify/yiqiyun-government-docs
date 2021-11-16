@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ConfigBorder
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=ConfigBorder
 &border=irt-2zevtm67
 &operation=ConfigRoute
 &zone=zw

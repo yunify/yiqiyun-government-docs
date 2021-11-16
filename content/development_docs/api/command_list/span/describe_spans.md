@@ -39,7 +39,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeSpans
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeSpans
 &spans.1=span-u6ssjx17
 &COMMON_PARAMS
 ```

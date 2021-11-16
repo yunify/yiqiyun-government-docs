@@ -32,7 +32,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyBorderAttributes
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyBorderAttributes
 &border=irt-2zevtm67
 &border_name=ABC
 &zone=zw

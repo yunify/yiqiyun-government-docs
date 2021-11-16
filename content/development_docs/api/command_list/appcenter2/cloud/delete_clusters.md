@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteClusters
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteClusters
 &clusters.1=cl-11esmufq
 &zone=zw1b
 &COMMON_PARAMS

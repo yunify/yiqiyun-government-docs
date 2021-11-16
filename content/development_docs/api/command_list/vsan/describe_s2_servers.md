@@ -100,7 +100,7 @@ nic_id： 网卡ID
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeS2Servers
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeS2Servers
 &s2_servers.1=s2-lxqjtu3l
 &verbose=1
 &zone=zw1b

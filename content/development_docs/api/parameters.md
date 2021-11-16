@@ -27,7 +27,7 @@ collapsible: false
 
 **请求样例**:
 
->[https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE](https://api.qingcloud.com/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE)
+>[https://api.yiqiyun.sd.cegn.cn/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE](https://api.yiqiyun.sd.cegn.cn/iaas/?access_key_id=QYACCESSKEYIDEXAMPLE)
 >
 >&action=RunInstances
 >

@@ -38,7 +38,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateVxnets
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateVxnets
 &vxnet_name=demo
 &vxnet_type=1
 &zone=zw

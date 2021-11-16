@@ -34,7 +34,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteLoadBalancers
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteLoadBalancers
 &loadbalancers.1=lb-1234abcd
 &zone=zw
 &COMMON_PARAMS

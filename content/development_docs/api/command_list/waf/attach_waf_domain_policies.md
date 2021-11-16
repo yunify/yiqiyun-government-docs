@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AttachWAFDomainPolicies
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=AttachWAFDomainPolicies
 &resourcies.1=lbl-ivifra2j
 &domain_policies.1=wafdp-rvbldlnf
 &zone=zw1b

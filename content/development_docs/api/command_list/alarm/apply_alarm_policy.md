@@ -32,7 +32,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ApplyAlarmPolicy
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=ApplyAlarmPolicy
 &alarm_policy=alp-12djpg8q
 &zone=zw1b
 &COMMON_PARAMS

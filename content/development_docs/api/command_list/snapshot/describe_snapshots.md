@@ -60,7 +60,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeSnapshots
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeSnapshots
 &zone=gd2
 &limit=2
 &COMMON_PARAMS

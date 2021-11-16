@@ -38,7 +38,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateDNSAlias
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=AssociateDNSAlias
 &prefix=database
 &resource=i-opv1n2brh
 &zone=zw

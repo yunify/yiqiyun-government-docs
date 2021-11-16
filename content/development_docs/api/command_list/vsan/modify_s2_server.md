@@ -31,7 +31,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyS2Server
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyS2Server
 &s2_server=s2-lxqjtu3l
 &name=demo
 &description=demo_descritpion

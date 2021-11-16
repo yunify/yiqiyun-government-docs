@@ -92,7 +92,7 @@ https://docs.qingcloud.com/appcenter/docs/specifications/specifications.html
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeClusterNodes
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeClusterNodes
 &cluster=cl-q1witcdk
 &limit=20
 &reverse=1

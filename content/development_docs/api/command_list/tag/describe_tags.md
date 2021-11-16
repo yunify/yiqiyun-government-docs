@@ -48,7 +48,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeTags
+https://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeTags
 &verbose=1
 &COMMON_PARAMS
 ```
