@@ -54,7 +54,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeLoadBalancers
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeLoadBalancers
 &loadbalancers.1=lb-1234abcd
 &status.1=active
 &verbose=1

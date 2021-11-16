@@ -34,7 +34,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=GetNFVMonitor
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=GetNFVMonitor
 &resource=nfv-1234abcd
 &meters.1=traffic
 &meters.2=interface

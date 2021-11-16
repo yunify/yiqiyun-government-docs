@@ -22,7 +22,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteGroupRoleRules
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteGroupRoleRules
 &group_role_rules.1=grr-613v0o2p
 &COMMON_PARAMS
 ```

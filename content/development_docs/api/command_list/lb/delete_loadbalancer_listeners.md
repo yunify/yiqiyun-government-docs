@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteLoadBalancerListeners
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteLoadBalancerListeners
 &loadbalancer_listeners.1=lbl-1234abcd
 &loadbalancer_listeners.2=lbl-5678hjkl
 &zone=zw

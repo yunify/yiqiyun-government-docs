@@ -32,7 +32,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeS2ServerVxnet
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ChangeS2ServerVxnet
 &s2_servers.1=s2-lxqjtu3l
 &vxnet=vxnet-ln2mtlk
 &zone=zw1b

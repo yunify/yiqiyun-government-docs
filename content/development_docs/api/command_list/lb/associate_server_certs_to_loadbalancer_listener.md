@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateServerCertsToLBListener
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AssociateServerCertsToLBListener
 &server_certificates.1=sc-1234abcd
 &loadbalancer_listener=lbl-xsfe0u8d
 &zone=zw

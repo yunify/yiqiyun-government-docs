@@ -23,7 +23,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyResourceGroupAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyResourceGroupAttributes
 &resource_group=rg-5ukijwcx
 &resource_group_name=TTTT
 &COMMON_PARAMS

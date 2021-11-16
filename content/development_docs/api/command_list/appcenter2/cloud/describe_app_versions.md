@@ -56,7 +56,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeAppVersions
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeAppVersions
 &app_ids.1=app-tg3lbp0a
 &limit=20
 &COMMON_PARAMS

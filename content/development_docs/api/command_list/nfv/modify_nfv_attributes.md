@@ -35,7 +35,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyNFVAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyNFVAttributes
 &nfv=nfv-1234abcd
 &zone=zw
 &COMMON_PARAMS

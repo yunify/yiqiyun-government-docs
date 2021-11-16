@@ -33,7 +33,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ResizeVolumes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ResizeVolumes
 &volumes.1=vol-r4jnbhui
 &size=50
 &zone=zw1b

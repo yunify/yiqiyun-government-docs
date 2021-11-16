@@ -24,7 +24,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyUserGroupMemberAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyUserGroupMemberAttributes
 &user_group=ug-6zp387ak
 &user=usr-iKf0yJEZ
 &status=disabled

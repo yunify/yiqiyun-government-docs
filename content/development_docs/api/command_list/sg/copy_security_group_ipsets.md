@@ -29,7 +29,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CopySecurityGroupIPSets
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CopySecurityGroupIPSets
 &ipsets.1=sgi-12345678
 &dest_zones.1=zw1b
 &COMMON_PARAMS

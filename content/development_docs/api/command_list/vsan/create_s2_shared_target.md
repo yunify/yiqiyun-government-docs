@@ -42,7 +42,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateS2SharedTarget
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateS2SharedTarget
 &s2_server=s2-lxqjtu3l
 &export_name=demo
 &description=demo_descritpion

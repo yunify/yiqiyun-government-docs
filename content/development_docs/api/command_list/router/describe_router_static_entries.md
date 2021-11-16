@@ -46,7 +46,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeRouterStaticEntries
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeRouterStaticEntries
 &router_static=rtrs-8e3pgr8r
 &COMMON_PARAMS
 ```

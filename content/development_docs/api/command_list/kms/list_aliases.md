@@ -33,7 +33,7 @@ weight: 65
 _Example Request_:
 
 ```
-https://kms.api.qingcloud.com/?action=ListAliases
+https://kms.api.yiqiyun.sd.cegn.cn/?action=ListAliases
 &COMMON_PARAMS
 ```
 

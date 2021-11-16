@@ -36,7 +36,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=PowerOnRouters
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=PowerOnRouters
 &routers.1=rtr-s5nqo8mr
 &zone=zw
 &COMMON_PARAMS

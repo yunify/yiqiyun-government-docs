@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DetachNics
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DetachNics
 &nics.1="52:54:00:00:12:34"
 &zone=zw1b
 &COMMON_PARAMS

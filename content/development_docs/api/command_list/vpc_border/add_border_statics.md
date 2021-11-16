@@ -38,7 +38,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AddBorderStatics
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AddBorderStatics
 &border=irt-2zevtm67
 &statics.0.border_static_name=r0
 &statics.0.static_type=0
