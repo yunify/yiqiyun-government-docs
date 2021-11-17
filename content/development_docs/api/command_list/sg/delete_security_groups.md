@@ -37,10 +37,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteSecurityGroups
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteSecurityGroups
 &security_groups.1=sg-inijevna
 &security_groups.2=sg-o3msxqpp
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

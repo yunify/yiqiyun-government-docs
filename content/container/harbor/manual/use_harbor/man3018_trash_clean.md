@@ -15,7 +15,7 @@ weight: 18
 
 2. 选择**系统管理**  > **垃圾清理**，点击**立即清理垃圾**。
 
-   <img src="/container/harbor/_images/man3018_garbege_clean.png" alt="garbege_clean" style="zoom:50%;" />
+   <img src="../../../_images/man3018_garbege_clean.png" alt="garbege_clean" style="zoom:50%;" />
 
    > **说明**：
    >

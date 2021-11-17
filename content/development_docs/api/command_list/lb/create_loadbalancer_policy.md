@@ -31,7 +31,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateLoadBalancerPolicy
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateLoadBalancerPolicy
 &loadbalancer_policy_name=static
 &balance_mode=roundrobin
 &COMMON_PARAMS

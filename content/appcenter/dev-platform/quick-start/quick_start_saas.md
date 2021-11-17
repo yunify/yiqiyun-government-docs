@@ -13,7 +13,7 @@ draft: false
 
 ## 主要流程
 
-山河 AppCenter 集成（SaaS） 创建一个应用的主要流程：
+山东省计算中心云平台 AppCenter 集成（SaaS） 创建一个应用的主要流程：
 
 - [应用与平台账户对接](/appcenter/dev-platform/saas-developer-guide/account)
 - [创建应用](/appcenter/dev-platform/saas-developer-guide/release/#创建应用)

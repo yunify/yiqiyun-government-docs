@@ -29,7 +29,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| loadbalancer_backend_set | Array | JSON 格式的后端服务数据列表, 每项参数可见下面 [Response Item](#response-item) |
+| loadbalancer_backend_set | Array | JSON 格式的后端服务数据列表, 每项参数可见下述 **Response Item** 部分 |
 | total_count | Integer | 根据过滤条件得到的后端服务总数 |
 
 **Response Item**
@@ -51,7 +51,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeLoadBalancerBackends
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeLoadBalancerBackends
 &loadbalancer=lb-1234abcd
 &COMMON_PARAMS
 ```

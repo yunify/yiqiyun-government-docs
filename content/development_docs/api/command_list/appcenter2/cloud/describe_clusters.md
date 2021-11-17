@@ -92,12 +92,12 @@ Cluster的格式
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeClusters
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeClusters
 &clusters.1=cl-q1witcdk
 &limit=20
 &reverse=1
 &scope=app
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

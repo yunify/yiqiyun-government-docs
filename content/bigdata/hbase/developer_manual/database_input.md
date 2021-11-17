@@ -13,7 +13,7 @@ draft: false
 
 通过 MapReduce 服务来批量导入 HDFS 中数据到 HBase。
 
-可通过 DistCp 命令来拷贝不同 HDFS 中的数据，关于 DistCp 更多的详细信息，可参考 [DistCp](http://hadoop.apache.org/docs/r2.7.7/hadoop-distcp/DistCp.html)
+可通过 DistCp 命令来拷贝不同 HDFS 中的数据，关于 DistCp 更多的详细信息，可参考 DistCp (http://hadoop.apache.org/docs/r2.7.7/hadoop-distcp/DistCp.html)
 
 ## 前提条件 
 
@@ -75,7 +75,7 @@ draft: false
 > 可自行修改 `job.setNumReduceTasks()` 中 Reduce 数目。
 
 ```java
-  package com.shanhe.hbase
+  package com.yiqiyun.hbase
 
   import org.apache.hadoop.conf.Configuration;
   import org.apache.hadoop.fs.Path;
@@ -177,7 +177,7 @@ hbase-tools-1.0.0.jar 是将上述代码打成的jar包，APP_HOME 是 jar 包�
 ```shell
   cd /opt/hadoop
 
-  bin/hadoop jar $APP_HOME/hbase-tools-1.0.0.jar com.shanhe.hbase.ImportByMR /user/inputPath
+  bin/hadoop jar $APP_HOME/hbase-tools-1.0.0.jar com.yiqiyun.hbase.ImportByMR /user/inputPath
 ```
 
 ## 方案二
@@ -185,7 +185,7 @@ hbase-tools-1.0.0.jar 是将上述代码打成的jar包，APP_HOME 是 jar 包�
 方案二 MapReduce 代码如下，Map 对数据做进一步处理，Reduce 无需指定，会根据 Map 的 outputValue 自动选择实现。
 
 ```java
-  package com.shanhe.hbase
+  package com.yiqiyun.hbase
 
   import org.apache.hadoop.conf.Configuration;
   import org.apache.hadoop.fs.Path;
@@ -262,7 +262,7 @@ hbase-tools-1.0.0.jar 是将上述代码打成的 jar 包，APP_HOME 是 jar 包
 
   export HADOOP_CLASSPATH=`/opt/hbase/bin/hbase classpath`
 
-  bin/hadoop jar $APP_HOME/hbase-tools-1.0.0.jar com.shanhe.hbase.ImportByBulkLoad /user/inputPath /user/outputPath
+  bin/hadoop jar $APP_HOME/hbase-tools-1.0.0.jar com.yiqiyun.hbase.ImportByBulkLoad /user/inputPath /user/outputPath
 
   bin/hadoop jar /opt/hbase/lib/hbase-server-<VERSION>.jar completebulkload /user/outputPath test_import
 ```

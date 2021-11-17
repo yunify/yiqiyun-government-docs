@@ -15,7 +15,9 @@ weight: 10
 
 在部署 Harbor App 之前，您需要创建一个 VPC 网络和一个负载均衡器。另外，若您需要使用 [QingStor 对象存储](/storage/object-storage/intro/object-storage/) 做后端存储，则还需要创建一个 QingStor 对象存储的 Bucket 。
 
-1. 创建一个 VPC 网络和关联一个 Vxnet 私有网络。
+1. 可选：创建一个 VPC 网络和关联一个 Vxnet 私有网络。
+   
+   若你需要在私有网络中部署 Harbor 镜像仓库，则需要提前创建好 VPC 及私有网络。
 
    创建 VPC 网络请参见[创建 VPC 网络](/network/vpc/manual/vpcnet/10_create_vpc/)，关联私有网络请参见[连接私有网络](/network/vpc/manual/vpcnet/15_bind_vxnet/)。
 
@@ -34,15 +36,15 @@ weight: 10
    > - 可创建私有或公有负载均衡器，若是公有，需要先申请公网IP；若是私有则只能用于内网访问。
    > - 监听器的监听协议可选 **HTTP** 或 **HTTPS** 。
    >
-   > - 若选择 **HTTPS** 协议，则需要在配置监听器时[添加服务器证书](/container/harbor/faq/use_ssl_certifcate/)，并在 **高级选项** > **附加HTTP头字段** 勾选**负载均衡器监听协议**（通过 X-Forwarded-Proto 头字段获取负载均衡器的监听协议）。
+   > - 若选择 **HTTPS** 协议，则需要在配置监听器时[添加服务器证书](../../faq/faq05_use_ssl_certifcate/)，并在 **高级选项** > **附加HTTP头字段** 勾选**负载均衡器监听协议**（通过 X-Forwarded-Proto 头字段获取负载均衡器的监听协议）。
 
-   <img src="/container/harbor/_images/qs_10_create_monitor.png" alt="monitor" style="zoom:50%;" />
+   <img src="../../_images/qs_10_create_monitor.png" alt="monitor" style="zoom:50%;" />
 
 3. 配置防火墙规则
 
    针对上一步负载均衡器的设置，在负载均衡器使用的安全组中添加允许下行规则 80/TCP (HTTP) 或 443/TCP (HTTPS) 端口。
 
-   <img src="/container/harbor/_images/qs_10_add_rules.png" alt="rule" style="zoom:50%;" />
+   <img src="../../_images/qs_10_add_rules.png" alt="rule" style="zoom:50%;" />
 
 4. 创建 Bucket（仅针对使用 QingStor 对象存储的用户，使用本地存储的用户请略过此步骤）
 
@@ -52,8 +54,8 @@ weight: 10
 
 ## 操作步骤
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
-2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **Harbor 镜像仓库**，进入 Harbor 镜像仓库部署页面。
+1. 登录管理控制台。
+2. 在控制台顶部的导航菜单中，选择**产品与服务** > **容器服务** > **Harbor**，进入 Harbor 镜像仓库部署页面。
 3. 点击**立即部署**开始部署。
 
 ### 第1步：基本设置
@@ -64,22 +66,22 @@ weight: 10
 
      > **说明**：
      >
-     > * 推荐使用 QingStor 对象存储来保证高可用和无限容量。（QingStor 对象存储是 QingCloud 提供的通用海量非结构化数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。）
+     > * 推荐使用 QingStor 对象存储来保证高可用和无限容量。（QingStor 对象存储是计算中心云平台提供的通用海量非结构化数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。）
      > * 本地存储不支持高可用，且受单磁盘容量限制，仅建议测试使用。
 
-     ![basic-info](/container/harbor/_images/harbor-create-basic-setting.png)
+     ![basic-info](../../_images/harbor-create-basic-setting.png)
 
 ### 第2步：主服务节点设置
 
 1. 点击 **+ 添加负载均衡器（后端端口 80）**，选择已创建好的负载均衡器及监听器，点击**添加**。
 
-    ![add-lb](/container/harbor/_images/harbor-create-add-lb.png)
+    ![add-lb](../../_images/harbor-create-add-lb.png)
 
 2. 填写主服务节点 CPU、内存，配置节点数量（默认为 2 个）及实例类型。
 
 ### 第3步：网络设置
 
-![network-setting](/container/harbor/_images/harbor-create-vxnet-set.png)
+![network-setting](../../_images/harbor-create-vxnet-set.png)
 
 选择已创建好的私有网络，并设置节点 IP 地址。
 
@@ -91,7 +93,7 @@ weight: 10
 
 ### 第4步：服务环境参数设置
 
-![para-setting](/container/harbor/_images/harbor-create-service-para-set.png)
+![para-setting](../../_images/harbor-create-service-para-set.png)
 
 设置以下参数：
 
@@ -126,7 +128,7 @@ weight: 10
 
 ### 第5步：用户协议
 
-阅读[《云平台 AppCenter 用户协议》](https://pek3a.qingstor.com/appcenter-docs/terms/qingcloud-appcenter-user-terms.pdf)并勾选确认接受该协议。
+阅读云平台 AppCenter 用户协议并勾选确认接受该协议。
 
 点击**提交**，开始创建 Harbor 集群所需资源。
 
@@ -136,5 +138,5 @@ weight: 10
 
 Habor 集群包含了：主服务节点、缓存节点、数据库节点、任务节点、日志节点及存储节点。
 
-![harbor-use-console-cluster-info](/container/harbor/_images/harbor-use-console-cluster-info.png)
+![harbor-use-console-cluster-info](../../_images/harbor-use-console-cluster-info.png)
 

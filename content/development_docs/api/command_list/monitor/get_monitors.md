@@ -7,7 +7,7 @@ draft: false
 
 
 批量获取多个资源的多个监控数据，一次请求总数不能超过 100 个资源。
-支持的资源类型和监控项可参考 [_GetMonitor_](./get_monitor.html)
+支持的资源类型和监控项可参考 [_GetMonitor_](../get_monitor/)
 
 
 **Request Parameters**
@@ -45,7 +45,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetMonitors
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=GetMonitors
 &resource_meters_pairs.1.resource=i-hpqfipia
 &resource_meters_pairs.1.meters=%5B%22cpu%22%2C%22memory%22%5D
 &resource_meters_pairs.2.resource=i-m39k0aoy

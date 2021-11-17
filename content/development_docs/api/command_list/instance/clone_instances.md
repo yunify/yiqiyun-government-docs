@@ -36,12 +36,12 @@ weight: 20
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CloneInstances
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CloneInstances
 &instances.1=i-xrvfi3jx
 &instances.2=i-w2kcs8vb
 &vxnets.1='i-xrvfi3jx|vxnet-q57edqv|172.30.10.21'
 &vxnets.2='i-w2kcs8vb|vxnet-3m9hetp'
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

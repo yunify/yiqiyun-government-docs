@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-本小节为用户呈现了直接调用 Elasticsearch API 的中文分词使用方式，为了在 Elasticsearch 中获取更好的中文分词效果，ELK 集成了 IK Analysis 中文分词插件，并为该插件提供了结巴分词的词库和 IK 自带的搜狗词库，同时还支持用户上传自定义词典。IK Analysis 插件用法请参考 [IK Analysis plugin](https://github.com/medcl/elasticsearch-analysis-ik)。
+本小节为用户呈现了直接调用 Elasticsearch API 的中文分词使用方式，为了在 Elasticsearch 中获取更好的中文分词效果，ELK 集成了 IK Analysis 中文分词插件，并为该插件提供了结巴分词的词库和 IK 自带的搜狗词库，同时还支持用户上传自定义词典。IK Analysis 插件用法请参考 IK Analysis plugin https://github.com/medcl/elasticsearch-analysis-ik。
 
 ## 操作步骤
 
@@ -63,9 +63,6 @@ draft: false
    公安部：各地校车将享最高路权
    中韩渔警冲突调查：韩警平均每天扣1艘中国渔船
    中国驻洛杉矶领事馆遭亚裔男子枪击，嫌犯已自首
-   北京优帆科技有限公司于2012年4月正式成立，是全球首家实现资源秒级响应并按秒计量的基础云服务商
-   青云的12字决：从初创企业到云生态的蜕变
-   "
    
    for data in $sampleData; do postData "$data"; done
    

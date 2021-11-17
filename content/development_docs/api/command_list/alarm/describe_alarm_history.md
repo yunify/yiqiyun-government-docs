@@ -52,7 +52,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeAlarmHistory
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeAlarmHistory
 &alarm=alm-xxxxxx
 &COMMON_PARAMS
 ```

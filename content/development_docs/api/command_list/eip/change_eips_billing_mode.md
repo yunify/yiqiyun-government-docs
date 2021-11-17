@@ -35,10 +35,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ChangeEipsBillingMode
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ChangeEipsBillingMode
 &eips.1=eip-r4jnbhui
 &billing_mode=traffic
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

@@ -1,7 +1,6 @@
+public/
 resources/
 node_modules/
-obj-sdk-bak/
-public/
 .vscode/
 debug.log
 .DS_Store

@@ -1,14 +1,13 @@
 ---
 title: "基准测试"
-description: 本小节主要介绍 QingCloud MongoDB 基准测试。 
+description: 本小节主要介绍文档数据库 MongoDB 基准测试。 
 keywords: mongodb 基准测试, 
-data: 2021-05-14T00:38:25+09:00
 weight: 90
 collapsible: false
 draft: false
 ---
 
-通过 [Yahoo! Cloud Serving Benchmark](https://github.com/brianfrankcooper/YCSB/tree/master/mongodb) 工具套件进行基准测试，本小节主要以下提供不同硬盘配置的测试结果，仅供参考。
+通过 `Yahoo! Cloud Serving Benchmark` (下载地址：https://github.com/brianfrankcooper/YCSB/tree/master/mongodb) 工具套件进行基准测试，本小节主要以下提供不同硬盘配置的测试结果，仅供参考。
 
 > - YCSB 不支持用户名密码登录，以下基准测试示例，为在关闭认证后测试结果。由于安全原因，MongoDB 认证默认禁止关闭，建议在实际性能评估时以模拟正式场景为准。
 > - 对 8核16G 和 16核32G 通过同时运行两个 YCSB 实例进行基准测试。两个 YCSB 实例实际上并不能压满 MongoDB 的性能，OPS 测试值仅供参考。

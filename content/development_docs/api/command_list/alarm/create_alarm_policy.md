@@ -46,10 +46,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateAlarmPolicy
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateAlarmPolicy
 &alarm_policy_type=eip
 &period=5m
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

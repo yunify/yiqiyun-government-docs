@@ -33,7 +33,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateSnapshots
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateSnapshots
 &resources.1=i-15ka7z7i
 &resources.2=vol-k9015e6r
 &zone=gd2

@@ -51,13 +51,13 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetQueueMonitor
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=GetQueueMonitor
 &resource=qn-71sgden7
 &meters.1=stats
 &start_time==2016-03-01T10%3A39%3A40.091Z
 &end_time=2016-05-01T16%3A39%3A40.091Z
 &step=5m
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

@@ -70,7 +70,7 @@ weight: 3
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=RunInstances
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=RunInstances
 &vxnets.1=vxnet-0
 &instance_type=small_a
 &image_id=centos63x64

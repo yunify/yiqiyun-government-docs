@@ -29,9 +29,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteWAFRules
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteWAFRules
 &rules.1=wafri-0q7fd000
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

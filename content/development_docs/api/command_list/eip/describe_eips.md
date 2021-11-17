@@ -31,7 +31,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| eip_set | Array | JSON 格式的公网IP数据列表，每项参数可见下面 [Response Item](#response-item) |
+| eip_set | Array | JSON 格式的公网IP数据列表，每项参数可见下述 **ResponseItemType** 部分 |
 | total_count | Integer | 根据过滤条件得到的公网IP总数 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
@@ -48,8 +48,8 @@ draft: false
 | status | String | 公网IP状态，有效值为 pending, available, associated, suspended，released, ceased。<br/>pending： 等待被创建<br/>available： 可用状态，此时可以被绑定到资源上。<br/>associated： 绑定状态<br/>suspended： 由于欠费，已被暂停使用<br/>released： 已被释放会资源池，此时公网IP不可被恢复。<br/>ceased： 已被彻底释放 |
 | transition_status | String | 公网IP过渡状态，有效值为 associating, dissociating, suspending, resuming, releasing。<br/>associating： 绑定到资源中，由 available 状态变成 associated 状态<br/>dissociating： 启动中，由 associated 状态变成 available 状态<br/>suspending： 欠费暂停中，由 available/associated 状态变成 suspended 状态<br/>resuming： 恢复中，由 suspended 状态变成 available 状态<br/>releasing： 删除中，由 available/associated/suspended 状态变成 released 状态 |
 | icp_codes | String | 备案号 |
-| create_time | TimeStamp | 公网IP创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
-| status_time | TimeStamp | 公网IP最近一次状态变更时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
+| create_time | TimeStamp | 公网IP创建时间，为UTC时间，格式可参见 ISO8601 (访问地址：http://www.w3.org/TR/NOTE-datetime)|
+| status_time | TimeStamp | 公网IP最近一次状态变更时间，为UTC时间，格式可参见 ISO8601 (访问地址：http://www.w3.org/TR/NOTE-datetime)|
 | resource | Dict | 若已分配到云服务器/路由器，则表示所分配的云服务器/路由器信息，数据格式为:<br/>{<br/> "resource_name":"website",<br/> "resource_type":"instance",<br/> "resource_id":"i-j32t3llb"<br/>} |
 | eip_group | Dict | 公网IP的分组信息，数据格式为:<br/>{<br/>  "eip_group_id":"eipg-1nv8hobz",<br/>  "eip_group_name":"192.168.93.*"<br/>} |
 | eip_addr | String | 公网IP地址 |
@@ -59,7 +59,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeEips
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeEips
 &COMMON_PARAMS
 ```
 

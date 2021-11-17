@@ -53,11 +53,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeClusterJobs
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeClusterJobs
 &app=app-tg3lbp0a
 &jobs.1=j-etkt94ebqra
 &limit=1
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 
@@ -71,7 +71,7 @@ _Example Response_:
     {
       "status":"successful",
       "job_id":"j-etkt94ebqra",
-      "directive":"{\"sender\":{\"lang\":\"en\",\"user_id\":\"system\",\"console_id\":\"system\",\"root_user_id\":\"system\",\"role\":\"global_admin\",\"privilege\":10,\"channel\":\"internal\"},\"zone\":\"pek3a\",\"expires\":\"2018-03-04T05:38:58Z\",\"action\":\"CeaseResources\",\"clusters\":[\"cl-xi3aoihf\"],\"resource_ids\":[\"cl-xi3aoihf\"]}",
+      "directive":"{\"sender\":{\"lang\":\"en\",\"user_id\":\"system\",\"console_id\":\"system\",\"root_user_id\":\"system\",\"role\":\"global_admin\",\"privilege\":10,\"channel\":\"internal\"},\"zone\":\"zw1b\",\"expires\":\"2018-03-04T05:38:58Z\",\"action\":\"CeaseResources\",\"clusters\":[\"cl-xi3aoihf\"],\"resource_ids\":[\"cl-xi3aoihf\"]}",
       "job_action":"CeaseResources",
       "create_time":"2018-03-04T05:37:58Z",
       "owner":"system",

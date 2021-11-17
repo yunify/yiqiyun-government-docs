@@ -37,7 +37,7 @@ weight: 13
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateBrokers
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateBrokers
 &instances.1=i-1tv6ffcy
 &zone=gd2
 &COMMON_PARAMS

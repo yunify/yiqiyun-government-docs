@@ -1,8 +1,7 @@
 ---
 title: "备份恢复"
-description: 本小节主要介绍如何备份恢复 QingCloud MongoDB 数据试。 
+description: 本小节主要介绍如何备份恢复文档数据库 MongoDB 数据试。 
 keywords: mongodb 备份恢复, 
-data: 2021-05-14T00:38:25+09:00
 weight: 50
 collapsible: false
 draft: false
@@ -11,7 +10,7 @@ draft: false
 
 ## 自动备份
 
-若开启了**自动备份**功能，那么 MongoDB 集群会在你指定的时间段进行每日的自动备份；可以从备份创建出全新的 MongoDB 集群。
+若开启了**自动备份**功能，那么 Mongo 集群会在你指定的时间段进行每日的自动备份；可以从备份创建出全新的 MongoDB 集群。
 
 ## 创建备份
 
@@ -19,7 +18,7 @@ draft: false
 
 > 如果备份后进行过增删节点，那么再次备份时需要创建新的备份链。
 
-![](../../_images/create_snapshot.png)
+<img src="../../_images/create_snapshot.png" style="zoom:50%;" />
 
 ## 从备份创建集群
 

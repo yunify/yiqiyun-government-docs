@@ -17,7 +17,7 @@ weight: 1
 ## 应用管理
 
 ### 创建应用
-首先登录[应用管理平台](https://appcenter.shanhe.com/developer)，点击**应用**部分的<b>+</b>号按钮，开始创建第一个应用。
+首先登录[应用管理平台](http://appcenter.yiqiyun.sd.cegn.cn/developer)，点击**应用**部分的<b>+</b>号按钮，开始创建第一个应用。
 
 ![应用管理首页](/appcenter/dev-platform/cluster-images/home.png)
 
@@ -36,8 +36,8 @@ weight: 1
 - **概述**: 简单介绍应用的主要功能及特性，让用户进一步了解该应用。
 - **应用描述**: 可在应用描述中详细介绍应用的各个功能以及特性，当用户想进一步了解应用时，描述内容的完整将变成尤为重要。
 - **应用类别**: 目前支持的应用类别主要有：基础服务、企业软件、研发管理、运维管理、安全管理和行业增值几大类，请根据应用的功能特性选择适合的应用类别。
-- **使用说明**: 用户如何使用本应用的详细说明，[语法说明](/appcenter/dev-platform/faq/cluster-faqs/#32-使用说明和服务条款的-markdown-语法说明)。
-- **服务条款**: 若用户在使用应用过程中需要同意一些特殊条款请在此声明，用户在部署安装时我们会告知用户，[语法说明](/appcenter/dev-platform/faq/cluster-faqs/#32-使用说明和服务条款的-markdown-语法说明)。
+- **使用说明**: 用户如何使用本应用的详细说明，[语法说明](/appcenter/dev-platform/faq/cluster-faqs/#31-使用说明和服务条款的-markdown-语法说明)。
+- **服务条款**: 若用户在使用应用过程中需要同意一些特殊条款请在此声明，用户在部署安装时我们会告知用户，[语法说明](/appcenter/dev-platform/faq/cluster-faqs/#31-使用说明和服务条款的-markdown-语法说明)。
 - **应用图标**: 为您的应用设计一枚美观的图标，以代表您的应用并突出应用特点。
 - **应用截图**: 清晰的界面截图可以辅助以上信息帮助用户直观了解应用的各个方面。
 
@@ -48,8 +48,6 @@ weight: 1
 完善的 大数据服务HBase 应用信息如下：
 
 ![应用信息1](/appcenter/dev-platform/cluster-images/app_info1.png)
-![应用信息2](/appcenter/dev-platform/cluster-images/app_info2.png)
-![应用信息3](/appcenter/dev-platform/cluster-images/app_info3.png)
 
 在应用中心中呈现给最终用户的效果如下：
 
@@ -57,7 +55,7 @@ weight: 1
 
 ### 发布应用
 
-应用(版本)通过审核之后，您可以选择适当的时间发布应用，发布之后用户便可通过 [AppCenter](https://appcenter.shanhe.com/) 浏览、搜索查看到此款应用，并购买应用从而部署自己的应用实例。
+应用(版本)通过审核之后，您可以选择适当的时间发布应用，发布之后用户便可通过 [AppCenter](http://appcenter.yiqiyun.sd.cegn.cn) 浏览、搜索查看到此款应用，并购买应用从而部署自己的应用实例。
 
 ### 管理应用
 

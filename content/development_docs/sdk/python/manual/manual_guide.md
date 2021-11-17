@@ -6,9 +6,9 @@ draft: false
 
 
 
-使用 qingcloud-sdk 前请先在 [青云控制台](https://console.qingcloud.com/access_keys/) 申请 access key，申请后便可以自由使用了。
+使用 qingcloud-sdk 前请先在 [山东省计算中心云平台控制台](http://console.yiqiyun.sd.cegn.cn/access_keys/) 申请 access key，申请后便可以自由使用了。
 
-> 注：如果您期望在IAM身份的信任设备上使用 qingcloud-sdk ，也可以不用申请 access key ，而是到 [IAM 控制面板](https://console.qingcloud.com/iam/)创建基于该信任设备的IAM即可。
+> 注：如果您期望在IAM身份的信任设备上使用 qingcloud-sdk ，也可以不用申请 access key ，而是到 [IAM 控制面板](http://console.yiqiyun.sd.cegn.cn/iam/)创建基于该信任设备的IAM即可。
 
 下面举几个例子来帮助大家快速上手，全部功能请见后面的 [函数列表](#id3) 。
 
@@ -132,7 +132,7 @@ u'available'
 >>> ret = conn.attach_volumes(volumes=[volume_id], instance='instance-id')
 ```
 
-硬盘加载成功后，需要到加载的云服务器上进一步手动操作，具体可参考 [_FAQ_](../../faq/index.html#faq) 。
+硬盘加载成功后，需要到加载的云服务器上进一步手动操作，具体可参考 [_FAQ_](/storage/disk/quickstart/init/init_start/) 。
 
 ## 函数列表 {#id3}
 

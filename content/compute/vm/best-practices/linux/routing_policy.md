@@ -25,7 +25,7 @@ draft: false
 
 ### 3.登录到云服务器，查看网卡ip地址信息
 
-<img src="../..=/_images/homer/network_nic_04.png" width="60%" height="60%">
+<img src="../../_images/homer/network_nic_04.png" width="60%" height="60%">
 
 ### 4.使用以下的命令创建两张路由表
 

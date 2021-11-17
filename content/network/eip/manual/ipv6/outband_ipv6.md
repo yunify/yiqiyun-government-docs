@@ -2,7 +2,7 @@
 title: "外部绑定公网 IP"
 description: test
 weight: 10
-draft: false
+draft: true
 ---
 
 ## 操作场景

@@ -35,11 +35,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DetachTags
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DetachTags
 &resource_tag_pairs.1.tag_id=tag-hp55o9i5
 &resource_tag_pairs.1.resource_type=instance
 &resource_tag_pairs.1.resource_id=i-5yn6js06
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

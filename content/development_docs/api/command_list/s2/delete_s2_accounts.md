@@ -31,9 +31,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteS2Accounts
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteS2Accounts
 &s2_accounts.1=s2a-10231qr5
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

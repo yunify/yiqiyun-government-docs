@@ -28,7 +28,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| router_vxnet_set | Array | JSON 格式的私有网络列表，每项参数可见下面 [ResponseItemType](#responseitemtype) |
+| router_vxnet_set | Array | JSON 格式的私有网络列表，每项参数可见下述 **ResponseItemType** 部分 |
 | total_count | Integer | 根据过滤条件得到的私有网络总数 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
@@ -43,14 +43,14 @@ draft: false
 | dyn_ip_start | String | 私有网络 DHCP 起始地址 |
 | dyn_ip_end | String | 私有网络 DHCP 终止地址 |
 | features | Integer | 私有网络开启的功能标记位<br/> “0” 表示不开启 DHCP 和内网 DNS 功能。<br/> “1” 表示只开启 DHCP 地址分配功能。<br/> “2” 表示只开启内网 DNS 功能。<br/> “3” 表示同时开启 DHCP 地址分配和内网 DNS 功能。 |
-| create_time | TimeStamp | 私有网络连接路由器的创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
+| create_time | TimeStamp | 私有网络连接路由器的创建时间，为UTC时间，格式可参见 ISO8601 (访问地址：http://www.w3.org/TR/NOTE-datetime). |
 
 **Example**
 
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeRouterVxnets
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeRouterVxnets
 &router=rtr-b0u6sdj6
 &COMMON_PARAMS
 ```

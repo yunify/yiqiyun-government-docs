@@ -1,14 +1,11 @@
 ---
 title: "节点管理"
-description: 本小节主要介绍如何管理 QingCloud MongoDB 集群节点。 
+description: 本小节主要介绍如何管理 MongoDB 集群节点。 
 keywords: mongodb 节点管理, 
-data: 2021-05-14T00:38:25+09:00
 weight: 40
 collapsible: false
 draft: false
 ---
-
-
 
 ## 节点详情
 
@@ -20,7 +17,7 @@ draft: false
 
 根据需要增加集群节点，增加的节点数必须为偶数。添加节点的任务执行时间跟集群的数据量有关系，数据量大时，任务执行时间会久一些，添加节点不影响集群的读写。
 
-![](../../_images/add_nodes.png)
+<img src="../../_images/add_nodes.png" style="zoom:50%;" />
 
 ## 删除节点
 

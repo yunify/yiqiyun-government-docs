@@ -44,8 +44,8 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeS2DefaultParameters
-&zone=pek3a
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeS2DefaultParameters
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

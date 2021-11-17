@@ -2,7 +2,6 @@
 title: "备份恢复"
 description: 本小节主要介绍 Redis Standalone 备份恢复数据。 
 keywords: redis standalone 备份恢复
-data: 2021-05-14T00:38:25+09:00
 weight: 60
 collapsible: false
 draft: false
@@ -11,7 +10,7 @@ draft: false
   
 
 
-可以对集群进行手动备份，也可以在集群列表页面右键选择备份时间进行自动备份。
+可以在**备份**页签，点击**创建备份**对集群进行手动备份，也可以在集群列表页面右键选择**修改自动备份策略**进行自动备份。
 
 ![备份数据](../../_images/backup_data_1.png)
 

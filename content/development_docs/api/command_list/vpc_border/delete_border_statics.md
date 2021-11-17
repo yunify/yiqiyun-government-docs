@@ -31,10 +31,10 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteBorderStatics
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteBorderStatics
 &border=irt-2zevtm67
 &border_statics.0=bdrs-22obzsfu
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

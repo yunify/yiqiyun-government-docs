@@ -24,9 +24,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DisableS2SharedTargets
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DisableS2SharedTargets
 &shared_targets.1=s2st-eawpunuj
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

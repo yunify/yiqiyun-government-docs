@@ -16,7 +16,7 @@ draft: false
 | --- | --- | --- | --- |
 | vxnet | String | 需要连接路由器的受管私有网络ID | Yes |
 | router | String | 受管私有网络需要连接的路由器ID | Yes |
-| ip_network | String | 受管私有网络的网段，目前支持的网段为 192.168.x.0/24 和 172.16.x.0/24，需要满足 [CIDR格式](http://en.wikipedia.org/wiki/Classless_Inter-Domain_Routing)<br/>注解<br/>同一个路由器下管理的受管私有网络的网段不能重复。 | Yes |
+| ip_network | String | 受管私有网络的网段，目前支持的网段为 192.168.x.0/24 和 172.16.x.0/24，需要满足 CIDR 格式<br/>注解<br/>同一个路由器下管理的受管私有网络的网段不能重复。 | Yes |
 | features | Integer | 路由器需要开启的功能，默认为1，目前这个值只能填1，表示开启DHCP服务。 | No |
 | manager_ip | String | 路由器的管理IP | No |
 | dyn_ip_start | String | DHCP服务分配开始IP | No |
@@ -38,11 +38,11 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=JoinRouter
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=JoinRouter
 &vxnet=vxnet-rzg2llb
 &router=rtr-xt37nm9j
 &ip_network=192.168.1.0/24
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

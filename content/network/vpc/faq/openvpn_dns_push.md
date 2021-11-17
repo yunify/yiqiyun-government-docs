@@ -11,7 +11,7 @@ weight: 20
 
 ### 1.配置内网解析的域名如下
 
-<img src="../homer/openvpn_dns_push_01.png" width="60%" height="60%">
+<img src="../homer/openvpn_dns_push_01.png" >
 
 ### 2.vpn服务---openvpn—修改，在附加配置里增加以下内容
 

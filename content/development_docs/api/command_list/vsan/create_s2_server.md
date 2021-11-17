@@ -38,10 +38,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=CreateS2Server
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=CreateS2Server
 &vxnet_id=vxnet-ln2mtlk
 &service_type=vsan
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

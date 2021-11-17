@@ -13,7 +13,7 @@ draft: false
 
 > **说明**
 > 
-> 更多配置参数说明，请参见 [HBase 官方配置文件](http://hbase.apache.org/book.html#config.files)
+> 更多配置参数说明，请参见 HBase 官方配置文件(http://hbase.apache.org/book.html#config.files)
 
 本小节主要介绍 AppCenter 中各 HBase 配置参数的含义。
 
@@ -48,7 +48,7 @@ draft: false
 |   hbase.rpc.timeout    |   1000～3600000  |  表示 HBase client 应用 rpc 超时时间。  |
 |  hbase.column.max.version      | 1~1000        |   表示新创建列簇的最大版本数。  |
 |   hbase.security.authorization  |   - |  表示是否开启安全认证机制。  |
-|   shanhe.hbase.major.compact.hour      |  -1～24       |   表示设置每天手动 Major Compaction 的整点时间，设为-1则取消手动 Compaction。  |
-|   shanhe.phoenix.on.hbase.enable  |   - |  表示是否开启 Phoenix 查询引擎功能。  |
+|   yiqiyun.hbase.major.compact.hour      |  -1～24       |   表示设置每天手动 Major Compaction 的整点时间，设为-1则取消手动 Compaction。  |
+|   yiqiyun.phoenix.on.hbase.enable  |   - |  表示是否开启 Phoenix 查询引擎功能。  |
 |   phoenix.functions.allowUserDefinedFunctions  |   - |  表示是是否开启 Phoenix UDF。  |
 |   phoenix.transactions.enabled  |   - |  表示是否开启 Phoenix ACID 事务。  |
