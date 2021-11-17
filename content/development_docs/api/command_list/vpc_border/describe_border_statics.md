@@ -61,7 +61,7 @@ _Example Response_:
             "static_type":0,
             "root_user_id":"usr-1gIBrASt",
             "owner":"usr-1gIBrASt",
-            "console_id":"qingcloud",
+            "console_id":"yiqiyun",
             "disabled":0,
             "border_static_name":"r0",
             "controller":"self",

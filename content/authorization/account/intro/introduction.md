@@ -3,7 +3,7 @@ title: "什么是账户中心"
 description: Test description
 draft: false
 weight: 5
-keyword: 账户中心, QingCloud
+keyword: 账户中心
 ---
 
 账户中心为用户提供账户设置、账户安全、通知列表等模块，用户可便捷管理账户。

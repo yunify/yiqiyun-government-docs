@@ -36,7 +36,7 @@ _Example Request_
 http://api.yiqiyun.sd.cegn.cn/iaas/?action=AddLoadBalancerPolicyRules
 &loadbalancer_policy=lbp-1234abcd
 &rules.1.rule_type=domain
-&rules.1.val=qingcloud.com
+&rules.1.val=yiqiyun.sd.cegn.cn
 &COMMON_PARAMS
 ```
 

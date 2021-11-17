@@ -29,7 +29,7 @@ draft: false
 
 **Example**
 
-以应用[Redis Cluster](https://appcenter.qingcloud.com/apps/app-jwq1fzqo/Tomcat%20Cluster%20on%20QingCloud)为例，修改 `max-maxmemory` 和 `hash-max-ziplist-entries`
+以应用 Redis Cluster 为例，修改 `max-maxmemory` 和 `hash-max-ziplist-entries`
 
 _Example Request_:
 
@@ -62,5 +62,4 @@ _Example Response_:
 }
 
 ```
-
 

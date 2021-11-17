@@ -52,7 +52,7 @@ _Example Response_:
     {
       "instance_id":"i-1tv6ffcy",
       "broker_port":23239,
-      "broker_host":"broker.qingcloud.com"
+      "broker_host":"broker.yiqiyun.com"
     }
   ],
   "ret_code":0

@@ -41,7 +41,7 @@ _Example Response_:
 {
   "action": "GetDNSLabelResponse",
   "dns_label": "xwxjic",
-  "domain_name": "xwxjic.gd2.qingcloud.com",
+  "domain_name": "xwxjic.gd2.yiqiyun.sd.cegn.cn",
   "ret_code":0
 }
 ```
