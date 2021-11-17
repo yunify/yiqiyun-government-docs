@@ -54,7 +54,7 @@ _Example Response_:
             "vxnet_id":"vxnet-gonkgpv",
             "dyn_ip_start":"192.168.0.2",
             "dyn_ipv6_end":"",
-            "console_id":"qingcloud",
+            "console_id":"yiqiyun",
             "create_time":"2020-11-13T07:47:50Z",
             "owner":"usr-1gIBrASt",
             "dhcp_server_ip":"",

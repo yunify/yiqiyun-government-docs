@@ -34,7 +34,7 @@ draft: false
 
 **Example**
 
-以应用[ZooKeeper](https://appcenter.qingcloud.com/apps/app-tg3lbp0a/ZooKeeper%20on%20QingCloud)为例
+以应用 ZooKeeper 为例
 
 _Example Request_:
 
@@ -63,5 +63,4 @@ _Example Response_:
   "job_id":"j-lvilrk89641"
 }
 ```
-
 
