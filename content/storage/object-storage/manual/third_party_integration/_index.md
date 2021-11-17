@@ -7,7 +7,7 @@ weight: 3
 collapsible: true
 ---
 
-为了进一步提高 QingStor 对象存储的易用性，降低使用 QingStor 对象存储服务的学习成本，QingStor 对象存储为用户提供了相应的插件与工具，用于支持第三方软件与 QingStor 对象存储服务的直接对接。
+为了进一步提高对象存储的易用性，降低使用对象存储服务的学习成本，对象存储为用户提供了相应的插件与工具，用于支持第三方软件与对象存储服务的直接对接。
 
 - [Logstash Input QingStor](logstash_input/)
     - [安装](logstash_input/#安装)

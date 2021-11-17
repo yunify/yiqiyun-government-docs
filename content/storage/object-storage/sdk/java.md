@@ -9,7 +9,7 @@ Java SDK 使用 [Snips](https://github.com/yunify/snips) 工具生成，各接�
 
 SDK 示例请参见 [SDK Example](https://github.com/qingstor/qingstor-sdk-java/blob/master/docs/examples_zh-CN.md)。
 
-使用 SDK 之前请先在 [管理控制台](https://console.qingcloud.com/access_keys/) 申请 Access key。
+使用 SDK 之前请先在管理控制台申请 Access key。
 
 ## 安装
 
