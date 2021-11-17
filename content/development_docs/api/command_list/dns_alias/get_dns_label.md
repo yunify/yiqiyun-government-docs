@@ -30,8 +30,8 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=GetDNSLabel
-&zone=pek3a
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=GetDNSLabel
+&zone=zw
 &COMMON_PARAMS
 ```
 

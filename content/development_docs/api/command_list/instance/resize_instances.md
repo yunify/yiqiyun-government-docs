@@ -42,10 +42,10 @@ weight: 9
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ResizeInstances
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ResizeInstances
 &instance_type=medium_a
 &instances.1=i-r4jnbhui
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

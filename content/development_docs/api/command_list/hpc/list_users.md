@@ -61,7 +61,7 @@ weight: 15
 _Example Request_:
 
 ```
-https://hpc.api.qingcloud.com:443/api/user
+https://hpc.api.yiqiyun.sd.cegn.cn:443/api/user
 ```
 
 _Example Response_:

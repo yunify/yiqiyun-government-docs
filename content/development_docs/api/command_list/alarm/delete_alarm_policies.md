@@ -30,7 +30,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteAlarmPolicys
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteAlarmPolicys
 &alarm_policies.1=alp-axbkmf20
 &alarm_policies.2=alp-axbkmf21
 &zone=pek3a

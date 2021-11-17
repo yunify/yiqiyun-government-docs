@@ -19,25 +19,24 @@ Harbor 提供镜像复制功能，允许用户以推送和拉取方式在不同 
 
 ## 操作步骤
 
-详细操作说明，请参见 [Harbor 官方文档](https://goharbor.io/docs/2.2.0/administration/configuring-replication/)，以下为步骤要点。
 
 >**说明**：
 >
 >本操作中截图以 Harbor v2.2.1 为例，仅供参考，请以您部署的 Harbor 实际版本为准。
 
-1. [登录资源所在的 Harbor Web界面](/container/harbor/quickstart/qs18_access_harbor/#浏览器登录)。 
+1. [登录资源所在的 Harbor Web界面](../../../quickstart/qs18_access_harbor/#浏览器登录)。 
 
 2. 创建目标仓库。
 
    进入**仓库管理**页面，点击**新建目标**，创建复制目标。
 
-   <img src="/container/harbor/_images/man3008_new_dest.png" alt="new_dest" style="zoom:50%;" />
+   <img src="../../../_images/man3008_new_dest.png" alt="new_dest" style="zoom:50%;" />
 
 3. 创建复制规则。
 
    进入**复制管理**页面，点击**新建规则**，进行复制规则配置。
 
-   <img src="/container/harbor/_images/man3008_new_rule.png" alt="new_rule" style="zoom:50%;" />
+   <img src="../../../_images/man3008_new_rule.png" alt="new_rule" style="zoom:50%;" />
 
 4. 手动运行复制任务。
 

@@ -29,7 +29,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| span_set | Array | JSON 格式的SPAN列表，每项参数可见下面 [Response Item](#response-item) |
+| span_set | Array | JSON 格式的SPAN列表，每项参数可见下述 **Response Item** 部分 |
 | total_count | Integer | 根据过滤条件得到的SPAN总数 |
 
 **Response Item**
@@ -39,7 +39,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeSpans
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeSpans
 &spans.1=span-u6ssjx17
 &COMMON_PARAMS
 ```

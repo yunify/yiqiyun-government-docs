@@ -7,13 +7,13 @@ type: "product"
 
 section1:
   title: API文档
-  vice_title: 青云向用户开放所有资源操作相关的API。青云API是通过 HTTPS GET方式来调用的。 
+  vice_title: 山东省计算中心云平台向用户开放所有资源操作相关的 API。API 是通过 HTTPS GET方式来调用的。 
 
 section2:
   title: 用户指南
   children:
     - title: 概述
-      content: API概述
+      content: API 概述
       url: "overview/"
 
     - title: 公共参数
@@ -28,7 +28,7 @@ section2:
       content: 服务器返回的错误码(ret_code)和错误信息(message)。
       url: "error_code/"
 
-    - title: API指令列表
+    - title: API 指令列表
       content: 列出了所有的API请求指令。
       url: "command_list/"
 
@@ -45,8 +45,8 @@ section3:
 
 section4:
   children:
-    - title: 了解：什么是API
-      content: 青云向用户开放所有资源操作相关的API。
+    - title: 了解：什么是 API
+      content: 向用户开放所有资源操作相关的 API。
       vice_title: 了解的第一步
       children:
         - title: API概述

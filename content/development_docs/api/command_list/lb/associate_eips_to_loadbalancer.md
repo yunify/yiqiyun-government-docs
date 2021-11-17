@@ -31,10 +31,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=AssociateEipsToLoadBalancer
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=AssociateEipsToLoadBalancer
 &eips.1=eip-1234abcd
 &loadbalancer=lb-1234abcd
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

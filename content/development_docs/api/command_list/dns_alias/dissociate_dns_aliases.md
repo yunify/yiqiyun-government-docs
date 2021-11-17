@@ -30,9 +30,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DissociateDNSAliases
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateDNSAliases
 &dns_alias.1=da-q8f2bu7
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

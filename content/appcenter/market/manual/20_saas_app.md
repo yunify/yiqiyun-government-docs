@@ -7,10 +7,10 @@ draft: false
 
 ## 应用查找
 
-山河为**山河用户**和 **山河 AppCenter 服务商**提供了以下方式进行应用查看：
+山东省计算中心云平台为**山东省计算中心云平台用户**和 **山东省计算中心云平台 AppCenter 服务商**提供了以下方式进行应用查看：
 
-1. 登录[应用管理平台](https://appcenter.shanhe.com/developer)，进入应用市场，可查看山河出品的应用。
-2. 登录进入[控制管理平台](https://console.shanhe.com/)，在 AppCenter 控制台的应用中心或者产品与服务，快速查看所需应用。
+1. 登录[应用管理平台](http://appcenter.yiqiyun.sd.cegn.cn/developer)，进入应用市场，可查看山东省计算中心云平台出品的应用。
+2. 登录进入[控制管理平台](http://console.yiqiyun.sd.cegn.cn/)，在 AppCenter 控制台的应用中心或者产品与服务，快速查看所需应用。
 
 在控制管理平台，进入到工作台，进入 AppCenter 控制台的应用中心，查找所需应用，如下界面所示。
 

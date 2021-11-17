@@ -7,7 +7,7 @@ collapsible: false
 draft: false
 ---
 
-在某些大规模数据分析场景（比如时间数据分析），可以采用此架构：基于时间创建 index，然后持续地把温/冷数据迁移到相应的数据节点。详情可参考官方博客 [“Hot-Warm” Architecture in Elasticsearch 5.x](https://www.elastic.co/blog/hot-warm-architecture-in-elasticsearch-5-x)。
+在某些大规模数据分析场景（比如时间数据分析），可以采用此架构：基于时间创建 index，然后持续地把温/冷数据迁移到相应的数据节点。详情可参考官方博客 “Hot-Warm” Architecture in Elasticsearch 5.x https://www.elastic.co/blog/hot-warm-architecture-in-elasticsearch-5-x。
 
 ## 节点介绍
 
@@ -50,4 +50,3 @@ PUT /last-year/_settings
 下面的动态截屏展示了通过 Kibana 的 Dev Tools 进行温/冷数据迁移的过程：
 
 ![hot-warm-cold](../../_images/hot-warm-cold.gif)
-

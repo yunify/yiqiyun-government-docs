@@ -33,10 +33,10 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DissociateBorder
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DissociateBorder
 &border=irt-2zevtm67
 &router=rtr-e5m6sr20
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

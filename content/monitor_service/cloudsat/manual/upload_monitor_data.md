@@ -513,7 +513,7 @@ func Verify(url string) int {
 
 func main() {
 	result := "access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA256&signature_version=1&time_stamp=2020-12-23T14%3A03%3A44Z&version=1&zone=sh1&signature=d6eMFDgO3E6wBqbbn2AydX%2BxQws7iD%2BtSgfGF6Lq7Uo%3D"
-	url := "https://api.qingcloud.com/iaas/" + "?" + result
+	url := "http://api.yiqiyun.sd.cegn.cn/iaas/" + "?" + result
 	fmt.Println(Verify(url))
 }
 ```
@@ -693,7 +693,7 @@ class UploadMonitorData(object):
 
         self.time_stamp = datetime.datetime.utcnow().strftime("%Y-%m-%dT%H:%M:%SZ")
         self.time = datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
-        self.url = "https://api.qingcloud.com/iaas/"
+        self.url = "http://api.yiqiyun.sd.cegn.cn/iaas/"
         self.CloudSatUrl = "http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData"
         self.url_path = '/iaas/'
         self.methods = 'GET'

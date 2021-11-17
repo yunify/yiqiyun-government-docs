@@ -6,7 +6,11 @@ draft: false
 
 
 
-删除一个或多个负载均衡器转发策略规则。 注意：在删除后，你需要执行 [_ApplyLoadBalancerPolicy_](../apply_loadbalancer_policy/) 指令才会生效。
+删除一个或多个负载均衡器转发策略规则。 
+
+注意：
+
+在删除后，你需要执行 [_ApplyLoadBalancerPolicy_](../apply_loadbalancer_policy/) 指令才会生效。
 
 **Request Parameters**
 
@@ -30,10 +34,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteLoadBalancerPolicyRules
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteLoadBalancerPolicyRules
 &loadbalancer_policy_rules.1=lbpr-1234abcd
 &loadbalancer_policy_rules.2=lbpr-5678hjkl
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 
@@ -46,6 +50,6 @@ _Example Response_:
     "lbl-1234abcd",
     "lbl-5678hjkl"
   ],
-  "zone":"pek3a"
+  "zone":"zw"
 }
 ```

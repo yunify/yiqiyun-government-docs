@@ -34,10 +34,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyLoadBalancerAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyLoadBalancerAttributes
 &loadbalancer=lb-rtyv0968
 &loadbalancer_name=sample
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

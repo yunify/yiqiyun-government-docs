@@ -42,11 +42,11 @@ weight: 18
 
 #### 安装 Docker
 
-使用 Docker 前，请先下载及安装 Docker，具体操作请参见 [安装 Docker](https://docs.docker.com/get-docker/)。
+使用 Docker 前，请先下载及安装 Docker，具体操作请参见 Docker 官方文档：https://docs.docker.com/get-docker/。
 
 #### 访问配置
 
-若您使用的是 HTTP 协议或自签名证书来连接访问 Harbor，您需要修改 Docker 的 --insecure-registry 配置，用于支持 Self-signed Certificate 或 HTTP 协议。详细配置操作，请参见 [Docker 文档](https://docs.docker.com/registry/insecure/)。
+若您使用的是 HTTP 协议或自签名证书来连接访问 Harbor，您需要修改 Docker 的 --insecure-registry 配置，用于支持 Self-signed Certificate 或 HTTP 协议。详细配置操作，请参见 Docker 官方文档：https://docs.docker.com/registry/insecure/。
 
 配置好后需要重启 Docker，如：在较新版本的 Linux 下执行命令 `systemctl restart docker`。
 

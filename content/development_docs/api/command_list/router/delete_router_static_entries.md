@@ -30,10 +30,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteRouterStaticEntries
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteRouterStaticEntries
 &router_static_entries.1=rse-wls7otet
 &router_static_entries.2=rse-b3epyxu5
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

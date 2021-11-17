@@ -63,10 +63,6 @@ Topology 提交成功后，用户可以在 Storm UI 上看到 ExclamationTopolog
 /opt/storm/bin/storm kill ExclamationTopology
 ```
 
-执行结果如下图所示：
-
-![](../../_images/ExclamationTopology-Shell-Kill.png)
-
 ## 测试二：ReachTopology
 
 ReachTopology 基于 Storm 可实时计算 Twitter 网站上任意 URL 的 Reach 值，并通过 Storm 分布式 RPC 对外提供服务。
@@ -80,7 +76,7 @@ ReachTopology 基于 Storm 可实时计算 Twitter 网站上任意 URL 的 Reach
 然后 Topology 成功提交运行后，接着创建用于发送 RPC 请求的客户端,为此，需创建一个基于 Maven 的 Java 工程，添加 storm-core 依赖包并创建 TestReachTopology 类, 该测试代码如下所示。
 
 ```
-package com.shanhe ;
+package com.yiqiyun ;
 
 import org.apache.storm.utils.DRPCClient;
 import org.apache.storm.utils.Utils;
@@ -107,7 +103,7 @@ public class TestReachTopology {
 用于测试的 jar 包已经打好放在客户端节点了，可以执行如下命令,该命令中 “i-9hhwul25” 为 master 节点的 leader 角色， 参数请使用的是任意一个 master 节点 host,可以直接在客户端节点 host 文件中找到。
 
 ```
-java -cp /opt/storm/examples/storm-drpc-client/storm-example-1.1-SNAPSHOT.jar com.shanhe.TestReachTopology i-9hhwul25
+java -cp /opt/storm/examples/storm-drpc-client/storm-example-1.1-SNAPSHOT.jar com.yiqiyun.TestReachTopology i-9hhwul25
 ```
 
 > **注意**
@@ -174,4 +170,4 @@ SlidingWindowTopology 展示了这两种窗口 API 的基本使用方法。
 
 例如：HBase、Kafka、Elasticsearch、Druid、Redis等。
 
-详情可以参考[Storm 官网](http://storm.apache.org/releases/1.1.2/index.html)中的 Integration With External Systems 和 Other Libraries。
+详情可以参考 Storm 官网(http://storm.apache.org/)中的 Integration With External Systems 和 Other Libraries。

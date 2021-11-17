@@ -33,10 +33,10 @@ weight: 10
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=ModifyInstanceAttributes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=ModifyInstanceAttributes
 &instance=i-rtyv0968
 &instance_name=sample
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

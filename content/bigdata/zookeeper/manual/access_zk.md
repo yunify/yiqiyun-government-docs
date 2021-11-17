@@ -17,7 +17,7 @@ ZooKeeper 支持通过节点内网 IP 地址连接，确保数据传输速率的
 
 - 已获取管理工作台登录账号和密码，且已获取集群操作权限。
 - 已创建 ZooKeeper 集群，且集群状态为**活跃**。
-- 已在同`VxNet` 网络的服务器中安装 [ZooKeeper](http://zookeeper.apache.org/releases.html) 客户端。
+- 已在同`VxNet` 网络的服务器中安装 ZooKeeper(http://zookeeper.apache.org/releases.html) 客户端。
 
 ## 操作步骤
 
@@ -41,7 +41,7 @@ ZooKeeper 支持通过节点内网 IP 地址连接，确保数据传输速率的
 bin/zkCli.sh|zkCli.cmd -server 192.168.100.10:2181,192.168.100.11:2181,192.168.100.12:2181
 ```
 
-此外，由支持的 [REST](https://github.com/apache/zookeeper/blob/release-3.4.13/src/contrib/rest) 服务，可通过如下面命令获取 znode 信息。
+此外，由支持的 REST(https://github.com/apache/zookeeper/blob/release-3.4.13/src/contrib/rest) 服务，可通过如下面命令获取 znode 信息。
 
 ```shell
 curl -H'Accept: application/json' http://192.168.100.10:9998/znodes/v1/
@@ -49,4 +49,4 @@ curl -H'Accept: application/json' http://192.168.100.10:9998/znodes/v1/
 
 > **注意**
 > 
-> REST 当前版本不能很好的支持按权限访问 ZooKeeper ，所以如果 ZNodes 设置了权限，REST 会返回相应的错误代码。具体信息可查看其[规范](https://github.com/apache/zookeeper/blob/release-3.4.13/src/contrib/rest/SPEC.txt#L274)。
+> REST 当前版本不能很好的支持按权限访问 ZooKeeper ，所以如果 ZNodes 设置了权限，REST 会返回相应的错误代码。具体信息可查看其 规范(https://github.com/apache/zookeeper/blob/release-3.4.13/src/contrib/rest/SPEC.txt#L274)。

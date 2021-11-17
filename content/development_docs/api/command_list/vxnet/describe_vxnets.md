@@ -28,7 +28,7 @@ draft: false
 | Name | Type | Description |
 | --- | --- | --- |
 | action | String | 响应动作 |
-| vxnet_set | Array | JSON 格式的私有网络数据列表，每项数据可见下面 [ResponseItemType](#responseitemtype) |
+| vxnet_set | Array | JSON 格式的私有网络数据列表，每项数据可见下述 **ResponseItemType** 部分 |
 | total_count | Integer | 根据过滤条件得到的私有网络总数 |
 | ret_code | Integer | 执行成功与否，0 表示成功，其他值则为错误代码 |
 
@@ -39,7 +39,7 @@ draft: false
 | vxnet_type | Integer | 私有网络类型，分为 1 - 受管私有网络，0 - 自管私有网络。 |
 | vxnet_id | String | 私有网络 ID |
 | vxnet_name | String | 私有网络名称 |
-| create_time | TimeStamp | 创建时间，为UTC时间，格式可参见 [ISO8601](http://www.w3.org/TR/NOTE-datetime). |
+| create_time | TimeStamp | 创建时间，为UTC时间，格式可参见 ISO8601(访问地址：http://www.w3.org/TR/NOTE-datetime)。 |
 | description | String | 私有网络的描述 |
 | instance_ids | Array | 已加入此私有网络的云服务器ID列表。只有在请求参数 verbose=1 才会返回此项。 |
 | router | Dict |
@@ -65,7 +65,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeVxnets
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeVxnets
 &vxnets.1=vxnet-ytuyg2q
 &COMMON_PARAMS
 ```
@@ -101,7 +101,7 @@ _Example Response_:
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeVxnets
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeVxnets
 &vxnets.1=vxnet-ytuyg2q
 &verbose=1
 &COMMON_PARAMS

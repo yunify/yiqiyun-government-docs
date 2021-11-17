@@ -13,29 +13,27 @@ Harbor 提供的代理缓存功能允许您使用 Harbor 来代理和缓存来�
 
 > **说明**：
 >
-> 从 Harbor v2.1.1 开始，代理缓存功能已更新，以与 [Docker Hub 的速率限制策略](https://www.docker.com/blog/scaling-docker-to-serve-millions-more-developers-network-egress/)保持一致。如果您打算在 Harbor 实例中使用代理缓存，强烈建议您使用 v2.1.1 或更高版，以免避免受到速率限制。
+> 从 Harbor v2.1.1 开始，代理缓存功能已更新，已与 Docker Hub 的速率限制策略保持一致。如果您打算在 Harbor 实例中使用代理缓存，强烈建议您使用 v2.1.1 或更高版，以免避免受到速率限制。
 
 ## 操作步骤
-
-详细操作说明，请参见 [Harbor 官方文档](https://goharbor.io/docs/2.2.0/administration/configure-proxy-cache/)，以下为步骤要点。
 
 > **说明**：
 >
 > 本操作中截图以 Harbor v2.2.1 为例，仅供参考，请以您部署的 Harbor 实际版本为准。
 
-1. [登录 Harbor Web界面](http://localhost:1313/container/harbor/quickstart/qs18_access_harbor/#浏览器登录)。
+1. [登录 Harbor Web界面](../../../quickstart/qs18_access_harbor/#浏览器登录)。
 
 2. 创建目标仓库。
 
    进入**仓库管理**页面，点击**新建目标**，创建您需要被代理和缓存的目标镜像仓库。
 
-   <img src="/container/harbor/_images/man3008_new_dest.png" alt="new_dest" style="zoom:50%;" />
+   <img src="../../../_images/man3008_new_dest.png" alt="new_dest" style="zoom:50%;" />
 
 3. 创建代理缓存项目。
 
    进入**项目**页面，点击新建项目，创建镜像代理项目。
 
-   <img src="/container/harbor/_images/man3012_new_project.png" alt="new_project" style="zoom:50%;" />
+   <img src="../../../_images/man3012_new_project.png" alt="new_project" style="zoom:50%;" />
 
    > **说明**：
    >

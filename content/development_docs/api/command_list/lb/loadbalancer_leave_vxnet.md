@@ -32,10 +32,10 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=LoadBalancerLeaveVxnet
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=LoadBalancerLeaveVxnet
 &vxnet=vxnet-q8f2bu
 &loadbalancer=lb-ciy73nib
-&zone=pek3
+&zone=zw
 &COMMON_PARAMS
 ```
 

@@ -2,7 +2,7 @@
 title: "内部绑定公网 IP"
 description: test
 weight: 20
-draft: false
+draft: true
 ---
 
 ## 操作场景

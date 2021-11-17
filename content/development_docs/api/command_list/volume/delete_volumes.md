@@ -30,9 +30,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DeleteVolumes
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DeleteVolumes
 &volumes.1=vol-uydrnlax
-&zone=pek3a
+&zone=zw1b
 &COMMON_PARAMS
 ```
 

@@ -71,7 +71,7 @@ bin/hdfs dfs -cat /teraValidate/part-r-00000
 
 ![Hadoop 代理用户](../../../_images/hadoop_proxy_user.png)
 
-> hosts 或 groups 中填写* 代表任意 host 或任意 group 。 hosts 和 groups 中也可以填写以逗号分割的 host name/ip 或者 group 名。详见 hadoop 官方文档[Proxy user setting](http://hadoop.apache.org/docs/r2.7.3/hadoop-project-dist/hadoop-common/Superusers.html)
+> hosts 或 groups 中填写* 代表任意 host 或任意 group 。 hosts 和 groups 中也可以填写以逗号分割的 host name/ip 或者 group 名。详见 hadoop 官方文档 Proxy user setting http://hadoop.apache.org/docs/r2.7.3/hadoop-project-dist/hadoop-common/Superusers.html
 
 2. root 用户下创建以 ubuntu 用户运行 job 所需的 HDFS 目录及权限。
 
@@ -117,7 +117,7 @@ YARN 支持两种调度器 CapacityScheduler（默认）和 FairScheduler。
 
 ![选择调度器](../../../_images/select_scheduler.png)
 
-> 注意
+> **注意**
 > 
 > 如果更新的自定义调度器和配置参数里 yarn.resourcemanager.scheduler.class 类型一致，则需要切换到另一种类型的调度器，保存设置后，再切换回来重新保存以达到重启集群使新的自定义调度器生效的目的。
 > 

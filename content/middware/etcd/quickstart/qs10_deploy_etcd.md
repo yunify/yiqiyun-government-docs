@@ -11,7 +11,7 @@ weight: 10
 
 ## 创建 etcd 集群
 
-1. 登录 [QingCloud 管理控制台](https://console.qingcloud.com/login)。
+1. 登录管理控制台。
 2. 在顶部菜单栏中，选择**产品与服务** > **消息队列与中间件** > **etcd 服务**。
 
 3. 点击**立即部署**，进入 etcd 服务的部署页面。
@@ -19,10 +19,10 @@ weight: 10
 
 ### 基本设置
 
-1. 设置 etcd 服务的基本信息，包括集群名称、描述、版本、快速配置、计费方式、自动备份时间及部署方式。
+1. 设置 etcd 服务的基本信息，包括集群名称、描述、版本、快速配置及自动备份时间。
    ![basic_info](/middware/etcd/images/basic1.png)
-   - 快速配置：若选择**开发测试**或**正式生产**，系统将自动完成节点配置；若选择**自定义**，则需要手动进行[etcd节点配置](#)[及代理节点设置](#代理节点配置)。
-   - 部署方式：**多可用区部署**指节点分散部署在不同可用区，具备更高可用性；**单可用区部署**指节点部署在同一个可用区（可自行指定），节点间网络延迟低。请根据您的业务特点及需求选择。
+   快速配置：若选择**开发测试**或**正式生产**，系统将自动完成节点配置；若选择**自定义**，则需要手动进行[etcd节点配置](#)[及代理节点设置](#代理节点配置)。
+<!--    - 部署方式：**多可用区部署**指节点分散部署在不同可用区，具备更高可用性；**单可用区部署**指节点部署在同一个可用区（可自行指定），节点间网络延迟低。请根据您的业务特点及需求选择。 -->
 
 ### etcd 节点配置
 
@@ -44,11 +44,11 @@ weight: 10
 
 ![net](/middware/etcd/images/netconf.png)
 
-选择VPC 网络、私有网络、安全组及节点 IP。
+选择已创建的私有网络或基础网络、安全组及节点 IP。
 
 > **说明**：
 >
-> 若无可选的 VPC 网络或私有网络，请根据界面提示新建。
+> 若无可选的私有网络，请根据界面提示新建。
 
 ### 服务环境参数设置
 
@@ -58,7 +58,7 @@ weight: 10
 
   > **说明**：
   >
-  > 每次对 etcd 键值的更新或设置操作都会被记录在数据文件中，可开启定时自动进行数据清理以防止性能下降和空间耗尽。相关原理可参考官方说明文档 [Compaction](https://github.com/etcd-io/etcd/blob/release-3.2/Documentation/op-guide/maintenance.md#history-compaction)。
+  > 每次对 etcd 键值的更新或设置操作都会被记录在数据文件中，可开启定时自动进行数据清理以防止性能下降和空间耗尽。相关原理可参考官方说明文档(参考地址：https://github.com/etcd-io/etcd/blob/release-3.2/Documentation/op-guide/maintenance.md#history-compaction)。
 
 - **etcd quota-backend-bytes**：存储大小限制，单位是字节，范围为 2147483648 - 8589934592，默认大小为 2147483648字节（即2GB）。
 
@@ -84,11 +84,13 @@ etcd 创建完成之后，您可以查看每个节点的运行状态。当节点
 
 ### 添加端口转发规则
 
+若您部署在私有网络内，需要根据以下操作方法配置端口转发规则。
+
 选择**产品与服务** > **网络** > **VPC 网络**，进入VPC 网络管理页面，找到节点所属 VPC，在 VPC 详情页，点击**管理配置** > **端口转发** > **添加规则**， 添加端口转发规则。
 
   ![portforward](/middware/etcd/images/portforward.png)
 
-源端口选择协议，端口，然后填入私网 IP 的地址，协议和端口。
+选择协议，端口，然后填入私网 IP 的地址，协议和端口。
 
   > **说明**：
   >
@@ -98,17 +100,17 @@ etcd 创建完成之后，您可以查看每个节点的运行状态。当节点
 
 您可以在与 etcd 集群节点同一私有网络或跨网络的客户端上进行连接测试。
 
-测试前请先下载 [etcd](https://github.com/etcd-io/etcd/releases/tag/v3.2.24) 并解压。
+测试前请先下载 etcd (官方下载地址：https://github.com/etcd-io/etcd/releases/) 并解压。
 
 现假设客户端和 etcd 在同一私有网络，etcd 集群有三个节点，IP 地址分别为192.168.100.10、192.168.100.11、192.168.100.12， 您可以通过如下命令连接 etcd：
 
 > **说明**：
 >
-> etcdctl 支持 v2 和 v3 两个版本，以下以 v3 为例，详细说明请查阅[官方文档](https://github.com/etcd-io/etcd/tree/v3.2.24/etcdctl)。
+> etcdctl 支持 v2 和 v3 两个版本，以下以 v3 为例，详细说明请查阅官方文档(https://github.com/etcd-io/etcd/tree/v3.2.24/etcdctl)。
 
 ```
 # ETCDCTL_API=3 ./etcdctl --endpoints http://192.168.100.10:2379,http://192.168.100.11:2379,http://192.168.100.12:2379 endpoint health
 ```
 
-同时该应用也提供了 REST 接口，详情请参考[官方文档](https://coreos.com/etcd/docs/latest/getting-started-with-etcd.html#reading-and-writing-to-etcd)。
+同时该应用也提供了 REST 接口，详情请查阅官方开发者文档（https://etcd.io/docs/v3.5/dev-guide/）。
 

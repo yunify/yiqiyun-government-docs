@@ -27,7 +27,7 @@ draft: false
 
 ```shell
 cd /opt/spark
-bin/spark-shell --master spark://<主节点IP>:7077
+bin/spark-shell --master spark://< 主节点IP >:7077
 
 val textFile = spark.read.textFile("file:///opt/spark/README.md")
 textFile.count()

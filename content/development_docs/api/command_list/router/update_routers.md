@@ -34,9 +34,9 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=UpdateRouters
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=UpdateRouters
 &routers.1=rtr-xt37nm9j
-&zone=pek3a
+&zone=zw
 &COMMON_PARAMS
 ```
 

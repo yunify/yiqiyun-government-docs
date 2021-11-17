@@ -12,7 +12,7 @@ draft: false
 
 HBase 2.x 版本使用 HBCK2。HBase 1.x 版本仍然使用 HBCK。
 
-更多 HBCK2 使用和功能介绍，可参考 [HBCK2](https://github.com/apache/hbase-operator-tools/tree/master/hbase-hbck2)
+更多 HBCK2 使用和功能介绍，可参考 HBCK2 (https://github.com/apache/hbase-operator-tools/tree/master/hbase-hbck2)
 
 ```shell
   cd /opt/hbase

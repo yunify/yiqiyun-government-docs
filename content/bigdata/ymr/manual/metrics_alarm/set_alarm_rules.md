@@ -90,4 +90,4 @@ YMR 支持对每个节点配置指标告警策略。当业务发生异常时，�
 
    > **说明**
    >
-   > 更多告警策略管理说明，请参见**云监控 CloudSat** [告警服务](../../../../../monitor_service/cloudsat/manual/alarm_service)。
+   > 更多告警策略管理说明，请参见**云监控 CloudSat** 告警服务。

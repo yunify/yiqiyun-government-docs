@@ -38,7 +38,7 @@ draft: false
 _Example Request_:
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeZones
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeZones
 &COMMON_PARAMS
 ```
 
@@ -51,7 +51,7 @@ _Example Response_:
   "zone_set":[
     {
       "status":"active",
-      "zone_id":pek3a
+      "zone_id":zw1b
     },
     {
       "status":"active",

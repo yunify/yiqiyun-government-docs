@@ -32,7 +32,7 @@ draft: false
 _Example Request_
 
 ```
-https://api.qingcloud.com/iaas/?action=DescribeRoutingTableResources
+http://api.yiqiyun.sd.cegn.cn/iaas/?action=DescribeRoutingTableResources
 &rtables.1=rt-w7xy0bq0
 &resources.1=lb-wkkqhohe
 &COMMON_PARAMS
