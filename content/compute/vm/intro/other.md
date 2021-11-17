@@ -5,7 +5,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 25
-keyword: 云服务器, QingCloud, 实例, 虚拟机
+keyword: 云服务器,实例, 虚拟机
 ---
 
 ## 性能型
