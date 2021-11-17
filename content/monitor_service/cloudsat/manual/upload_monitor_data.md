@@ -32,7 +32,7 @@ access_key_id=CCDJRDKCCKZYTEXANZJD&action=DescribeUsers&signature_method=HmacSHA
 ```
 注：这部分请根据实际参数进行构造
 
-由于上面构造前url上传监控数据需要对请求进行验证，这里采用类似[青云API 请求中签名 ( signature )]( /development_docs/api/signature/) 的生成方法，构造验证请求串，拼接在上面构造前url后面。由于需要去iaas对用户信息进行确认，所以这里选择DescribeUsers这个action去构造签名信息。
+由于上面构造前url上传监控数据需要对请求进行验证，这里采用类似[API 请求中签名 ( signature )]( /development_docs/api/signature/) 的生成方法，构造验证请求串，拼接在上面构造前url后面。由于需要去iaas对用户信息进行确认，所以这里选择DescribeUsers这个action去构造签名信息。
 
 
 **最终构造完成之后请求url示例为**：
@@ -219,7 +219,7 @@ secret_access_key = 'SECRETACCESSKEY'
 ```
 注解
 
-实际使用过程中请替换成你自己的AccessKeyId，切换相应区间信息。签名验证可以参考[青云API 请求中签名 ( signature )]( /development_docs/api/signature/)，使用链接文档中数据签名结果如果和链接中的一致代表签名方法正确。
+实际使用过程中请替换成你自己的AccessKeyId，切换相应区间信息。签名验证可以参考[API 请求中签名 ( signature )]( /development_docs/api/signature/)，使用链接文档中数据签名结果如果和链接中的一致代表签名方法正确。
 
 签名步骤
 
