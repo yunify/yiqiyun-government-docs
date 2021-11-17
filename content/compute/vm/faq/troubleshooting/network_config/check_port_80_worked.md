@@ -114,4 +114,4 @@ firewall-cmd --zone=public --add-port=80/tcp --permanent  #添加80端口规则
 
 firewall-cmd --reload  #重载生效
 ```
-#### 5.如上述操作都已检查仍无法连接，可以[提交工单](https://console.qingcloud.com/tickets/)咨询。
+#### 5.如上述操作都已检查仍无法连接，可以提交工单咨询。
