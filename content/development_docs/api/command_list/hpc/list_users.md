@@ -39,20 +39,20 @@ weight: 15
 
 **Response Item**
 
-| Name            | Type   | Sample value            | Description                                                  |
-| --------------- | ------ | ----------------------- | ------------------------------------------------------------ |
-| user_set        | list   |                         | 集群用户信息列表                                             |
-| cluster_id      | string | hpc-qig9xu97            | 用户所属集群id                                               |
-| create_time     | string | 2021-08-17T09:12:40Z    | 用户创建时间                                                 |
-| gid_number      | string | 41522                   | gid编号                                                      |
-| hpcuser_id      | string | hpcuser-8a301ir         | hpc用户id                                                    |
-| mod             | string | mod                     | 模式                                                         |
-| nas_mount_point | string | /public/qingcloud/07023 | nas挂载点                                                    |
-| role            | string | member                  | 用户角色类型的可能值：<br>boss boss端</br><br>admin 管理员</br><br>member 成员用户/普通用户</br> |
-| uid_number      | string | 41522                   | uid编号                                                      |
-| update_time     | string | 2021-08-17T09:12:40Z    | 用户更新时间                                                 |
-| user_id         | string | usr-vceaHsJu            | 用户id                                                       |
-| username        | string | usr-vceaHsJu            | 用户名称                                                     |
+| Name            | Type   | Sample value          | Description                                                  |
+| --------------- | ------ | --------------------- | ------------------------------------------------------------ |
+| user_set        | list   |                       | 集群用户信息列表                                             |
+| cluster_id      | string | hpc-qig9xu97          | 用户所属集群id                                               |
+| create_time     | string | 2021-08-17T09:12:40Z  | 用户创建时间                                                 |
+| gid_number      | string | 41522                 | gid编号                                                      |
+| hpcuser_id      | string | hpcuser-8a301ir       | hpc用户id                                                    |
+| mod             | string | mod                   | 模式                                                         |
+| nas_mount_point | string | /public/yiqiyun/07023 | nas挂载点                                                    |
+| role            | string | member                | 用户角色类型的可能值：<br>boss boss端</br><br>admin 管理员</br><br>member 成员用户/普通用户</br> |
+| uid_number      | string | 41522                 | uid编号                                                      |
+| update_time     | string | 2021-08-17T09:12:40Z  | 用户更新时间                                                 |
+| user_id         | string | usr-vceaHsJu          | 用户id                                                       |
+| username        | string | usr-vceaHsJu          | 用户名称                                                     |
 
 
 
@@ -85,7 +85,7 @@ hpcuser_id: "hpcuser-8a310ir1"
 
 mod: null
 
-nas_mount_point: "/public/qingcloud/s0723"
+nas_mount_point: "/public/yiqiyun/s0723"
 
 role: "member"
 

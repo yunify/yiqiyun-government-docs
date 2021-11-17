@@ -84,9 +84,9 @@ mem_hours: 1.76339637934081
 
 nas_id: "2cgki7pe"
 
-nas_mount_point: "/public/qingcloud/s0723"
+nas_mount_point: "/public/yiqiyun/s0723"
 
-nas_path: "10.0.0.7@o2ib:/lustrefs/qingcloud/s0723"
+nas_path: "10.0.0.7@o2ib:/lustrefs/yiqiyun/s0723"
 
 nas_shared_path: "/s0723"
 
