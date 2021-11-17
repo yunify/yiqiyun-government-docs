@@ -3,7 +3,7 @@ title: "账户注册问题"
 description: Test description
 draft: false
 weight: 5
-keyword: 账户中心, QingCloud
+keyword: 账户中心
 ---
 
 ## 注册的时候，应该选择什么币种？
