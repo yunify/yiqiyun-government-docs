@@ -57,7 +57,7 @@ https://www.cnblogs.com/zxg-blog/p/9835263.html
 
 **查看安全组规则是否添加**
 
-登录青云console，选择访问云服务器所属安全组：
+登录console，选择访问云服务器所属安全组：
 
 ![](/compute/vm/_images/anquanzu.png)
 
