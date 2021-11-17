@@ -58,7 +58,7 @@ _Example Response_:
   "loadbalancer_policy_rule_set":[
     {
       "rule_type":"domain",
-      "val":"www.qingcloud.com",
+      "val":"www.yiqiyun.sd.cegn.cn",
       "loadbalancer_policy_rule_id":"lbpr-1234abcd",
       "loadbalancer_policy_rule_name":null,
       "loadbalancer_policy_id":"lbp-1234abcd"

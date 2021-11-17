@@ -121,21 +121,21 @@ sudo su
 ```shell
 sudo nvidia-docker run -it --rm --name CONTAIN_NAME -p HOST_PORT:CONTAIN_PORT \
 -v HOST_VOLUME:CONTAIN_VOLUME --net YOUR_DOCKER_NET --ip SPECIFIC_IP --expose=EXPOSED_PORTS \
-qingcloud/deeplearning:1.1-cu91-cudnn7.1 /bin/bash
+yiqiyun/deeplearning:1.1-cu91-cudnn7.1 /bin/bash
 ```
 
 - 若使用基础版，启动命令为:
 ```shell
 drun -it --rm --name CONTAIN_NAME -p HOST_PORT:CONTAIN_PORT \
 -v HOST_VOLUME:CONTAIN_VOLUME --net YOUR_DOCKER_NET --ip SPECIFIC_IP --expose=EXPOSED_PORTS \
-qingcloud/deeplearning:1.1-rocm26 /bin/bash
+yiqiyun/deeplearning:1.1-rocm26 /bin/bash
 ```
 
 - 若使用入门版，启动命令为:
 ```shell
 sudo docker run -it --rm --name CONTAIN_NAME -p HOST_PORT:CONTAIN_PORT \
 -v HOST_VOLUME:CONTAIN_VOLUME --net YOUR_DOCKER_NET --ip SPECIFIC_IP --expose=EXPOSED_PORTS \
-qingcloud/deeplearning:1.1-cpu /bin/bash
+yiqiyun/deeplearning:1.1-cpu /bin/bash
 ```
 
 - 容器名字、容器 IP 地址、端口映射查看:
@@ -144,15 +144,15 @@ sudo docker inspect your_contain_id | grep -i IPAddress
 ```
 
 - 单机训练启动：
-使用内置镜像 qingcloud/deeplearning:1.1-cu91-cudnn7.1 启动容器，并且通过 -v 参数挂载测试用例，测试用例在宿主机 /home/ubuntu/test 目录，若用户在容器启动时未挂载测试用例，则可以从[这里下载](https://github.com/QingCloudAppcenter/DeepLearning/tree/master/test)
+使用内置镜像 yiqiyun/deeplearning:1.1-cu91-cudnn7.1 启动容器，并且通过 -v 参数挂载测试用例，测试用例在宿主机 /home/ubuntu/test 目录，若用户在容器启动时未挂载测试用例，则可以从[这里下载](https://github.com/yiqiyunAppcenter/DeepLearning/tree/master/test)
 ```shell
-sudo nvidia-docker run -it --rm --name test -p 8888:8888 -p 6006:6006 -v /home/ubuntu/test:/root/test qingcloud/deeplearning:1.1-cu91-cudnn7.1 /bin/bash
+sudo nvidia-docker run -it --rm --name test -p 8888:8888 -p 6006:6006 -v /home/ubuntu/test:/root/test yiqiyun/deeplearning:1.1-cu91-cudnn7.1 /bin/bash
 ```
 
 - 分布式训练启动：
 容器版分布式训练，需要设置容器共享主机网络。这里采用两台主机 node1:192.168.1.4，node2:192.168.1.5 进行实验，在 node1 和 node2 上各启动一个容器：
 ```shell
-sudo nvidia-docker run -it --rm --name test01 -v /home/ubuntu/test:/root/test --net host qingcloud/deeplearning:1.1-cu91-cudnn7.1 /bin/bash
+sudo nvidia-docker run -it --rm --name test01 -v /home/ubuntu/test:/root/test --net host yiqiyun/deeplearning:1.1-cu91-cudnn7.1 /bin/bash
 ```
 > 网络模式采用 host 模式，容器共享主机网络，即容器的 IP 地址分别为：192.168.1.4和192.168.1.5
 
@@ -223,7 +223,7 @@ python mnist.py
 #### 单任务使用双 GPU
 
 ```shell
-wget https://github.com/QingCloudAppcenter/DeepLearning/raw/master/examples/tensorflow_multi_gpu_test.py
+wget https://github.com/yiqiyunAppcenter/DeepLearning/raw/master/examples/tensorflow_multi_gpu_test.py
 python tensorflow_multi_gpu_test.py
 ```
 ![Alt text](../multip-gpu-tf.png)
@@ -263,7 +263,7 @@ TensorFlow 增加节点
 
 TensorFlow 分布式训练需要指定 parameter server 和 worker 的 IP 地址和端口号（根据自己的 IP 进行修改）
 
-跨区分布式：山河深度学习基础服务支持跨区分布式TensorFlow训练，首先使用IPSec或GRE方式，连通两个集群的路由器。参考[IPSec隧道](https://docs.qingcloud.com/product/network/ipsec)。如果是异地路由器，则要求两个路由器都有公网IP地址，并为公网IP分配足够的带宽，依据实际训练数据交互的带宽需求，调整带宽到合适的值。两个路由器连通之后，集群中的深度学习节点将会在不同的网段，例如 192.168.1.2 和 192.168.2.2 但是相互之间的连通性和在一个局域网没有差别，在进行 TensorFlow 分布式训练时，只需按照实际地址，指定分布式训练节点 IP 地址即可。
+跨区分布式：山河深度学习基础服务支持跨区分布式TensorFlow训练，首先使用IPSec或GRE方式，连通两个集群的路由器。参考[IPSec隧道](https://docs.yiqiyun.com/product/network/ipsec)。如果是异地路由器，则要求两个路由器都有公网IP地址，并为公网IP分配足够的带宽，依据实际训练数据交互的带宽需求，调整带宽到合适的值。两个路由器连通之后，集群中的深度学习节点将会在不同的网段，例如 192.168.1.2 和 192.168.2.2 但是相互之间的连通性和在一个局域网没有差别，在进行 TensorFlow 分布式训练时，只需按照实际地址，指定分布式训练节点 IP 地址即可。
 
 下面是一个 parameter server 和两个 worker 进行分布式训练的示例：
 
@@ -331,7 +331,7 @@ PyTorch 训练结果
 #### 单任务使用双 GPU
 
 ```shell
-wget https://github.com/QingCloudAppcenter/DeepLearning/raw/master/examples/pytorch_multi_gpu_test.py
+wget https://github.com/yiqiyunAppcenter/DeepLearning/raw/master/examples/pytorch_multi_gpu_test.py
 python pytorch_multi_gpu_test.py
 ```
 
@@ -360,21 +360,21 @@ PyTorch 分布式训练过程
 PyTorch 分布式训练结果
 ![PyTorch 分布式训练结果](../pytorchdist_result.png)
 
-跨区分布式：山河深度学习基础服务支持跨区分布式 PyTorch 训练，首先使用 IPSec 或 GRE 方式，连通两个集群的路由器。参考[IPSec隧道](https://docs.qingcloud.com/product/network/ipsec)。如果是异地路由器，则要求两个路由器都有公网 IP 地址，并为公网 IP 分配足够的带宽，依据实际训练数据交互的带宽需求，调整带宽到合适的值。两个路由器连通之后，集群中的深度学习节点将会在不同的网段，例如 192.168.1.2 和 192.168.2.2，但是相互之间的连通性和在一个局域网没有差别。
+跨区分布式：山河深度学习基础服务支持跨区分布式 PyTorch 训练，首先使用 IPSec 或 GRE 方式，连通两个集群的路由器。参考[IPSec隧道](https://docs.yiqiyun.com/product/network/ipsec)。如果是异地路由器，则要求两个路由器都有公网 IP 地址，并为公网 IP 分配足够的带宽，依据实际训练数据交互的带宽需求，调整带宽到合适的值。两个路由器连通之后，集群中的深度学习节点将会在不同的网段，例如 192.168.1.2 和 192.168.2.2，但是相互之间的连通性和在一个局域网没有差别。
 
-进行 Pytorch 分布式训练时，需要在分布式参数中指定 init_method 为 env 方式，参考代码[pytorch_mnist_dist.py](https://github.com/QingCloudAppcenter/DeepLearning/raw/master/examples/pytorch_multi_gpu_test.py)下载。以一台主机和一台从机为例，在两区节点都下载好分布式训练文件之后，启动命令如下：
+进行 Pytorch 分布式训练时，需要在分布式参数中指定 init_method 为 env 方式，参考代码[pytorch_mnist_dist.py](https://github.com/yiqiyunAppcenter/DeepLearning/raw/master/examples/pytorch_multi_gpu_test.py)下载。以一台主机和一台从机为例，在两区节点都下载好分布式训练文件之后，启动命令如下：
 
 主机 (IP: 192.168.1.2)：
 
 ```shell
-wget https://github.com/QingCloudAppcenter/DeepLearning/raw/master/examples/pytorch_mnist_dist.py
+wget https://github.com/yiqiyunAppcenter/DeepLearning/raw/master/examples/pytorch_mnist_dist.py
 python pytorch_mnist_dist.py --master-addr 192.168.1.2 --rank 0
 ```
 
 从机 (IP:192.168.2.2)：
 
 ```shell
-wget https://github.com/QingCloudAppcenter/DeepLearning/raw/master/examples/pytorch_mnist_dist.py
+wget https://github.com/yiqiyunAppcenter/DeepLearning/raw/master/examples/pytorch_mnist_dist.py
 python pytorch_mnist_dist.py --master-addr 192.168.1.2 --rank 1
 ```
 
@@ -403,27 +403,27 @@ jupyter 启动命令如下：
 企业版：
 
 ```shell
-sudo nvidia-docker run -it --rm --net host -v /home/ubuntu/test:/root/test qingcloud/deeplearning:1.1-cu91-cudnn7.1 /bin/bash
+sudo nvidia-docker run -it --rm --net host -v /home/ubuntu/test:/root/test yiqiyun/deeplearning:1.1-cu91-cudnn7.1 /bin/bash
 jupyter notebook --ip='your_host_eth0_ip' --allow-root
 ```
 
 基础版：
 
 ```shell
-drun --net host -v /home/ubuntu/test:/root/test qingcloud/deeplearning:1.1-rocm26 /bin/bash
+drun --net host -v /home/ubuntu/test:/root/test yiqiyun/deeplearning:1.1-rocm26 /bin/bash
 jupyter notebook --ip='your_host_eth0_ip' --allow-root
 ```
 
 入门版：
 
 ```shell
-sudo docker run -it --rm --net host -v /home/ubuntu/test:/root/test qingcloud/deeplearning:1.1-cpu /bin/bash
+sudo docker run -it --rm --net host -v /home/ubuntu/test:/root/test yiqiyun/deeplearning:1.1-cpu /bin/bash
 jupyter notebook --ip='your_host_eth0_ip' --allow-root
 ```
 
 
 jupyter notebook 默认端口号为 `8888`，启动上述命令后会输出 token 信息，这个信息在下面访问 notebook 时候需要。
-> 如果需要通过公网访问这些信息您需要先申请一个公网 IP 绑定在路由器上，在路由器上设置端口转发，同时打开防火墙相应的下行端口。为了方便使用 jupyter notebook，也可参考[VPN 隧道指南](https://docs.qingcloud.com/product/network/vpn#vpn) 配置 VPN。
+> 如果需要通过公网访问这些信息您需要先申请一个公网 IP 绑定在路由器上，在路由器上设置端口转发，同时打开防火墙相应的下行端口。为了方便使用 jupyter notebook，也可参考[VPN 隧道指南](https://docs.yiqiyun.com/product/network/vpn#vpn) 配置 VPN。
 
 jupyter notebook 开发环境浏览项目代码
 ![jupyter notebook 开发环境浏览项目代码](../jupyter_browse.png)
@@ -435,7 +435,7 @@ jupyter notebook 开发环境切换 Python 版本
 #### 单任务使用双 GPU 训练
 
 ```shell
-wget https://github.com/QingCloudAppcenter/DeepLearning/raw/master/examples/keras_multi_gpu_test.py
+wget https://github.com/yiqiyunAppcenter/DeepLearning/raw/master/examples/keras_multi_gpu_test.py
 pip install pytest six
 python keras_multi_gpu_test.py
 ```
@@ -860,7 +860,7 @@ sudo nvidia-docker run -it --rm -p host_port:8888 image_id /bin/bash
 	对 host_port 端口再次进行端口映射，该 VPC 网络必须绑定公网 IP:vpc_ip，由于云平台会为该云主机自动添加一个默认的防火墙，用户还需要修改防火墙的下行策略，放行端口 host_port，最后在控制台的 VPC 网络中将 host_port 映射到 VPC 网络路由器的相应端口 vpc_port，在浏览器中输入 vpc_ip:vpc_port 便可以访问
 
 - 方法2(建议)：
-	无需修改防火墙策略，在下图所示的 VPC 网络中[配置VPN服务](https://docs.qingcloud.com/product/network/vpn)，则可以轻松访问云端私有网络中的主机。
+	无需修改防火墙策略，在下图所示的 VPC 网络中[配置VPN服务](https://docs.yiqiyun.com/product/network/vpn)，则可以轻松访问云端私有网络中的主机。
 	在浏览器中输入 host_ip:host_port 便可以访问
 
 ![Alt text](../vpn_vpc.png)
@@ -985,60 +985,60 @@ CPU      | 3.6 | 1.12.0 | [https://appcenter-deeplearning.sh1a.is.shanhe.com/ten
 
 |框架版本	|Python 版本	|CUDA/ROCm 版本	|image 获取命令	|
 | :-------- | :--------:| :--: | :--|
-|deeplearning1.1|2.7/3.6|CUDA 9.1|docker pull qingcloud/deeplearning:1.1-cu91-cudnn7.1|
-|deeplearning1.1|2.7/3.6|CUDA 10.0|docker pull qingcloud/deeplearning:1.1-cu100-cudnn7.6|
-|deeplearning1.1|2.7/3.6|ROCm 2.6.22|docker pull qingcloud/deeplearning:1.1-rocm26|
-|deeplearning1.1|2.7/3.6|-|docker pull qingcloud/deeplearning:1.1-cpu-optimize|
-|deeplearning1.0|2.7|9.1|docker pull qingcloud/deeplearning:1.0-py27-cu91-cudnn7.1|
-|deeplearning1.0|2.7|-|docker pull qingcloud/deeplearning:1.0-py27-cpu|
-|deeplearning1.0|2.7|-|docker pull qingcloud/deeplearning:1.0-py27-cpu-avx|
-|deeplearning1.0|2.7|-|docker pull qingcloud/deeplearning:1.0-py27-cpu-avx2-mkldnn|
-|caffe1.0|2.7/3.6|9.1|docker pull qingcloud/caffe:1.0-cu91-cudnn7.1|
-|caffe1.0|2.7/3.6|8.0|docker pull qingcloud/caffe:1.0-cu80-cudnn7.1|
-|caffe1.0|2.7/3.6|-|docker pull qingcloud/caffe:1.0-cpu|
-|caffe1.0|3.6|-|docker pull qingcloud/caffe:1.0-bvlc-py36-cpu|
-|caffe1.0|2.7|-|docker pull qingcloud/caffe:1.0-bvlc-py27-cpu|
-|caffe1.0|3.6|9.1|docker pull qingcloud/caffe:1.0-bvlc-py36-cu91-cudnn7.1|
-|caffe1.0|3.6|8.0|docker pull qingcloud/caffe:1.0-bvlc-py36-cu80-cudnn7.1|
-|caffe1.0|2.7|9.1|docker pull qingcloud/caffe:1.0-bvlc-py27-cu91-cudnn7.1|
-|caffe1.0|2.7|8.0|docker pull qingcloud/caffe:1.0-bvlc-py27-cu80-cudnn7.1|
-|pytorch1.1.0|2.7/3.6|CUDA 9.1|docker pull qingcloud/pytorch:1.1.0-cpu-gpu-cu91-cudnn7.1|
-|pytorch1.1.0|2.7/3.6|CUDA 8.0|docker pull qingcloud/pytorch:1.1.0-cpu-gpu-cu80-cudnn7.1|
-|pytorch1.0.1|2.7|CUDA 9.1|docker pull qingcloud/pytorch:1.0.1-py27cpu-gpu-cu91-cudnn7.1|
-|pytorch1.0.1|2.7|CUDA 8.0|docker pull qingcloud/pytorch:1.0.1-py27cpu-gpu-cu80-cudnn7.1|
-|pytorch1.0.1|3.6|CUDA 9.1|docker pull qingcloud/pytorch:1.0.1-py36-cpu-gpu-cu91-cudnn7.1|
-|pytorch1.0.1|3.6|CUDA 8.0|docker pull qingcloud/pytorch:1.0.1-py36-cpu-gpu-cu80-cudnn7.1|
-|pytorch0.4.0|3.6|CUDA 9.1|docker pull qingcloud/pytorch:0.4.0-py36-cpu-cu91-cudnn7.1|
-|pytorch0.4.1|3.6|CUDA 8.0|docker pull qingcloud/pytorch:0.4.1-py36-cpu-cu80-cudnn7.1|
-|pytorch0.4.1|2.7|CUDA 9.1|docker pull qingcloud/pytorch:0.4.1-py27-cpu-cu91-cudnn7.1|
-|pytorch0.4.1|2.7|CUDA 8.0|docker pull qingcloud/pytorch:0.4.1-py27-cpu-cu80-cudnn7.1|
-|keras2.2|2.7/3.6|CUDA 9.1|docker pull qingcloud/keras:2.2-tf1.12-cu91-cudnn7.1|
-|keras2.2|2.7/3.6|-|docker pull qingcloud/keras:2.2-tf1.12-cpu|
-|keras2.2|3.6|9.1|docker pull qingcloud/keras:2.2-tf1.8-py36-cu91-cudnn7.1|
-|keras2.2|2.7|9.1|docker pull qingcloud/keras:2.2-tf1.8-py27-cu91-cudnn7.1|
-|keras2.2|3.6|-|docker pull qingcloud/keras:2.2-tf1.8-py36-cpu|
-|keras2.2|2.7|-|docker pull qingcloud/keras:2.2-tf1.8-py27-cpu|
-|tensorflow2.0|2.7/3.5|CUDA 10.0|docker pull qingcloud/tensorflow:2.0-gpu-cu100-cudnn7.6|
-|tensorflow1.12|2.7/3.6|CUDA 9.1|docker pull qingcloud/tensorflow:1.12-gpu-cu91-cudnn7.1|
-|tensorflow1.12|2.7/3.6|-|docker pull qingcloud/tensorflow:1.12-cpu|
-|tensorflow1.9|3.6|CUDA 9.1|docker pull qingcloud/tensorflow:1.9-py36-cu91-cudnn7.1|
-|tensorflow1.9|2.7|CUDA 9.1|docker pull qingcloud/tensorflow:1.9-py27-cu91-cudnn7.1|
-|tensorflow1.9|3.6|-|docker pull qingcloud/tensorflow:1.9-py36-cpu|
-|tensorflow1.9|2.7|-|docker pull qingcloud/tensorflow:1.9-py27-cpu|
-|tensorflow1.8|3.6|CUDA 9.1|docker pull qingcloud/tensorflow:1.8-py36-cu91-cudnn7.1|
-|tensorflow1.8|2.7|CUDA 9.1|docker pull qingcloud/tensorflow:1.8-py27-cu91-cudnn7.1|
-|tensorflow1.8|3.6|-|docker pull qingcloud/tensorflow:1.8-py36-cpu|
-|tensorflow1.8|2.7|-|docker pull qingcloud/tensorflow:1.8-py27-cpu|
-|tensorflow1.7|3.6|CUDA 9.1|docker pull qingcloud/tensorflow:1.7-py36-cu91-cudnn7.1|
-|tensorflow1.7|2.7|CUDA 9.1|docker pull qingcloud/tensorflow:1.7-py27-cu91-cudnn7.1|
-|tensorflow1.7|3.6|-|docker pull qingcloud/tensorflow:1.7-py36-cpu|
-|tensorflow1.7|2.7|-|docker pull qingcloud/tensorflow:1.7-py27-cpu|
-|tensorflow1.6|3.6|CUDA 9.1|docker pull qingcloud/tensorflow:1.6-py36-cu91-cudnn7.1|
-|tensorflow1.6|3.6|CUDA 8.0|docker pull qingcloud/tensorflow:1.6-py36-cu80-cudnn7.1|
-|tensorflow1.6|2.7|CUDA 9.1|docker pull qingcloud/tensorflow:1.6-py27-cu91-cudnn7.1|
-|tensorflow1.6|2.7|CUDA 8.0|docker pull qingcloud/tensorflow:1.6-py27-cu80-cudnn7.1|
-|tensorflow1.6|3.6|-|docker pull qingcloud/tensorflow:1.6-py36-cpu|
-|tensorflow1.6|2.7|-|docker pull qingcloud/tensorflow:1.6-py27-cpu|
+|deeplearning1.1|2.7/3.6|CUDA 9.1|docker pull yiqiyun/deeplearning:1.1-cu91-cudnn7.1|
+|deeplearning1.1|2.7/3.6|CUDA 10.0|docker pull yiqiyun/deeplearning:1.1-cu100-cudnn7.6|
+|deeplearning1.1|2.7/3.6|ROCm 2.6.22|docker pull yiqiyun/deeplearning:1.1-rocm26|
+|deeplearning1.1|2.7/3.6|-|docker pull yiqiyun/deeplearning:1.1-cpu-optimize|
+|deeplearning1.0|2.7|9.1|docker pull yiqiyun/deeplearning:1.0-py27-cu91-cudnn7.1|
+|deeplearning1.0|2.7|-|docker pull yiqiyun/deeplearning:1.0-py27-cpu|
+|deeplearning1.0|2.7|-|docker pull yiqiyun/deeplearning:1.0-py27-cpu-avx|
+|deeplearning1.0|2.7|-|docker pull yiqiyun/deeplearning:1.0-py27-cpu-avx2-mkldnn|
+|caffe1.0|2.7/3.6|9.1|docker pull yiqiyun/caffe:1.0-cu91-cudnn7.1|
+|caffe1.0|2.7/3.6|8.0|docker pull yiqiyun/caffe:1.0-cu80-cudnn7.1|
+|caffe1.0|2.7/3.6|-|docker pull yiqiyun/caffe:1.0-cpu|
+|caffe1.0|3.6|-|docker pull yiqiyun/caffe:1.0-bvlc-py36-cpu|
+|caffe1.0|2.7|-|docker pull yiqiyun/caffe:1.0-bvlc-py27-cpu|
+|caffe1.0|3.6|9.1|docker pull yiqiyun/caffe:1.0-bvlc-py36-cu91-cudnn7.1|
+|caffe1.0|3.6|8.0|docker pull yiqiyun/caffe:1.0-bvlc-py36-cu80-cudnn7.1|
+|caffe1.0|2.7|9.1|docker pull yiqiyun/caffe:1.0-bvlc-py27-cu91-cudnn7.1|
+|caffe1.0|2.7|8.0|docker pull yiqiyun/caffe:1.0-bvlc-py27-cu80-cudnn7.1|
+|pytorch1.1.0|2.7/3.6|CUDA 9.1|docker pull yiqiyun/pytorch:1.1.0-cpu-gpu-cu91-cudnn7.1|
+|pytorch1.1.0|2.7/3.6|CUDA 8.0|docker pull yiqiyun/pytorch:1.1.0-cpu-gpu-cu80-cudnn7.1|
+|pytorch1.0.1|2.7|CUDA 9.1|docker pull yiqiyun/pytorch:1.0.1-py27cpu-gpu-cu91-cudnn7.1|
+|pytorch1.0.1|2.7|CUDA 8.0|docker pull yiqiyun/pytorch:1.0.1-py27cpu-gpu-cu80-cudnn7.1|
+|pytorch1.0.1|3.6|CUDA 9.1|docker pull yiqiyun/pytorch:1.0.1-py36-cpu-gpu-cu91-cudnn7.1|
+|pytorch1.0.1|3.6|CUDA 8.0|docker pull yiqiyun/pytorch:1.0.1-py36-cpu-gpu-cu80-cudnn7.1|
+|pytorch0.4.0|3.6|CUDA 9.1|docker pull yiqiyun/pytorch:0.4.0-py36-cpu-cu91-cudnn7.1|
+|pytorch0.4.1|3.6|CUDA 8.0|docker pull yiqiyun/pytorch:0.4.1-py36-cpu-cu80-cudnn7.1|
+|pytorch0.4.1|2.7|CUDA 9.1|docker pull yiqiyun/pytorch:0.4.1-py27-cpu-cu91-cudnn7.1|
+|pytorch0.4.1|2.7|CUDA 8.0|docker pull yiqiyun/pytorch:0.4.1-py27-cpu-cu80-cudnn7.1|
+|keras2.2|2.7/3.6|CUDA 9.1|docker pull yiqiyun/keras:2.2-tf1.12-cu91-cudnn7.1|
+|keras2.2|2.7/3.6|-|docker pull yiqiyun/keras:2.2-tf1.12-cpu|
+|keras2.2|3.6|9.1|docker pull yiqiyun/keras:2.2-tf1.8-py36-cu91-cudnn7.1|
+|keras2.2|2.7|9.1|docker pull yiqiyun/keras:2.2-tf1.8-py27-cu91-cudnn7.1|
+|keras2.2|3.6|-|docker pull yiqiyun/keras:2.2-tf1.8-py36-cpu|
+|keras2.2|2.7|-|docker pull yiqiyun/keras:2.2-tf1.8-py27-cpu|
+|tensorflow2.0|2.7/3.5|CUDA 10.0|docker pull yiqiyun/tensorflow:2.0-gpu-cu100-cudnn7.6|
+|tensorflow1.12|2.7/3.6|CUDA 9.1|docker pull yiqiyun/tensorflow:1.12-gpu-cu91-cudnn7.1|
+|tensorflow1.12|2.7/3.6|-|docker pull yiqiyun/tensorflow:1.12-cpu|
+|tensorflow1.9|3.6|CUDA 9.1|docker pull yiqiyun/tensorflow:1.9-py36-cu91-cudnn7.1|
+|tensorflow1.9|2.7|CUDA 9.1|docker pull yiqiyun/tensorflow:1.9-py27-cu91-cudnn7.1|
+|tensorflow1.9|3.6|-|docker pull yiqiyun/tensorflow:1.9-py36-cpu|
+|tensorflow1.9|2.7|-|docker pull yiqiyun/tensorflow:1.9-py27-cpu|
+|tensorflow1.8|3.6|CUDA 9.1|docker pull yiqiyun/tensorflow:1.8-py36-cu91-cudnn7.1|
+|tensorflow1.8|2.7|CUDA 9.1|docker pull yiqiyun/tensorflow:1.8-py27-cu91-cudnn7.1|
+|tensorflow1.8|3.6|-|docker pull yiqiyun/tensorflow:1.8-py36-cpu|
+|tensorflow1.8|2.7|-|docker pull yiqiyun/tensorflow:1.8-py27-cpu|
+|tensorflow1.7|3.6|CUDA 9.1|docker pull yiqiyun/tensorflow:1.7-py36-cu91-cudnn7.1|
+|tensorflow1.7|2.7|CUDA 9.1|docker pull yiqiyun/tensorflow:1.7-py27-cu91-cudnn7.1|
+|tensorflow1.7|3.6|-|docker pull yiqiyun/tensorflow:1.7-py36-cpu|
+|tensorflow1.7|2.7|-|docker pull yiqiyun/tensorflow:1.7-py27-cpu|
+|tensorflow1.6|3.6|CUDA 9.1|docker pull yiqiyun/tensorflow:1.6-py36-cu91-cudnn7.1|
+|tensorflow1.6|3.6|CUDA 8.0|docker pull yiqiyun/tensorflow:1.6-py36-cu80-cudnn7.1|
+|tensorflow1.6|2.7|CUDA 9.1|docker pull yiqiyun/tensorflow:1.6-py27-cu91-cudnn7.1|
+|tensorflow1.6|2.7|CUDA 8.0|docker pull yiqiyun/tensorflow:1.6-py27-cu80-cudnn7.1|
+|tensorflow1.6|3.6|-|docker pull yiqiyun/tensorflow:1.6-py36-cpu|
+|tensorflow1.6|2.7|-|docker pull yiqiyun/tensorflow:1.6-py27-cpu|
 
 
 ## 版本历史

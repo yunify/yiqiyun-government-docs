@@ -56,7 +56,7 @@ weight: 25
 | backup_service                | string | null                           | 备份服务                                                     |
 | chang_vxnet_service           | string | null                           | 更改网络服务                                                 |
 | cluster_id                    | string | cl-jfj8y9zy                    | 节点所存在的集群id                                           |
-| console_id                    | string | qingcloud                      | 节点所存在的控制台id                                         |
+| console_id                    | string | yiqiyun                        | 节点所存在的控制台id                                         |
 | controller                    | string | self                           | 控制器                                                       |
 | cpu                           | int    | 1                              | 节点所在集群所拥有的cpu个数                                  |
 | cpu_model                     | string | CascadeLake                    | cpu处理器型号                                                |
@@ -77,7 +77,7 @@ weight: 25
 | gpu_class                     | int    | 0                              | gpu类型                                                      |
 | group_id                      | int    | 1                              | 节点组id                                                     |
 | health_chaeck                 | string | null                           | 节点健康检查                                                 |
-| host_machine                  | string | qingcloudr02n02                | 主机名称                                                     |
+| host_machine                  | string | yiqiyunr02n02                  | 主机名称                                                     |
 | hypervisor                    | string | kvm                            | 管理程序名称                                                 |
 | iass_agent_install            | bool   | true                           | iass代理安装可能值true 已代理安装false 未代理安装            |
 | incremental_backup_supported  | bool   | false                          | 支持增量备份可能值true 支持false 不支持                      |
@@ -92,7 +92,7 @@ weight: 25
 | moitor                        | string | null                           | 监控                                                         |
 | mulit_zone_policy             | string | unsupported                    | 多区域政策                                                   |
 | name                          | string | 登录节点1                      | 节点名称                                                     |
-| nas_mount_point               | string | /pubilc/qingcloud/s07023       | nas文件挂载点挂载由用户自行设置                              |
+| nas_mount_point               | string | /pubilc/yiqiyun/s07023         | nas文件挂载点挂载由用户自行设置                              |
 | node_id                       | string | cln_2ediswnc                   | 节点id                                                       |
 | os_reset                      | bool   | false                          | 是否重置操作系统                                             |
 | owner                         | string | usr-vceaHsJu                   | 节点所属者                                                   |
@@ -148,7 +148,7 @@ change_vxnet_service: null
 
 cluster_id: "cl-v0jpwmsr"
 
-console_id: "qingcloud"
+console_id: "yiqiyun"
 
 controller: "self"
 
@@ -218,7 +218,7 @@ incremental_backup_supported: false
 
 init_service: {cmd: "appctl init"}
 
-instance: {instance_id: "i-9csyilte", volume_ids: "", zone_id: "qingcloud"}
+instance: {instance_id: "i-9csyilte", volume_ids: "", zone_id: "yiqiyun"}
 
 instance_id: "i-9csyilte"
 
@@ -238,7 +238,7 @@ multi_zone_policy: "unsupported"
 
 name: "登录节点1"
 
-nas_mount_point: "/public/qingcloud/s0723"
+nas_mount_point: "/public/yiqiyun/s0723"
 
 node_id: "cln-wx6w1ef2"
 

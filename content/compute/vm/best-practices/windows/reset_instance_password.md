@@ -19,15 +19,13 @@ draft: false
 
 ## 方案二
 
-如果云服务器安装了360安全卫士等软件，可能会将qingcloud-agent进程删除，这样子会导致以上重置密码的方法无效，可以尝试用以下方法。
+如果云服务器安装了360安全卫士等软件，可能会将yiqiyun-agent进程删除，这样子会导致以上重置密码的方法无效，可以尝试用以下方法。
 
 ### 1.进入救援云服务器模式，挂载源云服务器系统盘，进入E盘的Windows\System32目录
 
 ###  2.找到osk.exe，如图所示
 
 <img src="../../_images/homer/window reset password_01.png" width="60%" height="60%">
-
- ![0_1529737241980_12.png](https://community.qingcloud.com/assets/uploads/files/1529737242254-12.png)
 
 ###  3.这个文件由于属主不是administrator而是Trustedintaller，所以无法修改，需要把这个文件的属主更改为administrator,更改的步骤如下:
 

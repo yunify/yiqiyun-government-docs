@@ -702,7 +702,7 @@ class UploadMonitorData(object):
         self.CloudSatUrl = "http://cloudsat.yiqiyun.com/api/sh1/v1/custom/UploadMonitorData"
 =======
         self.url = "http://api.yiqiyun.sd.cegn.cn/iaas/"
-        self.CloudSatUrl = "http://cloudsat.qingcloud.com/api/sh1/v1/custom/UploadMonitorData"
+        self.CloudSatUrl = "http://cloudsat.yiqiyun.com/api/sh1/v1/custom/UploadMonitorData"
 >>>>>>> 78f1a3e7c46b30fa41ea71581d5babfcefe5d935
         self.url_path = '/iaas/'
         self.methods = 'GET'

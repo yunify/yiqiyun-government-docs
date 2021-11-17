@@ -19,7 +19,7 @@ draft: false
 
 共享存储目标名称，及IQN
 
-> 也可以输入短名，QingCloud会自动帮你补全IQN。
+> 也可以输入短名，系统会自动帮你补全IQN。
 
  | Yes |
 | target_type | String | 共享存储目标类型，目前仅支持ISCSI | Yes |
