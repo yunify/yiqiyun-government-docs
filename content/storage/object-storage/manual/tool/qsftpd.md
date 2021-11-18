@@ -43,9 +43,7 @@ log_level: error
 
 cache_path: /var/cache/qsftpd
 
-# 认证设置，默认允许匿名用户登录，也可以指定特定的用户登录
-#users:
-#  username_example: password_example
+
 ```
 
    **说明：**

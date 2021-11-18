@@ -8,24 +8,17 @@ type: "product"
 section1:
   title: 对象存储
   vice_title: 对象存储为用户提供可无限扩展的通用数据存储服务，具有安全可靠、简单易用、高性能、低成本等特点。
-  # todo add qingstor introduction video
-  #video: "https://pek3b.qingstor.com/yunify-qingcloud-docs/video/qs_qingcloud_bucket.mp4"
-  #video_img: "/images/video.png"
+ 
 
 Section2:
   title: 用户指南
   children:
-    # - title: 动态与公告
-    #   content: 产品动态和公告
-    #   url: "/storage/object-storage/news/history"
+ 
 
     - title: 产品简介
       content: 产品简介
       url: "/storage/object-storage/intro/object-storage"
 
-    #- title: 计费指南
-      #content: 计费指南
-     # url: "/storage/object-storage/billing/price"
 
     - title: 操作指南
       content: 操作指南
@@ -85,9 +78,4 @@ section4:
 ---
 
 
-<!-- type: "product" 这个参数表明这是一个产品index页面 -->
-<!-- section1 为产品index页面 主标题 副标题 video  video_img为视频图片  -->
-<!-- section2 为产品index页面 第一个大块的用户文档配置  -->
-<!-- section3 为产品index页面 第二个大块的开发者文档配置  -->
-<!-- section4 为产品index页面 第三个大块的学习路径配置  -->
 
