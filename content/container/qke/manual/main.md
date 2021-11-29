@@ -245,7 +245,7 @@ KubeSphere Dashboard 以 NodePort 的形式暴露在端口 30880，您可以在 
 
 ## 指定负载均衡器服务类型
 
-从 `YKE v1.0.1` 版本起集成了[负载均衡器插件](../../attach/qingcloud-cloud-controller-manager-master.zip)，支持将 KubeSphere 内部的服务和 YiQiYun IaaS 的负载均衡器关联起来，通过负载均衡器将服务暴露给集群外部调用。LB 插件具体用法请参考插件包内的说明文档。根据中国大陆工信部的规定，所有在大陆境内运行的服务都必须进行 ICP 备案。只要在互联网能访问并且使用大陆公网 IP 地址的域名都需要备案。
+从 `YKE v1.0.1` 版本起集成了[负载均衡器插件](/container/qke/attach/qingcloud-cloud-controller-manager-master.zip)，支持将 KubeSphere 内部的服务和 YiQiYun IaaS 的负载均衡器关联起来，通过负载均衡器将服务暴露给集群外部调用。LB 插件具体用法请参考插件包内的说明文档。根据中国大陆工信部的规定，所有在大陆境内运行的服务都必须进行 ICP 备案。只要在互联网能访问并且使用大陆公网 IP 地址的域名都需要备案。
 
 Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 annotations:
 
@@ -277,7 +277,7 @@ Service 的 type 设置为 LoadBalancer，然后在 metadata 中增加以下 ann
 
 ## 挂载云平台块存储
 
-从 `YKE v1.0.1` 版本起内置了 [CSI 存储插件](../../attach/qingcloud-csi-master.zip)，可以动态创建基于 IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。KubeSphere 的存储卷使用方法请参考官方文档：https://kubesphere.com.cn/en/docs/installing-on-linux/introduction/storage-configuration/。
+从 `YKE v1.0.1` 版本起内置了 [CSI 存储插件](/container/qke/attach/qingcloud-csi-master.zip)，可以动态创建基于 IaaS 上的硬盘的 PVC，并挂载到 Pod，当 Pod 迁移时，硬盘会自动随着 Pod 迁移到其他云服务器上。KubeSphere 的存储卷使用方法请参考官方文档：https://kubesphere.com.cn/en/docs/installing-on-linux/introduction/storage-configuration/。
 
 ### 使用 NeonSAN 硬盘
 

@@ -17,8 +17,8 @@ YiQiYun KubeSphere Engine (YKE) 服务集成了云平台的云服务器、存储
 
 - 集成 `Calico`、`Flannel` 网络插件供用户选择使用
 - 集成 ipvs、iptables 代理模式供用户选择使用
-- 集成 [CSI 存储插件](../../attach/qingcloud-csi-master.zip)，可以自动创建存储资源，支持基础型、企业型、容量型、企业分布式 NeonSAN 等云平台硬盘，支持硬盘自动扩容和自动迁移
-- 集成 [负载均衡器插件](../../attach/qingcloud-cloud-controller-manager-master.zip)，可以自动创建负载均衡器、公网 IP，一键直达公网访问
+- 集成 [CSI 存储插件](/container/qke/attach/qingcloud-csi-master.zip)，可以自动创建存储资源，支持基础型、企业型、容量型、企业分布式 NeonSAN 等云平台硬盘，支持硬盘自动扩容和自动迁移
+- 集成 [负载均衡器插件](/container/qke/attach/qingcloud-cloud-controller-manager-master.zip)，可以自动创建负载均衡器、公网 IP，一键直达公网访问
 - 支持一键增删工作节点
 - `自 YKE 2.0.0 起` 支持一键部署 GPU 节点
 - 可插拔 `OpenPitrix 应用商店`(需通过 [集群参数](/container/qke/admin/main/#服务环境参数设置) 开启），提供应用商店与应用的生命周期管理，支持通过 3 种方式一键部署应用
