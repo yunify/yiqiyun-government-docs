@@ -14,7 +14,7 @@ weight: 10
 
 #### 网络
 
-若您的 YKE 集群需要部署在私有网络，可根据页面提示进行创建，也可以参考[创建 VPC](//network/vpc/manual/vpcnet/10_create_vpc/) 提前创建好。
+若您的 YKE 集群需要部署在私有网络，可根据页面提示进行创建，也可以参考[创建 VPC](/network/vpc/manual/vpcnet/10_create_vpc/) 提前创建好。
 
 
 > **注意**：
