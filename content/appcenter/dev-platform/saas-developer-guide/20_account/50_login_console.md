@@ -1,0 +1,18 @@
+---
+title: "免密登录控制台"
+description: 免费登录控制台的工作流
+keyword: 山东省计算中心云平台, AppCenter, 云应用开发平台, SaaS
+draft: false
+weight: 50
+---
+
+用户界面点击立即访问按钮，前端会获取到当前用户的 token，然后写携带 token 跳转到服务商提供的地址 authUrl?token={usertoken}
+
+> **说明：**
+>
+> - 跳转到服务商 authUrl 地址后，需校验是否携带token参数，如果携带需请求山东省计算中心云平台接口验证token有效性。
+> - 如果token未携带活无效，需要访问山东省计算中心云平台sso让用户重新登录来获取token。
+> - 获取了用户 token 后，服务商即可访问山东省计算中心云平台 API。
+
+![](/appcenter/dev-platform/saas-developer-guide/_image/um_sec_login.png)
+
