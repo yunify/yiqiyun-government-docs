@@ -5,7 +5,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 10
-keyword: 山河
+keyword: 云平台
 ---
 
 ## 初始化待挂载的硬盘

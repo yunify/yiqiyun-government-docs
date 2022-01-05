@@ -79,7 +79,7 @@ mysql -u root -p
 2. 登录后需要重置密码，参考命令。
 
 ```mysql
-mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'shanhe1234';
+mysql> ALTER USER 'root'@'localhost' IDENTIFIED BY 'admin1234';
 ```
 
 ### 开启远程访问

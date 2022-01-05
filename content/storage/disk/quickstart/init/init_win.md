@@ -4,7 +4,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 110
-keyword: 山河
+keyword: 云平台
 ---
 
 ##  硬盘容量小于 2TB

@@ -4,7 +4,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 105
-keyword: 山河
+keyword: 云平台
 ---
 
 ## 直接初始化

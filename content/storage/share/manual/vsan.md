@@ -5,7 +5,7 @@ description: Test description
 draft: false
 weight: 20
 enableToc: false
-keyword: 山河
+keyword: 云平台
 ---
 
 # 简介
@@ -17,7 +17,7 @@ keyword: 山河
 
 > 注解
 > 
-> 如果将一块硬盘通过 Virtual SAN 服务挂载到多台云服务器上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用云平台已经推出的 [_NAS 服务_](https://docsv3.shanhe.com/storage/vnas/manual/vnas/) 。
+> 如果将一块硬盘通过 Virtual SAN 服务挂载到多台云服务器上，那么必须通过分布式文件系统（Distributed File System）的支持才可以并行读写，可以使用云平台已经推出的 [_NAS 服务_](https://docsv3.yiqiyun.com/storage/vnas/manual/vnas/) 。
 
 ## 创建 Virtual SAN 服务器
 
@@ -95,7 +95,7 @@ InitiatorName=iqn.1993-08.org.debian:01:967eaffe29d7
 
 ```
 iscsi-iname （以缺省前缀生成名称）
-iscsi-iname -p iqn.2005-03.com.shanhe （以指定的前缀生成名称）
+iscsi-iname -p iqn.2005-03.com.yiqiyun （以指定的前缀生成名称）
 ```
 
 **发现目标**
