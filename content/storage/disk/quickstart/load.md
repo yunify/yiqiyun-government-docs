@@ -5,7 +5,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 30
-keyword: 山河，硬盘
+keyword: 云平台，硬盘
 ---
 
 ## 操作场景

@@ -4,7 +4,7 @@ description: Test description
 draft: false
 enableToc: false
 weight: 1
-keyword: 山河，硬盘，SSD
+keyword: 云平台，硬盘，SSD
 ---
 
 ## 产品概述

@@ -96,6 +96,6 @@ ping 114.114.114.114
 测试域名解析：
 
 ```bash
-ping www.shanhe.com
+ping www.baidu.com
 ```
 

@@ -1,6 +1,0 @@
----
-title: "山河AppCenter用户协议"
-linkTitle: "山河AppCenter用户协议"
-weight: 21
-collapsible: true
----
