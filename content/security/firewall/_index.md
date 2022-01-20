@@ -20,7 +20,7 @@ Section2:
 
     - title: 计费指南
       content: 计费指南
-      url: "/security/firewall/billing/price"
+      url: "billing/price"
 
     - title: 快速入门
       content: 快速入门
@@ -32,7 +32,7 @@ Section2:
 
     - title: 常见问题
       content: 常见问题
-      url: "/security/firewall/faq/faq/"
+      url: "faq/faq/"
 
 section4:
   children:
