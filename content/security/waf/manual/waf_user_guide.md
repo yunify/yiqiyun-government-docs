@@ -14,6 +14,7 @@ WAF(Web 应用防火墙) 是跟负载均衡器（LoadBalancer）一起部署的�
 **第一步：创建一个负载均衡器**
 
 首先，您需要创建一个负载均衡器。 在创建的对话框中点击**显示高级选项**，可以选择是否开启 WAF ，开启 WAF 之后会选择要求绑定一个全局配置组。
+
  <img src="../_images/create_waf.png" style="zoom:50%;" />
 
 > **说明**
@@ -31,7 +32,7 @@ WAF(Web 应用防火墙) 是跟负载均衡器（LoadBalancer）一起部署的�
 
  ![](../_images/attach_null_waf_policy_to_lbl.png)
 
-目前没有配置 WAF 域名防护策略，所以这里是空的。
+若没有配置 WAF 域名防护策略，则这里是空的。
 
 
 **第三步：配置 WAF 域名防护策略**
