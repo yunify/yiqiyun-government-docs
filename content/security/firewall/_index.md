@@ -30,6 +30,10 @@ Section2:
       content: 操作指南
       url: "manual/checkdata"
 
+    - title: 常见问题
+      content: 常见问题
+      url: "faq/faq/"
+
 section4:
   children:
     - title: 了解：什么是云防火墙 CFW
@@ -40,7 +44,7 @@ section4:
           url: "intro/intro"
 
         - title: 产品优势
-          url: "intro/intro/#CFW 安全策略"
+          url: "intro/intro"
     - title: 上手：创建和管理 CFW 安全策略
       content: 创建CFW 安全策略，查看资产，管理安全策略。
       vice_title: 上手的第一步
