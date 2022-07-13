@@ -3,7 +3,7 @@ title: "安全日志"
 description: 如何查看安全日志
 draft: false
 weight: 10
-keyword: 云服务器, 安全，安全日志
+keyword: 云服务器，安全，安全日志
 
 ---
 
