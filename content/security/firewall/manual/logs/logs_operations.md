@@ -1,10 +1,9 @@
 ---
 title: "操作日志"
-linkTitle: "日志审计"
 description: 如何进行日志审计操作
 draft: false
 weight: 30
-keyword: 云服务器, QingCloud，安全，操作日志
+keyword: 云服务器，安全，操作日志
 
 ---
 
